@@ -4,9 +4,9 @@ library(tidyverse)
 library(lubridate)
 library(scales)
 
-schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Prediction Models/Seasons/2021.csv")
-schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Prediction Models/Seasons/2022.csv")
-schedule2023 <- read_csv("C:/Users/thigg/Desktop/Hockey Prediction Models/Seasons/2023.csv")
+schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
+schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2022.csv")
+schedule2023 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2023.csv")
 
 colnames(schedule2021) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 colnames(schedule2022) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
@@ -62,6 +62,8 @@ sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Locat
 
 sequence_data1$Win <- ifelse(sequence_data1$Win == 1, "W", "L")
 
+# sequence_data1$Win <- as.factor(sequence_data1$Win)
+
 # sequence_data2 <- sequence_data1 %>%
 #   mutate(Team = as.factor(Team)) %>%
 #   mutate(Location = as.factor(Location)) %>%
@@ -113,18 +115,21 @@ actuals <- test %>%
 # 
 # rf_model <- train(Win ~ ., data = train, method="rf")
 # 
+# ann_model <- train(Win ~., data = train, 
+#                method = "nnet")
+# 
 # end <- Sys.time()
 # 
 # end - start
 
-saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Prediction Models/RF1.RDS")
+# saveRDS(ann_model, "C:/Users/thigg/Desktop/Hockey Models/ANN1.RDS")
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Prediction Models/RF1.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF1.RDS")
 
-# preds <- predict(rf_model, newdata = test1, type = "prob")
-
-# test <- test[,c(1:13)]
-
+# ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN1.RDS")
+# 
+# preds <- predict(ann_model, newdata = test1)
+# 
 # test <- cbind(test, preds)
 # 
 # test$pred_abs <- ifelse(test$L > test$W, "L", "W")
@@ -138,11 +143,11 @@ rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Prediction Models/RF1.RDS")
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
 # test2 <- test %>%
-#   filter(highest >= .85)
+#   filter(highest >= .75)
 # 
 # sum(test2$pred_abs1)/nrow(test2)
 
-next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Prediction Models/Next Week Games.csv")
+next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 
 colnames(next_week) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 
@@ -223,4 +228,7 @@ thomas <- next_week1 %>%
   mutate(Loser_Confidence = percent(Loser_Confidence)) %>%
   rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence)
 
-write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Prediction Models/Today Predictions.csv")
+write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/Today Predictions.csv")
+
+
+
