@@ -20,15 +20,15 @@ games$Home_Win <- ifelse(games$Winner == "H", 1, 0)
 games$Visitor_Win <- ifelse(games$Winner == "V", 1, 0)
 
 homes <- games %>%
-  select(Date, Home, `Home Score`, Home_Win, Vistor) %>%
-  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor) %>%
+  select(Date, Home, `Home Score`, Home_Win, Vistor, `Vistor Score`) %>%
+  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor, "GA" = `Vistor Score`) %>%
   mutate(Location = "Home")
 
 
 
 visits <- games %>%
-  select(Date, Vistor, `Vistor Score`, Visitor_Win, Home) %>%
-  rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home) %>%
+  select(Date, Vistor, `Vistor Score`, Visitor_Win, Home, `Home Score`) %>%
+  rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
   mutate(Location = "Road")
 
 
@@ -42,12 +42,84 @@ sequence_data <- games %>%
   group_by(Team) %>%
   mutate(Previous_Opponent = lag(Opponent)) %>%
   mutate(Previous_GF = lag(GF)) %>%
+  mutate(Previous_GA = lag(GA)) %>%
   mutate(Previous_3_GF = lag(GF, n = 1) + lag(GF, n = 2) + lag(GF, n = 3)) %>%
+  mutate(Previous_3_GA = lag(GA, n = 1) + lag(GA, n = 2) + lag(GA, n = 3)) %>%
   mutate(Previous_Result = lag(Win)) %>%
   mutate(Previous_3_Results = lag(Win, n = 1) + lag(Win, n = 2) + lag(Win, n = 3)) %>%
   mutate(Previous_Location = lag(Location)) %>%
+  mutate(Previous_7_GF = lag(GF, n = 1) + 
+           lag(GF, n = 2) + 
+           lag(GF, n = 3) + 
+           lag(GF, n = 4) +
+           lag(GF, n = 5) +
+           lag(GF, n = 6) +
+           lag(GF, n = 7)) %>%
+  mutate(Previous_7_GA = lag(GA, n = 1) + 
+           lag(GA, n = 2) + 
+           lag(GA, n = 3) + 
+           lag(GA, n = 4) +
+           lag(GA, n = 5) +
+           lag(GA, n = 6) +
+           lag(GA, n = 7)) %>%
+  mutate(Previous_7_Results = lag(Win, n = 1) + 
+           lag(Win, n = 2) + 
+           lag(Win, n = 3) + 
+           lag(Win, n = 4) +
+           lag(Win, n = 5) +
+           lag(Win, n = 6) +
+           lag(Win, n = 7)) %>%
+  mutate(Previous_15_GF = lag(GF, n = 1) + 
+           lag(GF, n = 2) + 
+           lag(GF, n = 3) + 
+           lag(GF, n = 4) +
+           lag(GF, n = 5) +
+           lag(GF, n = 6) +
+           lag(GF, n = 7) +
+           lag(GF, n = 8) + 
+           lag(GF, n = 9) + 
+           lag(GF, n = 10) +
+           lag(GF, n = 11) +
+           lag(GF, n = 12) +
+           lag(GF, n = 13) +
+           lag(GF, n = 14) +
+           lag(GF, n = 15)) %>%
+  mutate(Previous_15_GA = lag(GA, n = 1) + 
+           lag(GA, n = 2) + 
+           lag(GA, n = 3) + 
+           lag(GA, n = 4) +
+           lag(GA, n = 5) +
+           lag(GA, n = 6) +
+           lag(GA, n = 7) +
+           lag(GA, n = 8) + 
+           lag(GA, n = 9) + 
+           lag(GA, n = 10) +
+           lag(GA, n = 11) +
+           lag(GA, n = 12) +
+           lag(GA, n = 13) +
+           lag(GA, n = 14) +
+           lag(GA, n = 15)) %>%
+  mutate(Previous_15_Resuts = lag(Win, n = 1) + 
+           lag(GA, n = 2) + 
+           lag(GA, n = 3) + 
+           lag(GA, n = 4) +
+           lag(GA, n = 5) +
+           lag(GA, n = 6) +
+           lag(GA, n = 7) +
+           lag(GA, n = 8) + 
+           lag(GA, n = 9) + 
+           lag(GA, n = 10) +
+           lag(GA, n = 11) +
+           lag(GA, n = 12) +
+           lag(GA, n = 13) +
+           lag(GA, n = 14) +
+           lag(GA, n = 15)) %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_3_GF, Previous_Result, Previous_3_Results, Previous_Location, DOW, Win)
+  arrange(desc(Date)) %>%
+  slice(1:120) %>%
+  arrange(Date) %>%
+  ungroup() %>%
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
 
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
@@ -115,20 +187,20 @@ actuals <- test %>%
 # 
 # rf_model <- train(Win ~ ., data = train, method="rf")
 # 
-# ann_model <- train(Win ~., data = train, 
-#                method = "nnet")
+# # ann_model <- train(Win ~., data = train, 
+# #                method = "nnet")
 # 
 # end <- Sys.time()
 # 
 # end - start
 
-# saveRDS(ann_model, "C:/Users/thigg/Desktop/Hockey Models/ANN1.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF2.RDS")
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF1.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF2.RDS")
 
 # ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN1.RDS")
 # 
-# preds <- predict(ann_model, newdata = test1)
+# preds <- predict(rf_model, newdata = test1, type = "prob")
 # 
 # test <- cbind(test, preds)
 # 
@@ -143,7 +215,7 @@ rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF1.RDS")
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
 # test2 <- test %>%
-#   filter(highest >= .75)
+#   filter(highest >= .85)
 # 
 # sum(test2$pred_abs1)/nrow(test2)
 
@@ -160,21 +232,21 @@ attributes <- games %>%
   mutate(Date = as.Date(Date, format = "%m/%d/%Y")) %>%
   group_by(Team) %>%
   arrange(desc(Date)) %>%
-  slice(1:3) %>%
+  slice(1:15) %>%
   arrange(Date) %>%
   ungroup()
 
 
 homes <- next_week %>%
-  select(Date, Home, `Home Score`, Home_Win, Vistor) %>%
-  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor) %>%
+  select(Date, Home, `Home Score`, Home_Win, Vistor, `Vistor Score`) %>%
+  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor, "GA" = `Vistor Score`) %>%
   mutate(Location = "Home")
 
 
 
 visits <- next_week %>%
-  select(Date, Vistor, `Vistor Score`, Visitor_Win, Home) %>%
-  rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home) %>%
+  select(Date, Vistor, `Vistor Score`, Visitor_Win, Home, `Home Score`) %>%
+  rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
   mutate(Location = "Road")
 
 
@@ -192,15 +264,87 @@ next_week <- next_week %>%
   group_by(Team) %>%
   mutate(Previous_Opponent = lag(Opponent)) %>%
   mutate(Previous_GF = lag(GF)) %>%
+  mutate(Previous_GA = lag(GA)) %>%
   mutate(Previous_3_GF = lag(GF, n = 1) + lag(GF, n = 2) + lag(GF, n = 3)) %>%
+  mutate(Previous_3_GA = lag(GA, n = 1) + lag(GA, n = 2) + lag(GA, n = 3)) %>%
   mutate(Previous_Result = lag(Win)) %>%
   mutate(Previous_3_Results = lag(Win, n = 1) + lag(Win, n = 2) + lag(Win, n = 3)) %>%
   mutate(Previous_Location = lag(Location)) %>%
+  mutate(Previous_7_GF = lag(GF, n = 1) + 
+           lag(GF, n = 2) + 
+           lag(GF, n = 3) + 
+           lag(GF, n = 4) +
+           lag(GF, n = 5) +
+           lag(GF, n = 6) +
+           lag(GF, n = 7)) %>%
+  mutate(Previous_7_GA = lag(GA, n = 1) + 
+           lag(GA, n = 2) + 
+           lag(GA, n = 3) + 
+           lag(GA, n = 4) +
+           lag(GA, n = 5) +
+           lag(GA, n = 6) +
+           lag(GA, n = 7)) %>%
+  mutate(Previous_7_Results = lag(Win, n = 1) + 
+           lag(Win, n = 2) + 
+           lag(Win, n = 3) + 
+           lag(Win, n = 4) +
+           lag(Win, n = 5) +
+           lag(Win, n = 6) +
+           lag(Win, n = 7)) %>%
+  mutate(Previous_15_GF = lag(GF, n = 1) + 
+           lag(GF, n = 2) + 
+           lag(GF, n = 3) + 
+           lag(GF, n = 4) +
+           lag(GF, n = 5) +
+           lag(GF, n = 6) +
+           lag(GF, n = 7) +
+           lag(GF, n = 8) + 
+           lag(GF, n = 9) + 
+           lag(GF, n = 10) +
+           lag(GF, n = 11) +
+           lag(GF, n = 12) +
+           lag(GF, n = 13) +
+           lag(GF, n = 14) +
+           lag(GF, n = 15)) %>%
+  mutate(Previous_15_GA = lag(GA, n = 1) + 
+           lag(GA, n = 2) + 
+           lag(GA, n = 3) + 
+           lag(GA, n = 4) +
+           lag(GA, n = 5) +
+           lag(GA, n = 6) +
+           lag(GA, n = 7) +
+           lag(GA, n = 8) + 
+           lag(GA, n = 9) + 
+           lag(GA, n = 10) +
+           lag(GA, n = 11) +
+           lag(GA, n = 12) +
+           lag(GA, n = 13) +
+           lag(GA, n = 14) +
+           lag(GA, n = 15)) %>%
+  mutate(Previous_15_Resuts = lag(Win, n = 1) + 
+           lag(GA, n = 2) + 
+           lag(GA, n = 3) + 
+           lag(GA, n = 4) +
+           lag(GA, n = 5) +
+           lag(GA, n = 6) +
+           lag(GA, n = 7) +
+           lag(GA, n = 8) + 
+           lag(GA, n = 9) + 
+           lag(GA, n = 10) +
+           lag(GA, n = 11) +
+           lag(GA, n = 12) +
+           lag(GA, n = 13) +
+           lag(GA, n = 14) +
+           lag(GA, n = 15)) %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
-  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_3_GF, Previous_Result, Previous_3_Results, Previous_Location, DOW)
+  arrange(Date) %>%
+  ungroup() %>%
+  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
 
+  
 next_week1 <- next_week %>%
-  filter(Date >= as.Date("12/9/2023", format = "%m/%d/%Y"))
+  filter(Date >= as.Date("12/10/2023", format = "%m/%d/%Y")) %>%
+  select(-Win)
 
 next_week1 <- next_week1[complete.cases(next_week1),]
 
