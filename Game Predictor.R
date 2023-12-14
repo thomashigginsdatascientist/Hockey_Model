@@ -220,6 +220,9 @@ rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF2.RDS")
 # sum(test2$pred_abs1)/nrow(test2)
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
+next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
+next_week <- next_week %>%
+  filter(Date == Sys.Date())
 
 colnames(next_week) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 
@@ -232,7 +235,7 @@ attributes <- games %>%
   mutate(Date = as.Date(Date, format = "%m/%d/%Y")) %>%
   group_by(Team) %>%
   arrange(desc(Date)) %>%
-  slice(1:15) %>%
+  slice(1:30) %>%
   arrange(Date) %>%
   ungroup()
 
@@ -263,8 +266,8 @@ next_week <- next_week %>%
   ungroup() %>%
   group_by(Team) %>%
   mutate(Previous_Opponent = lag(Opponent)) %>%
-  mutate(Previous_GF = lag(GF)) %>%
-  mutate(Previous_GA = lag(GA)) %>%
+  mutate(Previous_GF = lag(GF, n = 1)) %>%
+  mutate(Previous_GA = lag(GA, n = 1)) %>%
   mutate(Previous_3_GF = lag(GF, n = 1) + lag(GF, n = 2) + lag(GF, n = 3)) %>%
   mutate(Previous_3_GA = lag(GA, n = 1) + lag(GA, n = 2) + lag(GA, n = 3)) %>%
   mutate(Previous_Result = lag(Win)) %>%
@@ -343,7 +346,8 @@ next_week <- next_week %>%
 
   
 next_week1 <- next_week %>%
-  filter(Date >= as.Date("12/10/2023", format = "%m/%d/%Y")) %>%
+  filter(Date == Sys.Date()) %>%
+  # filter(Date >= as.Date("12/13/2023", format = "%m/%d/%Y")) %>%
   select(-Win)
 
 next_week1 <- next_week1[complete.cases(next_week1),]
