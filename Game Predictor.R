@@ -125,6 +125,8 @@ sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
 location_data <- games %>%
   group_by(Team, Location) %>%
+  # arrange(desc(Date)) %>%
+  # slice(1:30) %>%
   summarise(Wins = sum(Win), Avg_GF = mean(GF), Total_GF = sum(GF), num_games = n()) %>%
   mutate(Losses = num_games - Wins) %>%
   mutate(Win_Percentage = Wins/num_games) %>%
@@ -183,20 +185,33 @@ actuals <- test %>%
 # 
 # summary(model)
 
+# control <- trainControl(method='repeatedcv', 
+#                         number=10, 
+#                         repeats=3,
+#                         search = 'grid')
+# 
 # start <- Sys.time()
 # 
-# rf_model <- train(Win ~ ., data = train, method="rf")
+# # rf_model <- train(Win ~ ., data = train, method="rf")
 # 
-# # ann_model <- train(Win ~., data = train, 
+# rf_model <- train(Win ~ ., data = train, method = "rf")
+# 
+# # ann_model <- train(Win ~., data = train,
 # #                method = "nnet")
 # 
 # end <- Sys.time()
 # 
 # end - start
+# 
+# print(rf_model)
+# 
+# plot(rf_model)
 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF2.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF3.RDS")
 
 rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF2.RDS")
+
+varImp(rf_model)
 
 # ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN1.RDS")
 # 
@@ -215,7 +230,7 @@ rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF2.RDS")
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
 # test2 <- test %>%
-#   filter(highest >= .85)
+#   filter(highest >= .7)
 # 
 # sum(test2$pred_abs1)/nrow(test2)
 
