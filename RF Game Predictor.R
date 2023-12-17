@@ -163,8 +163,6 @@ train <- train %>%
   ungroup() %>%
   as.data.frame()
 
-# model <- lm(Win ~ ., data = train, family="multinomial")
-
 test <- test %>%
   ungroup() %>%
   as.data.frame()
@@ -175,37 +173,13 @@ test1 <- test %>%
 actuals <- test %>%
   select(Win)
 
-# preds <- predict(model, newdata = test1, type = "response")
-# 
-# test$preds <- preds
-# 
-# test$pred_abs <- ifelse(test$preds >= 0.5, 1, 0)
-# 
-# confusionMatrix(as.factor(test$pred_abs), as.factor(test$Win))
-# 
-# summary(model)
-
-# control <- trainControl(method='repeatedcv',
-#                         number=10,
-#                         repeats=3,
-#                         search = 'grid')
-# 
 # start <- Sys.time()
 # 
 # rf_model <- train(Win ~ ., data = train, method="rf")
 # 
-# # ann_model <- train(Win ~., 
-# #                data = train,
-# #                method = "nnet",
-# #                trControl = control)
-# 
 # end <- Sys.time()
 # 
 # end - start
-# # 
-# print(rf_model)
-# 
-# plot(rf_model)
 
 # saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF3.RDS")
 
@@ -215,10 +189,6 @@ varImp(rf_model)
 
 training <- rf_model$trainingData
 
-# ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN1.RDS")
-
-# varImp(ann_model)
-# 
 # preds <- predict(rf_model, newdata = test1, type = "prob")
 # 
 # test <- cbind(test, preds)
@@ -234,7 +204,7 @@ training <- rf_model$trainingData
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
 # test2 <- test %>%
-#   filter(highest >= .8)
+#   filter(highest >= .7)
 # 
 # sum(test2$pred_abs1)/nrow(test2)
 
@@ -395,7 +365,7 @@ thomas <- next_week1 %>%
   mutate(Loser_Confidence = percent(Loser_Confidence)) %>%
   rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence)
 
-write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/Today Predictions.csv")
+write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/RF Today Predictions.csv")
 
 
 
