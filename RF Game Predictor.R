@@ -119,7 +119,7 @@ sequence_data <- games %>%
   slice(1:120) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
 
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
@@ -168,14 +168,17 @@ test <- test %>%
   as.data.frame()
 
 test1 <- test %>%
-  select(-Win)
+  select(-Win, -GF, -GA)
 
 actuals <- test %>%
-  select(Win)
+  select(Win, GF, GA)
+
+train_rf <- train %>%
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
 
 # start <- Sys.time()
 # 
-# rf_model <- train(Win ~ ., data = train, method="rf")
+# rf_model <- train(Win ~ ., data = train_rf, method="rf")
 # 
 # end <- Sys.time()
 # 
@@ -189,24 +192,92 @@ varImp(rf_model)
 
 training <- rf_model$trainingData
 
-# preds <- predict(rf_model, newdata = test1, type = "prob")
+
+preds <- predict(rf_model, newdata = train, type = "prob")
+
+train_ann <- cbind(train, preds)
+
+train_ann$Win_Probability <- train_ann$W
+
+train_ann_GF <- train_ann %>%
+  select(-L, -W, -GA, -Win)
+
+train_ann_GA <- train_ann %>%
+  select(-L, -W, -GF, -Win)
+
+# control <- trainControl(method='repeatedcv',
+#                         number=10,
+#                         repeats=3,
+#                         search = 'grid')
 # 
-# test <- cbind(test, preds)
+# start <- Sys.time()
 # 
-# test$pred_abs <- ifelse(test$L > test$W, "L", "W")
+# # GF_model <- train(GF ~ ., data = train_ann_GF, method="nnet", trControl = control)
 # 
-# test$pred_abs1 <- ifelse(test$Win == test$pred_abs, 1, 0)
+# GF_model <- lm(GF ~ ., data = train_ann_GF)
 # 
-# sum(test$pred_abs1)/nrow(test)
+# end <- Sys.time()
 # 
-# confusionMatrix(as.factor(test$pred_abs), as.factor(test$Win))
+# end - start
 # 
-# test$highest <- ifelse(test$L > test$Win, test$L, test$W)
+# saveRDS(GF_model, "C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
+
+GF_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
+
+
+# start <- Sys.time()
 # 
-# test2 <- test %>%
-#   filter(highest >= .7)
+# # GA_model <- train(GA ~ ., data = train_ann_GA, method="nnet", trControl = control)
 # 
-# sum(test2$pred_abs1)/nrow(test2)
+# GA_model <- lm(GA ~ ., data = train_ann_GA)
+# 
+# end <- Sys.time()
+# 
+# end - start
+# 
+# saveRDS(GA_model, "C:/Users/thigg/Desktop/Hockey Models/GA Model1.RDS")
+
+GA_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GA Model1.RDS")
+
+
+preds <- predict(rf_model, newdata = test1, type = "prob")
+
+test1 <- cbind(test1, preds)
+
+test1$Win_Probability <- test1$W
+
+preds <- predict(GF_model, newdata = test1)
+
+test1$GF_pred <- preds
+test1$GF_pred <- round(test1$GF_pred, 0)
+
+preds <- predict(GA_model, newdata = test1)
+
+test1$GA_pred <- preds
+test1$GA_pred <- round(test1$GA_pred, 0)
+
+test1$pred_abs <- ifelse(test1$L > test1$W, "L", "W")
+
+test1 <- cbind(test1, actuals)
+
+test1$pred_abs1 <- ifelse(test1$Win == test1$pred_abs, 1, 0)
+
+sum(test1$pred_abs1)/nrow(test1)
+
+confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
+
+test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
+
+test2 <- test1 %>%
+  filter(highest >= .7)
+
+sum(test2$pred_abs1)/nrow(test2)
+
+GF_MAE <- MAE(test1$GF_pred, test1$GF)
+
+GA_MAE <- MAE(test1$GA_pred, test1$GA)
+
+
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
@@ -331,13 +402,13 @@ next_week <- next_week %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
 
   
 next_week1 <- next_week %>%
   filter(Date == Sys.Date()) %>%
   # filter(Date >= as.Date("12/13/2023", format = "%m/%d/%Y")) %>%
-  select(-Win)
+  select(-Win, -GF, -GA)
 
 next_week1 <- next_week1[complete.cases(next_week1),]
 
@@ -354,12 +425,30 @@ next_week1$Loser <- ifelse(next_week1$L > next_week1$W, next_week1$Team, next_we
 
 next_week1$Confidence <- ifelse(next_week1$L > next_week1$W, next_week1$L, next_week1$W)
 
+next_week1 <- next_week1 %>%
+  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Avg_GF, Win_Percentage, W, L, Winner, Loser, Confidence)
+
+next_week1$Win_Probability <- next_week1$W
+
+preds <- predict(GF_model, next_week1)
+
+next_week1$GF <- preds
+next_week1$GF <- round(next_week1$GF, 0)
+
+preds <- predict(GA_model, next_week1)
+
+next_week1$GA <- preds
+next_week1$GA <- round(next_week1$GA, 0)
+
+next_week1$GF_MAE <- GF_MAE
+next_week1$GA_MAE <- GA_MAE
+
 thomas <- next_week1 %>%
   ungroup() %>%
   filter(Location == "Home") %>%
   mutate(Loser_Confidence = 1 - Confidence) %>%
   mutate(Site = paste("Playing At: ", Team, " ", Location)) %>%
-  select(Date, Winner, Confidence, Loser, Loser_Confidence, Site) %>%
+  select(Date, Winner, GF, Confidence, Loser, GA, Loser_Confidence, Site, GF_MAE, GA_MAE) %>%
   arrange(desc(Confidence)) %>%
   mutate(Confidence = percent(Confidence)) %>%
   mutate(Loser_Confidence = percent(Loser_Confidence)) %>%

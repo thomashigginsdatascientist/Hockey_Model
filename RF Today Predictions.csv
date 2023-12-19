@@ -1,6 +1,6 @@
-Date,Winner,Winner Probability,Loser,Loser Probability,Site
-2023-12-18,Winnipeg Jets,72.0%,Montreal Canadiens,28.0%,Playing At:  Winnipeg Jets   Home
-2023-12-18,Dallas Stars,67.4%,Seattle Kraken,32.6%,Playing At:  Dallas Stars   Home
-2023-12-18,Florida Panthers,58.6%,Calgary Flames,41.4%,Playing At:  Calgary Flames   Home
-2023-12-18,Pittsburgh Penguins,58.4%,Minnesota Wild,41.6%,Playing At:  Pittsburgh Penguins   Home
-2023-12-18,Detroit Red Wings,50.2%,Anaheim Ducks,49.8%,Playing At:  Detroit Red Wings   Home
+Date,Winner,GF,Winner Probability,Loser,GA,Loser Probability,Site,GF_MAE,GA_MAE
+2023-12-18,Winnipeg Jets,3,72.0%,Montreal Canadiens,3,28.0%,Playing At:  Winnipeg Jets   Home,1.031413612565445,1.1413612565445026
+2023-12-18,Dallas Stars,4,67.4%,Seattle Kraken,2,32.6%,Playing At:  Dallas Stars   Home,1.031413612565445,1.1413612565445026
+2023-12-18,Florida Panthers,3,58.6%,Calgary Flames,3,41.4%,Playing At:  Calgary Flames   Home,1.031413612565445,1.1413612565445026
+2023-12-18,Pittsburgh Penguins,4,58.4%,Minnesota Wild,3,41.6%,Playing At:  Pittsburgh Penguins   Home,1.031413612565445,1.1413612565445026
+2023-12-18,Detroit Red Wings,4,50.2%,Anaheim Ducks,3,49.8%,Playing At:  Detroit Red Wings   Home,1.031413612565445,1.1413612565445026
