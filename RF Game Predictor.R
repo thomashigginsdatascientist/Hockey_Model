@@ -3,6 +3,7 @@
 library(tidyverse)
 library(lubridate)
 library(scales)
+# library(car)
 
 schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
 schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2022.csv")
@@ -210,11 +211,11 @@ train_ann_GA <- train_ann %>%
 #                         repeats=3,
 #                         search = 'grid')
 # 
-# start <- Sys.time()
+start <- Sys.time()
 # 
-# # GF_model <- train(GF ~ ., data = train_ann_GF, method="nnet", trControl = control)
+# GF_model <- train(GF ~ ., data = train_ann_GF, method="bridge")
 # 
-# GF_model <- lm(GF ~ ., data = train_ann_GF)
+# # GF_model <- lm(GF ~ ., data = train_ann_GF)
 # 
 # end <- Sys.time()
 # 
@@ -224,12 +225,13 @@ train_ann_GA <- train_ann %>%
 
 GF_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
 
+vif(GF_model)
 
 # start <- Sys.time()
 # 
-# # GA_model <- train(GA ~ ., data = train_ann_GA, method="nnet", trControl = control)
+# GA_model <- train(GA ~ ., data = train_ann_GA, method="bridge")
 # 
-# GA_model <- lm(GA ~ ., data = train_ann_GA)
+# # GA_model <- lm(GA ~ ., data = train_ann_GA)
 # 
 # end <- Sys.time()
 # 
