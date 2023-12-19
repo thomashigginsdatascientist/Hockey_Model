@@ -126,7 +126,7 @@ sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 location_data <- games %>%
   group_by(Team, Location) %>%
   arrange(desc(Date)) %>%
-  slice(1:60) %>%
+  slice(1:82) %>%
   summarise(Wins = sum(Win), Avg_GF = mean(GF), Total_GF = sum(GF), num_games = n()) %>%
   mutate(Losses = num_games - Wins) %>%
   mutate(Win_Percentage = Wins/num_games) %>%
@@ -187,10 +187,10 @@ actuals <- test %>%
 # end <- Sys.time()
 # 
 # end - start
-# 
-# saveRDS(ann_model, "C:/Users/thigg/Desktop/Hockey Models/ANN2.RDS")
 
-ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN2.RDS")
+# saveRDS(ann_model, "C:/Users/thigg/Desktop/Hockey Models/ANN3.RDS")
+
+ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN3.RDS")
 
 varImp(ann_model)
 
@@ -209,7 +209,7 @@ varImp(ann_model)
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
 # test2 <- test %>%
-#   filter(highest >= .7)
+#   filter(highest >= .8)
 # 
 # sum(test2$pred_abs1)/nrow(test2)
 

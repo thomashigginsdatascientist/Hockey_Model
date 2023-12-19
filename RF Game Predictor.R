@@ -126,7 +126,7 @@ sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 location_data <- games %>%
   group_by(Team, Location) %>%
   arrange(desc(Date)) %>%
-  slice(1:60) %>%
+  slice(1:82) %>%
   summarise(Wins = sum(Win), Avg_GF = mean(GF), Total_GF = sum(GF), num_games = n()) %>%
   mutate(Losses = num_games - Wins) %>%
   mutate(Win_Percentage = Wins/num_games) %>%
@@ -174,7 +174,7 @@ actuals <- test %>%
   select(Win, GF, GA)
 
 train_rf <- train %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Avg_GF, Win_Percentage)
 
 # start <- Sys.time()
 # 
@@ -184,9 +184,9 @@ train_rf <- train %>%
 # 
 # end - start
 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF3.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF4.RDS")
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF3.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF4.RDS")
 
 varImp(rf_model)
 
@@ -219,7 +219,7 @@ train_ann_GA <- train_ann %>%
 # end <- Sys.time()
 # 
 # end - start
-# 
+
 # saveRDS(GF_model, "C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
 
 GF_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
@@ -234,7 +234,7 @@ GF_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
 # end <- Sys.time()
 # 
 # end - start
-# 
+
 # saveRDS(GA_model, "C:/Users/thigg/Desktop/Hockey Models/GA Model1.RDS")
 
 GA_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GA Model1.RDS")
@@ -269,7 +269,7 @@ confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
 test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
 
 test2 <- test1 %>%
-  filter(highest >= .7)
+  filter(highest >= .77)
 
 sum(test2$pred_abs1)/nrow(test2)
 
