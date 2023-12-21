@@ -459,4 +459,33 @@ thomas <- next_week1 %>%
 write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/RF Today Predictions.csv")
 
 
+predictions <- read_csv("C:/Users/thigg/Desktop/Hockey Models/RF Predictions.csv")
 
+predictions$Site <- gsub("Playing At: ", "", predictions$Site)
+predictions$Site <- gsub(" Home", "", predictions$Site)
+predictions$Site <- trimws(predictions$Site)
+
+predictions$UID <- paste(predictions$Site, predictions$Date, sep = "---")
+
+
+schedule20231 <- schedule2023 %>%
+  mutate(UID = paste0(Home, "---", Date)) %>%
+  select(UID, OTSO)
+
+predictions <- left_join(predictions, schedule20231, by = "UID")
+
+predictions <- predictions %>%
+  filter(is.na(OTSO))
+
+predictions1 <- predictions %>%
+  group_by(Category) %>%
+  summarise(Total = n(), Total_Correct = sum(Model)) %>%
+  mutate(Percent = Total_Correct/Total)
+
+sum(predictions1$Total_Correct)/sum(predictions1$Total)
+
+test70 <- predictions1[3,2] + predictions1[4,2] + predictions1[5,2]
+
+test70c <- predictions1[3,3] + predictions1[4,3] + predictions1[5,3]
+
+test70c/test70
