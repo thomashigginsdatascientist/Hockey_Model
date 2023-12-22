@@ -474,6 +474,9 @@ schedule20231 <- schedule2023 %>%
 
 predictions <- left_join(predictions, schedule20231, by = "UID")
 
+SOOT <- predictions %>%
+  filter(!is.na(OTSO))
+
 predictions <- predictions %>%
   filter(is.na(OTSO))
 
