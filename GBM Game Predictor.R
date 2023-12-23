@@ -115,11 +115,23 @@ sequence_data <- games %>%
            lag(GA, n = 14) +
            lag(GA, n = 15)) %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
+  mutate(Games_Since_Last_Game = Date - lag(Date)) %>%
+  mutate(Games_Between_Last_3 = lag(Games_Since_Last_Game, n = 1) + lag(Games_Since_Last_Game, n = 2) + lag(Games_Since_Last_Game, n = 3)) %>%
+  mutate(Games_Between_Last_7 = lag(Games_Since_Last_Game, n = 1) + 
+           lag(Games_Since_Last_Game, n = 2) + 
+           lag(Games_Since_Last_Game, n = 3) +
+           lag(Games_Since_Last_Game, n = 4) +
+           lag(Games_Since_Last_Game, n = 5) +
+           lag(Games_Since_Last_Game, n = 6) +
+           lag(Games_Since_Last_Game, n = 7)) %>%
+  mutate(Games_Since_Last_Game = as.numeric(Games_Since_Last_Game)) %>%
+  mutate(Games_Between_Last_3 = as.numeric(Games_Between_Last_3)) %>%
+  mutate(Games_Between_Last_7 = as.numeric(Games_Between_Last_7)) %>%
   arrange(desc(Date)) %>%
   slice(1:120) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
 
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
@@ -174,27 +186,32 @@ actuals <- test %>%
   select(Win)
 
 # control <- trainControl(method='repeatedcv',
-#                         number=15,
+#                         number=10,
 #                         repeats=3,
-#                         search = 'grid')
+#                         verboseIter = TRUE)
+# 
 # 
 # start <- Sys.time()
 # 
-# ann_model <- train(Win ~.,
+# gbm_model <- train(Win ~.,
 #                data = train,
-#                method = "nnet")
+#                method = "gbm",
+#                trControl = control,
+#                verbose = TRUE)
 # 
 # end <- Sys.time()
 # 
 # end - start
 
-# saveRDS(ann_model, "C:/Users/thigg/Desktop/Hockey Models/ANN3.RDS")
+# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM1.RDS")
 
-ann_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/ANN3.RDS")
+gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM1.RDS")
 
-varImp(ann_model)
+library(gbm)
 
-# preds <- predict(ann_model, newdata = test1, type = "prob")
+varImp(gbm_model)
+
+# preds <- predict(gbm_model, newdata = test1, type = "prob")
 # 
 # test <- cbind(test, preds)
 # 
@@ -209,7 +226,7 @@ varImp(ann_model)
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
 # test2 <- test %>%
-#   filter(highest >= .8)
+#   filter(highest >= .7)
 # 
 # sum(test2$pred_abs1)/nrow(test2)
 
@@ -334,9 +351,21 @@ next_week <- next_week %>%
            lag(GA, n = 14) +
            lag(GA, n = 15)) %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
+  mutate(Games_Since_Last_Game = Date - lag(Date)) %>%
+  mutate(Games_Between_Last_3 = lag(Games_Since_Last_Game, n = 1) + lag(Games_Since_Last_Game, n = 2) + lag(Games_Since_Last_Game, n = 3)) %>%
+  mutate(Games_Between_Last_7 = lag(Games_Since_Last_Game, n = 1) + 
+           lag(Games_Since_Last_Game, n = 2) + 
+           lag(Games_Since_Last_Game, n = 3) +
+           lag(Games_Since_Last_Game, n = 4) +
+           lag(Games_Since_Last_Game, n = 5) +
+           lag(Games_Since_Last_Game, n = 6) +
+           lag(Games_Since_Last_Game, n = 7)) %>%
+  mutate(Games_Since_Last_Game = as.numeric(Games_Since_Last_Game)) %>%
+  mutate(Games_Between_Last_3 = as.numeric(Games_Between_Last_3)) %>%
+  mutate(Games_Between_Last_7 = as.numeric(Games_Between_Last_7)) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
 
   
 next_week1 <- next_week %>%
@@ -348,7 +377,7 @@ next_week1 <- next_week1[complete.cases(next_week1),]
 
 next_week1 <- left_join(next_week1, location_data, by = c("Team", "Location"))
 
-today_preds <- predict(ann_model, newdata = next_week1, type = "prob")
+today_preds <- predict(gbm_model, newdata = next_week1, type = "prob")
 
 next_week1 <- cbind(next_week1, today_preds)
 
@@ -370,7 +399,7 @@ thomas <- next_week1 %>%
   mutate(Loser_Confidence = percent(Loser_Confidence)) %>%
   rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence)
 
-write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/ANN Today Predictions.csv")
+write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/GBM Today Predictions.csv")
 
 
 

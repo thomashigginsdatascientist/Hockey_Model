@@ -116,11 +116,23 @@ sequence_data <- games %>%
            lag(GA, n = 14) +
            lag(GA, n = 15)) %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
+  mutate(Games_Since_Last_Game = Date - lag(Date)) %>%
+  mutate(Games_Between_Last_3 = lag(Games_Since_Last_Game, n = 1) + lag(Games_Since_Last_Game, n = 2) + lag(Games_Since_Last_Game, n = 3)) %>%
+  mutate(Games_Between_Last_7 = lag(Games_Since_Last_Game, n = 1) + 
+           lag(Games_Since_Last_Game, n = 2) + 
+           lag(Games_Since_Last_Game, n = 3) +
+           lag(Games_Since_Last_Game, n = 4) +
+           lag(Games_Since_Last_Game, n = 5) +
+           lag(Games_Since_Last_Game, n = 6) +
+           lag(Games_Since_Last_Game, n = 7)) %>%
+  mutate(Games_Since_Last_Game = as.numeric(Games_Since_Last_Game)) %>%
+  mutate(Games_Between_Last_3 = as.numeric(Games_Between_Last_3)) %>%
+  mutate(Games_Between_Last_7 = as.numeric(Games_Between_Last_7)) %>%
   arrange(desc(Date)) %>%
   slice(1:120) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
 
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
@@ -134,6 +146,10 @@ location_data <- games %>%
   select(Team, Location, Avg_GF, Win_Percentage)
 
 sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Location"))
+
+# power_rankings <- read_csv("C:/Users/thigg/Desktop/Hockey Models/ESPN Power Rankings.csv")
+# 
+# sequence_data1 <- left_join(sequence_data1, power_rankings, by = c("Team"))
 
 sequence_data1$Win <- ifelse(sequence_data1$Win == 1, "W", "L")
 
@@ -175,7 +191,7 @@ actuals <- test %>%
   select(Win, GF, GA)
 
 train_rf <- train %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Avg_GF, Win_Percentage)
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Avg_GF, Win_Percentage, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7)
 
 # start <- Sys.time()
 # 
@@ -185,9 +201,9 @@ train_rf <- train %>%
 # 
 # end - start
 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF4.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF5.RDS")
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF4.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF5.RDS")
 
 varImp(rf_model)
 
@@ -211,11 +227,11 @@ train_ann_GA <- train_ann %>%
 #                         repeats=3,
 #                         search = 'grid')
 # 
-start <- Sys.time()
+# start <- Sys.time()
 # 
-# GF_model <- train(GF ~ ., data = train_ann_GF, method="bridge")
+# # GF_model <- train(GF ~ ., data = train_ann_GF, method="bridge")
 # 
-# # GF_model <- lm(GF ~ ., data = train_ann_GF)
+# GF_model <- lm(GF ~ ., data = train_ann_GF)
 # 
 # end <- Sys.time()
 # 
@@ -229,9 +245,9 @@ vif(GF_model)
 
 # start <- Sys.time()
 # 
-# GA_model <- train(GA ~ ., data = train_ann_GA, method="bridge")
+# # GA_model <- train(GA ~ ., data = train_ann_GA, method="bridge")
 # 
-# # GA_model <- lm(GA ~ ., data = train_ann_GA)
+# GA_model <- lm(GA ~ ., data = train_ann_GA)
 # 
 # end <- Sys.time()
 # 
@@ -271,7 +287,7 @@ confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
 test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
 
 test2 <- test1 %>%
-  filter(highest >= .77)
+  filter(highest >= .7)
 
 sum(test2$pred_abs1)/nrow(test2)
 
@@ -402,9 +418,21 @@ next_week <- next_week %>%
            lag(GA, n = 14) +
            lag(GA, n = 15)) %>%
   mutate(DOW = wday(Date, week_start = 1)) %>%
+  mutate(Games_Since_Last_Game = Date - lag(Date)) %>%
+  mutate(Games_Between_Last_3 = lag(Games_Since_Last_Game, n = 1) + lag(Games_Since_Last_Game, n = 2) + lag(Games_Since_Last_Game, n = 3)) %>%
+  mutate(Games_Between_Last_7 = lag(Games_Since_Last_Game, n = 1) + 
+           lag(Games_Since_Last_Game, n = 2) + 
+           lag(Games_Since_Last_Game, n = 3) +
+           lag(Games_Since_Last_Game, n = 4) +
+           lag(Games_Since_Last_Game, n = 5) +
+           lag(Games_Since_Last_Game, n = 6) +
+           lag(Games_Since_Last_Game, n = 7)) %>%
+  mutate(Games_Since_Last_Game = as.numeric(Games_Since_Last_Game)) %>%
+  mutate(Games_Between_Last_3 = as.numeric(Games_Between_Last_3)) %>%
+  mutate(Games_Between_Last_7 = as.numeric(Games_Between_Last_7)) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win)
+  select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
 
   
 next_week1 <- next_week %>%
@@ -428,7 +456,7 @@ next_week1$Loser <- ifelse(next_week1$L > next_week1$W, next_week1$Team, next_we
 next_week1$Confidence <- ifelse(next_week1$L > next_week1$W, next_week1$L, next_week1$W)
 
 next_week1 <- next_week1 %>%
-  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Avg_GF, Win_Percentage, W, L, Winner, Loser, Confidence)
+  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Avg_GF, Win_Percentage, W, L, Winner, Loser, Confidence)
 
 next_week1$Win_Probability <- next_week1$W
 
