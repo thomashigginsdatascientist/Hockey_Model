@@ -203,6 +203,10 @@ train_rf <- train %>%
 
 # saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF5.RDS")
 
+#R squared of 0.57072368
+
+#AUC of 0.6303693
+
 rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF5.RDS")
 
 varImp(rf_model)
@@ -279,6 +283,48 @@ test1$pred_abs <- ifelse(test1$L > test1$W, "L", "W")
 test1 <- cbind(test1, actuals)
 
 test1$pred_abs1 <- ifelse(test1$Win == test1$pred_abs, 1, 0)
+
+Calc <- test1
+
+Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
+
+Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
+
+Calc$Residual <- Calc$Win1 - Calc$Pred1
+
+Calc$Residual <- abs(Calc$Residual)
+
+Calc$Residual <- Calc$Residual^2
+
+RSS <- sum(Calc$Residual)
+
+Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
+
+Calc$Residual <- Calc$Residual^2
+
+TSS <- sum(Calc$Residual)
+
+Rsquared <- abs(1-(RSS/TSS))
+
+library(pROC)
+
+Result_ROC <- roc(test1$Win, preds)
+
+plot(Result_ROC, print.thres="best", print.thres.best.method="closest.topleft")
+
+Result_Coords <- coords(Result_ROC, "best", best.method="closest.topleft", ret=c("threshold", "accuracy"))
+print(Result_Coords)#to get threshold and accuracy
+
+library(MLmetrics)
+
+Calc <- test1 %>%
+  select(Win, W, L) %>%
+  mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
+  rename("obs" = Win) %>%
+  mutate(obs = as.factor(obs))
+
+prSummary(Calc, lev = levels(Calc$obs))
+
 
 sum(test1$pred_abs1)/nrow(test1)
 

@@ -205,9 +205,15 @@ actuals <- test %>%
 
 # saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM1.RDS")
 
+#R Squared of .5497807
+
+#AUC of .6440431
+
 gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM1.RDS")
 
 library(gbm)
+
+summary(gbm_model)
 
 varImp(gbm_model)
 
@@ -219,9 +225,43 @@ varImp(gbm_model)
 # 
 # test$pred_abs1 <- ifelse(test$Win == test$pred_abs, 1, 0)
 # 
+# 
+# Calc <- test
+# 
+# Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
+# 
+# Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
+# 
+# Calc$Residual <- Calc$Win1 - Calc$Pred1
+# 
+# Calc$Residual <- abs(Calc$Residual)
+# 
+# Calc$Residual <- Calc$Residual^2
+# 
+# RSS <- sum(Calc$Residual)
+# 
+# Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
+# 
+# Calc$Residual <- Calc$Residual^2
+# 
+# TSS <- sum(Calc$Residual)
+# 
+# Rsquared <- abs(1-(RSS/TSS))
+# 
+# library(MLmetrics)
+# 
+# Calc <- test %>%
+#   select(Win, W, L) %>%
+#   mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
+#   rename("obs" = Win) %>%
+#   mutate(obs = as.factor(obs))
+# 
+# prSummary(Calc, lev = levels(Calc$obs))
+# 
+# 
 # sum(test$pred_abs1)/nrow(test)
 # 
-# confusionMatrix(as.factor(test$pred_abs), as.factor(test$Win))
+# confusionMatrix(as.factor(test$pred_abs), as.factor(test$Win), mode = "prec_recall")
 # 
 # test$highest <- ifelse(test$L > test$Win, test$L, test$W)
 # 
