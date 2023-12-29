@@ -524,7 +524,7 @@ thomas <- next_week1 %>%
   filter(Location == "Home") %>%
   mutate(Loser_Confidence = 1 - Confidence) %>%
   mutate(Site = paste("Playing At: ", Team, " ", Location)) %>%
-  select(Date, Winner, GF, Confidence, Loser, GA, Loser_Confidence, Site, GF_MAE, GA_MAE) %>%
+  select(Date, Winner,  Confidence, Loser,  Loser_Confidence, Site, GF, GA,  GF_MAE, GA_MAE) %>%
   arrange(desc(Confidence)) %>%
   mutate(Confidence = percent(Confidence)) %>%
   mutate(Loser_Confidence = percent(Loser_Confidence)) %>%

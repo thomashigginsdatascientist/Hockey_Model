@@ -1,15 +1,10 @@
-Date,Winner,GF,Winner Probability,Loser,GA,Loser Probability,Site,GF_MAE,GA_MAE
-2023-12-27,Winnipeg Jets,2,79.6%,Chicago Blackhawks,4,20.4%,Playing At:  Chicago Blackhawks   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Vegas Golden Knights,2,76.6%,Anaheim Ducks,4,23.4%,Playing At:  Anaheim Ducks   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Minnesota Wild,3,75.6%,Detroit Red Wings,3,24.4%,Playing At:  Minnesota Wild   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Los Angeles Kings,4,75.4%,San Jose Sharks,3,24.6%,Playing At:  Los Angeles Kings   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Tampa Bay Lightning,4,71.4%,Florida Panthers,3,28.6%,Playing At:  Tampa Bay Lightning   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,New York Rangers,3,70.2%,Washington Capitals,2,29.8%,Playing At:  New York Rangers   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Boston Bruins,3,68.4%,Buffalo Sabres,4,31.6%,Playing At:  Buffalo Sabres   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,New Jersey Devils,4,66.6%,Columbus Blue Jackets,3,33.4%,Playing At:  New Jersey Devils   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Toronto Maple Leafs,3,66.2%,Ottawa Senators,3,33.8%,Playing At:  Toronto Maple Leafs   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Colorado Avalanche,3,64.4%,Arizona Coyotes,3,35.6%,Playing At:  Arizona Coyotes   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,New York Islanders,3,61.0%,Pittsburgh Penguins,2,39.0%,Playing At:  New York Islanders   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Calgary Flames,4,57.6%,Seattle Kraken,2,42.4%,Playing At:  Calgary Flames   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Dallas Stars,3,52.8%,St. Louis Blues,4,47.2%,Playing At:  St. Louis Blues   Home,1.1361256544502618,1.0104712041884816
-2023-12-27,Carolina Hurricanes,2,52.0%,Nashville Predators,3,48.0%,Playing At:  Nashville Predators   Home,1.1361256544502618,1.0104712041884816
+Date,Winner,Winner Probability,Loser,Loser Probability,Site,GF,GA,GF_MAE,GA_MAE
+2023-12-29,Dallas Stars,78.2%,Chicago Blackhawks,21.8%,Playing At:  Dallas Stars   Home,4,2,1.094240837696335,1.1675392670157068
+2023-12-29,Toronto Maple Leafs,64.2%,Columbus Blue Jackets,35.8%,Playing At:  Columbus Blue Jackets   Home,3,3,1.094240837696335,1.1675392670157068
+2023-12-29,Arizona Coyotes,62.4%,Anaheim Ducks,37.6%,Playing At:  Anaheim Ducks   Home,3,4,1.094240837696335,1.1675392670157068
+2023-12-29,Seattle Kraken,57.8%,Philadelphia Flyers,42.2%,Playing At:  Seattle Kraken   Home,4,2,1.094240837696335,1.1675392670157068
+2023-12-29,New Jersey Devils,55.2%,Ottawa Senators,44.8%,Playing At:  Ottawa Senators   Home,4,4,1.094240837696335,1.1675392670157068
+2023-12-29,St. Louis Blues,53.2%,Colorado Avalanche,46.8%,Playing At:  St. Louis Blues   Home,3,3,1.094240837696335,1.1675392670157068
+2023-12-29,New York Islanders,53.0%,Washington Capitals,47.0%,Playing At:  New York Islanders   Home,3,3,1.094240837696335,1.1675392670157068
+2023-12-29,Nashville Predators,52.6%,Detroit Red Wings,47.4%,Playing At:  Detroit Red Wings   Home,4,2,1.094240837696335,1.1675392670157068
+2023-12-29,Florida Panthers,50.8%,New York Rangers,49.2%,Playing At:  Florida Panthers   Home,3,3,1.094240837696335,1.1675392670157068
