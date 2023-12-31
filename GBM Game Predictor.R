@@ -164,7 +164,7 @@ sequence_data1$Win <- ifelse(sequence_data1$Win == 1, "W", "L")
 
 library(caret)
 
-set.seed(27)
+set.seed(31)
 Train_Index <- createDataPartition(sequence_data1$Win, p = .95, 
                                    list = F, 
                                    times = 1)
@@ -203,13 +203,13 @@ actuals <- test %>%
 # 
 # end - start
 
-# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM1.RDS")
+# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM2.RDS")
 
-#R Squared of .5497807
+#R Squared of .52883771
 
-#AUC of .6440431
+#AUC of .6623322
 
-gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM1.RDS")
+gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM2.RDS")
 
 library(gbm)
 
@@ -217,58 +217,58 @@ summary(gbm_model)
 
 varImp(gbm_model)
 
-# preds <- predict(gbm_model, newdata = test1, type = "prob")
-# 
-# test <- cbind(test, preds)
-# 
-# test$pred_abs <- ifelse(test$L > test$W, "L", "W")
-# 
-# test$pred_abs1 <- ifelse(test$Win == test$pred_abs, 1, 0)
-# 
-# 
-# Calc <- test
-# 
-# Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
-# 
-# Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
-# 
-# Calc$Residual <- Calc$Win1 - Calc$Pred1
-# 
-# Calc$Residual <- abs(Calc$Residual)
-# 
-# Calc$Residual <- Calc$Residual^2
-# 
-# RSS <- sum(Calc$Residual)
-# 
-# Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
-# 
-# Calc$Residual <- Calc$Residual^2
-# 
-# TSS <- sum(Calc$Residual)
-# 
-# Rsquared <- abs(1-(RSS/TSS))
-# 
-# library(MLmetrics)
-# 
-# Calc <- test %>%
-#   select(Win, W, L) %>%
-#   mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
-#   rename("obs" = Win) %>%
-#   mutate(obs = as.factor(obs))
-# 
-# prSummary(Calc, lev = levels(Calc$obs))
-# 
-# 
-# sum(test$pred_abs1)/nrow(test)
-# 
-# confusionMatrix(as.factor(test$pred_abs), as.factor(test$Win), mode = "prec_recall")
-# 
-# test$highest <- ifelse(test$L > test$Win, test$L, test$W)
-# 
-# test2 <- test %>%
-#   filter(highest >= .7)
-# 
-# sum(test2$pred_abs1)/nrow(test2)
+preds <- predict(gbm_model, newdata = test1, type = "prob")
+
+test <- cbind(test, preds)
+
+test$pred_abs <- ifelse(test$L > test$W, "L", "W")
+
+test$pred_abs1 <- ifelse(test$Win == test$pred_abs, 1, 0)
+
+
+Calc <- test
+
+Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
+
+Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
+
+Calc$Residual <- Calc$Win1 - Calc$Pred1
+
+Calc$Residual <- abs(Calc$Residual)
+
+Calc$Residual <- Calc$Residual^2
+
+RSS <- sum(Calc$Residual)
+
+Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
+
+Calc$Residual <- Calc$Residual^2
+
+TSS <- sum(Calc$Residual)
+
+Rsquared <- abs(1-(RSS/TSS))
+
+library(MLmetrics)
+
+Calc <- test %>%
+  select(Win, W, L) %>%
+  mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
+  rename("obs" = Win) %>%
+  mutate(obs = as.factor(obs))
+
+prSummary(Calc, lev = levels(Calc$obs))
+
+
+sum(test$pred_abs1)/nrow(test)
+
+confusionMatrix(as.factor(test$pred_abs), as.factor(test$Win), mode = "prec_recall")
+
+test$highest <- ifelse(test$L > test$Win, test$L, test$W)
+
+test2 <- test %>%
+  filter(highest >= .7)
+
+sum(test2$pred_abs1)/nrow(test2)
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")

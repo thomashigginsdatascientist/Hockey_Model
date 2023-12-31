@@ -169,7 +169,7 @@ sequence_data1$Win <- ifelse(sequence_data1$Win == 1, "W", "L")
 
 library(caret)
 
-set.seed(27)
+set.seed(31)
 Train_Index <- createDataPartition(sequence_data1$Win, p = .95, 
                                    list = F, 
                                    times = 1)
@@ -195,19 +195,22 @@ train_rf <- train %>%
 
 # start <- Sys.time()
 # 
-# rf_model <- train(Win ~ ., data = train_rf, method="rf")
+# rf_model <- train(Win ~ ., 
+#                   data = train_rf, 
+#                   method="rf"
+#                   )
 # 
 # end <- Sys.time()
 # 
 # end - start
 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF5.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF6.RDS")
 
-#R squared of 0.57072368
+#R squared of 0.5917
 
-#AUC of 0.6303693
+#AUC of 0.6345937
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF5.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF6.RDS")
 
 varImp(rf_model)
 
@@ -226,14 +229,8 @@ train_ann_GF <- train_ann %>%
 train_ann_GA <- train_ann %>%
   select(-L, -W, -GF, -Win)
 
-# control <- trainControl(method='repeatedcv',
-#                         number=10,
-#                         repeats=3,
-#                         search = 'grid')
-# 
 # start <- Sys.time()
 # 
-# # GF_model <- train(GF ~ ., data = train_ann_GF, method="bridge")
 # 
 # GF_model <- lm(GF ~ ., data = train_ann_GF)
 # 
@@ -248,8 +245,6 @@ GF_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
 vif(GF_model)
 
 # start <- Sys.time()
-# 
-# # GA_model <- train(GA ~ ., data = train_ann_GA, method="bridge")
 # 
 # GA_model <- lm(GA ~ ., data = train_ann_GA)
 # 
