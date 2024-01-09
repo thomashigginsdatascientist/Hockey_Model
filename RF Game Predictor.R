@@ -195,8 +195,8 @@ train_rf <- train %>%
 
 # start <- Sys.time()
 # 
-# rf_model <- train(Win ~ ., 
-#                   data = train_rf, 
+# rf_model <- train(Win ~ .,
+#                   data = train_rf,
 #                   method="rf"
 #                   )
 # 
@@ -204,13 +204,13 @@ train_rf <- train %>%
 # 
 # end - start
 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF6.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF7.RDS")
 
-#R squared of 0.5917
+#R squared of 0.75921
 
-#AUC of 0.6345937
+#AUC of 0.6399847
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF6.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF7.RDS")
 
 varImp(rf_model)
 
@@ -230,7 +230,6 @@ train_ann_GA <- train_ann %>%
   select(-L, -W, -GF, -Win)
 
 # start <- Sys.time()
-# 
 # 
 # GF_model <- lm(GF ~ ., data = train_ann_GF)
 # 
@@ -328,7 +327,7 @@ confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
 test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
 
 test2 <- test1 %>%
-  filter(highest >= .7)
+  filter(highest >= .8)
 
 sum(test2$pred_abs1)/nrow(test2)
 
@@ -474,7 +473,6 @@ next_week <- next_week %>%
   arrange(Date) %>%
   ungroup() %>%
   select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
-
   
 next_week1 <- next_week %>%
   filter(Date == Sys.Date()) %>%

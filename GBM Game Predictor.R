@@ -203,13 +203,13 @@ actuals <- test %>%
 # 
 # end - start
 
-# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM2.RDS")
+# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM3.RDS")
 
-#R Squared of .52883771
+#R Squared of .5917
 
-#AUC of .6623322
+#AUC of .6079980
 
-gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM2.RDS")
+gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM3.RDS")
 
 library(gbm)
 

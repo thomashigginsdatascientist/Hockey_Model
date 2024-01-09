@@ -1,13 +1,11 @@
 Date,Winner,Winner Probability,Loser,Loser Probability,Site,GF,GA,GF_MAE,GA_MAE
-2024-01-06,Toronto Maple Leafs,81.6%,San Jose Sharks,18.4%,Playing At:  San Jose Sharks   Home,3,4,1.031413612565445,1.0471204188481675
-2024-01-06,Carolina Hurricanes,76.8%,St. Louis Blues,23.2%,Playing At:  Carolina Hurricanes   Home,4,3,1.031413612565445,1.0471204188481675
-2024-01-06,New York Rangers,75.0%,Montreal Canadiens,25.0%,Playing At:  Montreal Canadiens   Home,3,4,1.031413612565445,1.0471204188481675
-2024-01-06,Edmonton Oilers,73.6%,Ottawa Senators,26.4%,Playing At:  Edmonton Oilers   Home,4,4,1.031413612565445,1.0471204188481675
-2024-01-06,Dallas Stars,70.8%,Nashville Predators,29.2%,Playing At:  Dallas Stars   Home,5,2,1.031413612565445,1.0471204188481675
-2024-01-06,Boston Bruins,64.0%,Tampa Bay Lightning,36.0%,Playing At:  Boston Bruins   Home,3,4,1.031413612565445,1.0471204188481675
-2024-01-06,Colorado Avalanche,61.4%,Florida Panthers,38.6%,Playing At:  Colorado Avalanche   Home,2,4,1.031413612565445,1.0471204188481675
-2024-01-06,Minnesota Wild,60.4%,Columbus Blue Jackets,39.6%,Playing At:  Columbus Blue Jackets   Home,3,3,1.031413612565445,1.0471204188481675
-2024-01-06,New Jersey Devils,60.2%,Vancouver Canucks,39.8%,Playing At:  New Jersey Devils   Home,4,3,1.031413612565445,1.0471204188481675
-2024-01-06,Vegas Golden Knights,59.4%,New York Islanders,40.6%,Playing At:  Vegas Golden Knights   Home,3,4,1.031413612565445,1.0471204188481675
-2024-01-06,Calgary Flames,54.2%,Philadelphia Flyers,45.8%,Playing At:  Philadelphia Flyers   Home,4,3,1.031413612565445,1.0471204188481675
-2024-01-06,Pittsburgh Penguins,53.8%,Buffalo Sabres,46.2%,Playing At:  Pittsburgh Penguins   Home,3,4,1.031413612565445,1.0471204188481675
+2024-01-09,Edmonton Oilers,80.0%,Chicago Blackhawks,20.0%,Playing At:  Chicago Blackhawks   Home,2,5,1.4240837696335078,1.4659685863874345
+2024-01-09,Toronto Maple Leafs,76.8%,San Jose Sharks,23.2%,Playing At:  Toronto Maple Leafs   Home,4,3,1.4240837696335078,1.4659685863874345
+2024-01-09,Winnipeg Jets,75.4%,Columbus Blue Jackets,24.6%,Playing At:  Winnipeg Jets   Home,3,3,1.4240837696335078,1.4659685863874345
+2024-01-09,Boston Bruins,62.8%,Arizona Coyotes,37.2%,Playing At:  Arizona Coyotes   Home,3,3,1.4240837696335078,1.4659685863874345
+2024-01-09,Tampa Bay Lightning,61.6%,Los Angeles Kings,38.4%,Playing At:  Tampa Bay Lightning   Home,4,3,1.4240837696335078,1.4659685863874345
+2024-01-09,Nashville Predators,60.8%,Anaheim Ducks,39.2%,Playing At:  Nashville Predators   Home,4,2,1.4240837696335078,1.4659685863874345
+2024-01-09,St. Louis Blues,59.2%,Florida Panthers,40.8%,Playing At:  St. Louis Blues   Home,4,3,1.4240837696335078,1.4659685863874345
+2024-01-09,New York Islanders,58.2%,Vancouver Canucks,41.8%,Playing At:  New York Islanders   Home,4,2,1.4240837696335078,1.4659685863874345
+2024-01-09,Calgary Flames,56.8%,Ottawa Senators,43.2%,Playing At:  Calgary Flames   Home,4,3,1.4240837696335078,1.4659685863874345
+2024-01-09,Seattle Kraken,55.0%,Buffalo Sabres,45.0%,Playing At:  Buffalo Sabres   Home,3,4,1.4240837696335078,1.4659685863874345
