@@ -1,103 +1,228 @@
-﻿Date,Winner,GF Prediction,Winner Probability,Loser,GA Prediction,Loser Probability,Site,Model,Category,GF Actual,GA Actual,GF ABS Error,GA ABS Error
-12/9/2023,Boston Bruins,,0.876,Arizona Coyotes,,0.124,Playing At:  Boston Bruins   Home,1,85 <,,,,
-12/9/2023,Colorado Avalanche,,0.85,Philadelphia Flyers,,0.15,Playing At:  Colorado Avalanche   Home,0,85 <,,,,
-12/9/2023,St. Louis Blues,,0.81,Chicago Blackhawks,,0.19,Playing At:  Chicago Blackhawks   Home,0,80-85,,,,
-12/9/2023,Toronto Maple Leafs,,0.798,Nashville Predators,,0.202,Playing At:  Toronto Maple Leafs   Home,1,70-80,,,,
-12/9/2023,Tampa Bay Lightning,,0.778,Seattle Kraken,,0.222,Playing At:  Seattle Kraken   Home,1,70-80,,,,
-12/9/2023,New York Rangers,,0.712,Washington Capitals,,0.288,Playing At:  Washington Capitals   Home,0,70-80,,,,
-12/9/2023,Dallas Stars,,0.698,Vegas Golden Knights,,0.302,Playing At:  Dallas Stars   Home,0,60-70,,,,
-12/9/2023,Calgary Flames,,0.642,New Jersey Devils,,0.358,Playing At:  Calgary Flames   Home,0,60-70,,,,
-12/9/2023,Ottawa Senators,,0.58,Detroit Red Wings,,0.42,Playing At:  Detroit Red Wings   Home,1,50-60,,,,
-12/9/2023,New York Islanders,,0.57,Los Angeles Kings,,0.43,Playing At:  New York Islanders   Home,1,50-60,,,,
-12/9/2023,Vancouver Canucks,,0.538,Carolina Hurricanes,,0.462,Playing At:  Vancouver Canucks   Home,1,50-60,,,,
-12/9/2023,Montreal Canadiens,,0.506,Buffalo Sabres,,0.494,Playing At:  Buffalo Sabres   Home,1,50-60,,,,
-12/10/2023,Vegas Golden Knights,,0.87,San Jose Sharks,,0.13,Playing At:  Vegas Golden Knights   Home,1,85 <,,,,
-12/10/2023,Edmonton Oilers,,0.822,New Jersey Devils,,0.178,Playing At:  Edmonton Oilers   Home,1,80-85,,,,
-12/10/2023,Winnipeg Jets,,0.802,Anaheim Ducks,,0.198,Playing At:  Anaheim Ducks   Home,1,80-85,,,,
-12/10/2023,Minnesota Wild,,0.764,Seattle Kraken,,0.236,Playing At:  Seattle Kraken   Home,1,70-80,,,,
-12/10/2023,Nashville Predators,,0.744,Montreal Canadiens,,0.256,Playing At:  Montreal Canadiens   Home,1,70-80,,,,
-12/10/2023,Washington Capitals,,0.702,Chicago Blackhawks,,0.298,Playing At:  Chicago Blackhawks   Home,1,70-80,,,,
-12/10/2023,New York Rangers,,0.69,Los Angeles Kings,,0.31,Playing At:  New York Rangers   Home,1,60-70,,,,
-12/10/2023,Florida Panthers,,0.602,Columbus Blue Jackets,,0.398,Playing At:  Columbus Blue Jackets   Home,1,60-70,,,,
-12/11/2023,Colorado Avalanche,,0.688,Calgary Flames,,0.312,Playing At:  Colorado Avalanche   Home,1,60-70,,,,
-12/11/2023,Dallas Stars,,0.622,Detroit Red Wings,,0.378,Playing At:  Dallas Stars   Home,1,60-70,,,,
-12/11/2023,Buffalo Sabres,,0.522,Arizona Coyotes,,0.478,Playing At:  Buffalo Sabres   Home,1,50-60,,,,
-12/11/2023,Toronto Maple Leafs,,0.502,New York Islanders,,0.498,Playing At:  New York Islanders   Home,0,50-60,,,,
-12/12/2023,Edmonton Oilers,,0.824,Chicago Blackhawks,,0.176,Playing At:  Edmonton Oilers   Home,1,80-85,,,,
-12/12/2023,Winnipeg Jets,,0.778,San Jose Sharks,,0.222,Playing At:  San Jose Sharks   Home,0,70-80,,,,
-12/12/2023,Vegas Golden Knights,,0.692,Calgary Flames,,0.308,Playing At:  Vegas Golden Knights   Home,1,60-70,,,,
-12/12/2023,Florida Panthers,,0.682,Seattle Kraken,,0.318,Playing At:  Seattle Kraken   Home,0,60-70,,,,
-12/12/2023,Nashville Predators,,0.68,Philadelphia Flyers,,0.32,Playing At:  Nashville Predators   Home,1,60-70,,,,
-12/12/2023,New York Rangers,,0.652,Toronto Maple Leafs,,0.348,Playing At:  New York Rangers   Home,0,60-70,,,,
-12/12/2023,Vancouver Canucks,,0.572,Tampa Bay Lightning,,0.428,Playing At:  Vancouver Canucks   Home,1,50-60,,,,
-12/12/2023,Ottawa Senators,,0.562,Carolina Hurricanes,,0.438,Playing At:  Ottawa Senators   Home,0,50-60,,,,
-12/12/2023,St. Louis Blues,,0.522,Detroit Red Wings,,0.478,Playing At:  St. Louis Blues   Home,0,50-60,,,,
-12/12/2023,Pittsburgh Penguins,,0.516,Arizona Coyotes,,0.484,Playing At:  Pittsburgh Penguins   Home,1,50-60,,,,
-12/13/2023,Pittsburgh Penguins,,0.73,Montreal Canadiens,,0.27,Playing At:  Montreal Canadiens   Home,1,70-80,,,,
-12/13/2023,New York Islanders,,0.624,Anaheim Ducks,,0.376,Playing At:  New York Islanders   Home,1,60-70,,,,
-12/13/2023,Colorado Avalanche,,0.622,Buffalo Sabres,,0.378,Playing At:  Colorado Avalanche   Home,1,60-70,,,,
-12/13/2023,Boston Bruins,,0.622,New Jersey Devils,,0.378,Playing At:  New Jersey Devils   Home,0,60-70,,,,
-12/13/2023,Los Angeles Kings,,0.57,Winnipeg Jets,,0.43,Playing At:  Los Angeles Kings   Home,0,50-60,,,,
-12/14/2023,Edmonton Oilers,,0.744,Tampa Bay Lightning,,0.256,Playing At:  Edmonton Oilers   Home,0,70-80,,,,
-12/14/2023,Minnesota Wild,,0.706,Calgary Flames,,0.294,Playing At:  Minnesota Wild   Home,1,70-80,,,,
-12/14/2023,Toronto Maple Leafs,,0.698,Columbus Blue Jackets,,0.302,Playing At:  Toronto Maple Leafs   Home,0,60-70,,,,
-12/14/2023,Vancouver Canucks,,0.574,Florida Panthers,,0.426,Playing At:  Vancouver Canucks   Home,1,50-60,,,,
-12/14/2023,Carolina Hurricanes,,0.542,Detroit Red Wings,,0.458,Playing At:  Detroit Red Wings   Home,1,50-60,,,,
-12/14/2023,Seattle Kraken,,0.538,Chicago Blackhawks,,0.462,Playing At:  Seattle Kraken   Home,1,50-60,,,,
-12/14/2023,Washington Capitals,,0.522,Philadelphia Flyers,,0.478,Playing At:  Philadelphia Flyers   Home,0,50-60,,,,
-12/14/2023,St. Louis Blues,,0.506,Ottawa Senators,,0.494,Playing At:  St. Louis Blues   Home,1,50-60,,,,
-12/15/2023,Carolina Hurricanes,,0.758,Nashville Predators,,0.242,Playing At:  Carolina Hurricanes   Home,0,70-80,,,,
-12/15/2023,New York Rangers,,0.724,Anaheim Ducks,,0.276,Playing At:  New York Rangers   Home,1,70-80,,,,
-12/15/2023,Vegas Golden Knights,,0.71,Buffalo Sabres,,0.29,Playing At:  Vegas Golden Knights   Home,0,70-80,,,,
-12/15/2023,Dallas Stars,,0.692,Ottawa Senators,,0.308,Playing At:  Dallas Stars   Home,1,60-70,,,,
-12/15/2023,Boston Bruins,,0.58,New York Islanders,,0.42,Playing At:  New York Islanders   Home,1,50-60,,,,
-12/15/2023,San Jose Sharks,,0.508,Arizona Coyotes,,0.492,Playing At:  Arizona Coyotes   Home,0,50-60,,,,
-12/16/2023,New York Islanders,,0.764,Montreal Canadiens,,0.236,Playing At:  Montreal Canadiens   Home,0,70-80,,,,
-12/16/2023,Minnesota Wild,,0.722,Vancouver Canucks,,0.278,Playing At:  Minnesota Wild   Home,1,70-80,,,,
-12/16/2023,Winnipeg Jets,,0.678,Colorado Avalanche,,0.322,Playing At:  Winnipeg Jets   Home,1,60-70,,,,
-12/16/2023,Boston Bruins,,0.674,New York Rangers,,0.326,Playing At:  Boston Bruins   Home,0,60-70,,,,
-12/16/2023,Toronto Maple Leafs,,0.656,Pittsburgh Penguins,,0.344,Playing At:  Toronto Maple Leafs   Home,1,60-70,,,,
-12/16/2023,New Jersey Devils,,0.628,Columbus Blue Jackets,,0.372,Playing At:  Columbus Blue Jackets   Home,1,60-70,,,,
-12/16/2023,Buffalo Sabres,,0.624,Arizona Coyotes,,0.376,Playing At:  Arizona Coyotes   Home,0,60-70,,,,
-12/16/2023,Nashville Predators,,0.61,Washington Capitals,,0.39,Playing At:  Nashville Predators   Home,1,60-70,,,,
-12/16/2023,Calgary Flames,,0.592,Tampa Bay Lightning,,0.408,Playing At:  Calgary Flames   Home,1,50-60,,,,
-12/16/2023,Philadelphia Flyers,,0.574,Detroit Red Wings,,0.426,Playing At:  Philadelphia Flyers   Home,1,50-60,,,,
-12/16/2023,Edmonton Oilers,,0.566,Florida Panthers,,0.434,Playing At:  Edmonton Oilers   Home,0,50-60,,,,
-12/16/2023,Dallas Stars,,0.552,St. Louis Blues,,0.448,Playing At:  St. Louis Blues   Home,0,50-60,,,,
-12/16/2023,Los Angeles Kings,,0.504,Seattle Kraken,,0.496,Playing At:  Seattle Kraken   Home,1,50-60,,,,
-12/17/2023,Vancouver Canucks,,0.81,Chicago Blackhawks,,0.19,Playing At:  Chicago Blackhawks   Home,1,80-85,Used RF Model 3 - only 60 game location averages - poor results,,,
-12/17/2023,Colorado Avalanche,,0.748,San Jose Sharks,,0.252,Playing At:  Colorado Avalanche   Home,1,70-80,,,,
-12/17/2023,Vegas Golden Knights,,0.706,Ottawa Senators,,0.294,Playing At:  Vegas Golden Knights   Home,1,70-80,,,,
-12/17/2023,Carolina Hurricanes,,0.694,Washington Capitals,,0.306,Playing At:  Carolina Hurricanes   Home,0,60-70,,,,
-12/17/2023,New Jersey Devils,GF Prediction,0.574,Anaheim Ducks,GA Prediction,0.426,Playing At:  New Jersey Devils   Home,0,50-60,GF Actual,GA Actual,GF ABS Error,GA ABS Error
-12/18/2023,Winnipeg Jets,3,0.72,Montreal Canadiens,3,0.28,Playing At:  Winnipeg Jets   Home,0,70-80,2,3,1,0
-12/18/2023,Dallas Stars,4,0.674,Seattle Kraken,2,0.326,Playing At:  Dallas Stars   Home,1,60-70,4,3,0,1
-12/18/2023,Florida Panthers,1,0.586,Calgary Flames,3,0.414,Playing At:  Calgary Flames   Home,0,50-60,3,2,2,1
-12/18/2023,Pittsburgh Penguins,4,0.584,Minnesota Wild,3,0.416,Playing At:  Pittsburgh Penguins   Home,1,50-60,4,3,0,0
-12/18/2023,Detroit Red Wings,4,0.502,Anaheim Ducks,3,0.498,Playing At:  Detroit Red Wings   Home,0,50-60,3,4,1,1
-12/19/2023,Los Angeles Kings,2,0.844,San Jose Sharks,4,0.156,Playing At:  San Jose Sharks   Home,1,80-85,4,1,2,3
-12/19/2023,Colorado Avalanche,2,0.802,Chicago Blackhawks,4,0.198,Playing At:  Chicago Blackhawks   Home,0,80-85,2,3,0,1
-12/19/2023,Tampa Bay Lightning,5,0.722,St. Louis Blues,2,0.278,Playing At:  Tampa Bay Lightning   Home,1,70-80,6,1,1,1
-12/19/2023,Boston Bruins,3,0.674,Minnesota Wild,3,0.326,Playing At:  Boston Bruins   Home,0,60-70,3,4,0,1
-12/19/2023,Nashville Predators,3,0.632,Vancouver Canucks,3,0.368,Playing At:  Nashville Predators   Home,0,60-70,2,5,1,2
-12/19/2023,New Jersey Devils,3,0.614,Philadelphia Flyers,3,0.386,Playing At:  New Jersey Devils   Home,0,60-70,2,3,1,0
-12/19/2023,Carolina Hurricanes,3,0.606,Vegas Golden Knights,3,0.394,Playing At:  Carolina Hurricanes   Home,1,60-70,6,3,3,0
-12/19/2023,Toronto Maple Leafs,2,0.604,New York Rangers,4,0.396,Playing At:  Toronto Maple Leafs   Home,0,60-70,2,5,0,1
-12/19/2023,Edmonton Oilers,3,0.584,New York Islanders,4,0.416,Playing At:  New York Islanders   Home,0,50-60,1,3,2,1
-12/19/2023,Buffalo Sabres,4,0.56,Columbus Blue Jackets,3,0.44,Playing At:  Buffalo Sabres   Home,0,50-60,4,9,0,6
-12/19/2023,Ottawa Senators,3,0.548,Arizona Coyotes,4,0.452,Playing At:  Arizona Coyotes   Home,0,50-60,3,4,0,0
-12/20/2023,Winnipeg Jets,3,0.712,Detroit Red Wings,3,0.288,Playing At:  Winnipeg Jets   Home,1,70-80,5,2,2,1
-12/20/2023,Los Angeles Kings,3,0.666,Seattle Kraken,3,0.334,Playing At:  Los Angeles Kings   Home,0,60-70,1,2,2,1
-12/20/2023,New York Islanders,2,0.554,Washington Capitals,3,0.446,Playing At:  Washington Capitals   Home,0,50-60,3,2,1,1
-12/21/2023,Minnesota Wild,4,0.804,Montreal Canadiens,2,0.196,Playing At:  Minnesota Wild   Home,1,80-85,4,3,0,1
-12/21/2023,Florida Panthers,4,0.75,St. Louis Blues,3,0.25,Playing At:  Florida Panthers   Home,0,70-80,1,4,3,1
-12/21/2023,Arizona Coyotes,2,0.72,San Jose Sharks,4,0.28,Playing At:  San Jose Sharks   Home,1,70-80,5,2,3,2
-12/21/2023,Calgary Flames,3,0.716,Anaheim Ducks,4,0.284,Playing At:  Anaheim Ducks   Home,1,70-80,3,0,0,4
-12/21/2023,Colorado Avalanche,4,0.708,Ottawa Senators,3,0.292,Playing At:  Colorado Avalanche   Home,1,70-80,6,4,2,1
-12/21/2023,Dallas Stars,4,0.668,Vancouver Canucks,3,0.332,Playing At:  Dallas Stars   Home,1,60-70,4,3,0,0
-12/21/2023,Tampa Bay Lightning,3,0.634,Vegas Golden Knights,3,0.366,Playing At:  Tampa Bay Lightning   Home,1,60-70,5,4,2,1
-12/21/2023,Toronto Maple Leafs,3,0.63,Buffalo Sabres,4,0.37,Playing At:  Buffalo Sabres   Home,0,60-70,3,9,0,5
-12/21/2023,Washington Capitals,3,0.622,Columbus Blue Jackets,4,0.378,Playing At:  Columbus Blue Jackets   Home,1,60-70,3,2,0,2
-12/21/2023,Edmonton Oilers,3,0.52,New Jersey Devils,4,0.48,Playing At:  New Jersey Devils   Home,1,50-60,6,3,3,1
-12/21/2023,Philadelphia Flyers,3,0.518,Nashville Predators,3,0.482,Playing At:  Philadelphia Flyers   Home,0,50-60,2,4,1,1
-12/21/2023,Pittsburgh Penguins,3,0.514,Carolina Hurricanes,3,0.486,Playing At:  Pittsburgh Penguins   Home,1,50-60,2,1,1,2
+﻿Date,Winner,Winner Probability,Loser,Loser Probability,Site,Model,Category
+12/9/2023,Boston Bruins,87.60%,Arizona Coyotes,12.40%,Playing At:  Boston Bruins   Home,1,85 <
+12/9/2023,Colorado Avalanche,85.00%,Philadelphia Flyers,15.00%,Playing At:  Colorado Avalanche   Home,0,85 <
+12/9/2023,St. Louis Blues,81.00%,Chicago Blackhawks,19.00%,Playing At:  Chicago Blackhawks   Home,0,80-85
+12/9/2023,Toronto Maple Leafs,79.80%,Nashville Predators,20.20%,Playing At:  Toronto Maple Leafs   Home,1,70-80
+12/9/2023,Tampa Bay Lightning,77.80%,Seattle Kraken,22.20%,Playing At:  Seattle Kraken   Home,1,70-80
+12/9/2023,New York Rangers,71.20%,Washington Capitals,28.80%,Playing At:  Washington Capitals   Home,0,70-80
+12/9/2023,Dallas Stars,69.80%,Vegas Golden Knights,30.20%,Playing At:  Dallas Stars   Home,0,60-70
+12/9/2023,Calgary Flames,64.20%,New Jersey Devils,35.80%,Playing At:  Calgary Flames   Home,0,60-70
+12/9/2023,Ottawa Senators,58.00%,Detroit Red Wings,42.00%,Playing At:  Detroit Red Wings   Home,1,50-60
+12/9/2023,New York Islanders,57.00%,Los Angeles Kings,43.00%,Playing At:  New York Islanders   Home,1,50-60
+12/9/2023,Vancouver Canucks,53.80%,Carolina Hurricanes,46.20%,Playing At:  Vancouver Canucks   Home,1,50-60
+12/9/2023,Montreal Canadiens,50.60%,Buffalo Sabres,49.40%,Playing At:  Buffalo Sabres   Home,1,50-60
+12/10/2023,Vegas Golden Knights,87.00%,San Jose Sharks,13.00%,Playing At:  Vegas Golden Knights   Home,1,85 <
+12/10/2023,Edmonton Oilers,82.20%,New Jersey Devils,17.80%,Playing At:  Edmonton Oilers   Home,1,80-85
+12/10/2023,Winnipeg Jets,80.20%,Anaheim Ducks,19.80%,Playing At:  Anaheim Ducks   Home,1,80-85
+12/10/2023,Minnesota Wild,76.40%,Seattle Kraken,23.60%,Playing At:  Seattle Kraken   Home,1,70-80
+12/10/2023,Nashville Predators,74.40%,Montreal Canadiens,25.60%,Playing At:  Montreal Canadiens   Home,1,70-80
+12/10/2023,Washington Capitals,70.20%,Chicago Blackhawks,29.80%,Playing At:  Chicago Blackhawks   Home,1,70-80
+12/10/2023,New York Rangers,69.00%,Los Angeles Kings,31.00%,Playing At:  New York Rangers   Home,1,60-70
+12/10/2023,Florida Panthers,60.20%,Columbus Blue Jackets,39.80%,Playing At:  Columbus Blue Jackets   Home,1,60-70
+12/11/2023,Colorado Avalanche,68.80%,Calgary Flames,31.20%,Playing At:  Colorado Avalanche   Home,1,60-70
+12/11/2023,Dallas Stars,62.20%,Detroit Red Wings,37.80%,Playing At:  Dallas Stars   Home,1,60-70
+12/11/2023,Buffalo Sabres,52.20%,Arizona Coyotes,47.80%,Playing At:  Buffalo Sabres   Home,1,50-60
+12/11/2023,Toronto Maple Leafs,50.20%,New York Islanders,49.80%,Playing At:  New York Islanders   Home,0,50-60
+12/12/2023,Edmonton Oilers,82.40%,Chicago Blackhawks,17.60%,Playing At:  Edmonton Oilers   Home,1,80-85
+12/12/2023,Winnipeg Jets,77.80%,San Jose Sharks,22.20%,Playing At:  San Jose Sharks   Home,0,70-80
+12/12/2023,Vegas Golden Knights,69.20%,Calgary Flames,30.80%,Playing At:  Vegas Golden Knights   Home,1,60-70
+12/12/2023,Florida Panthers,68.20%,Seattle Kraken,31.80%,Playing At:  Seattle Kraken   Home,0,60-70
+12/12/2023,Nashville Predators,68.00%,Philadelphia Flyers,32.00%,Playing At:  Nashville Predators   Home,1,60-70
+12/12/2023,New York Rangers,65.20%,Toronto Maple Leafs,34.80%,Playing At:  New York Rangers   Home,0,60-70
+12/12/2023,Vancouver Canucks,57.20%,Tampa Bay Lightning,42.80%,Playing At:  Vancouver Canucks   Home,1,50-60
+12/12/2023,Ottawa Senators,56.20%,Carolina Hurricanes,43.80%,Playing At:  Ottawa Senators   Home,0,50-60
+12/12/2023,St. Louis Blues,52.20%,Detroit Red Wings,47.80%,Playing At:  St. Louis Blues   Home,0,50-60
+12/12/2023,Pittsburgh Penguins,51.60%,Arizona Coyotes,48.40%,Playing At:  Pittsburgh Penguins   Home,1,50-60
+12/13/2023,Pittsburgh Penguins,73.00%,Montreal Canadiens,27.00%,Playing At:  Montreal Canadiens   Home,1,70-80
+12/13/2023,New York Islanders,62.40%,Anaheim Ducks,37.60%,Playing At:  New York Islanders   Home,1,60-70
+12/13/2023,Colorado Avalanche,62.20%,Buffalo Sabres,37.80%,Playing At:  Colorado Avalanche   Home,1,60-70
+12/13/2023,Boston Bruins,62.20%,New Jersey Devils,37.80%,Playing At:  New Jersey Devils   Home,0,60-70
+12/13/2023,Los Angeles Kings,57.00%,Winnipeg Jets,43.00%,Playing At:  Los Angeles Kings   Home,0,50-60
+12/14/2023,Edmonton Oilers,74.40%,Tampa Bay Lightning,25.60%,Playing At:  Edmonton Oilers   Home,0,70-80
+12/14/2023,Minnesota Wild,70.60%,Calgary Flames,29.40%,Playing At:  Minnesota Wild   Home,1,70-80
+12/14/2023,Toronto Maple Leafs,69.80%,Columbus Blue Jackets,30.20%,Playing At:  Toronto Maple Leafs   Home,0,60-70
+12/14/2023,Vancouver Canucks,57.40%,Florida Panthers,42.60%,Playing At:  Vancouver Canucks   Home,1,50-60
+12/14/2023,Carolina Hurricanes,54.20%,Detroit Red Wings,45.80%,Playing At:  Detroit Red Wings   Home,1,50-60
+12/14/2023,Seattle Kraken,53.80%,Chicago Blackhawks,46.20%,Playing At:  Seattle Kraken   Home,1,50-60
+12/14/2023,Washington Capitals,52.20%,Philadelphia Flyers,47.80%,Playing At:  Philadelphia Flyers   Home,0,50-60
+12/14/2023,St. Louis Blues,50.60%,Ottawa Senators,49.40%,Playing At:  St. Louis Blues   Home,1,50-60
+12/15/2023,Carolina Hurricanes,75.80%,Nashville Predators,24.20%,Playing At:  Carolina Hurricanes   Home,0,70-80
+12/15/2023,New York Rangers,72.40%,Anaheim Ducks,27.60%,Playing At:  New York Rangers   Home,1,70-80
+12/15/2023,Vegas Golden Knights,71.00%,Buffalo Sabres,29.00%,Playing At:  Vegas Golden Knights   Home,0,70-80
+12/15/2023,Dallas Stars,69.20%,Ottawa Senators,30.80%,Playing At:  Dallas Stars   Home,1,60-70
+12/15/2023,Boston Bruins,58.00%,New York Islanders,42.00%,Playing At:  New York Islanders   Home,1,50-60
+12/15/2023,San Jose Sharks,50.80%,Arizona Coyotes,49.20%,Playing At:  Arizona Coyotes   Home,0,50-60
+12/16/2023,New York Islanders,76.40%,Montreal Canadiens,23.60%,Playing At:  Montreal Canadiens   Home,0,70-80
+12/16/2023,Minnesota Wild,72.20%,Vancouver Canucks,27.80%,Playing At:  Minnesota Wild   Home,1,70-80
+12/16/2023,Winnipeg Jets,67.80%,Colorado Avalanche,32.20%,Playing At:  Winnipeg Jets   Home,1,60-70
+12/16/2023,Boston Bruins,67.40%,New York Rangers,32.60%,Playing At:  Boston Bruins   Home,0,60-70
+12/16/2023,Toronto Maple Leafs,65.60%,Pittsburgh Penguins,34.40%,Playing At:  Toronto Maple Leafs   Home,1,60-70
+12/16/2023,New Jersey Devils,62.80%,Columbus Blue Jackets,37.20%,Playing At:  Columbus Blue Jackets   Home,1,60-70
+12/16/2023,Buffalo Sabres,62.40%,Arizona Coyotes,37.60%,Playing At:  Arizona Coyotes   Home,0,60-70
+12/16/2023,Nashville Predators,61.00%,Washington Capitals,39.00%,Playing At:  Nashville Predators   Home,1,60-70
+12/16/2023,Calgary Flames,59.20%,Tampa Bay Lightning,40.80%,Playing At:  Calgary Flames   Home,1,50-60
+12/16/2023,Philadelphia Flyers,57.40%,Detroit Red Wings,42.60%,Playing At:  Philadelphia Flyers   Home,1,50-60
+12/16/2023,Edmonton Oilers,56.60%,Florida Panthers,43.40%,Playing At:  Edmonton Oilers   Home,0,50-60
+12/16/2023,Dallas Stars,55.20%,St. Louis Blues,44.80%,Playing At:  St. Louis Blues   Home,0,50-60
+12/16/2023,Los Angeles Kings,50.40%,Seattle Kraken,49.60%,Playing At:  Seattle Kraken   Home,1,50-60
+12/17/2023,Vancouver Canucks,81.00%,Chicago Blackhawks,19.00%,Playing At:  Chicago Blackhawks   Home,1,80-85
+12/17/2023,Colorado Avalanche,74.80%,San Jose Sharks,25.20%,Playing At:  Colorado Avalanche   Home,1,70-80
+12/17/2023,Vegas Golden Knights,70.60%,Ottawa Senators,29.40%,Playing At:  Vegas Golden Knights   Home,1,70-80
+12/17/2023,Carolina Hurricanes,69.40%,Washington Capitals,30.60%,Playing At:  Carolina Hurricanes   Home,0,60-70
+12/17/2023,New Jersey Devils,57.40%,Anaheim Ducks,42.60%,Playing At:  New Jersey Devils   Home,0,50-60
+12/18/2023,Winnipeg Jets,72.00%,Montreal Canadiens,28.00%,Playing At:  Winnipeg Jets   Home,0,70-80
+12/18/2023,Dallas Stars,67.40%,Seattle Kraken,32.60%,Playing At:  Dallas Stars   Home,1,60-70
+12/18/2023,Florida Panthers,58.60%,Calgary Flames,41.40%,Playing At:  Calgary Flames   Home,0,50-60
+12/18/2023,Pittsburgh Penguins,58.40%,Minnesota Wild,41.60%,Playing At:  Pittsburgh Penguins   Home,1,50-60
+12/18/2023,Detroit Red Wings,50.20%,Anaheim Ducks,49.80%,Playing At:  Detroit Red Wings   Home,0,50-60
+12/19/2023,Los Angeles Kings,84.40%,San Jose Sharks,15.60%,Playing At:  San Jose Sharks   Home,1,80-85
+12/19/2023,Colorado Avalanche,80.20%,Chicago Blackhawks,19.80%,Playing At:  Chicago Blackhawks   Home,0,80-85
+12/19/2023,Tampa Bay Lightning,72.20%,St. Louis Blues,27.80%,Playing At:  Tampa Bay Lightning   Home,1,70-80
+12/19/2023,Boston Bruins,67.40%,Minnesota Wild,32.60%,Playing At:  Boston Bruins   Home,0,60-70
+12/19/2023,Nashville Predators,63.20%,Vancouver Canucks,36.80%,Playing At:  Nashville Predators   Home,0,60-70
+12/19/2023,New Jersey Devils,61.40%,Philadelphia Flyers,38.60%,Playing At:  New Jersey Devils   Home,0,60-70
+12/19/2023,Carolina Hurricanes,60.60%,Vegas Golden Knights,39.40%,Playing At:  Carolina Hurricanes   Home,1,60-70
+12/19/2023,Toronto Maple Leafs,60.40%,New York Rangers,39.60%,Playing At:  Toronto Maple Leafs   Home,0,60-70
+12/19/2023,Edmonton Oilers,58.40%,New York Islanders,41.60%,Playing At:  New York Islanders   Home,0,50-60
+12/19/2023,Buffalo Sabres,56.00%,Columbus Blue Jackets,44.00%,Playing At:  Buffalo Sabres   Home,0,50-60
+12/19/2023,Ottawa Senators,54.80%,Arizona Coyotes,45.20%,Playing At:  Arizona Coyotes   Home,0,50-60
+12/20/2023,Winnipeg Jets,71.20%,Detroit Red Wings,28.80%,Playing At:  Winnipeg Jets   Home,1,70-80
+12/20/2023,Los Angeles Kings,66.60%,Seattle Kraken,33.40%,Playing At:  Los Angeles Kings   Home,0,60-70
+12/20/2023,New York Islanders,55.40%,Washington Capitals,44.60%,Playing At:  Washington Capitals   Home,0,50-60
+12/21/2023,Minnesota Wild,80.40%,Montreal Canadiens,19.60%,Playing At:  Minnesota Wild   Home,1,80-85
+12/21/2023,Florida Panthers,75.00%,St. Louis Blues,25.00%,Playing At:  Florida Panthers   Home,0,70-80
+12/21/2023,Arizona Coyotes,72.00%,San Jose Sharks,28.00%,Playing At:  San Jose Sharks   Home,1,70-80
+12/21/2023,Calgary Flames,71.60%,Anaheim Ducks,28.40%,Playing At:  Anaheim Ducks   Home,1,70-80
+12/21/2023,Colorado Avalanche,70.80%,Ottawa Senators,29.20%,Playing At:  Colorado Avalanche   Home,1,70-80
+12/21/2023,Dallas Stars,66.80%,Vancouver Canucks,33.20%,Playing At:  Dallas Stars   Home,1,60-70
+12/21/2023,Tampa Bay Lightning,63.40%,Vegas Golden Knights,36.60%,Playing At:  Tampa Bay Lightning   Home,1,60-70
+12/21/2023,Toronto Maple Leafs,63.00%,Buffalo Sabres,37.00%,Playing At:  Buffalo Sabres   Home,0,60-70
+12/21/2023,Washington Capitals,62.20%,Columbus Blue Jackets,37.80%,Playing At:  Columbus Blue Jackets   Home,1,60-70
+12/21/2023,Edmonton Oilers,52.00%,New Jersey Devils,48.00%,Playing At:  New Jersey Devils   Home,1,50-60
+12/21/2023,Philadelphia Flyers,51.80%,Nashville Predators,48.20%,Playing At:  Philadelphia Flyers   Home,0,50-60
+12/21/2023,Pittsburgh Penguins,51.40%,Carolina Hurricanes,48.60%,Playing At:  Pittsburgh Penguins   Home,1,50-60
+12/22/2023,Montreal Canadiens,74.80%,Chicago Blackhawks,25.20%,Playing At:  Chicago Blackhawks   Home,1,70-80
+12/22/2023,New York Rangers,66.20%,Edmonton Oilers,33.80%,Playing At:  New York Rangers   Home,0,60-70
+12/22/2023,Winnipeg Jets,57.00%,Boston Bruins,43.00%,Playing At:  Winnipeg Jets   Home,1,50-60
+12/22/2023,Detroit Red Wings,51.40%,Philadelphia Flyers,48.60%,Playing At:  Detroit Red Wings   Home,1,50-60
+12/23/2023,Vancouver Canucks,75.80%,San Jose Sharks,24.20%,Playing At:  Vancouver Canucks   Home,1,70-80
+12/23/2023,Colorado Avalanche,75.20%,Arizona Coyotes,24.80%,Playing At:  Colorado Avalanche   Home,1,70-80
+12/23/2023,Seattle Kraken,70.60%,Anaheim Ducks,29.40%,Playing At:  Anaheim Ducks   Home,1,70-80
+12/23/2023,Carolina Hurricanes,67.00%,New York Islanders,33.00%,Playing At:  Carolina Hurricanes   Home,0,60-70
+12/23/2023,St. Louis Blues,65.20%,Chicago Blackhawks,34.80%,Playing At:  St. Louis Blues   Home,1,60-70
+12/23/2023,Florida Panthers,63.60%,Vegas Golden Knights,36.40%,Playing At:  Florida Panthers   Home,1,60-70
+12/23/2023,New York Rangers,63.00%,Buffalo Sabres,37.00%,Playing At:  New York Rangers   Home,1,60-70
+12/23/2023,Los Angeles Kings,62.00%,Calgary Flames,38.00%,Playing At:  Los Angeles Kings   Home,1,60-70
+12/23/2023,Minnesota Wild,60.60%,Boston Bruins,39.40%,Playing At:  Minnesota Wild   Home,1,60-70
+12/23/2023,Toronto Maple Leafs,60.40%,Columbus Blue Jackets,39.60%,Playing At:  Columbus Blue Jackets   Home,1,60-70
+12/23/2023,Tampa Bay Lightning,58.20%,Washington Capitals,41.80%,Playing At:  Washington Capitals   Home,1,50-60
+12/23/2023,Pittsburgh Penguins,57.80%,Ottawa Senators,42.20%,Playing At:  Ottawa Senators   Home,0,50-60
+12/23/2023,Nashville Predators,57.00%,Dallas Stars,43.00%,Playing At:  Nashville Predators   Home,0,50-60
+12/23/2023,Detroit Red Wings,56.20%,New Jersey Devils,43.80%,Playing At:  New Jersey Devils   Home,0,50-60
+12/27/2023,Winnipeg Jets,79.60%,Chicago Blackhawks,20.40%,Playing At:  Chicago Blackhawks   Home,0,70-80
+12/27/2023,Vegas Golden Knights,76.60%,Anaheim Ducks,23.40%,Playing At:  Anaheim Ducks   Home,0,70-80
+12/27/2023,Minnesota Wild,75.60%,Detroit Red Wings,24.40%,Playing At:  Minnesota Wild   Home,1,70-80
+12/27/2023,Los Angeles Kings,75.40%,San Jose Sharks,24.60%,Playing At:  Los Angeles Kings   Home,1,70-80
+12/27/2023,Tampa Bay Lightning,71.40%,Florida Panthers,28.60%,Playing At:  Tampa Bay Lightning   Home,0,70-80
+12/27/2023,New York Rangers,70.20%,Washington Capitals,29.80%,Playing At:  New York Rangers   Home,1,70-80
+12/27/2023,Boston Bruins,68.40%,Buffalo Sabres,31.60%,Playing At:  Buffalo Sabres   Home,1,60-70
+12/27/2023,New Jersey Devils,66.60%,Columbus Blue Jackets,33.40%,Playing At:  New Jersey Devils   Home,1,60-70
+12/27/2023,Toronto Maple Leafs,66.20%,Ottawa Senators,33.80%,Playing At:  Toronto Maple Leafs   Home,0,60-70
+12/27/2023,Colorado Avalanche,64.40%,Arizona Coyotes,35.60%,Playing At:  Arizona Coyotes   Home,0,60-70
+12/27/2023,New York Islanders,61.00%,Pittsburgh Penguins,39.00%,Playing At:  New York Islanders   Home,0,60-70
+12/27/2023,Calgary Flames,57.60%,Seattle Kraken,42.40%,Playing At:  Calgary Flames   Home,0,50-60
+12/27/2023,Dallas Stars,52.80%,St. Louis Blues,47.20%,Playing At:  St. Louis Blues   Home,0,50-60
+12/27/2023,Carolina Hurricanes,52.00%,Nashville Predators,48.00%,Playing At:  Nashville Predators   Home,1,50-60
+12/28/2023,Edmonton Oilers,85.80%,San Jose Sharks,14.20%,Playing At:  San Jose Sharks   Home,1,85  <
+12/28/2023,Carolina Hurricanes,72.40%,Montreal Canadiens,27.60%,Playing At:  Carolina Hurricanes   Home,1,70-80
+12/28/2023,Vancouver Canucks,68.60%,Philadelphia Flyers,31.40%,Playing At:  Vancouver Canucks   Home,0,60-70
+12/28/2023,Vegas Golden Knights,54.00%,Los Angeles Kings,46.00%,Playing At:  Vegas Golden Knights   Home,1,50-60
+12/29/2023,Dallas Stars,78.20%,Chicago Blackhawks,21.80%,Playing At:  Dallas Stars   Home,1,70-80
+12/29/2023,Toronto Maple Leafs,64.20%,Columbus Blue Jackets,35.80%,Playing At:  Columbus Blue Jackets   Home,0,60-70
+12/29/2023,Arizona Coyotes,62.40%,Anaheim Ducks,37.60%,Playing At:  Anaheim Ducks   Home,1,60-70
+12/29/2023,Seattle Kraken,57.80%,Philadelphia Flyers,42.20%,Playing At:  Seattle Kraken   Home,1,50-60
+12/29/2023,New Jersey Devils,55.20%,Ottawa Senators,44.80%,Playing At:  Ottawa Senators   Home,1,50-60
+12/29/2023,St. Louis Blues,53.20%,Colorado Avalanche,46.80%,Playing At:  St. Louis Blues   Home,0,50-60
+12/29/2023,New York Islanders,53.00%,Washington Capitals,47.00%,Playing At:  New York Islanders   Home,1,50-60
+12/29/2023,Nashville Predators,52.60%,Detroit Red Wings,47.40%,Playing At:  Detroit Red Wings   Home,0,50-60
+12/29/2023,Florida Panthers,50.80%,New York Rangers,49.20%,Playing At:  Florida Panthers   Home,1,50-60
+12/30/2023,Florida Panthers,67.00%,Montreal Canadiens,33.00%,Playing At:  Florida Panthers   Home,1,60-70
+12/30/2023,Winnipeg Jets,65.60%,Minnesota Wild,34.40%,Playing At:  Winnipeg Jets   Home,1,60-70
+12/30/2023,Los Angeles Kings,62.00%,Edmonton Oilers,38.00%,Playing At:  Los Angeles Kings   Home,0,60-70
+12/30/2023,Tampa Bay Lightning,61.60%,New York Rangers,38.40%,Playing At:  Tampa Bay Lightning   Home,0,60-70
+12/30/2023,Boston Bruins,60.20%,New Jersey Devils,39.80%,Playing At:  Boston Bruins   Home,1,60-70
+12/30/2023,Nashville Predators,60.00%,Washington Capitals,40.00%,Playing At:  Washington Capitals   Home,1,60-70
+12/30/2023,Buffalo Sabres,59.80%,Columbus Blue Jackets,40.20%,Playing At:  Buffalo Sabres   Home,1,50-60
+12/30/2023,Pittsburgh Penguins,55.40%,St. Louis Blues,44.60%,Playing At:  Pittsburgh Penguins   Home,1,50-60
+12/30/2023,Toronto Maple Leafs,51.00%,Carolina Hurricanes,49.00%,Playing At:  Toronto Maple Leafs   Home,0,50-60
+12/31/2023,Colorado Avalanche,83.80%,San Jose Sharks,16.20%,Playing At:  Colorado Avalanche   Home,1,80-85
+12/31/2023,Edmonton Oilers,79.80%,Anaheim Ducks,20.20%,Playing At:  Anaheim Ducks   Home,1,70-80
+12/31/2023,Dallas Stars,79.00%,Chicago Blackhawks,21.00%,Playing At:  Dallas Stars   Home,1,70-80
+12/31/2023,Tampa Bay Lightning,64.60%,Montreal Canadiens,35.40%,Playing At:  Tampa Bay Lightning   Home,1,60-70
+12/31/2023,Pittsburgh Penguins,63.00%,New York Islanders,37.00%,Playing At:  Pittsburgh Penguins   Home,1,60-70
+12/31/2023,Boston Bruins,62.40%,Detroit Red Wings,37.60%,Playing At:  Detroit Red Wings   Home,1,60-70
+12/31/2023,Minnesota Wild,62.20%,Winnipeg Jets,37.80%,Playing At:  Minnesota Wild   Home,0,60-70
+12/31/2023,Calgary Flames,60.80%,Philadelphia Flyers,39.20%,Playing At:  Calgary Flames   Home,1,60-70
+12/31/2023,Ottawa Senators,54.40%,Buffalo Sabres,45.60%,Playing At:  Ottawa Senators   Home,1,50-60
+1/1/2024,Vegas Golden Knights,53%,Seattle Kraken,47%,Playing At:  Seattle Kraken   Home,0,50-60
+1/2/2024,Detroit Red Wings,84.60%,San Jose Sharks,15.40%,Playing At:  San Jose Sharks   Home,1,80-85
+1/2/2024,Dallas Stars,75.80%,Montreal Canadiens,24.20%,Playing At:  Dallas Stars   Home,0,70-80
+1/2/2024,Winnipeg Jets,74.80%,Tampa Bay Lightning,25.20%,Playing At:  Winnipeg Jets   Home,1,70-80
+1/2/2024,Boston Bruins,70.60%,Columbus Blue Jackets,29.40%,Playing At:  Columbus Blue Jackets   Home,1,70-80
+1/2/2024,Edmonton Oilers,69.20%,Philadelphia Flyers,30.80%,Playing At:  Edmonton Oilers   Home,1,60-70
+1/2/2024,Minnesota Wild,69.20%,Calgary Flames,30.80%,Playing At:  Minnesota Wild   Home,0,60-70
+1/2/2024,Colorado Avalanche,68.60%,New York Islanders,31.40%,Playing At:  Colorado Avalanche   Home,1,60-70
+1/2/2024,Nashville Predators,68.20%,Chicago Blackhawks,31.80%,Playing At:  Nashville Predators   Home,1,60-70
+1/2/2024,Pittsburgh Penguins,67.20%,Washington Capitals,32.80%,Playing At:  Pittsburgh Penguins   Home,0,60-70
+1/2/2024,Vancouver Canucks,66.00%,Ottawa Senators,34.00%,Playing At:  Vancouver Canucks   Home,1,60-70
+1/2/2024,Los Angeles Kings,64.20%,Toronto Maple Leafs,35.80%,Playing At:  Los Angeles Kings   Home,0,60-70
+1/2/2024,New York Rangers,61.60%,Carolina Hurricanes,38.40%,Playing At:  New York Rangers   Home,0,60-70
+1/2/2024,Arizona Coyotes,56.20%,Florida Panthers,43.80%,Playing At:  Arizona Coyotes   Home,0,50-60
+1/3/2024,Toronto Maple Leafs,76%,Anaheim Ducks,24%,Playing At:  Anaheim Ducks   Home,1,70-80
+1/3/2024,New Jersey Devils,63%,Washington Capitals,37%,Playing At:  Washington Capitals   Home,1,60-70
+1/4/2024,Winnipeg Jets,80.40%,San Jose Sharks,19.60%,Playing At:  San Jose Sharks   Home,1,80-85
+1/4/2024,Boston Bruins,73.00%,Pittsburgh Penguins,27.00%,Playing At:  Boston Bruins   Home,0,70-80
+1/4/2024,New York Rangers,68.00%,Chicago Blackhawks,32.00%,Playing At:  New York Rangers   Home,1,60-70
+1/4/2024,Los Angeles Kings,67.00%,Detroit Red Wings,33.00%,Playing At:  Los Angeles Kings   Home,0,60-70
+1/4/2024,Minnesota Wild,66.20%,Tampa Bay Lightning,33.80%,Playing At:  Minnesota Wild   Home,0,60-70
+1/4/2024,Nashville Predators,65.20%,Calgary Flames,34.80%,Playing At:  Nashville Predators   Home,0,60-70
+1/4/2024,Buffalo Sabres,64.80%,Montreal Canadiens,35.20%,Playing At:  Montreal Canadiens   Home,1,60-70
+1/4/2024,Vegas Golden Knights,62.20%,Florida Panthers,37.80%,Playing At:  Vegas Golden Knights   Home,0,60-70
+1/4/2024,Dallas Stars,60.00%,Colorado Avalanche,40.00%,Playing At:  Dallas Stars   Home,0,60-70
+1/4/2024,Seattle Kraken,58.80%,Ottawa Senators,41.20%,Playing At:  Seattle Kraken   Home,1,50-60
+1/4/2024,Arizona Coyotes,53.20%,New York Islanders,46.80%,Playing At:  Arizona Coyotes   Home,0,50-60
+1/4/2024,St. Louis Blues,53.00%,Vancouver Canucks,47.00%,Playing At:  St. Louis Blues   Home,1,50-60
+1/4/2024,Columbus Blue Jackets,51.20%,Philadelphia Flyers,48.80%,Playing At:  Philadelphia Flyers   Home,1,50-60
+1/5/2024,Winnipeg Jets,70.80%,Anaheim Ducks,29.20%,Playing At:  Anaheim Ducks   Home,1,70-80
+1/5/2024,New Jersey Devils,69.40%,Chicago Blackhawks,30.60%,Playing At:  New Jersey Devils   Home,1,60-70
+1/5/2024,Carolina Hurricanes,62.60%,Washington Capitals,37.40%,Playing At:  Washington Capitals   Home,1,60-70
+1/6/2024,Toronto Maple Leafs,81.60%,San Jose Sharks,18.40%,Playing At:  San Jose Sharks   Home,1,80-85
+1/6/2024,Carolina Hurricanes,76.80%,St. Louis Blues,23.20%,Playing At:  Carolina Hurricanes   Home,0,70-80
+1/6/2024,New York Rangers,75.00%,Montreal Canadiens,25.00%,Playing At:  Montreal Canadiens   Home,0,70-80
+1/6/2024,Edmonton Oilers,73.60%,Ottawa Senators,26.40%,Playing At:  Edmonton Oilers   Home,1,70-80
+1/6/2024,Dallas Stars,70.80%,Nashville Predators,29.20%,Playing At:  Dallas Stars   Home,0,70-80
+1/6/2024,Boston Bruins,64.00%,Tampa Bay Lightning,36.00%,Playing At:  Boston Bruins   Home,1,60-70
+1/6/2024,Colorado Avalanche,61.40%,Florida Panthers,38.60%,Playing At:  Colorado Avalanche   Home,0,60-70
+1/6/2024,Minnesota Wild,60.40%,Columbus Blue Jackets,39.60%,Playing At:  Columbus Blue Jackets   Home,1,60-70
+1/6/2024,New Jersey Devils,60.20%,Vancouver Canucks,39.80%,Playing At:  New Jersey Devils   Home,0,60-70
+1/6/2024,Vegas Golden Knights,59.40%,New York Islanders,40.60%,Playing At:  Vegas Golden Knights   Home,1,50-60
+1/6/2024,Calgary Flames,54.20%,Philadelphia Flyers,45.80%,Playing At:  Philadelphia Flyers   Home,0,50-60
+1/6/2024,Pittsburgh Penguins,53.80%,Buffalo Sabres,46.20%,Playing At:  Pittsburgh Penguins   Home,0,50-60
+1/7/2024,Calgary Flames,71.60%,Chicago Blackhawks,28.40%,Playing At:  Chicago Blackhawks   Home,0,70-80
+1/7/2024,Detroit Red Wings,69.60%,Anaheim Ducks,30.40%,Playing At:  Anaheim Ducks   Home,1,60-70
+1/7/2024,Los Angeles Kings,61.80%,Washington Capitals,38.20%,Playing At:  Washington Capitals   Home,0,60-70
+1/7/2024,Winnipeg Jets,57.20%,Arizona Coyotes,42.80%,Playing At:  Arizona Coyotes   Home,1,50-60
+1/8/2024,New York Rangers,69.20%,Vancouver Canucks,30.80%,Playing At:  New York Rangers   Home,0,60-70
+1/8/2024,Minnesota Wild,62.00%,Dallas Stars,38.00%,Playing At:  Minnesota Wild   Home,0,60-70
+1/8/2024,Philadelphia Flyers,54.20%,Pittsburgh Penguins,45.80%,Playing At:  Philadelphia Flyers   Home,0,50-60
+1/8/2024,Colorado Avalanche,54.00%,Boston Bruins,46.00%,Playing At:  Colorado Avalanche   Home,1,50-60
+1/9/2024,Edmonton Oilers,80.00%,Chicago Blackhawks,20.00%,Playing At:  Chicago Blackhawks   Home,1,80-85
+1/9/2024,Toronto Maple Leafs,76.80%,San Jose Sharks,23.20%,Playing At:  Toronto Maple Leafs   Home,1,70-80
+1/9/2024,Winnipeg Jets,75.40%,Columbus Blue Jackets,24.60%,Playing At:  Winnipeg Jets   Home,1,70-80
+1/9/2024,Boston Bruins,62.80%,Arizona Coyotes,37.20%,Playing At:  Arizona Coyotes   Home,0,60-70
+1/9/2024,Tampa Bay Lightning,61.60%,Los Angeles Kings,38.40%,Playing At:  Tampa Bay Lightning   Home,1,60-70
+1/9/2024,Nashville Predators,60.80%,Anaheim Ducks,39.20%,Playing At:  Nashville Predators   Home,0,60-70
+1/9/2024,St. Louis Blues,59.20%,Florida Panthers,40.80%,Playing At:  St. Louis Blues   Home,0,50-60
+1/9/2024,New York Islanders,58.20%,Vancouver Canucks,41.80%,Playing At:  New York Islanders   Home,0,50-60
+1/9/2024,Calgary Flames,56.80%,Ottawa Senators,43.20%,Playing At:  Calgary Flames   Home,1,50-60
+1/9/2024,Seattle Kraken,55.00%,Buffalo Sabres,45.00%,Playing At:  Buffalo Sabres   Home,1,50-60
