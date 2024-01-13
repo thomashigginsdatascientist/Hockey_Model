@@ -132,7 +132,7 @@ sequence_data <- games %>%
   slice(1:120) %>%
   arrange(Date) %>%
   ungroup() %>%
-  select(Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
+  select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
 
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
@@ -147,11 +147,80 @@ location_data <- games %>%
 
 sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Location"))
 
+# games1 <- games %>%
+#   mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
+#   # filter(Date >= as.Date("01/01/2022", format = "%m/%d/%Y"))
+# 
+# dates <- unique(games1$Date)
+# dates <- as.data.frame(dates)
+# dates <- dates %>%
+#   filter(dates >= as.Date("01/01/2022", format = "%m/%d/%Y"))
+# 
+# teams <- unique(games1$Team)
+# 
+# binder <- games1 %>%
+#   select(Team, Date) %>%
+#   mutate(hot_score = 0)
+# 
+# binder <- binder[1,]
+# binder <- binder[-1,]
+# binder <- binder %>%
+#   select(Team, hot_score, Date)
+# 
+# for(i in 1:nrow(dates)){
+# 
+#   print(i)
+# 
+#   current_date <- dates$dates[i]
+# 
+#   current_date_one <- current_date - days(1)
+# 
+#   current_date_two_weeks <- current_date - days(15)
+# 
+#   league_data <- games1 %>%
+#     filter(Date <= current_date_one) %>%
+#     filter(Date >= current_date_two_weeks) %>%
+#     mutate(group = 1) %>%
+#     group_by(group) %>%
+#     summarise(Avg_Win_Percentage_League = 0.5, Avg_GF_League = mean(GF), Avg_GA_League = mean(GA))
+# 
+#     team_data <- games1 %>%
+#       filter(Date <= current_date_one) %>%
+#       filter(Date >= current_date_two_weeks) %>%
+#       group_by(Team) %>%
+#       mutate(Num_Games = n()) %>%
+#       mutate(Num_Wins = sum(Win)) %>%
+#       mutate(GF_Team = mean(GF)) %>%
+#       mutate(GA_Team = mean(GA)) %>%
+#       mutate(Win_Percentage = Num_Wins/Num_Games) %>%
+#       ungroup() %>%
+#       mutate(Avg_Win_Percentage_League = 0.5) %>%
+#       mutate(Avg_GF_League = league_data$Avg_GF_League) %>%
+#       mutate(Avg_GA_League = league_data$Avg_GA_League) %>%
+#       mutate(variable_1 = (Win_Percentage - Avg_Win_Percentage_League)) %>%
+#       mutate(variable_2 = (GF_Team - Avg_GF_League)) %>%
+#       mutate(variable_3 = -(GA_Team - Avg_GA_League)) %>%
+#       mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3) %>%
+#       distinct(Team, .keep_all = TRUE) %>%
+#       select(Team, hot_score)
+# 
+#     team_data$Date <- current_date
+# 
+#     binder <- rbind(binder, team_data)
+# 
+# }
+# 
+# sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
+
+
 # power_rankings <- read_csv("C:/Users/thigg/Desktop/Hockey Models/ESPN Power Rankings.csv")
 # 
 # sequence_data1 <- left_join(sequence_data1, power_rankings, by = c("Team"))
 
 sequence_data1$Win <- ifelse(sequence_data1$Win == 1, "W", "L")
+
+sequence_data1 <- sequence_data1 %>%
+  select(-Date)
 
 # sequence_data1$Win <- as.factor(sequence_data1$Win)
 
@@ -180,9 +249,13 @@ train <- train %>%
   ungroup() %>%
   as.data.frame()
 
+train <- train[complete.cases(train),]
+
 test <- test %>%
   ungroup() %>%
   as.data.frame()
+
+test <- test[complete.cases(test),]
 
 test1 <- test %>%
   select(-Win, -GF, -GA)
@@ -203,12 +276,16 @@ train_rf <- train %>%
 # end <- Sys.time()
 # 
 # end - start
-
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF7.RDS")
+# 
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF8.RDS")
 
 #R squared of 0.75921
 
 #AUC of 0.6399847
+
+#R squared of 0.80851
+
+#AUC of 0.6122866
 
 rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF7.RDS")
 
@@ -240,9 +317,9 @@ train_ann_GA <- train_ann %>%
 # saveRDS(GF_model, "C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
 
 GF_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GF Model1.RDS")
-
-vif(GF_model)
-
+# 
+# vif(GF_model)
+# 
 # start <- Sys.time()
 # 
 # GA_model <- lm(GA ~ ., data = train_ann_GA)
@@ -327,7 +404,7 @@ confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
 test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
 
 test2 <- test1 %>%
-  filter(highest >= .8)
+  filter(highest >= .7)
 
 sum(test2$pred_abs1)/nrow(test2)
 
