@@ -147,70 +147,70 @@ location_data <- games %>%
 
 sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Location"))
 
-# games1 <- games %>%
-#   mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
-#   # filter(Date >= as.Date("01/01/2022", format = "%m/%d/%Y"))
-# 
-# dates <- unique(games1$Date)
-# dates <- as.data.frame(dates)
-# dates <- dates %>%
-#   filter(dates >= as.Date("01/01/2022", format = "%m/%d/%Y"))
-# 
-# teams <- unique(games1$Team)
-# 
-# binder <- games1 %>%
-#   select(Team, Date) %>%
-#   mutate(hot_score = 0)
-# 
-# binder <- binder[1,]
-# binder <- binder[-1,]
-# binder <- binder %>%
-#   select(Team, hot_score, Date)
-# 
-# for(i in 1:nrow(dates)){
-# 
-#   print(i)
-# 
-#   current_date <- dates$dates[i]
-# 
-#   current_date_one <- current_date - days(1)
-# 
-#   current_date_two_weeks <- current_date - days(15)
-# 
-#   league_data <- games1 %>%
-#     filter(Date <= current_date_one) %>%
-#     filter(Date >= current_date_two_weeks) %>%
-#     mutate(group = 1) %>%
-#     group_by(group) %>%
-#     summarise(Avg_Win_Percentage_League = 0.5, Avg_GF_League = mean(GF), Avg_GA_League = mean(GA))
-# 
-#     team_data <- games1 %>%
-#       filter(Date <= current_date_one) %>%
-#       filter(Date >= current_date_two_weeks) %>%
-#       group_by(Team) %>%
-#       mutate(Num_Games = n()) %>%
-#       mutate(Num_Wins = sum(Win)) %>%
-#       mutate(GF_Team = mean(GF)) %>%
-#       mutate(GA_Team = mean(GA)) %>%
-#       mutate(Win_Percentage = Num_Wins/Num_Games) %>%
-#       ungroup() %>%
-#       mutate(Avg_Win_Percentage_League = 0.5) %>%
-#       mutate(Avg_GF_League = league_data$Avg_GF_League) %>%
-#       mutate(Avg_GA_League = league_data$Avg_GA_League) %>%
-#       mutate(variable_1 = (Win_Percentage - Avg_Win_Percentage_League)) %>%
-#       mutate(variable_2 = (GF_Team - Avg_GF_League)) %>%
-#       mutate(variable_3 = -(GA_Team - Avg_GA_League)) %>%
-#       mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3) %>%
-#       distinct(Team, .keep_all = TRUE) %>%
-#       select(Team, hot_score)
-# 
-#     team_data$Date <- current_date
-# 
-#     binder <- rbind(binder, team_data)
-# 
-# }
-# 
-# sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
+games1 <- games %>%
+  mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
+  # filter(Date >= as.Date("01/01/2022", format = "%m/%d/%Y"))
+
+dates <- unique(games1$Date)
+dates <- as.data.frame(dates)
+dates <- dates %>%
+  filter(dates >= as.Date("01/01/2022", format = "%m/%d/%Y"))
+
+teams <- unique(games1$Team)
+
+binder <- games1 %>%
+  select(Team, Date) %>%
+  mutate(hot_score = 0)
+
+binder <- binder[1,]
+binder <- binder[-1,]
+binder <- binder %>%
+  select(Team, hot_score, Date)
+
+for(i in 1:nrow(dates)){
+
+  print(i)
+
+  current_date <- dates$dates[i]
+
+  current_date_one <- current_date - days(1)
+
+  current_date_two_weeks <- current_date - days(15)
+
+  league_data <- games1 %>%
+    filter(Date <= current_date_one) %>%
+    filter(Date >= current_date_two_weeks) %>%
+    mutate(group = 1) %>%
+    group_by(group) %>%
+    summarise(Avg_Win_Percentage_League = 0.5, Avg_GF_League = mean(GF), Avg_GA_League = mean(GA))
+
+    team_data <- games1 %>%
+      filter(Date <= current_date_one) %>%
+      filter(Date >= current_date_two_weeks) %>%
+      group_by(Team) %>%
+      mutate(Num_Games = n()) %>%
+      mutate(Num_Wins = sum(Win)) %>%
+      mutate(GF_Team = mean(GF)) %>%
+      mutate(GA_Team = mean(GA)) %>%
+      mutate(Win_Percentage = Num_Wins/Num_Games) %>%
+      ungroup() %>%
+      mutate(Avg_Win_Percentage_League = 0.5) %>%
+      mutate(Avg_GF_League = league_data$Avg_GF_League) %>%
+      mutate(Avg_GA_League = league_data$Avg_GA_League) %>%
+      mutate(variable_1 = (Win_Percentage - Avg_Win_Percentage_League)) %>%
+      mutate(variable_2 = (GF_Team - Avg_GF_League)) %>%
+      mutate(variable_3 = -(GA_Team - Avg_GA_League)) %>%
+      mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3) %>%
+      distinct(Team, .keep_all = TRUE) %>%
+      select(Team, hot_score)
+
+    team_data$Date <- current_date
+
+    binder <- rbind(binder, team_data)
+
+}
+
+sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
 
 
 # power_rankings <- read_csv("C:/Users/thigg/Desktop/Hockey Models/ESPN Power Rankings.csv")
@@ -264,7 +264,7 @@ actuals <- test %>%
   select(Win, GF, GA)
 
 train_rf <- train %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Avg_GF, Win_Percentage, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7)
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Avg_GF, Win_Percentage, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, hot_score)
 
 # start <- Sys.time()
 # 
@@ -277,13 +277,14 @@ train_rf <- train %>%
 # 
 # end - start
 # 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF8.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF HS 1.RDS")
 
-#R squared of 0.6335
+#R squared of 0.63829
 
-#AUC of 0.6684
+#AUC of 0.6568
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF8.RDS")
+
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF HS 1.RDS")
 
 varImp(rf_model)
 
@@ -322,6 +323,15 @@ Calc$Residual <- Calc$Residual^2
 TSS <- sum(Calc$Residual)
 
 Rsquared <- abs(1-(RSS/TSS))
+
+# library(pROC)
+# 
+# Result_ROC <- roc(test1$Win, preds)
+# 
+# plot(Result_ROC, print.thres="best", print.thres.best.method="closest.topleft")
+# 
+# Result_Coords <- coords(Result_ROC, "best", best.method="closest.topleft", ret=c("threshold", "accuracy"))
+# print(Result_Coords)#to get threshold and accuracy
 
 library(MLmetrics)
 
@@ -487,7 +497,19 @@ next_week <- next_week %>%
 next_week1 <- next_week %>%
   filter(Date == Sys.Date()) %>%
   # filter(Date >= as.Date("12/13/2023", format = "%m/%d/%Y")) %>%
-  select(-Win)
+  select(-Win, -GF, -GA)
+
+binder1 <- binder %>%
+  arrange(desc(Date)) %>%
+  group_by(Team) %>%
+  slice(1) %>%
+  select(Team, hot_score) %>%
+  ungroup() %>%
+  filter(Team %in% next_week1$Team)
+
+next_week1 <- left_join(next_week1, binder1, by = "Team")
+
+next_week1 <- next_week1[complete.cases(next_week1),]
 
 next_week1 <- left_join(next_week1, location_data, by = c("Team", "Location"))
 
@@ -518,7 +540,7 @@ thomas <- next_week1 %>%
   mutate(Loser_Confidence = percent(Loser_Confidence)) %>%
   rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence)
 
-write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/RF Today Predictions.csv")
+write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/RF HS Today Predictions.csv")
 
 
 predictions <- read_csv("C:/Users/thigg/Desktop/Hockey Models/RF Predictions.csv")

@@ -146,71 +146,71 @@ location_data <- games %>%
 
 sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Location"))
 
-# games1 <- games %>%
-#   mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
-#   # filter(Date >= as.Date("01/01/2022", format = "%m/%d/%Y"))
-# 
-# dates <- unique(games1$Date)
-# dates <- as.data.frame(dates)
-# dates <- dates %>%
-#   filter(dates >= as.Date("01/01/2022", format = "%m/%d/%Y"))
-# 
-# teams <- unique(games1$Team)
-# 
-# binder <- games1 %>%
-#   select(Team, Date) %>%
-#   mutate(hot_score = 0)
-# 
-# binder <- binder[1,]
-# binder <- binder[-1,]
-# binder <- binder %>%
-#   select(Team, hot_score, Date)
-# 
-# for(i in 1:nrow(dates)){
-#   
-#   print(i)
-#   
-#   current_date <- dates$dates[i]
-#   
-#   current_date_one <- current_date - days(1)
-#   
-#   current_date_two_weeks <- current_date - days(15)
-#   
-#   league_data <- games1 %>%
-#     filter(Date <= current_date_one) %>%
-#     filter(Date >= current_date_two_weeks) %>%
-#     mutate(group = 1) %>%
-#     group_by(group) %>%
-#     summarise(Avg_Win_Percentage_League = 0.5, Avg_GF_League = mean(GF), Avg_GA_League = mean(GA))
-# 
-#     team_data <- games1 %>%
-#       filter(Date <= current_date_one) %>%
-#       filter(Date >= current_date_two_weeks) %>%
-#       group_by(Team) %>%
-#       mutate(Num_Games = n()) %>%
-#       mutate(Num_Wins = sum(Win)) %>%
-#       mutate(GF_Team = mean(GF)) %>%
-#       mutate(GA_Team = mean(GA)) %>%
-#       mutate(Win_Percentage = Num_Wins/Num_Games) %>%
-#       ungroup() %>%
-#       mutate(Avg_Win_Percentage_League = 0.5) %>%
-#       mutate(Avg_GF_League = league_data$Avg_GF_League) %>%
-#       mutate(Avg_GA_League = league_data$Avg_GA_League) %>%
-#       mutate(variable_1 = (Win_Percentage - Avg_Win_Percentage_League)) %>%
-#       mutate(variable_2 = (GF_Team - Avg_GF_League)) %>%
-#       mutate(variable_3 = -(GA_Team - Avg_GA_League)) %>%
-#       mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3) %>%
-#       distinct(Team, .keep_all = TRUE) %>%
-#       select(Team, hot_score)
-#     
-#     team_data$Date <- current_date
-#     
-#     binder <- rbind(binder, team_data)
-#   
-# }
-# 
-# sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
-# 
+games1 <- games %>%
+  mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
+  # filter(Date >= as.Date("01/01/2022", format = "%m/%d/%Y"))
+
+dates <- unique(games1$Date)
+dates <- as.data.frame(dates)
+dates <- dates %>%
+  filter(dates >= as.Date("01/01/2022", format = "%m/%d/%Y"))
+
+teams <- unique(games1$Team)
+
+binder <- games1 %>%
+  select(Team, Date) %>%
+  mutate(hot_score = 0)
+
+binder <- binder[1,]
+binder <- binder[-1,]
+binder <- binder %>%
+  select(Team, hot_score, Date)
+
+for(i in 1:nrow(dates)){
+
+  print(i)
+
+  current_date <- dates$dates[i]
+
+  current_date_one <- current_date - days(1)
+
+  current_date_two_weeks <- current_date - days(15)
+
+  league_data <- games1 %>%
+    filter(Date <= current_date_one) %>%
+    filter(Date >= current_date_two_weeks) %>%
+    mutate(group = 1) %>%
+    group_by(group) %>%
+    summarise(Avg_Win_Percentage_League = 0.5, Avg_GF_League = mean(GF), Avg_GA_League = mean(GA))
+
+    team_data <- games1 %>%
+      filter(Date <= current_date_one) %>%
+      filter(Date >= current_date_two_weeks) %>%
+      group_by(Team) %>%
+      mutate(Num_Games = n()) %>%
+      mutate(Num_Wins = sum(Win)) %>%
+      mutate(GF_Team = mean(GF)) %>%
+      mutate(GA_Team = mean(GA)) %>%
+      mutate(Win_Percentage = Num_Wins/Num_Games) %>%
+      ungroup() %>%
+      mutate(Avg_Win_Percentage_League = 0.5) %>%
+      mutate(Avg_GF_League = league_data$Avg_GF_League) %>%
+      mutate(Avg_GA_League = league_data$Avg_GA_League) %>%
+      mutate(variable_1 = (Win_Percentage - Avg_Win_Percentage_League)) %>%
+      mutate(variable_2 = (GF_Team - Avg_GF_League)) %>%
+      mutate(variable_3 = -(GA_Team - Avg_GA_League)) %>%
+      mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3) %>%
+      distinct(Team, .keep_all = TRUE) %>%
+      select(Team, hot_score)
+
+    team_data$Date <- current_date
+
+    binder <- rbind(binder, team_data)
+
+}
+
+sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
+
 # test <- sequence_data1 %>%
 #   filter(is.na(hot_score))
 
@@ -277,14 +277,14 @@ actuals <- test %>%
 # end <- Sys.time()
 # 
 # end - start
+# 
+# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM4.RDS")
 
-# saveRDS(gbm_model, "C:/Users/thigg/Desktop/Hockey Models/GBM3.RDS")
+#R Squared of .65957
 
-#R Squared of .5917
+#AUC of .6540
 
-#AUC of .6079980
-
-gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM3.RDS")
+gbm_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/GBM4.RDS")
 
 library(gbm)
 
@@ -487,6 +487,16 @@ next_week1 <- next_week %>%
   filter(Date == Sys.Date()) %>%
   # filter(Date >= as.Date("12/13/2023", format = "%m/%d/%Y")) %>%
   select(-Win)
+
+binder1 <- binder %>%
+  arrange(desc(Date)) %>%
+  group_by(Team) %>%
+  slice(1) %>%
+  select(Team, hot_score) %>%
+  ungroup() %>%
+  filter(Team %in% next_week1$Team)
+
+next_week1 <- left_join(next_week1, binder1, by = "Team")
 
 next_week1 <- next_week1[complete.cases(next_week1),]
 
