@@ -145,7 +145,7 @@ location_data <- games %>%
   mutate(Win_Percentage = Wins/num_games) %>%
   select(Team, Location, Avg_GF, Win_Percentage)
 
-sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Location"))
+# sequence_data1 <- left_join(sequence_data1, location_data, by = c("Team", "Location"))
 
 games1 <- games %>%
   mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
@@ -264,27 +264,31 @@ actuals <- test %>%
   select(Win, GF, GA)
 
 train_rf <- train %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Avg_GF, Win_Percentage, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, hot_score)
+  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, hot_score)
 
-# start <- Sys.time()
-# 
-# rf_model <- train(Win ~ .,
-#                   data = train_rf,
-#                   method="rf"
-#                   )
-# 
-# end <- Sys.time()
-# 
-# end - start
-# 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF HS 1.RDS")
+start <- Sys.time()
 
-#R squared of 0.63829
+rf_model <- train(Win ~ .,
+                  data = train_rf,
+                  method="rf"
+                  )
 
-#AUC of 0.6568
+end <- Sys.time()
+
+end - start
+
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF HS 2.RDS")
+
+#R squared of 0.732669
+
+#AUC of 0.5777
+
+#Precision of 0.5853659
+
+#Recall of 0.5106
 
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF HS 1.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF HS 2.RDS")
 
 varImp(rf_model)
 
@@ -511,7 +515,7 @@ next_week1 <- left_join(next_week1, binder1, by = "Team")
 
 next_week1 <- next_week1[complete.cases(next_week1),]
 
-next_week1 <- left_join(next_week1, location_data, by = c("Team", "Location"))
+# next_week1 <- left_join(next_week1, location_data, by = c("Team", "Location"))
 
 today_preds <- predict(rf_model, newdata = next_week1, type = "prob")
 
@@ -525,7 +529,7 @@ next_week1$Loser <- ifelse(next_week1$L > next_week1$W, next_week1$Team, next_we
 next_week1$Confidence <- ifelse(next_week1$L > next_week1$W, next_week1$L, next_week1$W)
 
 next_week1 <- next_week1 %>%
-  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Avg_GF, Win_Percentage, W, L, Winner, Loser, Confidence)
+  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, W, L, Winner, Loser, Confidence)
 
 next_week1$Win_Probability <- next_week1$W
 

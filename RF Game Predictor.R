@@ -277,11 +277,15 @@ train_rf <- train %>%
 # 
 # end - start
 # 
-# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF8.RDS")
+# saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/RF9.RDS")
 
-#R squared of 0.6335
+#R squared of 0.612609
 
-#AUC of 0.6684
+#AUC of 0.601434
+
+#Precision of 0.6097
+
+#Recall of 0.5263
 
 rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF8.RDS")
 
@@ -549,8 +553,14 @@ predictions1 <- predictions %>%
 
 sum(predictions1$Total_Correct)/sum(predictions1$Total)
 
-test70 <- predictions1[3,2] + predictions1[4,2] + predictions1[5,2]
+test70 <- predictions1[3,2] + predictions1[4,2] + predictions1[5,2] + predictions1[6,2]
 
-test70c <- predictions1[3,3] + predictions1[4,3] + predictions1[5,3]
+test70c <- predictions1[3,3] + predictions1[4,3] + predictions1[5,3] + predictions1[6,3]
 
 test70c/test70
+
+test80 <- predictions1[4,2] + predictions1[5,2] + predictions1[6,2]
+
+test80c <- predictions1[4,3] + predictions1[5,3] + predictions1[6,3]
+
+test80c/test80
