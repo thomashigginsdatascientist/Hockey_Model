@@ -5,6 +5,8 @@ library(lubridate)
 library(scales)
 # library(car)
 
+
+
 schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
 schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2022.csv")
 schedule2023 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2023.csv")
@@ -242,11 +244,18 @@ for(i in 1:nrow(filter_dates)){
   if(current_date %in% train_dates$Date){
     
     print("Training New Model")
+    
+    start1 <- Sys.time()
 
   rf_model <- train(Win ~ .,
                     data = sequence_data1,
-                    method="rf"
+                    method="pda"
   )
+  
+  end1 <- Sys.time()
+  
+  end1 - start1
+  
   }else{
     print(current_date)
   }
@@ -337,8 +346,8 @@ results_summary <- results %>%
   group_by(Category) %>%
   summarise(Total = n(), Correct = sum(Model))
 
-test <- results_summary[1,2] + results_summary[2,2] + results_summary[3,2] + results_summary[4,2] + results_summary[5,2]
-testc <- results_summary[1,3] + results_summary[2,3] + results_summary[3,3] + results_summary[4,3] + results_summary[5,3]
+test <- results_summary[1,2] + results_summary[2,2] + results_summary[3,2] + results_summary[4,2] + results_summary[5,2] + results_summary[6,2]
+testc <- results_summary[1,3] + results_summary[2,3] + results_summary[3,3] + results_summary[4,3] + results_summary[5,3] + results_summary[6,3]
 acc <- testc/test
 
 print(paste0("Total Data Set: ", test, " predictions; ", testc, " correct; ", percent(acc$Correct), " accuracy"))
@@ -362,7 +371,7 @@ acc <- testc/test
 
 print(paste0("Above 80% Prob: ", test, " predictions; ", testc, " correct; ", percent(acc$Correct), " accuracy"))
 
-write.csv(results, "C:/Users/thigg/Desktop/Hockey Models/Backtesting With Hot Score No Location Data RF.csv", row.names = FALSE)
+write.csv(results, "C:/Users/thigg/Desktop/Hockey Models/Backtesting With Hot Score No Location Data PDA.csv", row.names = FALSE)
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
@@ -560,8 +569,17 @@ thomas <- prediction_data %>%
   mutate(Site = paste("Playing At: ", Team, " ", Location)) %>%
   select(Date, Winner1,  Confidence, Loser1,  Loser_Confidence, Site) %>%
   arrange(desc(Confidence)) %>%
-  # mutate(Confidence = percent(Confidence)) %>%
-  # mutate(Loser_Confidence = percent(Loser_Confidence)) %>%
-  rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence)
+  rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence) %>%
+  mutate(Category = case_when(`Winner Probability` > .85 ~ "85 <",
+                              `Winner Probability` > .8 & `Winner Probability` <= .85 ~ "80-85",
+                              `Winner Probability` > .7 & `Winner Probability` <= .8 ~ "70-80",
+                              `Winner Probability` > .6 & `Winner Probability` <= .7 ~ "60-70",
+                              `Winner Probability` > .55 & `Winner Probability` <= .6 ~ "55-60",
+                              `Winner Probability` <= .55 ~ "55 >",
+                              TRUE ~ "Thomas")) %>%
+  mutate(`Winner Probability` = percent(`Winner Probability`)) %>%
+  mutate(`Loser Probability` = percent(`Loser Probability`))
 
-write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/Back Testing Predictions.csv")
+write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/Back Testing Predictions PDA.csv")
+
+saveRDS(rf_model, "C:/Users/thigg/Desktop/Hockey Models/PDA1.RDS")
