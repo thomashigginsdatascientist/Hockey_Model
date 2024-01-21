@@ -1,0 +1,299 @@
+"Date","Winner1","Winner Probability","Loser1","Loser Probability","Site","Category","Winner_Actual","Model"
+2023-12-09,"Boston Bruins",0.876105393058864,"Arizona Coyotes",0.123894606941136,"Playing At:  Boston Bruins   Home","85 <","Boston Bruins",1
+2023-12-09,"Colorado Avalanche",0.780567822974962,"Philadelphia Flyers",0.219432177025038,"Playing At:  Colorado Avalanche   Home","70-80","Philadelphia Flyers",0
+2023-12-09,"New Jersey Devils",0.658638985307722,"Calgary Flames",0.341361014692278,"Playing At:  Calgary Flames   Home","60-70","New Jersey Devils",1
+2023-12-09,"Buffalo Sabres",0.646072362568528,"Montreal Canadiens",0.353927637431472,"Playing At:  Buffalo Sabres   Home","60-70","Montreal Canadiens",0
+2023-12-09,"Carolina Hurricanes",0.60306404448012,"Vancouver Canucks",0.39693595551988,"Playing At:  Vancouver Canucks   Home","60-70","Vancouver Canucks",0
+2023-12-09,"New York Rangers",0.602566052224053,"Washington Capitals",0.397433947775947,"Playing At:  Washington Capitals   Home","60-70","Washington Capitals",0
+2023-12-09,"Seattle Kraken",0.591774661578502,"Tampa Bay Lightning",0.408225338421498,"Playing At:  Seattle Kraken   Home","55-60","Tampa Bay Lightning",0
+2023-12-09,"Toronto Maple Leafs",0.578408296142607,"Nashville Predators",0.421591703857393,"Playing At:  Toronto Maple Leafs   Home","55-60","Toronto Maple Leafs",1
+2023-12-09,"St. Louis Blues",0.557628410634506,"Chicago Blackhawks",0.442371589365494,"Playing At:  Chicago Blackhawks   Home","55-60","Chicago Blackhawks",0
+2023-12-09,"Ottawa Senators",0.540426027945155,"Detroit Red Wings",0.459573972054845,"Playing At:  Detroit Red Wings   Home","55 >","Ottawa Senators",1
+2023-12-09,"Los Angeles Kings",0.538191732189329,"New York Islanders",0.461808267810671,"Playing At:  New York Islanders   Home","55 >","New York Islanders",0
+2023-12-09,"Vegas Golden Knights",0.513575367819836,"Dallas Stars",0.486424632180164,"Playing At:  Dallas Stars   Home","55 >","Vegas Golden Knights",1
+2023-12-10,"Vegas Golden Knights",0.828907109944642,"San Jose Sharks",0.171092890055358,"Playing At:  Vegas Golden Knights   Home","80-85","Vegas Golden Knights",1
+2023-12-10,"Winnipeg Jets",0.707613887529011,"Anaheim Ducks",0.292386112470989,"Playing At:  Anaheim Ducks   Home","70-80","Winnipeg Jets",1
+2023-12-10,"Florida Panthers",0.675102020234998,"Columbus Blue Jackets",0.324897979765002,"Playing At:  Columbus Blue Jackets   Home","60-70","Florida Panthers",1
+2023-12-10,"Nashville Predators",0.659996391063444,"Montreal Canadiens",0.340003608936556,"Playing At:  Montreal Canadiens   Home","60-70","Nashville Predators",1
+2023-12-10,"New York Rangers",0.614938331484075,"Los Angeles Kings",0.385061668515925,"Playing At:  New York Rangers   Home","60-70","New York Rangers",1
+2023-12-10,"Washington Capitals",0.607033108262187,"Chicago Blackhawks",0.392966891737813,"Playing At:  Chicago Blackhawks   Home","60-70","Washington Capitals",1
+2023-12-10,"Seattle Kraken",0.558734324869945,"Minnesota Wild",0.441265675130055,"Playing At:  Seattle Kraken   Home","55-60","Minnesota Wild",0
+2023-12-10,"New Jersey Devils",0.543381774309443,"Edmonton Oilers",0.456618225690557,"Playing At:  Edmonton Oilers   Home","55 >","Edmonton Oilers",0
+2023-12-11,"Dallas Stars",0.72188211518356,"Detroit Red Wings",0.27811788481644,"Playing At:  Dallas Stars   Home","70-80","Dallas Stars",1
+2023-12-11,"Colorado Avalanche",0.705934087530376,"Calgary Flames",0.294065912469624,"Playing At:  Colorado Avalanche   Home","70-80","Colorado Avalanche",1
+2023-12-11,"Buffalo Sabres",0.651892847530374,"Arizona Coyotes",0.348107152469626,"Playing At:  Buffalo Sabres   Home","60-70","Buffalo Sabres",1
+2023-12-11,"Toronto Maple Leafs",0.568078718833927,"New York Islanders",0.431921281166073,"Playing At:  New York Islanders   Home","55-60","New York Islanders",0
+2023-12-12,"Edmonton Oilers",0.791626849991676,"Chicago Blackhawks",0.208373150008324,"Playing At:  Edmonton Oilers   Home","70-80","Edmonton Oilers",1
+2023-12-12,"Winnipeg Jets",0.752178484035654,"San Jose Sharks",0.247821515964346,"Playing At:  San Jose Sharks   Home","70-80","San Jose Sharks",0
+2023-12-12,"Vegas Golden Knights",0.727965658361253,"Calgary Flames",0.272034341638747,"Playing At:  Vegas Golden Knights   Home","70-80","Vegas Golden Knights",1
+2023-12-12,"Nashville Predators",0.680801351750078,"Philadelphia Flyers",0.319198648249922,"Playing At:  Nashville Predators   Home","60-70","Nashville Predators",1
+2023-12-12,"Carolina Hurricanes",0.642931636660968,"Ottawa Senators",0.357068363339032,"Playing At:  Ottawa Senators   Home","60-70","Carolina Hurricanes",1
+2023-12-12,"Pittsburgh Penguins",0.626282037029455,"Arizona Coyotes",0.373717962970545,"Playing At:  Pittsburgh Penguins   Home","60-70","Pittsburgh Penguins",1
+2023-12-12,"New York Rangers",0.599561610318937,"Toronto Maple Leafs",0.400438389681063,"Playing At:  New York Rangers   Home","55-60","Toronto Maple Leafs",0
+2023-12-12,"Seattle Kraken",0.594216571623771,"Florida Panthers",0.405783428376229,"Playing At:  Seattle Kraken   Home","55-60","Seattle Kraken",1
+2023-12-12,"Vancouver Canucks",0.541029911519074,"Tampa Bay Lightning",0.458970088480926,"Playing At:  Vancouver Canucks   Home","55 >","Vancouver Canucks",1
+2023-12-12,"St. Louis Blues",0.530652279730955,"Detroit Red Wings",0.469347720269045,"Playing At:  St. Louis Blues   Home","55 >","Detroit Red Wings",0
+2023-12-13,"New York Islanders",0.714776732918275,"Anaheim Ducks",0.285223267081725,"Playing At:  New York Islanders   Home","70-80","New York Islanders",1
+2023-12-13,"Boston Bruins",0.697441206939916,"New Jersey Devils",0.302558793060084,"Playing At:  New Jersey Devils   Home","60-70","New Jersey Devils",0
+2023-12-13,"Colorado Avalanche",0.672733935381533,"Buffalo Sabres",0.327266064618467,"Playing At:  Colorado Avalanche   Home","60-70","Colorado Avalanche",1
+2023-12-13,"Pittsburgh Penguins",0.596886032393623,"Montreal Canadiens",0.403113967606377,"Playing At:  Montreal Canadiens   Home","55-60","Pittsburgh Penguins",1
+2023-12-13,"Los Angeles Kings",0.51384572633648,"Winnipeg Jets",0.48615427366352,"Playing At:  Los Angeles Kings   Home","55 >","Winnipeg Jets",0
+2023-12-14,"Seattle Kraken",0.790056359986844,"Chicago Blackhawks",0.209943640013156,"Playing At:  Seattle Kraken   Home","70-80","Seattle Kraken",1
+2023-12-14,"Toronto Maple Leafs",0.789336921493591,"Columbus Blue Jackets",0.210663078506409,"Playing At:  Toronto Maple Leafs   Home","70-80","Columbus Blue Jackets",0
+2023-12-14,"Carolina Hurricanes",0.590612853930835,"Detroit Red Wings",0.409387146069165,"Playing At:  Detroit Red Wings   Home","55-60","Carolina Hurricanes",1
+2023-12-14,"Minnesota Wild",0.582315321861255,"Calgary Flames",0.417684678138745,"Playing At:  Minnesota Wild   Home","55-60","Minnesota Wild",1
+2023-12-14,"Washington Capitals",0.561046336330865,"Philadelphia Flyers",0.438953663669135,"Playing At:  Philadelphia Flyers   Home","55-60","Philadelphia Flyers",0
+2023-12-14,"Edmonton Oilers",0.541361691656533,"Tampa Bay Lightning",0.458638308343467,"Playing At:  Edmonton Oilers   Home","55 >","Tampa Bay Lightning",0
+2023-12-14,"Vancouver Canucks",0.5252192894594,"Florida Panthers",0.4747807105406,"Playing At:  Vancouver Canucks   Home","55 >","Vancouver Canucks",1
+2023-12-14,"St. Louis Blues",0.505795000758579,"Ottawa Senators",0.494204999241421,"Playing At:  St. Louis Blues   Home","55 >","St. Louis Blues",1
+2023-12-15,"New York Rangers",0.830275248545837,"Anaheim Ducks",0.169724751454163,"Playing At:  New York Rangers   Home","80-85","New York Rangers",1
+2023-12-15,"Boston Bruins",0.769724444146688,"New York Islanders",0.230275555853312,"Playing At:  New York Islanders   Home","70-80","Boston Bruins",1
+2023-12-15,"Vegas Golden Knights",0.688468901369611,"Buffalo Sabres",0.311531098630389,"Playing At:  Vegas Golden Knights   Home","60-70","Buffalo Sabres",0
+2023-12-15,"Dallas Stars",0.62421152193837,"Ottawa Senators",0.37578847806163,"Playing At:  Dallas Stars   Home","60-70","Dallas Stars",1
+2023-12-15,"Carolina Hurricanes",0.610719954915998,"Nashville Predators",0.389280045084002,"Playing At:  Carolina Hurricanes   Home","60-70","Nashville Predators",0
+2023-12-15,"Arizona Coyotes",0.602494760215448,"San Jose Sharks",0.397505239784552,"Playing At:  Arizona Coyotes   Home","60-70","Arizona Coyotes",1
+2023-12-16,"New Jersey Devils",0.780640700258806,"Columbus Blue Jackets",0.219359299741194,"Playing At:  Columbus Blue Jackets   Home","70-80","New Jersey Devils",1
+2023-12-16,"Toronto Maple Leafs",0.661159558106879,"Pittsburgh Penguins",0.338840441893121,"Playing At:  Toronto Maple Leafs   Home","60-70","Toronto Maple Leafs",1
+2023-12-16,"Boston Bruins",0.631767906301409,"New York Rangers",0.368232093698591,"Playing At:  Boston Bruins   Home","60-70","New York Rangers",0
+2023-12-16,"Buffalo Sabres",0.616740899031252,"Arizona Coyotes",0.383259100968748,"Playing At:  Arizona Coyotes   Home","60-70","Arizona Coyotes",0
+2023-12-16,"Nashville Predators",0.612188678017832,"Washington Capitals",0.387811321982168,"Playing At:  Nashville Predators   Home","60-70","Nashville Predators",1
+2023-12-16,"New York Islanders",0.601967420292711,"Montreal Canadiens",0.398032579707289,"Playing At:  Montreal Canadiens   Home","60-70","Montreal Canadiens",0
+2023-12-16,"Minnesota Wild",0.577732489263648,"Vancouver Canucks",0.422267510736352,"Playing At:  Minnesota Wild   Home","55-60","Minnesota Wild",1
+2023-12-16,"Los Angeles Kings",0.574527565303002,"Seattle Kraken",0.425472434696998,"Playing At:  Seattle Kraken   Home","55-60","Los Angeles Kings",1
+2023-12-16,"Dallas Stars",0.570766320086291,"St. Louis Blues",0.429233679913709,"Playing At:  St. Louis Blues   Home","55-60","St. Louis Blues",0
+2023-12-16,"Detroit Red Wings",0.549315045432046,"Philadelphia Flyers",0.450684954567954,"Playing At:  Philadelphia Flyers   Home","55 >","Philadelphia Flyers",0
+2023-12-16,"Colorado Avalanche",0.549206695894062,"Winnipeg Jets",0.450793304105938,"Playing At:  Winnipeg Jets   Home","55 >","Winnipeg Jets",0
+2023-12-16,"Tampa Bay Lightning",0.545894080676202,"Calgary Flames",0.454105919323798,"Playing At:  Calgary Flames   Home","55 >","Calgary Flames",0
+2023-12-16,"Edmonton Oilers",0.53230728207154,"Florida Panthers",0.46769271792846,"Playing At:  Edmonton Oilers   Home","55 >","Florida Panthers",0
+2023-12-17,"Colorado Avalanche",0.825082728590786,"San Jose Sharks",0.174917271409214,"Playing At:  Colorado Avalanche   Home","80-85","Colorado Avalanche",1
+2023-12-17,"New Jersey Devils",0.792178911219092,"Anaheim Ducks",0.207821088780908,"Playing At:  New Jersey Devils   Home","70-80","Anaheim Ducks",0
+2023-12-17,"Vancouver Canucks",0.723423489046211,"Chicago Blackhawks",0.276576510953789,"Playing At:  Chicago Blackhawks   Home","70-80","Vancouver Canucks",1
+2023-12-17,"Carolina Hurricanes",0.70669968075728,"Washington Capitals",0.29330031924272,"Playing At:  Carolina Hurricanes   Home","70-80","Washington Capitals",0
+2023-12-17,"Vegas Golden Knights",0.659218278140359,"Ottawa Senators",0.340781721859641,"Playing At:  Vegas Golden Knights   Home","60-70","Vegas Golden Knights",1
+2023-12-18,"Winnipeg Jets",0.684705865334599,"Montreal Canadiens",0.315294134665401,"Playing At:  Winnipeg Jets   Home","60-70","Montreal Canadiens",0
+2023-12-18,"Detroit Red Wings",0.623167971603131,"Anaheim Ducks",0.376832028396869,"Playing At:  Detroit Red Wings   Home","60-70","Anaheim Ducks",0
+2023-12-18,"Florida Panthers",0.586524422637757,"Calgary Flames",0.413475577362243,"Playing At:  Calgary Flames   Home","55-60","Calgary Flames",0
+2023-12-18,"Dallas Stars",0.57033336593527,"Seattle Kraken",0.42966663406473,"Playing At:  Dallas Stars   Home","55-60","Dallas Stars",1
+2023-12-18,"Pittsburgh Penguins",0.512072244668659,"Minnesota Wild",0.487927755331341,"Playing At:  Pittsburgh Penguins   Home","55 >","Pittsburgh Penguins",1
+2023-12-19,"Los Angeles Kings",0.798367070769628,"San Jose Sharks",0.201632929230372,"Playing At:  San Jose Sharks   Home","70-80","Los Angeles Kings",1
+2023-12-19,"Colorado Avalanche",0.776009134806559,"Chicago Blackhawks",0.223990865193441,"Playing At:  Chicago Blackhawks   Home","70-80","Chicago Blackhawks",0
+2023-12-19,"Boston Bruins",0.770710827030512,"Minnesota Wild",0.229289172969488,"Playing At:  Boston Bruins   Home","70-80","Minnesota Wild",0
+2023-12-19,"New Jersey Devils",0.767692100205118,"Philadelphia Flyers",0.232307899794882,"Playing At:  New Jersey Devils   Home","70-80","Philadelphia Flyers",0
+2023-12-19,"Buffalo Sabres",0.720967415425671,"Columbus Blue Jackets",0.279032584574329,"Playing At:  Buffalo Sabres   Home","70-80","Columbus Blue Jackets",0
+2023-12-19,"Tampa Bay Lightning",0.637210209733944,"St. Louis Blues",0.362789790266056,"Playing At:  Tampa Bay Lightning   Home","60-70","Tampa Bay Lightning",1
+2023-12-19,"Carolina Hurricanes",0.629636680344644,"Vegas Golden Knights",0.370363319655356,"Playing At:  Carolina Hurricanes   Home","60-70","Carolina Hurricanes",1
+2023-12-19,"Ottawa Senators",0.620706020420728,"Arizona Coyotes",0.379293979579272,"Playing At:  Arizona Coyotes   Home","60-70","Arizona Coyotes",0
+2023-12-19,"Nashville Predators",0.606127675223513,"Vancouver Canucks",0.393872324776487,"Playing At:  Nashville Predators   Home","60-70","Vancouver Canucks",0
+2023-12-19,"Edmonton Oilers",0.583609113566832,"New York Islanders",0.416390886433168,"Playing At:  New York Islanders   Home","55-60","New York Islanders",0
+2023-12-19,"New York Rangers",0.509331156217463,"Toronto Maple Leafs",0.490668843782537,"Playing At:  Toronto Maple Leafs   Home","55 >","New York Rangers",1
+2023-12-20,"Los Angeles Kings",0.608837239700511,"Seattle Kraken",0.391162760299489,"Playing At:  Los Angeles Kings   Home","60-70","Seattle Kraken",0
+2023-12-20,"Winnipeg Jets",0.6048787344918,"Detroit Red Wings",0.3951212655082,"Playing At:  Winnipeg Jets   Home","60-70","Winnipeg Jets",1
+2023-12-20,"New York Islanders",0.50901413319968,"Washington Capitals",0.49098586680032,"Playing At:  Washington Capitals   Home","55 >","Washington Capitals",0
+2023-12-21,"Florida Panthers",0.67914375893983,"St. Louis Blues",0.32085624106017,"Playing At:  Florida Panthers   Home","60-70","St. Louis Blues",0
+2023-12-21,"Minnesota Wild",0.660423207192536,"Montreal Canadiens",0.339576792807464,"Playing At:  Minnesota Wild   Home","60-70","Minnesota Wild",1
+2023-12-21,"Washington Capitals",0.643960304817783,"Columbus Blue Jackets",0.356039695182217,"Playing At:  Columbus Blue Jackets   Home","60-70","Washington Capitals",1
+2023-12-21,"Carolina Hurricanes",0.642436146390864,"Pittsburgh Penguins",0.357563853609136,"Playing At:  Pittsburgh Penguins   Home","60-70","Pittsburgh Penguins",0
+2023-12-21,"Nashville Predators",0.641475954000191,"Philadelphia Flyers",0.358524045999809,"Playing At:  Philadelphia Flyers   Home","60-70","Nashville Predators",1
+2023-12-21,"Colorado Avalanche",0.625653411460203,"Ottawa Senators",0.374346588539797,"Playing At:  Colorado Avalanche   Home","60-70","Colorado Avalanche",1
+2023-12-21,"Toronto Maple Leafs",0.592536494594073,"Buffalo Sabres",0.407463505405927,"Playing At:  Buffalo Sabres   Home","55-60","Buffalo Sabres",0
+2023-12-21,"New Jersey Devils",0.586006044381164,"Edmonton Oilers",0.413993955618836,"Playing At:  New Jersey Devils   Home","55-60","Edmonton Oilers",0
+2023-12-21,"Calgary Flames",0.585795989855663,"Anaheim Ducks",0.414204010144337,"Playing At:  Anaheim Ducks   Home","55-60","Calgary Flames",1
+2023-12-21,"Dallas Stars",0.578211165258424,"Vancouver Canucks",0.421788834741576,"Playing At:  Dallas Stars   Home","55-60","Dallas Stars",1
+2023-12-21,"San Jose Sharks",0.527486634869399,"Arizona Coyotes",0.472513365130601,"Playing At:  San Jose Sharks   Home","55 >","Arizona Coyotes",0
+2023-12-21,"Tampa Bay Lightning",0.503920834330252,"Vegas Golden Knights",0.496079165669748,"Playing At:  Tampa Bay Lightning   Home","55 >","Tampa Bay Lightning",1
+2023-12-22,"Boston Bruins",0.703143558832161,"Winnipeg Jets",0.296856441167839,"Playing At:  Winnipeg Jets   Home","70-80","Winnipeg Jets",0
+2023-12-22,"Detroit Red Wings",0.624250678488686,"Philadelphia Flyers",0.375749321511314,"Playing At:  Detroit Red Wings   Home","60-70","Detroit Red Wings",1
+2023-12-22,"New York Rangers",0.609163989187246,"Edmonton Oilers",0.390836010812754,"Playing At:  New York Rangers   Home","60-70","Edmonton Oilers",0
+2023-12-22,"Montreal Canadiens",0.56100593199747,"Chicago Blackhawks",0.43899406800253,"Playing At:  Chicago Blackhawks   Home","55-60","Montreal Canadiens",1
+2023-12-23,"Boston Bruins",0.758042527161052,"Minnesota Wild",0.241957472838948,"Playing At:  Minnesota Wild   Home","70-80","Minnesota Wild",0
+2023-12-23,"Toronto Maple Leafs",0.740028922328364,"Columbus Blue Jackets",0.259971077671636,"Playing At:  Columbus Blue Jackets   Home","70-80","Toronto Maple Leafs",1
+2023-12-23,"Vancouver Canucks",0.73746438470668,"San Jose Sharks",0.26253561529332,"Playing At:  Vancouver Canucks   Home","70-80","Vancouver Canucks",1
+2023-12-23,"Colorado Avalanche",0.737266869955088,"Arizona Coyotes",0.262733130044912,"Playing At:  Colorado Avalanche   Home","70-80","Colorado Avalanche",1
+2023-12-23,"St. Louis Blues",0.71753482436146,"Chicago Blackhawks",0.28246517563854,"Playing At:  St. Louis Blues   Home","70-80","St. Louis Blues",1
+2023-12-23,"New Jersey Devils",0.695064228934915,"Detroit Red Wings",0.304935771065085,"Playing At:  New Jersey Devils   Home","60-70","New Jersey Devils",1
+2023-12-23,"Seattle Kraken",0.685419453617363,"Anaheim Ducks",0.314580546382637,"Playing At:  Anaheim Ducks   Home","60-70","Seattle Kraken",1
+2023-12-23,"Los Angeles Kings",0.672801301623916,"Calgary Flames",0.327198698376084,"Playing At:  Los Angeles Kings   Home","60-70","Los Angeles Kings",1
+2023-12-23,"Tampa Bay Lightning",0.65460234748271,"Washington Capitals",0.34539765251729,"Playing At:  Washington Capitals   Home","60-70","Tampa Bay Lightning",1
+2023-12-23,"Carolina Hurricanes",0.613150673242997,"New York Islanders",0.386849326757003,"Playing At:  Carolina Hurricanes   Home","60-70","New York Islanders",0
+2023-12-23,"New York Rangers",0.566547746873115,"Buffalo Sabres",0.433452253126885,"Playing At:  New York Rangers   Home","55-60","New York Rangers",1
+2023-12-23,"Ottawa Senators",0.520059906300908,"Pittsburgh Penguins",0.479940093699092,"Playing At:  Ottawa Senators   Home","55 >","Ottawa Senators",1
+2023-12-23,"Dallas Stars",0.516422905136299,"Nashville Predators",0.483577094863701,"Playing At:  Nashville Predators   Home","55 >","Dallas Stars",1
+2023-12-23,"Florida Panthers",0.507931563296047,"Vegas Golden Knights",0.492068436703953,"Playing At:  Florida Panthers   Home","55 >","Florida Panthers",1
+2023-12-27,"Los Angeles Kings",0.819806178768429,"San Jose Sharks",0.180193821231571,"Playing At:  Los Angeles Kings   Home","80-85","Los Angeles Kings",1
+2023-12-27,"New Jersey Devils",0.804550945778857,"Columbus Blue Jackets",0.195449054221143,"Playing At:  New Jersey Devils   Home","80-85","New Jersey Devils",1
+2023-12-27,"Boston Bruins",0.791810585944581,"Buffalo Sabres",0.208189414055419,"Playing At:  Buffalo Sabres   Home","70-80","Boston Bruins",1
+2023-12-27,"Colorado Avalanche",0.773073417952001,"Arizona Coyotes",0.226926582047999,"Playing At:  Arizona Coyotes   Home","70-80","Arizona Coyotes",0
+2023-12-27,"Vegas Golden Knights",0.769302323881072,"Anaheim Ducks",0.230697676118928,"Playing At:  Anaheim Ducks   Home","70-80","Anaheim Ducks",0
+2023-12-27,"Winnipeg Jets",0.759830738524481,"Chicago Blackhawks",0.240169261475519,"Playing At:  Chicago Blackhawks   Home","70-80","Chicago Blackhawks",0
+2023-12-27,"New York Rangers",0.74495531588689,"Washington Capitals",0.25504468411311,"Playing At:  New York Rangers   Home","70-80","New York Rangers",1
+2023-12-27,"Toronto Maple Leafs",0.642577901582872,"Ottawa Senators",0.357422098417128,"Playing At:  Toronto Maple Leafs   Home","60-70","Ottawa Senators",0
+2023-12-27,"New York Islanders",0.597798476633297,"Pittsburgh Penguins",0.402201523366703,"Playing At:  New York Islanders   Home","55-60","Pittsburgh Penguins",0
+2023-12-27,"Seattle Kraken",0.597070847894282,"Calgary Flames",0.402929152105718,"Playing At:  Calgary Flames   Home","55-60","Seattle Kraken",1
+2023-12-27,"Dallas Stars",0.580521364314186,"St. Louis Blues",0.419478635685814,"Playing At:  St. Louis Blues   Home","55-60","St. Louis Blues",0
+2023-12-27,"Minnesota Wild",0.55760232137577,"Detroit Red Wings",0.44239767862423,"Playing At:  Minnesota Wild   Home","55-60","Minnesota Wild",1
+2023-12-27,"Carolina Hurricanes",0.553732035390377,"Nashville Predators",0.446267964609623,"Playing At:  Nashville Predators   Home","55-60","Carolina Hurricanes",1
+2023-12-27,"Florida Panthers",0.505609071072441,"Tampa Bay Lightning",0.494390928927559,"Playing At:  Tampa Bay Lightning   Home","55 >","Florida Panthers",1
+2023-12-28,"Carolina Hurricanes",0.75594107396854,"Montreal Canadiens",0.24405892603146,"Playing At:  Carolina Hurricanes   Home","70-80","Carolina Hurricanes",1
+2023-12-28,"Edmonton Oilers",0.718516994155108,"San Jose Sharks",0.281483005844892,"Playing At:  San Jose Sharks   Home","70-80","Edmonton Oilers",1
+2023-12-28,"Vancouver Canucks",0.693096050833548,"Philadelphia Flyers",0.306903949166452,"Playing At:  Vancouver Canucks   Home","60-70","Philadelphia Flyers",0
+2023-12-28,"Vegas Golden Knights",0.557977451552945,"Los Angeles Kings",0.442022548447055,"Playing At:  Vegas Golden Knights   Home","55-60","Vegas Golden Knights",1
+2023-12-29,"Dallas Stars",0.770456580060993,"Chicago Blackhawks",0.229543419939007,"Playing At:  Dallas Stars   Home","70-80","Dallas Stars",1
+2023-12-29,"Toronto Maple Leafs",0.734778099292559,"Columbus Blue Jackets",0.265221900707441,"Playing At:  Columbus Blue Jackets   Home","70-80","Columbus Blue Jackets",0
+2023-12-29,"Colorado Avalanche",0.665329607662242,"St. Louis Blues",0.334670392337758,"Playing At:  St. Louis Blues   Home","60-70","Colorado Avalanche",1
+2023-12-29,"New York Rangers",0.657249556014226,"Florida Panthers",0.342750443985774,"Playing At:  Florida Panthers   Home","60-70","Florida Panthers",0
+2023-12-29,"Seattle Kraken",0.648045724780217,"Philadelphia Flyers",0.351954275219783,"Playing At:  Seattle Kraken   Home","60-70","Seattle Kraken",1
+2023-12-29,"New York Islanders",0.610826438960451,"Washington Capitals",0.389173561039549,"Playing At:  New York Islanders   Home","60-70","New York Islanders",1
+2023-12-29,"Nashville Predators",0.549638721321226,"Detroit Red Wings",0.450361278678774,"Playing At:  Detroit Red Wings   Home","55 >","Detroit Red Wings",0
+2023-12-29,"New Jersey Devils",0.544111419127777,"Ottawa Senators",0.455888580872223,"Playing At:  Ottawa Senators   Home","55 >","New Jersey Devils",1
+2023-12-29,"Anaheim Ducks",0.536532045577717,"Arizona Coyotes",0.463467954422283,"Playing At:  Anaheim Ducks   Home","55 >","Arizona Coyotes",0
+2023-12-30,"Boston Bruins",0.758877152078193,"New Jersey Devils",0.241122847921807,"Playing At:  Boston Bruins   Home","70-80","Boston Bruins",1
+2023-12-30,"Buffalo Sabres",0.695649157050835,"Columbus Blue Jackets",0.304350842949165,"Playing At:  Buffalo Sabres   Home","60-70","Buffalo Sabres",1
+2023-12-30,"Florida Panthers",0.632511287638117,"Montreal Canadiens",0.367488712361883,"Playing At:  Florida Panthers   Home","60-70","Florida Panthers",1
+2023-12-30,"Nashville Predators",0.588957758891327,"Washington Capitals",0.411042241108673,"Playing At:  Washington Capitals   Home","55-60","Nashville Predators",1
+2023-12-30,"Winnipeg Jets",0.572423318234818,"Minnesota Wild",0.427576681765182,"Playing At:  Winnipeg Jets   Home","55-60","Winnipeg Jets",1
+2023-12-30,"Pittsburgh Penguins",0.572266942560629,"St. Louis Blues",0.427733057439371,"Playing At:  Pittsburgh Penguins   Home","55-60","Pittsburgh Penguins",1
+2023-12-30,"Los Angeles Kings",0.56021370160344,"Edmonton Oilers",0.43978629839656,"Playing At:  Los Angeles Kings   Home","55-60","Edmonton Oilers",0
+2023-12-30,"New York Rangers",0.557854578198634,"Tampa Bay Lightning",0.442145421801366,"Playing At:  Tampa Bay Lightning   Home","55-60","New York Rangers",1
+2023-12-30,"Carolina Hurricanes",0.515701554920873,"Toronto Maple Leafs",0.484298445079127,"Playing At:  Toronto Maple Leafs   Home","55 >","Carolina Hurricanes",1
+2023-12-31,"Colorado Avalanche",0.845846926217873,"San Jose Sharks",0.154153073782127,"Playing At:  Colorado Avalanche   Home","80-85","Colorado Avalanche",1
+2023-12-31,"Boston Bruins",0.793067978850582,"Detroit Red Wings",0.206932021149418,"Playing At:  Detroit Red Wings   Home","70-80","Boston Bruins",1
+2023-12-31,"Dallas Stars",0.784451399991642,"Chicago Blackhawks",0.215548600008358,"Playing At:  Dallas Stars   Home","70-80","Dallas Stars",1
+2023-12-31,"Edmonton Oilers",0.732880518270566,"Anaheim Ducks",0.267119481729434,"Playing At:  Anaheim Ducks   Home","70-80","Edmonton Oilers",1
+2023-12-31,"Tampa Bay Lightning",0.660115401590257,"Montreal Canadiens",0.339884598409743,"Playing At:  Tampa Bay Lightning   Home","60-70","Tampa Bay Lightning",1
+2023-12-31,"Calgary Flames",0.5822523603771,"Philadelphia Flyers",0.4177476396229,"Playing At:  Calgary Flames   Home","55-60","Calgary Flames",1
+2023-12-31,"Ottawa Senators",0.565781157437142,"Buffalo Sabres",0.434218842562858,"Playing At:  Ottawa Senators   Home","55-60","Ottawa Senators",1
+2023-12-31,"Winnipeg Jets",0.561236200221336,"Minnesota Wild",0.438763799778664,"Playing At:  Minnesota Wild   Home","55-60","Winnipeg Jets",1
+2023-12-31,"New York Islanders",0.50829005150213,"Pittsburgh Penguins",0.49170994849787,"Playing At:  Pittsburgh Penguins   Home","55 >","Pittsburgh Penguins",0
+2024-01-01,"Vegas Golden Knights",0.591385827917023,"Seattle Kraken",0.408614172082977,"Playing At:  Seattle Kraken   Home","55-60","Seattle Kraken",0
+2024-01-02,"Boston Bruins",0.864123829076154,"Columbus Blue Jackets",0.135876170923846,"Playing At:  Columbus Blue Jackets   Home","85 <","Boston Bruins",1
+2024-01-02,"Nashville Predators",0.807092602139111,"Chicago Blackhawks",0.192907397860889,"Playing At:  Nashville Predators   Home","80-85","Nashville Predators",1
+2024-01-02,"Dallas Stars",0.719273032216177,"Montreal Canadiens",0.280726967783823,"Playing At:  Dallas Stars   Home","70-80","Montreal Canadiens",0
+2024-01-02,"Edmonton Oilers",0.704841251406813,"Philadelphia Flyers",0.295158748593187,"Playing At:  Edmonton Oilers   Home","70-80","Edmonton Oilers",1
+2024-01-02,"Detroit Red Wings",0.68200133042264,"San Jose Sharks",0.31799866957736,"Playing At:  San Jose Sharks   Home","60-70","Detroit Red Wings",1
+2024-01-02,"Colorado Avalanche",0.665029980821752,"New York Islanders",0.334970019178248,"Playing At:  Colorado Avalanche   Home","60-70","Colorado Avalanche",1
+2024-01-02,"Minnesota Wild",0.634202204509927,"Calgary Flames",0.365797795490073,"Playing At:  Minnesota Wild   Home","60-70","Calgary Flames",0
+2024-01-02,"Florida Panthers",0.613757202332309,"Arizona Coyotes",0.386242797667691,"Playing At:  Arizona Coyotes   Home","60-70","Florida Panthers",1
+2024-01-02,"Vancouver Canucks",0.605510348379605,"Ottawa Senators",0.394489651620395,"Playing At:  Vancouver Canucks   Home","60-70","Vancouver Canucks",1
+2024-01-02,"Winnipeg Jets",0.567178126322808,"Tampa Bay Lightning",0.432821873677192,"Playing At:  Winnipeg Jets   Home","55-60","Winnipeg Jets",1
+2024-01-02,"Pittsburgh Penguins",0.560364583356415,"Washington Capitals",0.439635416643585,"Playing At:  Pittsburgh Penguins   Home","55-60","Washington Capitals",0
+2024-01-02,"Los Angeles Kings",0.509646455329842,"Toronto Maple Leafs",0.490353544670158,"Playing At:  Los Angeles Kings   Home","55 >","Toronto Maple Leafs",0
+2024-01-02,"New York Rangers",0.500100213369386,"Carolina Hurricanes",0.499899786630614,"Playing At:  New York Rangers   Home","55 >","Carolina Hurricanes",0
+2024-01-03,"Toronto Maple Leafs",0.772853431221945,"Anaheim Ducks",0.227146568778055,"Playing At:  Anaheim Ducks   Home","70-80","Toronto Maple Leafs",1
+2024-01-03,"New Jersey Devils",0.660583792163594,"Washington Capitals",0.339416207836406,"Playing At:  Washington Capitals   Home","60-70","New Jersey Devils",1
+2024-01-04,"New York Rangers",0.837382976501054,"Chicago Blackhawks",0.162617023498946,"Playing At:  New York Rangers   Home","80-85","New York Rangers",1
+2024-01-04,"Los Angeles Kings",0.730461538001353,"Detroit Red Wings",0.269538461998647,"Playing At:  Los Angeles Kings   Home","70-80","Detroit Red Wings",0
+2024-01-04,"Winnipeg Jets",0.730044307274388,"San Jose Sharks",0.269955692725612,"Playing At:  San Jose Sharks   Home","70-80","Winnipeg Jets",1
+2024-01-04,"Boston Bruins",0.728442917871806,"Pittsburgh Penguins",0.271557082128194,"Playing At:  Boston Bruins   Home","70-80","Pittsburgh Penguins",0
+2024-01-04,"Nashville Predators",0.637735822020098,"Calgary Flames",0.362264177979902,"Playing At:  Nashville Predators   Home","60-70","Calgary Flames",0
+2024-01-04,"Seattle Kraken",0.604732236547462,"Ottawa Senators",0.395267763452538,"Playing At:  Seattle Kraken   Home","60-70","Seattle Kraken",1
+2024-01-04,"New York Islanders",0.601249861052305,"Arizona Coyotes",0.398750138947695,"Playing At:  Arizona Coyotes   Home","60-70","New York Islanders",1
+2024-01-04,"Philadelphia Flyers",0.593415553560909,"Columbus Blue Jackets",0.406584446439091,"Playing At:  Philadelphia Flyers   Home","55-60","Columbus Blue Jackets",0
+2024-01-04,"Vegas Golden Knights",0.583771723925381,"Florida Panthers",0.416228276074619,"Playing At:  Vegas Golden Knights   Home","55-60","Florida Panthers",0
+2024-01-04,"Minnesota Wild",0.556766434490964,"Tampa Bay Lightning",0.443233565509036,"Playing At:  Minnesota Wild   Home","55-60","Tampa Bay Lightning",0
+2024-01-04,"Colorado Avalanche",0.53592866979873,"Dallas Stars",0.46407133020127,"Playing At:  Dallas Stars   Home","55 >","Colorado Avalanche",1
+2024-01-04,"Buffalo Sabres",0.530549772066835,"Montreal Canadiens",0.469450227933165,"Playing At:  Montreal Canadiens   Home","55 >","Buffalo Sabres",1
+2024-01-04,"Vancouver Canucks",0.526073599480424,"St. Louis Blues",0.473926400519576,"Playing At:  St. Louis Blues   Home","55 >","St. Louis Blues",0
+2024-01-05,"New Jersey Devils",0.855899618890899,"Chicago Blackhawks",0.144100381109101,"Playing At:  New Jersey Devils   Home","85 <","New Jersey Devils",1
+2024-01-05,"Winnipeg Jets",0.659131362457222,"Anaheim Ducks",0.340868637542778,"Playing At:  Anaheim Ducks   Home","60-70","Winnipeg Jets",1
+2024-01-05,"Carolina Hurricanes",0.549935263314189,"Washington Capitals",0.450064736685811,"Playing At:  Washington Capitals   Home","55 >","Carolina Hurricanes",1
+2024-01-06,"Toronto Maple Leafs",0.758151123076061,"San Jose Sharks",0.241848876923939,"Playing At:  San Jose Sharks   Home","70-80","Toronto Maple Leafs",1
+2024-01-06,"New York Rangers",0.714786845636087,"Montreal Canadiens",0.285213154363913,"Playing At:  Montreal Canadiens   Home","70-80","Montreal Canadiens",0
+2024-01-06,"Boston Bruins",0.713458748583297,"Tampa Bay Lightning",0.286541251416703,"Playing At:  Boston Bruins   Home","70-80","Boston Bruins",1
+2024-01-06,"Minnesota Wild",0.712831925626981,"Columbus Blue Jackets",0.287168074373019,"Playing At:  Columbus Blue Jackets   Home","70-80","Minnesota Wild",1
+2024-01-06,"Edmonton Oilers",0.668520047448222,"Ottawa Senators",0.331479952551778,"Playing At:  Edmonton Oilers   Home","60-70","Edmonton Oilers",1
+2024-01-06,"Carolina Hurricanes",0.661910106957784,"St. Louis Blues",0.338089893042216,"Playing At:  Carolina Hurricanes   Home","60-70","St. Louis Blues",0
+2024-01-06,"Vegas Golden Knights",0.618794775338342,"New York Islanders",0.381205224661658,"Playing At:  Vegas Golden Knights   Home","60-70","Vegas Golden Knights",1
+2024-01-06,"New Jersey Devils",0.58188394026699,"Vancouver Canucks",0.41811605973301,"Playing At:  New Jersey Devils   Home","55-60","Vancouver Canucks",0
+2024-01-06,"Colorado Avalanche",0.570325905822316,"Florida Panthers",0.429674094177684,"Playing At:  Colorado Avalanche   Home","55-60","Florida Panthers",0
+2024-01-06,"Pittsburgh Penguins",0.559774742242928,"Buffalo Sabres",0.440225257757072,"Playing At:  Pittsburgh Penguins   Home","55-60","Buffalo Sabres",0
+2024-01-06,"Dallas Stars",0.547629715632142,"Nashville Predators",0.452370284367858,"Playing At:  Dallas Stars   Home","55 >","Nashville Predators",0
+2024-01-06,"Philadelphia Flyers",0.519105929089424,"Calgary Flames",0.480894070910576,"Playing At:  Philadelphia Flyers   Home","55 >","Philadelphia Flyers",1
+2024-01-07,"Winnipeg Jets",0.67414313439454,"Arizona Coyotes",0.32585686560546,"Playing At:  Arizona Coyotes   Home","60-70","Winnipeg Jets",1
+2024-01-07,"Los Angeles Kings",0.641105781196004,"Washington Capitals",0.358894218803996,"Playing At:  Washington Capitals   Home","60-70","Washington Capitals",0
+2024-01-07,"Detroit Red Wings",0.610546518303528,"Anaheim Ducks",0.389453481696472,"Playing At:  Anaheim Ducks   Home","60-70","Detroit Red Wings",1
+2024-01-07,"Calgary Flames",0.579273534384161,"Chicago Blackhawks",0.420726465615839,"Playing At:  Chicago Blackhawks   Home","55-60","Chicago Blackhawks",0
+2024-01-08,"Boston Bruins",0.625479031886355,"Colorado Avalanche",0.374520968113645,"Playing At:  Colorado Avalanche   Home","60-70","Colorado Avalanche",0
+2024-01-08,"New York Rangers",0.600137742506923,"Vancouver Canucks",0.399862257493077,"Playing At:  New York Rangers   Home","60-70","Vancouver Canucks",0
+2024-01-08,"Pittsburgh Penguins",0.560864970651455,"Philadelphia Flyers",0.439135029348545,"Playing At:  Philadelphia Flyers   Home","55-60","Pittsburgh Penguins",1
+2024-01-08,"Dallas Stars",0.536291646640139,"Minnesota Wild",0.463708353359861,"Playing At:  Minnesota Wild   Home","55 >","Dallas Stars",1
+2024-01-09,"Boston Bruins",0.790229482224656,"Arizona Coyotes",0.209770517775344,"Playing At:  Arizona Coyotes   Home","70-80","Arizona Coyotes",0
+2024-01-09,"Toronto Maple Leafs",0.760516266785911,"San Jose Sharks",0.239483733214089,"Playing At:  Toronto Maple Leafs   Home","70-80","Toronto Maple Leafs",1
+2024-01-09,"Winnipeg Jets",0.750511227517735,"Columbus Blue Jackets",0.249488772482265,"Playing At:  Winnipeg Jets   Home","70-80","Winnipeg Jets",1
+2024-01-09,"Nashville Predators",0.715185702049088,"Anaheim Ducks",0.284814297950912,"Playing At:  Nashville Predators   Home","70-80","Anaheim Ducks",0
+2024-01-09,"Edmonton Oilers",0.695703544949819,"Chicago Blackhawks",0.304296455050181,"Playing At:  Chicago Blackhawks   Home","60-70","Edmonton Oilers",1
+2024-01-09,"New York Islanders",0.556455760656178,"Vancouver Canucks",0.443544239343822,"Playing At:  New York Islanders   Home","55-60","Vancouver Canucks",0
+2024-01-09,"Los Angeles Kings",0.551279651464847,"Tampa Bay Lightning",0.448720348535153,"Playing At:  Tampa Bay Lightning   Home","55-60","Tampa Bay Lightning",0
+2024-01-09,"Florida Panthers",0.534979181757198,"St. Louis Blues",0.465020818242802,"Playing At:  St. Louis Blues   Home","55 >","Florida Panthers",1
+2024-01-09,"Ottawa Senators",0.523545328904977,"Calgary Flames",0.476454671095023,"Playing At:  Calgary Flames   Home","55 >","Calgary Flames",0
+2024-01-09,"Buffalo Sabres",0.513744882370249,"Seattle Kraken",0.486255117629751,"Playing At:  Buffalo Sabres   Home","55 >","Seattle Kraken",0
+2024-01-10,"Dallas Stars",0.585446337309359,"Minnesota Wild",0.414553662690641,"Playing At:  Dallas Stars   Home","55-60","Dallas Stars",1
+2024-01-10,"Philadelphia Flyers",0.540534537146481,"Montreal Canadiens",0.459465462853519,"Playing At:  Philadelphia Flyers   Home","55 >","Philadelphia Flyers",1
+2024-01-10,"Colorado Avalanche",0.520536687447221,"Vegas Golden Knights",0.479463312552779,"Playing At:  Colorado Avalanche   Home","55 >","Colorado Avalanche",1
+2024-01-11,"Carolina Hurricanes",0.827749426852771,"Anaheim Ducks",0.172250573147229,"Playing At:  Carolina Hurricanes   Home","80-85","Carolina Hurricanes",1
+2024-01-11,"Winnipeg Jets",0.756299573651001,"Chicago Blackhawks",0.243700426348999,"Playing At:  Winnipeg Jets   Home","70-80","Winnipeg Jets",1
+2024-01-11,"New York Rangers",0.687874223915771,"St. Louis Blues",0.312125776084229,"Playing At:  St. Louis Blues   Home","60-70","St. Louis Blues",0
+2024-01-11,"Boston Bruins",0.646085077607031,"Vegas Golden Knights",0.353914922392969,"Playing At:  Vegas Golden Knights   Home","60-70","Vegas Golden Knights",0
+2024-01-11,"Montreal Canadiens",0.59647642672921,"San Jose Sharks",0.40352357327079,"Playing At:  Montreal Canadiens   Home","55-60","San Jose Sharks",0
+2024-01-11,"Edmonton Oilers",0.568777362239516,"Detroit Red Wings",0.431222637760484,"Playing At:  Detroit Red Wings   Home","55-60","Edmonton Oilers",1
+2024-01-11,"Arizona Coyotes",0.563212403651589,"Calgary Flames",0.436787596348411,"Playing At:  Arizona Coyotes   Home","55-60","Calgary Flames",0
+2024-01-11,"New Jersey Devils",0.549024706638789,"Tampa Bay Lightning",0.450975293361211,"Playing At:  Tampa Bay Lightning   Home","55 >","Tampa Bay Lightning",0
+2024-01-11,"Toronto Maple Leafs",0.538366286417512,"New York Islanders",0.461633713582488,"Playing At:  New York Islanders   Home","55 >","New York Islanders",0
+2024-01-11,"Los Angeles Kings",0.511691785636372,"Florida Panthers",0.488308214363628,"Playing At:  Florida Panthers   Home","55 >","Florida Panthers",0
+2024-01-11,"Ottawa Senators",0.509853023793745,"Buffalo Sabres",0.490146976206255,"Playing At:  Buffalo Sabres   Home","55 >","Buffalo Sabres",0
+2024-01-11,"Seattle Kraken",0.506097011788246,"Washington Capitals",0.493902988211754,"Playing At:  Washington Capitals   Home","55 >","Seattle Kraken",1
+2024-01-11,"Vancouver Canucks",0.505755948476477,"Pittsburgh Penguins",0.494244051523523,"Playing At:  Pittsburgh Penguins   Home","55 >","Vancouver Canucks",1
+2024-01-12,"Minnesota Wild",0.664354630308832,"Philadelphia Flyers",0.335645369691168,"Playing At:  Minnesota Wild   Home","60-70","Philadelphia Flyers",0
+2024-01-12,"Dallas Stars",0.534180732725567,"Nashville Predators",0.465819267274433,"Playing At:  Dallas Stars   Home","55 >","Nashville Predators",0
+2024-01-13,"Boston Bruins",0.793273263010942,"St. Louis Blues",0.206726736989058,"Playing At:  St. Louis Blues   Home","70-80","Boston Bruins",1
+2024-01-13,"Tampa Bay Lightning",0.77601482906651,"Anaheim Ducks",0.22398517093349,"Playing At:  Tampa Bay Lightning   Home","70-80","Tampa Bay Lightning",1
+2024-01-13,"Vegas Golden Knights",0.735121337860677,"Calgary Flames",0.264878662139323,"Playing At:  Vegas Golden Knights   Home","70-80","Calgary Flames",0
+2024-01-13,"Ottawa Senators",0.729779971079626,"San Jose Sharks",0.270220028920374,"Playing At:  Ottawa Senators   Home","70-80","Ottawa Senators",1
+2024-01-13,"Dallas Stars",0.719223378514619,"Chicago Blackhawks",0.280776621485381,"Playing At:  Chicago Blackhawks   Home","70-80","Dallas Stars",1
+2024-01-13,"Seattle Kraken",0.709587553971774,"Columbus Blue Jackets",0.290412446028226,"Playing At:  Columbus Blue Jackets   Home","70-80","Seattle Kraken",1
+2024-01-13,"New York Rangers",0.708331422133805,"Washington Capitals",0.291668577866195,"Playing At:  Washington Capitals   Home","70-80","Washington Capitals",0
+2024-01-13,"Los Angeles Kings",0.676337152015914,"Detroit Red Wings",0.323662847984086,"Playing At:  Detroit Red Wings   Home","60-70","Detroit Red Wings",0
+2024-01-13,"Edmonton Oilers",0.671853444595888,"Montreal Canadiens",0.328146555404112,"Playing At:  Montreal Canadiens   Home","60-70","Edmonton Oilers",1
+2024-01-13,"Minnesota Wild",0.667811452276629,"Arizona Coyotes",0.332188547723371,"Playing At:  Minnesota Wild   Home","60-70","Arizona Coyotes",0
+2024-01-13,"Winnipeg Jets",0.660064196143386,"Philadelphia Flyers",0.339935803856614,"Playing At:  Winnipeg Jets   Home","60-70","Philadelphia Flyers",0
+2024-01-13,"Carolina Hurricanes",0.640445832804258,"Pittsburgh Penguins",0.359554167195742,"Playing At:  Carolina Hurricanes   Home","60-70","Carolina Hurricanes",1
+2024-01-13,"Vancouver Canucks",0.53750492232805,"Buffalo Sabres",0.46249507767195,"Playing At:  Buffalo Sabres   Home","55 >","Vancouver Canucks",1
+2024-01-13,"New York Islanders",0.531911432743294,"Nashville Predators",0.468088567256706,"Playing At:  Nashville Predators   Home","55 >","Nashville Predators",0
+2024-01-13,"Colorado Avalanche",0.530502237337921,"Toronto Maple Leafs",0.469497762662079,"Playing At:  Toronto Maple Leafs   Home","55 >","Colorado Avalanche",1
+2024-01-13,"New Jersey Devils",0.52099758704792,"Florida Panthers",0.47900241295208,"Playing At:  Florida Panthers   Home","55 >","New Jersey Devils",1
+2024-01-14,"New York Rangers",0.737430408362335,"Washington Capitals",0.262569591637665,"Playing At:  New York Rangers   Home","70-80","New York Rangers",1
+2024-01-14,"Toronto Maple Leafs",0.637348773144326,"Detroit Red Wings",0.362651226855674,"Playing At:  Toronto Maple Leafs   Home","60-70","Detroit Red Wings",0
+2024-01-15,"Florida Panthers",0.79749624130801,"Anaheim Ducks",0.20250375869199,"Playing At:  Florida Panthers   Home","70-80","Anaheim Ducks",0
+2024-01-15,"Buffalo Sabres",0.769694623995507,"San Jose Sharks",0.230305376004493,"Playing At:  Buffalo Sabres   Home","70-80","Buffalo Sabres",1
+2024-01-15,"Colorado Avalanche",0.743990756390539,"Montreal Canadiens",0.256009243609461,"Playing At:  Montreal Canadiens   Home","70-80","Montreal Canadiens",0
+2024-01-15,"Vancouver Canucks",0.736820057855837,"Columbus Blue Jackets",0.263179942144163,"Playing At:  Columbus Blue Jackets   Home","70-80","Columbus Blue Jackets",0
+2024-01-15,"Boston Bruins",0.673306156736395,"New Jersey Devils",0.326693843263605,"Playing At:  Boston Bruins   Home","60-70","Boston Bruins",1
+2024-01-15,"St. Louis Blues",0.630092239172372,"Philadelphia Flyers",0.369907760827628,"Playing At:  St. Louis Blues   Home","60-70","Philadelphia Flyers",0
+2024-01-15,"Vegas Golden Knights",0.609927072093366,"Nashville Predators",0.390072927906634,"Playing At:  Vegas Golden Knights   Home","60-70","Vegas Golden Knights",1
+2024-01-15,"Minnesota Wild",0.59225558086969,"New York Islanders",0.40774441913031,"Playing At:  Minnesota Wild   Home","55-60","Minnesota Wild",1
+2024-01-15,"Carolina Hurricanes",0.520449962424727,"Los Angeles Kings",0.479550037575273,"Playing At:  Carolina Hurricanes   Home","55 >","Los Angeles Kings",0
+2024-01-15,"Pittsburgh Penguins",0.512649101365619,"Seattle Kraken",0.487350898634381,"Playing At:  Pittsburgh Penguins   Home","55 >","Pittsburgh Penguins",1
+2024-01-16,"New York Rangers",0.672532411818342,"Seattle Kraken",0.327467588181658,"Playing At:  New York Rangers   Home","60-70","New York Rangers",1
+2024-01-16,"Washington Capitals",0.64193490729847,"Anaheim Ducks",0.35806509270153,"Playing At:  Washington Capitals   Home","60-70","Washington Capitals",1
+2024-01-16,"Colorado Avalanche",0.580743659289553,"Ottawa Senators",0.419256340710447,"Playing At:  Ottawa Senators   Home","55-60","Colorado Avalanche",1
+2024-01-16,"Winnipeg Jets",0.575024477832114,"New York Islanders",0.424975522167886,"Playing At:  Winnipeg Jets   Home","55-60","Winnipeg Jets",1
+2024-01-16,"Calgary Flames",0.555661126684488,"Arizona Coyotes",0.444338873315512,"Playing At:  Calgary Flames   Home","55-60","Calgary Flames",1
+2024-01-16,"Chicago Blackhawks",0.515999744281362,"San Jose Sharks",0.484000255718638,"Playing At:  Chicago Blackhawks   Home","55 >","Chicago Blackhawks",1
+2024-01-16,"Edmonton Oilers",0.509447499460202,"Toronto Maple Leafs",0.490552500539798,"Playing At:  Edmonton Oilers   Home","55 >","Edmonton Oilers",1
+2024-01-16,"Los Angeles Kings",0.50766624617291,"Dallas Stars",0.49233375382709,"Playing At:  Dallas Stars   Home","55 >","Dallas Stars",0
+2024-01-17,"New Jersey Devils",0.759942638191425,"Montreal Canadiens",0.240057361808575,"Playing At:  New Jersey Devils   Home","70-80","Montreal Canadiens",0
+2024-01-17,"Florida Panthers",0.619366689097833,"Detroit Red Wings",0.380633310902167,"Playing At:  Florida Panthers   Home","60-70","Detroit Red Wings",0
+2024-01-18,"Boston Bruins",0.729489141106815,"Colorado Avalanche",0.270510858893185,"Playing At:  Boston Bruins   Home","70-80","Boston Bruins",1
+2024-01-18,"Buffalo Sabres",0.713068505879803,"Chicago Blackhawks",0.286931494120197,"Playing At:  Buffalo Sabres   Home","70-80","Buffalo Sabres",1
+2024-01-18,"Edmonton Oilers",0.682402517942168,"Seattle Kraken",0.317597482057832,"Playing At:  Edmonton Oilers   Home","60-70","Edmonton Oilers",1
+2024-01-18,"Dallas Stars",0.633357173458211,"Philadelphia Flyers",0.366642826541789,"Playing At:  Philadelphia Flyers   Home","60-70","Philadelphia Flyers",0
+2024-01-18,"Toronto Maple Leafs",0.615785616774827,"Calgary Flames",0.384214383225173,"Playing At:  Calgary Flames   Home","60-70","Toronto Maple Leafs",1
+2024-01-18,"Vancouver Canucks",0.61541386042804,"Arizona Coyotes",0.38458613957196,"Playing At:  Vancouver Canucks   Home","60-70","Vancouver Canucks",1
+2024-01-18,"Ottawa Senators",0.578280280458778,"Montreal Canadiens",0.421719719541222,"Playing At:  Ottawa Senators   Home","55-60","Ottawa Senators",1
+2024-01-18,"Tampa Bay Lightning",0.554656777972479,"Minnesota Wild",0.445343222027521,"Playing At:  Tampa Bay Lightning   Home","55-60","Tampa Bay Lightning",1
+2024-01-18,"Washington Capitals",0.536107381335611,"St. Louis Blues",0.463892618664389,"Playing At:  Washington Capitals   Home","55 >","Washington Capitals",1
+2024-01-18,"Los Angeles Kings",0.52445850667988,"Nashville Predators",0.47554149332012,"Playing At:  Los Angeles Kings   Home","55 >","Nashville Predators",0
+2024-01-18,"Vegas Golden Knights",0.510054567652084,"New York Rangers",0.489945432347916,"Playing At:  Vegas Golden Knights   Home","55 >","Vegas Golden Knights",1
+2024-01-19,"New Jersey Devils",0.747233982514258,"Columbus Blue Jackets",0.252766017485742,"Playing At:  Columbus Blue Jackets   Home","70-80","New Jersey Devils",1
+2024-01-19,"Carolina Hurricanes",0.710698687526703,"Detroit Red Wings",0.289301312473297,"Playing At:  Carolina Hurricanes   Home","70-80","Carolina Hurricanes",1
+2024-01-19,"New York Islanders",0.687412417437029,"Chicago Blackhawks",0.312587582562971,"Playing At:  Chicago Blackhawks   Home","60-70","Chicago Blackhawks",0
+2024-01-19,"Florida Panthers",0.603443999840949,"Minnesota Wild",0.396556000159051,"Playing At:  Florida Panthers   Home","60-70","Minnesota Wild",0
