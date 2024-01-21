@@ -25,13 +25,10 @@ homes <- games %>%
   rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor, "GA" = `Vistor Score`) %>%
   mutate(Location = "Home")
 
-
-
 visits <- games %>%
   select(Date, Vistor, `Vistor Score`, Visitor_Win, Home, `Home Score`) %>%
   rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
   mutate(Location = "Road")
-
 
 games <- rbind(homes, visits)
 
@@ -135,7 +132,6 @@ sequence_data <- games %>%
   select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
 
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
-
 
 games1 <- games %>%
   mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
@@ -247,7 +243,7 @@ train <- train %>%
 # 
 # end - start
 # 
-# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA2.RDS")
+# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
 
 #R squared of 0.612609
 
@@ -257,66 +253,64 @@ train <- train %>%
 
 #Recall of 0.5263
 
-model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA2.RDS")
+model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
 
-varImp(model)
-
-preds <- predict(model, newdata = test1, type = "prob")
-
-test1 <- cbind(test1, preds)
-
-test1$Win_Probability <- test1$W
-
-test1$pred_abs <- ifelse(test1$L > test1$W, "L", "W")
-
-test1 <- cbind(test1, actuals)
-
-test1$pred_abs1 <- ifelse(test1$Win == test1$pred_abs, 1, 0)
-
-Calc <- test1
-
-Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
-
-Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
-
-Calc$Residual <- Calc$Win1 - Calc$Pred1
-
-Calc$Residual <- abs(Calc$Residual)
-
-Calc$Residual <- Calc$Residual^2
-
-RSS <- sum(Calc$Residual)
-
-Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
-
-Calc$Residual <- Calc$Residual^2
-
-TSS <- sum(Calc$Residual)
-
-Rsquared <- abs(1-(RSS/TSS))
-
-library(MLmetrics)
-
-Calc <- test1 %>%
-  select(Win, W, L) %>%
-  mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
-  rename("obs" = Win) %>%
-  mutate(obs = as.factor(obs))
-
-prSummary(Calc, lev = levels(Calc$obs))
-
-
-sum(test1$pred_abs1)/nrow(test1)
-
-confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
-
-test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
-
-test2 <- test1 %>%
-  filter(highest >= .7)
-
-sum(test2$pred_abs1)/nrow(test2)
-
+# varImp(model)
+# 
+# preds <- predict(model, newdata = test1, type = "prob")
+# 
+# test1 <- cbind(test1, preds)
+# 
+# test1$Win_Probability <- test1$W
+# 
+# test1$pred_abs <- ifelse(test1$L > test1$W, "L", "W")
+# 
+# test1 <- cbind(test1, actuals)
+# 
+# test1$pred_abs1 <- ifelse(test1$Win == test1$pred_abs, 1, 0)
+# 
+# Calc <- test1
+# 
+# Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
+# 
+# Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
+# 
+# Calc$Residual <- Calc$Win1 - Calc$Pred1
+# 
+# Calc$Residual <- abs(Calc$Residual)
+# 
+# Calc$Residual <- Calc$Residual^2
+# 
+# RSS <- sum(Calc$Residual)
+# 
+# Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
+# 
+# Calc$Residual <- Calc$Residual^2
+# 
+# TSS <- sum(Calc$Residual)
+# 
+# Rsquared <- abs(1-(RSS/TSS))
+# 
+# library(MLmetrics)
+# 
+# Calc <- test1 %>%
+#   select(Win, W, L) %>%
+#   mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
+#   rename("obs" = Win) %>%
+#   mutate(obs = as.factor(obs))
+# 
+# prSummary(Calc, lev = levels(Calc$obs))
+# 
+# sum(test1$pred_abs1)/nrow(test1)
+# 
+# confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
+# 
+# test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
+# 
+# test2 <- test1 %>%
+#   filter(highest >= .7)
+# 
+# sum(test2$pred_abs1)/nrow(test2)
 
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
@@ -339,19 +333,15 @@ attributes <- games %>%
   arrange(Date) %>%
   ungroup()
 
-
 homes <- next_week %>%
   select(Date, Home, `Home Score`, Home_Win, Vistor, `Vistor Score`) %>%
   rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor, "GA" = `Vistor Score`) %>%
   mutate(Location = "Home")
 
-
-
 visits <- next_week %>%
   select(Date, Vistor, `Vistor Score`, Visitor_Win, Home, `Home Score`) %>%
   rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
   mutate(Location = "Road")
-
 
 next_week <- rbind(homes, visits)
 
@@ -481,7 +471,6 @@ next_week1$Winner <- ifelse(next_week1$L > next_week1$W, next_week1$Opponent, ne
 
 next_week1$Loser <- ifelse(next_week1$L > next_week1$W, next_week1$Team, next_week1$Opponent)
 
-
 next_week1$Confidence <- ifelse(next_week1$L > next_week1$W, next_week1$L, next_week1$W)
 
 next_week1 <- next_week1 %>%
@@ -516,7 +505,8 @@ thomas <- prediction_data %>%
   rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence) %>%
   mutate(Category = case_when(`Winner Probability` > .85 ~ "85 <",
                               `Winner Probability` > .8 & `Winner Probability` <= .85 ~ "80-85",
-                              `Winner Probability` > .7 & `Winner Probability` <= .8 ~ "70-80",
+                              `Winner Probability` > .75 & `Winner Probability` <= .8 ~ "75-80",
+                              `Winner Probability` > .70 & `Winner Probability` <= .75 ~ "70-75",
                               `Winner Probability` > .6 & `Winner Probability` <= .7 ~ "60-70",
                               `Winner Probability` > .55 & `Winner Probability` <= .6 ~ "55-60",
                               `Winner Probability` <= .55 ~ "55 >",
@@ -527,7 +517,20 @@ thomas <- prediction_data %>%
 write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/PDA Today Results.csv")
 
 
-# predictions <- read_csv("C:/Users/thigg/Desktop/Hockey Models/RF Predictions.csv")
+# predictions <- read_csv("C:/Users/thigg/Desktop/Hockey Models/temp.csv")
+# 
+# predictions <- predictions %>%
+#   mutate(Category = case_when(`Winner Probability` > .85 ~ "85 <",
+#                               `Winner Probability` > .8 & `Winner Probability` <= .85 ~ "80-85",
+#                               `Winner Probability` > .75 & `Winner Probability` <= .8 ~ "75-80",
+#                               `Winner Probability` > .70 & `Winner Probability` <= .75 ~ "70-75",
+#                               `Winner Probability` > .6 & `Winner Probability` <= .7 ~ "60-70",
+#                               `Winner Probability` > .55 & `Winner Probability` <= .6 ~ "55-60",
+#                               `Winner Probability` <= .55 ~ "55 >",
+#                               TRUE ~ "Thomas"))
+# 
+# write_csv(predictions, "C:/Users/thigg/Desktop/Hockey Models/temp.csv")
+
 # 
 # predictions$Site <- gsub("Playing At: ", "", predictions$Site)
 # predictions$Site <- gsub(" Home", "", predictions$Site)
