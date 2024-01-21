@@ -3,6 +3,7 @@
 library(tidyverse)
 library(lubridate)
 library(scales)
+library(readxl)
 # library(car)
 
 schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
@@ -204,34 +205,11 @@ sequence_data1 <- sequence_data1 %>%
 
 library(caret)
 
-set.seed(31)
-Train_Index <- createDataPartition(sequence_data1$Win, p = .95, 
-                                   list = F, 
-                                   times = 1)
-train <- sequence_data1[ Train_Index,]
-test  <- sequence_data1[-Train_Index,]
-
-train <- train %>%
-  ungroup() %>%
-  as.data.frame()
+train <- sequence_data1 %>%
+  select(-GF, -GA)
 
 train <- train[complete.cases(train),]
-
-test <- test %>%
-  ungroup() %>%
-  as.data.frame()
-
-test <- test[complete.cases(test),]
-
-test1 <- test %>%
-  select(-Win, -GF, -GA)
-
-actuals <- test %>%
-  select(Win, GF, GA)
-
-train <- train %>%
-  select(Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Win, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, hot_score)
-
+  
 # start <- Sys.time()
 # 
 # model <- train(Win ~ .,
@@ -245,73 +223,66 @@ train <- train %>%
 # 
 # saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
 
-#R squared of 0.612609
-
-#AUC of 0.601434
-
-#Precision of 0.6097
-
-#Recall of 0.5263
-
 model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
 
-# varImp(model)
-# 
-# preds <- predict(model, newdata = test1, type = "prob")
-# 
-# test1 <- cbind(test1, preds)
-# 
-# test1$Win_Probability <- test1$W
-# 
-# test1$pred_abs <- ifelse(test1$L > test1$W, "L", "W")
-# 
-# test1 <- cbind(test1, actuals)
-# 
-# test1$pred_abs1 <- ifelse(test1$Win == test1$pred_abs, 1, 0)
-# 
-# Calc <- test1
-# 
-# Calc$Win1 <- ifelse(Calc$Win == "W", 1, 0)
-# 
-# Calc$Pred1 <- ifelse(Calc$pred_abs == "W", 1, 0)
-# 
-# Calc$Residual <- Calc$Win1 - Calc$Pred1
-# 
-# Calc$Residual <- abs(Calc$Residual)
-# 
-# Calc$Residual <- Calc$Residual^2
-# 
-# RSS <- sum(Calc$Residual)
-# 
-# Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
-# 
-# Calc$Residual <- Calc$Residual^2
-# 
-# TSS <- sum(Calc$Residual)
-# 
-# Rsquared <- abs(1-(RSS/TSS))
-# 
-# library(MLmetrics)
-# 
-# Calc <- test1 %>%
-#   select(Win, W, L) %>%
-#   mutate(pred = factor(ifelse(W > L, "W", "L"))) %>%
-#   rename("obs" = Win) %>%
-#   mutate(obs = as.factor(obs))
-# 
-# prSummary(Calc, lev = levels(Calc$obs))
-# 
-# sum(test1$pred_abs1)/nrow(test1)
-# 
-# confusionMatrix(as.factor(test1$pred_abs), as.factor(test1$Win))
-# 
-# test1$highest <- ifelse(test1$L > test1$Win, test1$L, test1$W)
-# 
-# test2 <- test1 %>%
-#   filter(highest >= .7)
-# 
-# sum(test2$pred_abs1)/nrow(test2)
+preds <- read_excel("C:/Users/thigg/Desktop/Hockey Models/PDA Lifetime Predictions.xlsx", sheet = "Predictions")
 
+Calc <- preds
+
+Calc$Win1 <- ifelse(Calc$Model == 1, 1, 0)
+
+Calc$Pred1 <- 1
+
+Calc$Residual <- Calc$Win1 - Calc$Pred1
+
+Calc$Residual <- abs(Calc$Residual)
+
+Calc$Residual <- Calc$Residual^2
+
+RSS <- sum(Calc$Residual)
+
+Calc$Residual <- Calc$Win1 - mean(Calc$Win1)
+
+Calc$Residual <- Calc$Residual^2
+
+TSS <- sum(Calc$Residual)
+
+Rsquared <- abs(1-(RSS/TSS))
+
+library(MLmetrics)
+
+Calc1 <- preds %>%
+  select(Winner1, `Winner Probability`, Model) %>%
+  rename("Team" = Winner1, "W" = `Winner Probability`, "obs" = Model) %>%
+  mutate(W = as.numeric(W)) %>%
+  mutate(L = 1-W) %>%
+  mutate(pred = "W") %>%
+  mutate(obs = ifelse(obs == 1, "W", "L"))
+
+Calc2 <- preds %>%
+  select(Loser1, `Loser Probability`, Model) %>%
+  rename("Team" = Loser1, "L" = `Loser Probability`, "obs" = Model) %>%
+  mutate(L = as.numeric(L)) %>%
+  mutate(W = 1-L) %>%
+  mutate(pred = "L") %>%
+  mutate(obs = ifelse(obs == 1, "L", "W"))
+
+Calc <- rbind(Calc1, Calc2)
+
+Calc <- Calc %>%
+  select(-Team) %>%
+  mutate(pred = as.factor(pred)) %>%
+  mutate(obs = as.factor(obs))
+
+metrics <- data.frame(prSummary(Calc, lev = levels(Calc$obs)))
+metrics$metric <- rownames(metrics)
+colnames(metrics)[1] <- "Score"
+
+Rsquared1 <- data.frame(Score = Rsquared, metric = "R Squared")
+
+metrics <- rbind(metrics, Rsquared1)
+
+write_csv(metrics, "C:/Users/thigg/Desktop/Hockey Models/Current Model Metrics.csv")
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")

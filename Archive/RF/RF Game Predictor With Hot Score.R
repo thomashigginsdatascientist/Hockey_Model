@@ -288,7 +288,7 @@ end - start
 #Recall of 0.5106
 
 
-rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/RF HS 2.RDS")
+rf_model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/Archive/Archive Models/RF HS 2.RDS")
 
 varImp(rf_model)
 
