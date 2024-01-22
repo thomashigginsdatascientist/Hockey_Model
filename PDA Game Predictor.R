@@ -426,7 +426,8 @@ binder1 <- binder %>%
   arrange(desc(Date)) %>%
   group_by(Team) %>%
   slice(1) %>%
-  select(Team, hot_score) %>%
+  select(Team, Date, hot_score) %>%
+  rename("Score_Date" = Date) %>%
   ungroup() %>%
   filter(Team %in% next_week1$Team)
 
@@ -445,7 +446,7 @@ next_week1$Loser <- ifelse(next_week1$L > next_week1$W, next_week1$Team, next_we
 next_week1$Confidence <- ifelse(next_week1$L > next_week1$W, next_week1$L, next_week1$W)
 
 next_week1 <- next_week1 %>%
-  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, W, L, Winner, Loser, Confidence)
+  select(Date, Team, Location, Opponent, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, hot_score, W, L, Winner, Loser, Confidence)
 
 next_week1$Win_Probability <- next_week1$W
 
@@ -471,7 +472,7 @@ thomas <- prediction_data %>%
   filter(Location == "Home") %>%
   mutate(Loser_Confidence = 1 - Confidence) %>%
   mutate(Site = paste("Playing At: ", Team, " ", Location)) %>%
-  select(Date, Winner1,  Confidence, Loser1,  Loser_Confidence, Site) %>%
+  select(Date, Winner1,  Confidence, Loser1,  Loser_Confidence, Site, hot_score) %>%
   arrange(desc(Confidence)) %>%
   rename("Winner Probability" = Confidence, "Loser Probability" = Loser_Confidence) %>%
   mutate(Category = case_when(`Winner Probability` > .85 ~ "85 <",
@@ -483,7 +484,8 @@ thomas <- prediction_data %>%
                               `Winner Probability` <= .55 ~ "55 >",
                               TRUE ~ "Thomas")) %>%
   mutate(`Winner Probability` = percent(`Winner Probability`)) %>%
-  mutate(`Loser Probability` = percent(`Loser Probability`))
+  mutate(`Loser Probability` = percent(`Loser Probability`)) %>%
+  select(Date, Winner1,  `Winner Probability`, Loser1,  `Loser Probability`, Site, Category, hot_score)
 
 write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/PDA Today Results.csv")
 
