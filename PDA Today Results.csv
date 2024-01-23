@@ -1,7 +1,10 @@
-Date,Winner1,Winner Probability,Loser1,Loser Probability,Site,Category
-2024-01-22,Vancouver Canucks,77.42%,Chicago Blackhawks,22.58%,Playing At:  Vancouver Canucks   Home,75-80
-2024-01-22,Los Angeles Kings,76.79%,San Jose Sharks,23.21%,Playing At:  Los Angeles Kings   Home,75-80
-2024-01-22,Boston Bruins,68.99%,Winnipeg Jets,31.01%,Playing At:  Boston Bruins   Home,60-70
-2024-01-22,Pittsburgh Penguins,59.70%,Arizona Coyotes,40.30%,Playing At:  Arizona Coyotes   Home,55-60
-2024-01-22,New Jersey Devils,52.28%,Vegas Golden Knights,47.72%,Playing At:  New Jersey Devils   Home,55 >
-2024-01-22,Florida Panthers,50.86%,Nashville Predators,49.14%,Playing At:  Nashville Predators   Home,55 >
+Date,Winner1,Winner Probability,Loser1,Loser Probability,Site,Category,hot_score
+2024-01-23,New York Rangers,81.51%,San Jose Sharks,18.49%,Playing At:  San Jose Sharks   Home,80-85,-1.1666666666666665
+2024-01-23,Edmonton Oilers,80.11%,Columbus Blue Jackets,19.89%,Playing At:  Edmonton Oilers   Home,80-85,3
+2024-01-23,Buffalo Sabres,66.94%,Anaheim Ducks,33.06%,Playing At:  Anaheim Ducks   Home,60-70,-1.5
+2024-01-23,Tampa Bay Lightning,66.13%,Philadelphia Flyers,33.87%,Playing At:  Philadelphia Flyers   Home,60-70,1
+2024-01-23,Vegas Golden Knights,62.16%,New York Islanders,37.84%,Playing At:  New York Islanders   Home,60-70,-1.5000000000000002
+2024-01-23,Dallas Stars,58.92%,Detroit Red Wings,41.08%,Playing At:  Detroit Red Wings   Home,55-60,1.5000000000000002
+2024-01-23,St. Louis Blues,57.20%,Calgary Flames,42.80%,Playing At:  Calgary Flames   Home,55-60,1.5
+2024-01-23,Minnesota Wild,55.85%,Washington Capitals,44.15%,Playing At:  Minnesota Wild   Home,55-60,-1
+2024-01-23,Ottawa Senators,50.00%,Montreal Canadiens,50.00%,Playing At:  Montreal Canadiens   Home,55 >,-1.357142857142857

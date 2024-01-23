@@ -153,6 +153,11 @@ binder <- binder[-1,]
 binder <- binder %>%
   select(Team, hot_score, Date)
 
+# all_binder <- team_data[1,]
+# saveRDS(all_binder, "C:/Users/thigg/Desktop/Hockey Models/temp binder.RDS")
+all_binder <- readRDS("C:/Users/thigg/Desktop/Hockey Models/temp binder.RDS")
+all_binder <- all_binder[-1,]
+
 for(i in 1:nrow(dates)){
 
   print(i)
@@ -186,7 +191,11 @@ for(i in 1:nrow(dates)){
       mutate(variable_1 = (Win_Percentage - Avg_Win_Percentage_League)) %>%
       mutate(variable_2 = (GF_Team - Avg_GF_League)) %>%
       mutate(variable_3 = -(GA_Team - Avg_GA_League)) %>%
-      mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3) %>%
+      mutate(hot_score = Win_Percentage + variable_1 + variable_2 + variable_3)
+    
+    all_binder <- rbind(all_binder, team_data)
+    
+    team_data <- team_data %>%
       distinct(Team, .keep_all = TRUE) %>%
       select(Team, hot_score)
 
@@ -195,6 +204,10 @@ for(i in 1:nrow(dates)){
     binder <- rbind(binder, team_data)
 
 }
+
+library(plotly)
+
+plot_ly(data = all_binder, x = ~Team, y = ~hot_score, color = ~Team)
 
 sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
 
