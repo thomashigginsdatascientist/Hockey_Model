@@ -205,9 +205,37 @@ for(i in 1:nrow(dates)){
 
 }
 
-library(plotly)
+colnames(all_binder)[16:18] <- c("Win % - Avg League Win %", "GF - League Avg GF", "Neg GA - League Avg GA")
 
-plot_ly(data = all_binder, x = ~Team, y = ~hot_score, color = ~Team)
+current_hot_scores <- all_binder %>%
+  select(Date, Team, hot_score, Num_Games, Num_Wins, GF_Team, GA_Team, Win_Percentage, Avg_GF_League, Avg_GA_League, `Win % - Avg League Win %`, `GF - League Avg GF`, `Neg GA - League Avg GA`) %>%
+  arrange(desc(Date)) %>%
+  group_by(Team) %>%
+  slice(1) %>%
+  ungroup() %>%
+  arrange(desc(hot_score))
+
+for(i in 3:length(current_hot_scores)){
+  
+  current_hot_scores[,i] <- round(current_hot_scores[,i], 2)
+  
+}
+
+write_csv(current_hot_scores, "C:/Users/thigg/Desktop/Hockey Models/Current Hot Scores.csv")
+
+# library(plotly)
+# 
+# plot_ly(data = all_binder, x = ~Win, y = ~hot_score, color = ~Team)
+# 
+# all_binder_loss <- all_binder %>%
+#   filter(Win == 0)
+# 
+# hist(all_binder_loss$hot_score)
+# 
+# all_binder_win <- all_binder %>%
+#   filter(Win == 1)
+# 
+# hist(all_binder_win$hot_score)
 
 sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
 
@@ -237,6 +265,8 @@ train <- train[complete.cases(train),]
 # saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
 
 model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
+
+#shapley package
 
 preds <- read_excel("C:/Users/thigg/Desktop/Hockey Models/PDA Lifetime Predictions.xlsx", sheet = "Predictions")
 
