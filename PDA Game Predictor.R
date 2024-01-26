@@ -223,19 +223,6 @@ for(i in 3:length(current_hot_scores)){
 
 write_csv(current_hot_scores, "C:/Users/thigg/Desktop/Hockey Models/Current Hot Scores.csv")
 
-# library(plotly)
-# 
-# plot_ly(data = all_binder, x = ~Win, y = ~hot_score, color = ~Team)
-# 
-# all_binder_loss <- all_binder %>%
-#   filter(Win == 0)
-# 
-# hist(all_binder_loss$hot_score)
-# 
-# all_binder_win <- all_binder %>%
-#   filter(Win == 1)
-# 
-# hist(all_binder_win$hot_score)
 
 sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
 
@@ -585,3 +572,234 @@ write_csv(thomas, "C:/Users/thigg/Desktop/Hockey Models/PDA Today Results.csv")
 # test80c <- predictions1[4,3] + predictions1[5,3] + predictions1[6,3]
 # 
 # test80c/test80
+
+
+
+
+all_binder1 <- all_binder %>%
+  mutate(UID = paste(Team, Date, sep = "---")) %>%
+  distinct(UID, .keep_all = TRUE) %>%
+  group_by(Team) %>%
+  arrange(Date) %>%
+  mutate(next_3_games = Win + lead(Win, n = 1) + lead(Win, n = 2)) %>%
+  mutate(Next_Win = lead(Win, n=1)) %>%
+  mutate(Streak_Signal = ifelse(Win == 1 & Next_Win == 1, 1, 0)) %>%
+  mutate(Streak = cumsum(Streak_Signal %in% 0) + 1) %>%
+  ungroup() %>%
+  group_by(Team, Streak) %>%
+  mutate(Total_Streak = sum(Streak_Signal)) %>%
+  ungroup() %>%
+  filter(Total_Streak > 1) %>%
+  group_by(Team, Streak) %>%
+  slice(2:n()) %>%
+  mutate(Streak_Min_Date = min(Date)) %>%
+  ungroup()
+
+combos <- all_binder1 %>%
+  mutate(UID = paste(Team, Streak_Min_Date, sep = "&&&")) %>%
+  distinct(UID, .keep_all = TRUE) %>%
+  select(UID, Date, Team)
+
+
+combo_binder <- all_binder %>%
+  select(Team, Date) %>%
+  slice(1)
+
+combo_binder$Previous_3_Hot_Score <- 0
+combo_binder$Previous_7_Hot_Score <- 0
+
+combo_binder <- combo_binder %>%
+  select(Team, Previous_3_Hot_Score, Previous_7_Hot_Score, Date)
+
+combo_binder <- combo_binder[-1,]
+
+for(i in 1:nrow(combos)){
+  
+  print(i)
+  
+  current_combo <- combos[i,]
+  current_team <- current_combo$Team
+  current_date <- current_combo$Date
+  current_date1 <- current_date - days(1)
+  
+  lookup_data <- all_binder %>%
+    mutate(UID = paste(Team, Date, sep = "---")) %>%
+    distinct(UID, .keep_all = TRUE) %>%
+    filter(Team == current_team) %>%
+    filter(Date <= current_date1) %>%
+    arrange(Date) %>%
+    mutate(Previous_3_Hot_Score = hot_score + lag(hot_score, n = 1) + lag(hot_score, n = 2)) %>%
+    mutate(Previous_7_Hot_Score = hot_score + 
+             lag(hot_score, n = 1) + 
+             lag(hot_score, n = 2) + 
+             lag(hot_score, n = 3) +
+             lag(hot_score, n = 4) +
+             lag(hot_score, n = 5) +
+             lag(hot_score, n = 6) +
+             lag(hot_score, n = 7)) %>%
+    arrange(desc(Date)) %>%
+    slice(1) %>%
+    select(Team, Previous_3_Hot_Score, Previous_7_Hot_Score)
+  
+  lookup_data$Date <- current_date
+  
+  combo_binder <- rbind(combo_binder, lookup_data)
+  
+}
+
+combo_binder <- combo_binder[complete.cases(combo_binder),]
+
+all_binder1 <- left_join(all_binder1, combo_binder, by = c("Team", "Date"))
+
+all_binder1 <- all_binder1 %>%
+  filter(!is.na(Previous_3_Hot_Score)) %>%
+  filter(!is.na(Previous_7_Hot_Score)) %>%
+  mutate(Previous_3_Hot_Score1 = round(Previous_3_Hot_Score, 0)) %>%
+  mutate(Previous_7_Hot_Score1 = round(Previous_7_Hot_Score, 0))
+
+all_binder2 <- all_binder1 %>%
+  group_by(Total_Streak, Previous_3_Hot_Score1) %>%
+  summarise(Total = n()) %>%
+  ungroup() %>%
+  mutate(Total_Obs_Streak_Above_3 = sum(Total)) %>%
+  mutate(Total_Streaks_Above_1 = nrow(all_binder1)) %>%
+  mutate(Above_0 = ifelse(Previous_3_Hot_Score1 > 0, Total, 0)) %>%
+  mutate(Total_Obs_Above_0_Streak_Above_3 = sum(Above_0))
+
+all_binder3 <- all_binder1 %>%
+  group_by(Total_Streak, Previous_7_Hot_Score1) %>%
+  summarise(Total = n()) %>%
+  ungroup() %>%
+  mutate(Total_Obs_Streak_Above_3 = sum(Total)) %>%
+  mutate(Total_Streaks_Above_1 = nrow(all_binder1)) %>%
+  mutate(Above_0 = ifelse(Previous_7_Hot_Score1 > 0, Total, 0)) %>%
+  mutate(Total_Obs_Above_0_Streak_Above_3 = sum(Above_0))
+
+
+all_binder_not_streaks <- all_binder %>%
+  mutate(UID = paste(Team, Date, sep = "---")) %>%
+  distinct(UID, .keep_all = TRUE) %>%
+  group_by(Team) %>%
+  arrange(Date) %>%
+  mutate(next_3_games = Win + lead(Win, n = 1) + lead(Win, n = 2)) %>%
+  mutate(Next_Win = lead(Win, n=1)) %>%
+  mutate(Streak_Signal = ifelse(Win == 1 & Next_Win == 1, 1, 0)) %>%
+  mutate(Streak = cumsum(Streak_Signal %in% 0) + 1) %>%
+  ungroup() %>%
+  group_by(Team, Streak) %>%
+  mutate(Total_Streak = sum(Streak_Signal)) %>%
+  ungroup() %>%
+  filter(Total_Streak <= 1) %>%
+  group_by(Team, Streak) %>%
+  slice(2:n()) %>%
+  mutate(Streak_Min_Date = min(Date)) %>%
+  ungroup()
+
+
+combos <- all_binder_not_streaks %>%
+  mutate(UID = paste(Team, Streak_Min_Date, sep = "&&&")) %>%
+  distinct(UID, .keep_all = TRUE) %>%
+  select(UID, Date, Team)
+
+
+combo_binder <- all_binder %>%
+  select(Team, Date) %>%
+  slice(1)
+
+combo_binder$Previous_3_Hot_Score <- 0
+combo_binder$Previous_7_Hot_Score <- 0
+
+combo_binder <- combo_binder %>%
+  select(Team, Previous_3_Hot_Score, Previous_7_Hot_Score, Date)
+
+combo_binder <- combo_binder[-1,]
+
+for(i in 1:nrow(combos)){
+  
+  print(i)
+  
+  current_combo <- combos[i,]
+  current_team <- current_combo$Team
+  current_date <- current_combo$Date
+  current_date1 <- current_date - days(1)
+  
+  lookup_data <- all_binder %>%
+    mutate(UID = paste(Team, Date, sep = "---")) %>%
+    distinct(UID, .keep_all = TRUE) %>%
+    filter(Team == current_team) %>%
+    filter(Date <= current_date1) %>%
+    arrange(Date) %>%
+    mutate(Previous_3_Hot_Score = hot_score + lag(hot_score, n = 1) + lag(hot_score, n = 2)) %>%
+    mutate(Previous_7_Hot_Score = hot_score + 
+             lag(hot_score, n = 1) + 
+             lag(hot_score, n = 2) + 
+             lag(hot_score, n = 3) +
+             lag(hot_score, n = 4) +
+             lag(hot_score, n = 5) +
+             lag(hot_score, n = 6) +
+             lag(hot_score, n = 7)) %>%
+    arrange(desc(Date)) %>%
+    slice(1) %>%
+    select(Team, Previous_3_Hot_Score, Previous_7_Hot_Score)
+  
+  lookup_data$Date <- current_date
+  
+  combo_binder <- rbind(combo_binder, lookup_data)
+  
+}
+
+
+all_binder_not_streaks <- left_join(all_binder_not_streaks, combo_binder, by = c("Team", "Date"))
+
+all_binder_not_streaks <- all_binder_not_streaks %>%
+  filter(!is.na(Previous_3_Hot_Score)) %>%
+  filter(!is.na(Previous_7_Hot_Score)) %>%
+  mutate(Previous_3_Hot_Score1 = round(Previous_3_Hot_Score, 0)) %>%
+  mutate(Previous_7_Hot_Score1 = round(Previous_7_Hot_Score, 0))
+
+Not_streaks3 <- all_binder_not_streaks %>%
+  group_by(Total_Streak, Previous_3_Hot_Score1) %>%
+  summarise(Total = n()) %>%
+  ungroup() %>%
+  mutate(Total_Obs_Streak_Above_3 = sum(Total)) %>%
+  mutate(Total_Streaks_Above_1 = nrow(all_binder_not_streaks)) %>%
+  mutate(Above_0 = ifelse(Previous_3_Hot_Score1 > 0, Total, 0)) %>%
+  mutate(Total_Obs_Above_0_Streak_Above_3 = sum(Above_0))
+
+Not_streaks7 <- all_binder_not_streaks %>%
+  group_by(Total_Streak, Previous_7_Hot_Score1) %>%
+  summarise(Total = n()) %>%
+  ungroup() %>%
+  mutate(Total_Obs_Streak_Above_3 = sum(Total)) %>%
+  mutate(Total_Streaks_Above_1 = nrow(all_binder1)) %>%
+  mutate(Above_0 = ifelse(Previous_7_Hot_Score1 > 0, Total, 0)) %>%
+  mutate(Total_Obs_Above_0_Streak_Above_3 = sum(Above_0)) 
+
+
+prev3 <- rbind(Not_streaks3, all_binder2)
+
+prev3 <- prev3 %>%
+  mutate(Previous_3_Hot_Score1 = ifelse(Previous_3_Hot_Score1 < 0, -1, Previous_3_Hot_Score1)) %>%
+  mutate(Total_Streak = ifelse(Total_Streak > 5, 5, Total_Streak)) %>%
+  group_by(Previous_3_Hot_Score1, Total_Streak) %>%
+  summarise(Total = sum(Total)) %>%
+  mutate(UID = paste(Previous_3_Hot_Score1, Total_Streak, sep = "---")) %>%
+  ungroup() %>%
+  mutate(Total_obs = sum(Total)) %>%
+  mutate(Perc = Total/Total_obs) %>%
+  arrange(desc(Perc)) %>%
+  mutate(Perc_sum = cumsum(Perc))
+
+library(plotly)
+
+plot_ly(data = prev3, x = ~UID, y = ~Total)
+
+all_binder_loss <- all_binder %>%
+  filter(Win == 0)
+
+hist(all_binder_loss$hot_score)
+
+all_binder_win <- all_binder %>%
+  filter(Win == 1)
+
+hist(all_binder_win$hot_score)
