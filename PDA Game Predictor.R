@@ -249,9 +249,9 @@ train <- train[complete.cases(train),]
 # 
 # end - start
 # 
-# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
+# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA8.RDS")
 
-model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA7.RDS")
+model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA8.RDS")
 
 #shapley package
 
