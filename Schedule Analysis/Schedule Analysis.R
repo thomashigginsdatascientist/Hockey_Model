@@ -48,7 +48,7 @@ analysis2 <- schedule %>%
   summarise(Num_Games = n(), Light_Days = sum(Target)) %>%
   mutate(Heavy_Days = Num_Games - Light_Days) %>%
   arrange(Min_Date) %>%
-  filter(Min_Date >= as.Date("2/5/2024", format = "%m/%d/%Y")) %>%
+  filter(Min_Date >= as.Date("2/12/2024", format = "%m/%d/%Y")) %>%
   ungroup() %>%
   mutate(Light_Multiplier = Light_Days * 1.5) %>%
   mutate(Heavy_Multiplier = Heavy_Days * 0.5) %>%
@@ -76,6 +76,16 @@ analysis2 <- schedule %>%
   slice(1) %>%
   ungroup() %>%
   select(Team, Min_Date, Num_Games, Light_Days, Heavy_Days, Score, Next_Week_Num_Games, Next_Week_Light_Days, Next_Week_Score, Two_Week_Num_Games, Two_Week_Light_Days, Two_Week_Score, Three_Week_Num_Games, Three_Week_Light_Days, Three_Week_Score) %>%
-  arrange(desc(Score))
+  arrange(desc(Score)) %>%
+  ungroup() %>%
+  mutate(Total_Score = Score + Next_Week_Score + Two_Week_Score + Three_Week_Score) %>%
+  mutate(Total_Games = Num_Games + Next_Week_Num_Games + Two_Week_Num_Games + Three_Week_Num_Games) %>%
+  mutate(Total_Light_Games = Light_Days + Next_Week_Light_Days + Two_Week_Light_Days + Three_Week_Light_Days) %>%
+  arrange(desc(Total_Score)) %>%
+  mutate(Score_Rank = min_rank(Total_Score)) %>%
+  mutate(Games_Rank = min_rank(Total_Games)) %>%
+  mutate(Light_Rank = min_rank(Total_Light_Games)) %>%
+  mutate(Total_Rank = Score_Rank + Games_Rank + Light_Rank)
+  
 
 write_csv(analysis2, "C:/Users/thigg/Desktop/Hockey Models/Schedule Analysis/Schedule Analysis.csv")  
