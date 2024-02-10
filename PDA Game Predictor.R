@@ -253,8 +253,6 @@ train <- train[complete.cases(train),]
 
 model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA9.RDS")
 
-#shapley package
-
 preds <- read_excel("C:/Users/thigg/Desktop/Hockey Models/PDA Lifetime Predictions.xlsx", sheet = "Predictions")
 
 Calc <- preds
