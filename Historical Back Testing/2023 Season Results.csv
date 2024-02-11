@@ -1,0 +1,785 @@
+Date,Winner1,Winner Probability,Loser1,Loser Probability,Site,Category,Winner_Actual,Model
+2023-10-15,Carolina Hurricanes,0.8062210102417233,Anaheim Ducks,0.19377898975827668,Playing At:  Anaheim Ducks   Home,80-85,Anaheim Ducks,0
+2023-10-15,Tampa Bay Lightning,0.5840257627624392,Ottawa Senators,0.4159742372375608,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,0
+2023-10-16,Toronto Maple Leafs,0.8453529447934292,Chicago Blackhawks,0.15464705520657085,Playing At:  Toronto Maple Leafs   Home,80-85,Chicago Blackhawks,0
+2023-10-16,New York Rangers,0.7039216707764555,Arizona Coyotes,0.2960783292235445,Playing At:  New York Rangers   Home,70-80,New York Rangers,1
+2023-10-16,New Jersey Devils,0.5587897866324518,Florida Panthers,0.4412102133675482,Playing At:  New Jersey Devils   Home,55-60,Florida Panthers,0
+2023-10-16,Detroit Red Wings,0.5423676009151989,Columbus Blue Jackets,0.45763239908480113,Playing At:  Columbus Blue Jackets   Home,55 >,Detroit Red Wings,1
+2023-10-16,Washington Capitals,0.5305560334803795,Calgary Flames,0.4694439665196205,Playing At:  Washington Capitals   Home,55 >,Washington Capitals,1
+2023-10-17,Carolina Hurricanes,0.8156067046994115,San Jose Sharks,0.18439329530058846,Playing At:  San Jose Sharks   Home,80-85,Carolina Hurricanes,1
+2023-10-17,New York Islanders,0.7614040828608135,Arizona Coyotes,0.2385959171391865,Playing At:  New York Islanders   Home,70-80,New York Islanders,1
+2023-10-17,Minnesota Wild,0.7062331580190115,Montreal Canadiens,0.29376684198098846,Playing At:  Montreal Canadiens   Home,70-80,Minnesota Wild,1
+2023-10-17,Vancouver Canucks,0.6626998606792243,Philadelphia Flyers,0.33730013932077574,Playing At:  Philadelphia Flyers   Home,60-70,Philadelphia Flyers,0
+2023-10-17,Edmonton Oilers,0.611078709946502,Nashville Predators,0.38892129005349796,Playing At:  Nashville Predators   Home,60-70,Edmonton Oilers,1
+2023-10-17,Winnipeg Jets,0.5568223579231321,Los Angeles Kings,0.44317764207686794,Playing At:  Winnipeg Jets   Home,55-60,Los Angeles Kings,0
+2023-10-17,Colorado Avalanche,0.5530833034492317,Seattle Kraken,0.44691669655076827,Playing At:  Seattle Kraken   Home,55-60,Colorado Avalanche,1
+2023-10-17,Tampa Bay Lightning,0.5196661726720917,Buffalo Sabres,0.4803338273279083,Playing At:  Buffalo Sabres   Home,55 >,Buffalo Sabres,0
+2023-10-17,Dallas Stars,0.5078263716254138,Vegas Golden Knights,0.4921736283745862,Playing At:  Vegas Golden Knights   Home,55 >,Vegas Golden Knights,0
+2023-10-18,Pittsburgh Penguins,0.6731230585108641,Detroit Red Wings,0.32687694148913593,Playing At:  Detroit Red Wings   Home,60-70,Detroit Red Wings,0
+2023-10-18,Washington Capitals,0.5656363313683809,Ottawa Senators,0.4343636686316191,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,0
+2023-10-19,Boston Bruins,0.886717337365736,San Jose Sharks,0.11328266263426401,Playing At:  San Jose Sharks   Home,85 <,Boston Bruins,1
+2023-10-19,Colorado Avalanche,0.7909846438559558,Chicago Blackhawks,0.2090153561440442,Playing At:  Colorado Avalanche   Home,70-80,Colorado Avalanche,1
+2023-10-19,Dallas Stars,0.7752802842179097,Anaheim Ducks,0.22471971578209027,Playing At:  Anaheim Ducks   Home,70-80,Dallas Stars,1
+2023-10-19,Edmonton Oilers,0.7325577006043369,Philadelphia Flyers,0.2674422993956631,Playing At:  Philadelphia Flyers   Home,70-80,Philadelphia Flyers,0
+2023-10-19,St. Louis Blues,0.7215763113413549,Arizona Coyotes,0.2784236886586451,Playing At:  St. Louis Blues   Home,70-80,Arizona Coyotes,0
+2023-10-19,New York Rangers,0.6985524295250456,Nashville Predators,0.3014475704749544,Playing At:  New York Rangers   Home,60-70,Nashville Predators,0
+2023-10-19,Tampa Bay Lightning,0.67868465936979006,Vancouver Canucks,0.32131534063020994,Playing At:  Tampa Bay Lightning   Home,60-70,Tampa Bay Lightning,1
+2023-10-19,Carolina Hurricanes,0.6321656762561414,Seattle Kraken,0.3678343237438586,Playing At:  Seattle Kraken   Home,60-70,Seattle Kraken,0
+2023-10-19,Winnipeg Jets,0.5470111122344721,Vegas Golden Knights,0.4529888877655279,Playing At:  Winnipeg Jets   Home,55 >,Vegas Golden Knights,0
+2023-10-19,Minnesota Wild,0.5288514961411883,Los Angeles Kings,0.4711485038588117,Playing At:  Minnesota Wild   Home,55 >,Los Angeles Kings,0
+2023-10-19,Toronto Maple Leafs,0.5228329572394479,Florida Panthers,0.4771670427605521,Playing At:  Florida Panthers   Home,55 >,Florida Panthers,0
+2023-10-19,Buffalo Sabres,0.5029395981689805,Calgary Flames,0.4970604018310195,Playing At:  Buffalo Sabres   Home,55 >,Calgary Flames,0
+2023-10-20,Calgary Flames,0.6157081832633106,Columbus Blue Jackets,0.38429181673668944,Playing At:  Columbus Blue Jackets   Home,60-70,Columbus Blue Jackets,0
+2023-10-20,New Jersey Devils,0.5076525134577917,New York Islanders,0.4923474865422083,Playing At:  New York Islanders   Home,55 >,New Jersey Devils,1
+2023-10-21,Dallas Stars,0.7704824937845214,Philadelphia Flyers,0.22951750621547862,Playing At:  Dallas Stars   Home,70-80,Dallas Stars,1
+2023-10-21,Vegas Golden Knights,0.7261804886811759,Chicago Blackhawks,0.2738195113188241,Playing At:  Chicago Blackhawks   Home,70-80,Vegas Golden Knights,1
+2023-10-21,Minnesota Wild,0.7026988356703201,Columbus Blue Jackets,0.2973011643296799,Playing At:  Minnesota Wild   Home,70-80,Columbus Blue Jackets,0
+2023-10-21,Nashville Predators,0.6861941680403036,San Jose Sharks,0.31380583195969636,Playing At:  Nashville Predators   Home,60-70,Nashville Predators,1
+2023-10-21,Arizona Coyotes,0.6817092798830489,Anaheim Ducks,0.31829072011695114,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,1
+2023-10-21,Florida Panthers,0.6775975629814955,Vancouver Canucks,0.32240243701850446,Playing At:  Florida Panthers   Home,60-70,Vancouver Canucks,0
+2023-10-21,Boston Bruins,0.6400279747228752,Los Angeles Kings,0.3599720252771248,Playing At:  Los Angeles Kings   Home,60-70,Boston Bruins,1
+2023-10-21,Ottawa Senators,0.6001783005997445,Detroit Red Wings,0.39982169940025547,Playing At:  Ottawa Senators   Home,60-70,Detroit Red Wings,0
+2023-10-21,Buffalo Sabres,0.588453759972257,New York Islanders,0.411546240027743,Playing At:  Buffalo Sabres   Home,55-60,Buffalo Sabres,1
+2023-10-21,St. Louis Blues,0.5600667616909347,Pittsburgh Penguins,0.4399332383090653,Playing At:  St. Louis Blues   Home,55-60,St. Louis Blues,1
+2023-10-21,New York Rangers,0.5570728251267283,Seattle Kraken,0.4429271748732717,Playing At:  Seattle Kraken   Home,55-60,New York Rangers,1
+2023-10-21,Edmonton Oilers,0.5326093432781234,Winnipeg Jets,0.46739065672187663,Playing At:  Edmonton Oilers   Home,55 >,Winnipeg Jets,0
+2023-10-21,Tampa Bay Lightning,0.5166907564388679,Toronto Maple Leafs,0.48330924356113214,Playing At:  Tampa Bay Lightning   Home,55 >,Toronto Maple Leafs,0
+2023-10-21,Washington Capitals,0.5128704714051704,Montreal Canadiens,0.4871295285948296,Playing At:  Montreal Canadiens   Home,55 >,Montreal Canadiens,0
+2023-10-21,Colorado Avalanche,0.501786278314674,Carolina Hurricanes,0.49821372168532596,Playing At:  Colorado Avalanche   Home,55 >,Colorado Avalanche,1
+2023-10-22,Boston Bruins,0.8650554406036963,Anaheim Ducks,0.13494455939630368,Playing At:  Anaheim Ducks   Home,85 <,Boston Bruins,1
+2023-10-22,Calgary Flames,0.5316213864795853,Detroit Red Wings,0.46837861352041466,Playing At:  Detroit Red Wings   Home,55 >,Detroit Red Wings,0
+2023-10-23,Buffalo Sabres,0.6577033931966194,Montreal Canadiens,0.3422966068033806,Playing At:  Buffalo Sabres   Home,60-70,Montreal Canadiens,0
+2023-10-24,Boston Bruins,0.8510076971574284,Chicago Blackhawks,0.1489923028425716,Playing At:  Chicago Blackhawks   Home,85 <,Boston Bruins,1
+2023-10-24,Florida Panthers,0.8249343578786195,San Jose Sharks,0.17506564212138054,Playing At:  Florida Panthers   Home,80-85,Florida Panthers,1
+2023-10-24,Vegas Golden Knights,0.7293733951915716,Philadelphia Flyers,0.2706266048084284,Playing At:  Vegas Golden Knights   Home,70-80,Vegas Golden Knights,1
+2023-10-24,Los Angeles Kings,0.7245348423059558,Arizona Coyotes,0.2754651576940442,Playing At:  Los Angeles Kings   Home,70-80,Los Angeles Kings,1
+2023-10-24,New Jersey Devils,0.6379598950428156,Montreal Canadiens,0.3620401049571844,Playing At:  Montreal Canadiens   Home,60-70,New Jersey Devils,1
+2023-10-24,Toronto Maple Leafs,0.6199792809663249,Washington Capitals,0.38002071903367507,Playing At:  Washington Capitals   Home,60-70,Toronto Maple Leafs,1
+2023-10-24,Columbus Blue Jackets,0.5831500023959981,Anaheim Ducks,0.4168499976040019,Playing At:  Columbus Blue Jackets   Home,55-60,Anaheim Ducks,0
+2023-10-24,Winnipeg Jets,0.5786031720486844,St. Louis Blues,0.4213968279513156,Playing At:  Winnipeg Jets   Home,55-60,Winnipeg Jets,1
+2023-10-24,New York Rangers,0.5769238355776087,Calgary Flames,0.42307616442239127,Playing At:  Calgary Flames   Home,55-60,New York Rangers,1
+2023-10-24,Nashville Predators,0.5603013156519091,Vancouver Canucks,0.4396986843480909,Playing At:  Nashville Predators   Home,55-60,Vancouver Canucks,0
+2023-10-24,Tampa Bay Lightning,0.55806460098618,Carolina Hurricanes,0.44193539901381995,Playing At:  Tampa Bay Lightning   Home,55-60,Tampa Bay Lightning,1
+2023-10-24,Colorado Avalanche,0.5452129526869645,New York Islanders,0.45478704731303554,Playing At:  New York Islanders   Home,55 >,Colorado Avalanche,1
+2023-10-24,Pittsburgh Penguins,0.5430889046841234,Dallas Stars,0.4569110953158766,Playing At:  Pittsburgh Penguins   Home,55 >,Dallas Stars,0
+2023-10-24,Detroit Red Wings,0.5298669751360545,Seattle Kraken,0.4701330248639455,Playing At:  Detroit Red Wings   Home,55 >,Seattle Kraken,0
+2023-10-24,Edmonton Oilers,0.5277552246758304,Minnesota Wild,0.47224477532416964,Playing At:  Minnesota Wild   Home,55 >,Minnesota Wild,0
+2023-10-24,Ottawa Senators,0.5207857987906424,Buffalo Sabres,0.47921420120935765,Playing At:  Ottawa Senators   Home,55 >,Buffalo Sabres,0
+2023-10-25,New Jersey Devils,0.5299105588568143,Washington Capitals,0.47008944114318574,Playing At:  New Jersey Devils   Home,55 >,Washington Capitals,0
+2023-10-26,Boston Bruins,0.9055347646043991,Anaheim Ducks,0.09446523539560092,Playing At:  Boston Bruins   Home,85 <,Anaheim Ducks,0
+2023-10-26,Tampa Bay Lightning,0.7829132981709854,San Jose Sharks,0.21708670182901457,Playing At:  Tampa Bay Lightning   Home,70-80,Tampa Bay Lightning,1
+2023-10-26,Minnesota Wild,0.6878347036177231,Philadelphia Flyers,0.31216529638227686,Playing At:  Philadelphia Flyers   Home,60-70,Philadelphia Flyers,0
+2023-10-26,Winnipeg Jets,0.6458619464102804,Detroit Red Wings,0.3541380535897196,Playing At:  Detroit Red Wings   Home,60-70,Winnipeg Jets,1
+2023-10-26,Carolina Hurricanes,0.6311315867289495,Seattle Kraken,0.36886841327105047,Playing At:  Carolina Hurricanes   Home,60-70,Carolina Hurricanes,1
+2023-10-26,Colorado Avalanche,0.6009316939333866,Pittsburgh Penguins,0.39906830606661337,Playing At:  Pittsburgh Penguins   Home,60-70,Pittsburgh Penguins,0
+2023-10-26,Toronto Maple Leafs,0.5602404723474708,Dallas Stars,0.43975952765252924,Playing At:  Dallas Stars   Home,55-60,Toronto Maple Leafs,1
+2023-10-26,Montreal Canadiens,0.5223575048080292,Columbus Blue Jackets,0.4776424951919708,Playing At:  Montreal Canadiens   Home,55 >,Montreal Canadiens,1
+2023-10-26,New York Islanders,0.5194573363026773,Ottawa Senators,0.4805426636973227,Playing At:  New York Islanders   Home,55 >,New York Islanders,1
+2023-10-26,Edmonton Oilers,0.5095561097138774,New York Rangers,0.49044389028612256,Playing At:  Edmonton Oilers   Home,55 >,New York Rangers,0
+2023-10-26,Calgary Flames,0.5042601680102785,St. Louis Blues,0.4957398319897215,Playing At:  Calgary Flames   Home,55 >,St. Louis Blues,0
+2023-10-27,Carolina Hurricanes,0.8652074910241234,San Jose Sharks,0.13479250897587658,Playing At:  Carolina Hurricanes   Home,85 <,Carolina Hurricanes,1
+2023-10-27,Los Angeles Kings,0.7195841791638948,Arizona Coyotes,0.28041582083610517,Playing At:  Arizona Coyotes   Home,70-80,Los Angeles Kings,1
+2023-10-27,Vegas Golden Knights,0.7139687297191954,Chicago Blackhawks,0.28603127028080455,Playing At:  Vegas Golden Knights   Home,70-80,Chicago Blackhawks,0
+2023-10-27,St. Louis Blues,0.5787962947258386,Vancouver Canucks,0.4212037052741614,Playing At:  Vancouver Canucks   Home,55-60,Vancouver Canucks,0
+2023-10-27,New Jersey Devils,0.5782291056859218,Buffalo Sabres,0.4217708943140782,Playing At:  New Jersey Devils   Home,55-60,New Jersey Devils,1
+2023-10-27,Minnesota Wild,0.54681777373636,Washington Capitals,0.45318222626364,Playing At:  Washington Capitals   Home,55 >,Washington Capitals,0
+2023-10-28,Boston Bruins,0.8460309254910744,Detroit Red Wings,0.1539690745089256,Playing At:  Boston Bruins   Home,80-85,Boston Bruins,1
+2023-10-28,Winnipeg Jets,0.6751440048703381,Montreal Canadiens,0.3248559951296619,Playing At:  Montreal Canadiens   Home,60-70,Montreal Canadiens,0
+2023-10-28,Philadelphia Flyers,0.6440379686852173,Anaheim Ducks,0.35596203131478266,Playing At:  Philadelphia Flyers   Home,60-70,Anaheim Ducks,0
+2023-10-28,New York Islanders,0.6396740216872175,Columbus Blue Jackets,0.36032597831278246,Playing At:  Columbus Blue Jackets   Home,60-70,New York Islanders,1
+2023-10-28,Florida Panthers,0.6050536239381918,Seattle Kraken,0.39494637606180816,Playing At:  Florida Panthers   Home,60-70,Florida Panthers,1
+2023-10-28,Los Angeles Kings,0.5514512503503308,Vegas Golden Knights,0.4485487496496692,Playing At:  Los Angeles Kings   Home,55-60,Vegas Golden Knights,0
+2023-10-28,Pittsburgh Penguins,0.5351014700395105,Ottawa Senators,0.4648985299604895,Playing At:  Pittsburgh Penguins   Home,55 >,Ottawa Senators,0
+2023-10-28,Toronto Maple Leafs,0.5305833210307166,Nashville Predators,0.4694166789692834,Playing At:  Nashville Predators   Home,55 >,Nashville Predators,0
+2023-10-28,New York Rangers,0.529160484002591,Vancouver Canucks,0.47083951599740903,Playing At:  Vancouver Canucks   Home,55 >,New York Rangers,1
+2023-10-29,Washington Capitals,0.7593730705589866,San Jose Sharks,0.24062692944101338,Playing At:  Washington Capitals   Home,70-80,Washington Capitals,1
+2023-10-29,Edmonton Oilers,0.5834144291546972,Calgary Flames,0.4165855708453028,Playing At:  Edmonton Oilers   Home,55-60,Edmonton Oilers,1
+2023-10-29,Colorado Avalanche,0.5615120820553572,Buffalo Sabres,0.4384879179446428,Playing At:  Buffalo Sabres   Home,55-60,Buffalo Sabres,0
+2023-10-29,Minnesota Wild,0.5233635286969709,New Jersey Devils,0.4766364713030291,Playing At:  New Jersey Devils   Home,55 >,New Jersey Devils,0
+2023-10-30,Dallas Stars,0.773743880026142,Columbus Blue Jackets,0.22625611997385797,Playing At:  Dallas Stars   Home,70-80,Dallas Stars,1
+2023-10-30,Pittsburgh Penguins,0.7532760640112606,Anaheim Ducks,0.24672393598873943,Playing At:  Pittsburgh Penguins   Home,70-80,Anaheim Ducks,0
+2023-10-30,Boston Bruins,0.7361181894599491,Florida Panthers,0.2638818105400509,Playing At:  Boston Bruins   Home,70-80,Boston Bruins,1
+2023-10-30,Carolina Hurricanes,0.7340391432787303,Philadelphia Flyers,0.2659608567212697,Playing At:  Philadelphia Flyers   Home,70-80,Carolina Hurricanes,1
+2023-10-30,Vegas Golden Knights,0.6864841645107256,Montreal Canadiens,0.3135158354892744,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,1
+2023-10-30,Tampa Bay Lightning,0.6098027774135959,Seattle Kraken,0.3901972225864041,Playing At:  Tampa Bay Lightning   Home,60-70,Seattle Kraken,0
+2023-10-30,New York Rangers,0.5429471047678142,Winnipeg Jets,0.45705289523218584,Playing At:  Winnipeg Jets   Home,55 >,New York Rangers,1
+2023-10-30,New York Islanders,0.5366415203159038,Detroit Red Wings,0.46335847968409616,Playing At:  New York Islanders   Home,55 >,Detroit Red Wings,0
+2023-10-30,Arizona Coyotes,0.5126914037501255,Chicago Blackhawks,0.48730859624987455,Playing At:  Arizona Coyotes   Home,55 >,Arizona Coyotes,1
+2023-10-31,Nashville Predators,0.600829128106285,Vancouver Canucks,0.39917087189371503,Playing At:  Vancouver Canucks   Home,60-70,Vancouver Canucks,0
+2023-10-31,Toronto Maple Leafs,0.5299315665694623,Los Angeles Kings,0.4700684334305377,Playing At:  Toronto Maple Leafs   Home,55 >,Los Angeles Kings,0
+2023-11-01,Colorado Avalanche,0.6745517664204395,St. Louis Blues,0.32544823357956054,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2023-11-01,Buffalo Sabres,0.6733378658021658,Philadelphia Flyers,0.3266621341978342,Playing At:  Philadelphia Flyers   Home,60-70,Buffalo Sabres,1
+2023-11-01,Arizona Coyotes,0.6160368264982017,Anaheim Ducks,0.3839631735017983,Playing At:  Anaheim Ducks   Home,60-70,Anaheim Ducks,0
+2023-11-01,Dallas Stars,0.514622980389472,Calgary Flames,0.48537701961052804,Playing At:  Calgary Flames   Home,55 >,Dallas Stars,1
+2023-11-02,Tampa Bay Lightning,0.7215332303268731,Columbus Blue Jackets,0.2784667696731269,Playing At:  Columbus Blue Jackets   Home,70-80,Columbus Blue Jackets,0
+2023-11-02,Boston Bruins,0.6848790559000112,Toronto Maple Leafs,0.3151209440999888,Playing At:  Boston Bruins   Home,60-70,Boston Bruins,1
+2023-11-02,Florida Panthers,0.6443540431363113,Detroit Red Wings,0.3556459568636887,Playing At:  Detroit Red Wings   Home,60-70,Florida Panthers,1
+2023-11-02,Vancouver Canucks,0.639998461415531,San Jose Sharks,0.36000153858446904,Playing At:  San Jose Sharks   Home,60-70,Vancouver Canucks,1
+2023-11-02,Edmonton Oilers,0.6144436542848031,Dallas Stars,0.3855563457151969,Playing At:  Edmonton Oilers   Home,60-70,Dallas Stars,0
+2023-11-02,Los Angeles Kings,0.5841664258774732,Ottawa Senators,0.41583357412252675,Playing At:  Ottawa Senators   Home,55-60,Los Angeles Kings,1
+2023-11-02,Minnesota Wild,0.5563142864072064,New Jersey Devils,0.44368571359279363,Playing At:  Minnesota Wild   Home,55-60,New Jersey Devils,0
+2023-11-02,Vegas Golden Knights,0.5538214515033429,Winnipeg Jets,0.44617854849665706,Playing At:  Vegas Golden Knights   Home,55-60,Vegas Golden Knights,1
+2023-11-02,Montreal Canadiens,0.5251750963807664,Arizona Coyotes,0.4748249036192336,Playing At:  Arizona Coyotes   Home,55 >,Arizona Coyotes,0
+2023-11-02,New York Rangers,0.518830191051114,Carolina Hurricanes,0.48116980894888595,Playing At:  New York Rangers   Home,55 >,New York Rangers,1
+2023-11-02,Seattle Kraken,0.5114183901068607,Nashville Predators,0.48858160989313926,Playing At:  Seattle Kraken   Home,55 >,Seattle Kraken,1
+2023-11-02,New York Islanders,0.5106597601160698,Washington Capitals,0.48934023988393016,Playing At:  Washington Capitals   Home,55 >,New York Islanders,1
+2023-11-03,Buffalo Sabres,0.6429995927866861,Philadelphia Flyers,0.35700040721331394,Playing At:  Buffalo Sabres   Home,60-70,Philadelphia Flyers,0
+2023-11-03,New Jersey Devils,0.5622081643147624,St. Louis Blues,0.4377918356852376,Playing At:  St. Louis Blues   Home,55-60,St. Louis Blues,0
+2023-11-04,Boston Bruins,0.8147535068887741,Detroit Red Wings,0.18524649311122587,Playing At:  Detroit Red Wings   Home,80-85,Detroit Red Wings,0
+2023-11-04,Winnipeg Jets,0.7430736506832984,Arizona Coyotes,0.25692634931670155,Playing At:  Arizona Coyotes   Home,70-80,Winnipeg Jets,1
+2023-11-04,Toronto Maple Leafs,0.7420034205712345,Buffalo Sabres,0.2579965794287655,Playing At:  Toronto Maple Leafs   Home,70-80,Buffalo Sabres,0
+2023-11-04,Pittsburgh Penguins,0.7334674753357207,San Jose Sharks,0.26653252466427935,Playing At:  San Jose Sharks   Home,70-80,Pittsburgh Penguins,1
+2023-11-04,Florida Panthers,0.7299762531725791,Chicago Blackhawks,0.2700237468274209,Playing At:  Chicago Blackhawks   Home,70-80,Chicago Blackhawks,0
+2023-11-04,Washington Capitals,0.6614764335860436,Columbus Blue Jackets,0.3385235664139564,Playing At:  Washington Capitals   Home,60-70,Washington Capitals,1
+2023-11-04,Los Angeles Kings,0.6364597865110793,Philadelphia Flyers,0.36354021348892074,Playing At:  Philadelphia Flyers   Home,60-70,Los Angeles Kings,1
+2023-11-04,Edmonton Oilers,0.6163026691160011,Nashville Predators,0.38369733088399893,Playing At:  Edmonton Oilers   Home,60-70,Nashville Predators,0
+2023-11-04,St. Louis Blues,0.6084504699354358,Montreal Canadiens,0.39154953006456417,Playing At:  St. Louis Blues   Home,60-70,St. Louis Blues,1
+2023-11-04,Colorado Avalanche,0.6059013108620555,Vegas Golden Knights,0.39409868913794455,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,0
+2023-11-04,Minnesota Wild,0.5726414344130502,New York Rangers,0.42735856558694985,Playing At:  Minnesota Wild   Home,55-60,Minnesota Wild,1
+2023-11-04,Tampa Bay Lightning,0.5462199374028229,Ottawa Senators,0.45378006259717707,Playing At:  Ottawa Senators   Home,55 >,Tampa Bay Lightning,1
+2023-11-04,Carolina Hurricanes,0.5267416223018431,New York Islanders,0.47325837769815693,Playing At:  New York Islanders   Home,55 >,Carolina Hurricanes,1
+2023-11-04,Seattle Kraken,0.5224220325333285,Calgary Flames,0.47757796746667147,Playing At:  Seattle Kraken   Home,55 >,Calgary Flames,0
+2023-11-04,Dallas Stars,0.5170324970290523,Vancouver Canucks,0.4829675029709477,Playing At:  Vancouver Canucks   Home,55 >,Vancouver Canucks,0
+2023-11-05,Vegas Golden Knights,0.7619701234173091,Anaheim Ducks,0.23802987658269092,Playing At:  Anaheim Ducks   Home,70-80,Anaheim Ducks,0
+2023-11-05,New Jersey Devils,0.7291867311894958,Chicago Blackhawks,0.27081326881050416,Playing At:  Chicago Blackhawks   Home,70-80,New Jersey Devils,1
+2023-11-06,Florida Panthers,0.7132918029176543,Columbus Blue Jackets,0.28670819708234574,Playing At:  Florida Panthers   Home,70-80,Florida Panthers,1
+2023-11-06,Boston Bruins,0.6775954121665687,Dallas Stars,0.3224045878334313,Playing At:  Dallas Stars   Home,60-70,Boston Bruins,1
+2023-11-06,Toronto Maple Leafs,0.6499568527273119,Tampa Bay Lightning,0.35004314727268815,Playing At:  Toronto Maple Leafs   Home,60-70,Toronto Maple Leafs,1
+2023-11-06,Edmonton Oilers,0.5852766923397188,Vancouver Canucks,0.4147233076602812,Playing At:  Vancouver Canucks   Home,55-60,Vancouver Canucks,0
+2023-11-07,Seattle Kraken,0.702320248672238,Arizona Coyotes,0.29767975132776203,Playing At:  Arizona Coyotes   Home,70-80,Arizona Coyotes,0
+2023-11-07,Pittsburgh Penguins,0.6993422825101914,Anaheim Ducks,0.30065771748980863,Playing At:  Anaheim Ducks   Home,60-70,Pittsburgh Penguins,1
+2023-11-07,Tampa Bay Lightning,0.662855150145091,Montreal Canadiens,0.337144849854909,Playing At:  Montreal Canadiens   Home,60-70,Tampa Bay Lightning,1
+2023-11-07,New York Rangers,0.64915332177955,Detroit Red Wings,0.35084667822045,Playing At:  New York Rangers   Home,60-70,New York Rangers,1
+2023-11-07,Colorado Avalanche,0.6253044163711743,New Jersey Devils,0.3746955836288257,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2023-11-07,Winnipeg Jets,0.594449943875537,St. Louis Blues,0.40555005612446304,Playing At:  St. Louis Blues   Home,55-60,Winnipeg Jets,1
+2023-11-07,Carolina Hurricanes,0.5897208007544699,Buffalo Sabres,0.41027919924553014,Playing At:  Carolina Hurricanes   Home,55-60,Carolina Hurricanes,1
+2023-11-07,Philadelphia Flyers,0.5733224477994789,San Jose Sharks,0.42667755220052106,Playing At:  San Jose Sharks   Home,55-60,San Jose Sharks,0
+2023-11-07,Minnesota Wild,0.5686097123230062,New York Islanders,0.43139028767699383,Playing At:  New York Islanders   Home,55-60,Minnesota Wild,1
+2023-11-07,Nashville Predators,0.5070630019734375,Calgary Flames,0.49293699802656255,Playing At:  Calgary Flames   Home,55 >,Calgary Flames,0
+2023-11-08,Toronto Maple Leafs,0.6782735969668792,Ottawa Senators,0.32172640303312083,Playing At:  Toronto Maple Leafs   Home,60-70,Ottawa Senators,0
+2023-11-08,Vegas Golden Knights,0.5571044987338925,Los Angeles Kings,0.44289550126610755,Playing At:  Vegas Golden Knights   Home,55-60,Los Angeles Kings,0
+2023-11-08,Florida Panthers,0.554346023184104,Washington Capitals,0.445653976815896,Playing At:  Washington Capitals   Home,55-60,Florida Panthers,1
+2023-11-09,Edmonton Oilers,0.818350462626352,San Jose Sharks,0.18164953737364797,Playing At:  San Jose Sharks   Home,80-85,San Jose Sharks,0
+2023-11-09,Boston Bruins,0.7516860459127791,New York Islanders,0.2483139540872209,Playing At:  Boston Bruins   Home,70-80,Boston Bruins,1
+2023-11-09,Dallas Stars,0.748487651500799,Columbus Blue Jackets,0.251512348499201,Playing At:  Columbus Blue Jackets   Home,70-80,Dallas Stars,1
+2023-11-09,Tampa Bay Lightning,0.7325700231712493,Chicago Blackhawks,0.2674299768287507,Playing At:  Tampa Bay Lightning   Home,70-80,Chicago Blackhawks,0
+2023-11-09,St. Louis Blues,0.6539131986441145,Arizona Coyotes,0.34608680135588554,Playing At:  St. Louis Blues   Home,60-70,St. Louis Blues,1
+2023-11-09,Los Angeles Kings,0.6165358295890375,Pittsburgh Penguins,0.3834641704109625,Playing At:  Los Angeles Kings   Home,60-70,Pittsburgh Penguins,0
+2023-11-09,Colorado Avalanche,0.6100521123684501,Seattle Kraken,0.38994788763154986,Playing At:  Colorado Avalanche   Home,60-70,Seattle Kraken,0
+2023-11-09,Ottawa Senators,0.5897468434029496,Vancouver Canucks,0.4102531565970504,Playing At:  Ottawa Senators   Home,55-60,Vancouver Canucks,0
+2023-11-09,Winnipeg Jets,0.5645968057594155,Nashville Predators,0.4354031942405845,Playing At:  Winnipeg Jets   Home,55-60,Winnipeg Jets,1
+2023-11-09,New York Rangers,0.5480626066238401,Minnesota Wild,0.4519373933761599,Playing At:  New York Rangers   Home,55 >,New York Rangers,1
+2023-11-09,Detroit Red Wings,0.5396562018656873,Montreal Canadiens,0.4603437981343127,Playing At:  Detroit Red Wings   Home,55 >,Montreal Canadiens,0
+2023-11-10,Vegas Golden Knights,0.8263891943457473,San Jose Sharks,0.1736108056542527,Playing At:  Vegas Golden Knights   Home,80-85,Vegas Golden Knights,1
+2023-11-10,Toronto Maple Leafs,0.7019747129704119,Calgary Flames,0.2980252870295881,Playing At:  Toronto Maple Leafs   Home,70-80,Toronto Maple Leafs,1
+2023-11-10,Philadelphia Flyers,0.5854134223088765,Anaheim Ducks,0.4145865776911235,Playing At:  Anaheim Ducks   Home,55-60,Philadelphia Flyers,1
+2023-11-10,New Jersey Devils,0.5835032851566948,Washington Capitals,0.4164967148433052,Playing At:  New Jersey Devils   Home,55-60,Washington Capitals,0
+2023-11-10,Carolina Hurricanes,0.5672536775147754,Florida Panthers,0.4327463224852246,Playing At:  Florida Panthers   Home,55-60,Florida Panthers,0
+2023-11-10,Minnesota Wild,0.5239478393470907,Buffalo Sabres,0.47605216065290934,Playing At:  Buffalo Sabres   Home,55 >,Buffalo Sabres,0
+2023-11-11,Boston Bruins,0.8248548952553556,Montreal Canadiens,0.1751451047446444,Playing At:  Montreal Canadiens   Home,80-85,Montreal Canadiens,0
+2023-11-11,Toronto Maple Leafs,0.7574819341425415,Vancouver Canucks,0.2425180658574585,Playing At:  Toronto Maple Leafs   Home,70-80,Toronto Maple Leafs,1
+2023-11-11,Los Angeles Kings,0.7182504625857982,Philadelphia Flyers,0.28174953741420183,Playing At:  Los Angeles Kings   Home,70-80,Philadelphia Flyers,0
+2023-11-11,Colorado Avalanche,0.6639485917071579,St. Louis Blues,0.3360514082928421,Playing At:  Colorado Avalanche   Home,60-70,St. Louis Blues,0
+2023-11-11,Nashville Predators,0.6543970442954958,Arizona Coyotes,0.34560295570450417,Playing At:  Nashville Predators   Home,60-70,Arizona Coyotes,0
+2023-11-11,Detroit Red Wings,0.6453011781166113,Columbus Blue Jackets,0.35469882188338875,Playing At:  Detroit Red Wings   Home,60-70,Detroit Red Wings,1
+2023-11-11,New York Islanders,0.6369150933749144,Washington Capitals,0.36308490662508563,Playing At:  New York Islanders   Home,60-70,Washington Capitals,0
+2023-11-11,Edmonton Oilers,0.596507169827025,Seattle Kraken,0.403492830172975,Playing At:  Seattle Kraken   Home,55-60,Edmonton Oilers,1
+2023-11-11,Carolina Hurricanes,0.5847798392021077,Tampa Bay Lightning,0.41522016079789226,Playing At:  Tampa Bay Lightning   Home,55-60,Carolina Hurricanes,1
+2023-11-11,Buffalo Sabres,0.5597625785245719,Pittsburgh Penguins,0.4402374214754281,Playing At:  Pittsburgh Penguins   Home,55-60,Pittsburgh Penguins,0
+2023-11-11,Ottawa Senators,0.5495472902260924,Calgary Flames,0.4504527097739076,Playing At:  Ottawa Senators   Home,55 >,Ottawa Senators,1
+2023-11-11,Winnipeg Jets,0.510778619121029,Dallas Stars,0.48922138087897105,Playing At:  Winnipeg Jets   Home,55 >,Dallas Stars,0
+2023-11-12,New York Rangers,0.8027926237446876,Columbus Blue Jackets,0.19720737625531237,Playing At:  New York Rangers   Home,80-85,New York Rangers,1
+2023-11-12,Florida Panthers,0.7546024416828064,Chicago Blackhawks,0.24539755831719356,Playing At:  Florida Panthers   Home,70-80,Florida Panthers,1
+2023-11-12,Minnesota Wild,0.5872163139438308,Dallas Stars,0.4127836860561692,Playing At:  Minnesota Wild   Home,55-60,Dallas Stars,0
+2023-11-12,Vancouver Canucks,0.5599183265803509,Montreal Canadiens,0.4400816734196491,Playing At:  Montreal Canadiens   Home,55-60,Vancouver Canucks,1
+2023-11-12,San Jose Sharks,0.5026734554878255,Anaheim Ducks,0.4973265445121745,Playing At:  Anaheim Ducks   Home,55 >,Anaheim Ducks,0
+2023-11-13,Colorado Avalanche,0.607762652874031,Seattle Kraken,0.392237347125969,Playing At:  Seattle Kraken   Home,60-70,Colorado Avalanche,1
+2023-11-13,Edmonton Oilers,0.6058651340091739,New York Islanders,0.39413486599082614,Playing At:  Edmonton Oilers   Home,60-70,Edmonton Oilers,1
+2023-11-14,Dallas Stars,0.7825453257203179,Arizona Coyotes,0.21745467427968213,Playing At:  Dallas Stars   Home,70-80,Dallas Stars,1
+2023-11-14,Nashville Predators,0.7806469525229233,Anaheim Ducks,0.21935304747707673,Playing At:  Nashville Predators   Home,70-80,Anaheim Ducks,0
+2023-11-14,Florida Panthers,0.7321404605464034,San Jose Sharks,0.26785953945359664,Playing At:  San Jose Sharks   Home,70-80,Florida Panthers,1
+2023-11-14,Boston Bruins,0.7276629862197261,Buffalo Sabres,0.27233701378027386,Playing At:  Buffalo Sabres   Home,70-80,Boston Bruins,1
+2023-11-14,Pittsburgh Penguins,0.7080261772621903,Columbus Blue Jackets,0.2919738227378097,Playing At:  Columbus Blue Jackets   Home,70-80,Pittsburgh Penguins,1
+2023-11-14,Vegas Golden Knights,0.6417918040287323,Washington Capitals,0.35820819597126774,Playing At:  Washington Capitals   Home,60-70,Washington Capitals,0
+2023-11-14,Tampa Bay Lightning,0.551943588423,St. Louis Blues,0.44805641157700005,Playing At:  St. Louis Blues   Home,55-60,St. Louis Blues,0
+2023-11-14,Calgary Flames,0.53994655868407615,Montreal Canadiens,0.46005344131592385,Playing At:  Montreal Canadiens   Home,55 >,Calgary Flames,1
+2023-11-14,New Jersey Devils,0.5160704527400789,Winnipeg Jets,0.4839295472599211,Playing At:  Winnipeg Jets   Home,55 >,Winnipeg Jets,0
+2023-11-15,Colorado Avalanche,0.8763218436753848,Anaheim Ducks,0.12367815632461521,Playing At:  Colorado Avalanche   Home,85 <,Colorado Avalanche,1
+2023-11-15,Carolina Hurricanes,0.8003929471022235,Philadelphia Flyers,0.19960705289777647,Playing At:  Carolina Hurricanes   Home,80-85,Philadelphia Flyers,0
+2023-11-15,Edmonton Oilers,0.6307919255043767,Seattle Kraken,0.3692080744956233,Playing At:  Edmonton Oilers   Home,60-70,Edmonton Oilers,1
+2023-11-15,New York Islanders,0.5271852306176344,Vancouver Canucks,0.47281476938236555,Playing At:  Vancouver Canucks   Home,55 >,Vancouver Canucks,0
+2023-11-16,Tampa Bay Lightning,0.7221133706850057,Chicago Blackhawks,0.2778866293149943,Playing At:  Chicago Blackhawks   Home,70-80,Tampa Bay Lightning,1
+2023-11-16,St. Louis Blues,0.6706872426910031,San Jose Sharks,0.3293127573089969,Playing At:  San Jose Sharks   Home,60-70,San Jose Sharks,0
+2023-11-16,Vegas Golden Knights,0.6660385031605579,Montreal Canadiens,0.3339614968394421,Playing At:  Montreal Canadiens   Home,60-70,Vegas Golden Knights,1
+2023-11-16,Ottawa Senators,0.6466988637299198,Detroit Red Wings,0.3533011362700802,Playing At:  Ottawa Senators   Home,60-70,Ottawa Senators,1
+2023-11-16,New Jersey Devils,0.6036741003841146,Pittsburgh Penguins,0.3963258996158854,Playing At:  Pittsburgh Penguins   Home,60-70,New Jersey Devils,1
+2023-11-16,Los Angeles Kings,0.5679157076842387,Florida Panthers,0.4320842923157613,Playing At:  Los Angeles Kings   Home,55-60,Los Angeles Kings,1
+2023-11-16,Seattle Kraken,0.5216636236352991,New York Islanders,0.47833637636470094,Playing At:  Seattle Kraken   Home,55 >,Seattle Kraken,1
+2023-11-16,Calgary Flames,0.519636381227538,Vancouver Canucks,0.48036361877246203,Playing At:  Calgary Flames   Home,55 >,Calgary Flames,1
+2023-11-16,Columbus Blue Jackets,0.5118242551141632,Arizona Coyotes,0.4881757448858368,Playing At:  Columbus Blue Jackets   Home,55 >,Arizona Coyotes,0
+2023-11-17,Florida Panthers,0.7921895709024487,Anaheim Ducks,0.20781042909755132,Playing At:  Anaheim Ducks   Home,70-80,Florida Panthers,1
+2023-11-17,Toronto Maple Leafs,0.761986052474813,Detroit Red Wings,0.238013947525187,Playing At:  Detroit Red Wings   Home,70-80,Toronto Maple Leafs,1
+2023-11-17,Winnipeg Jets,0.5267542514238199,Buffalo Sabres,0.47324574857618007,Playing At:  Winnipeg Jets   Home,55 >,Winnipeg Jets,1
+2023-11-18,Boston Bruins,0.8455500041164574,Montreal Canadiens,0.15444999588354258,Playing At:  Boston Bruins   Home,80-85,Boston Bruins,1
+2023-11-18,Winnipeg Jets,0.7807635522872873,Arizona Coyotes,0.21923644771271267,Playing At:  Winnipeg Jets   Home,70-80,Winnipeg Jets,1
+2023-11-18,Nashville Predators,0.7528259890306145,Chicago Blackhawks,0.24717401096938552,Playing At:  Nashville Predators   Home,70-80,Nashville Predators,1
+2023-11-18,Vegas Golden Knights,0.7151134114064837,Philadelphia Flyers,0.28488658859351634,Playing At:  Philadelphia Flyers   Home,70-80,Philadelphia Flyers,0
+2023-11-18,Carolina Hurricanes,0.6915695441077884,Pittsburgh Penguins,0.30843045589221163,Playing At:  Carolina Hurricanes   Home,60-70,Carolina Hurricanes,1
+2023-11-18,Washington Capitals,0.6702330400343326,Columbus Blue Jackets,0.3297669599656674,Playing At:  Washington Capitals   Home,60-70,Washington Capitals,1
+2023-11-18,Los Angeles Kings,0.6643508732165161,St. Louis Blues,0.3356491267834839,Playing At:  Los Angeles Kings   Home,60-70,Los Angeles Kings,1
+2023-11-18,Minnesota Wild,0.6016315850490268,Ottawa Senators,0.3983684149509732,Playing At:  Ottawa Senators   Home,60-70,Ottawa Senators,0
+2023-11-18,Edmonton Oilers,0.5559167345947007,Tampa Bay Lightning,0.4440832654052993,Playing At:  Tampa Bay Lightning   Home,55-60,Tampa Bay Lightning,0
+2023-11-18,Colorado Avalanche,0.5384069682289093,Dallas Stars,0.4615930317710907,Playing At:  Dallas Stars   Home,55 >,Colorado Avalanche,1
+2023-11-18,New York Islanders,0.5307043810518255,Calgary Flames,0.4692956189481745,Playing At:  Calgary Flames   Home,55 >,New York Islanders,1
+2023-11-18,Vancouver Canucks,0.5067327848334009,Seattle Kraken,0.4932672151665991,Playing At:  Vancouver Canucks   Home,55 >,Seattle Kraken,0
+2023-11-18,New York Rangers,0.501986591345079,New Jersey Devils,0.49801340865492105,Playing At:  New Jersey Devils   Home,55 >,New York Rangers,1
+2023-11-19,Buffalo Sabres,0.7369290214874058,Chicago Blackhawks,0.2630709785125942,Playing At:  Chicago Blackhawks   Home,70-80,Buffalo Sabres,1
+2023-11-19,St. Louis Blues,0.6443255775193826,Anaheim Ducks,0.3556744224806174,Playing At:  Anaheim Ducks   Home,60-70,St. Louis Blues,1
+2023-11-19,Vegas Golden Knights,0.6396470748841563,Pittsburgh Penguins,0.3603529251158437,Playing At:  Pittsburgh Penguins   Home,60-70,Pittsburgh Penguins,0
+2023-11-19,Philadelphia Flyers,0.5954189395855116,Columbus Blue Jackets,0.4045810604144884,Playing At:  Philadelphia Flyers   Home,55-60,Philadelphia Flyers,1
+2023-11-19,Toronto Maple Leafs,0.5551602968247631,Minnesota Wild,0.4448397031752369,Playing At:  Minnesota Wild   Home,55-60,Toronto Maple Leafs,1
+2023-11-20,Los Angeles Kings,0.7681313859800529,Arizona Coyotes,0.23186861401994707,Playing At:  Arizona Coyotes   Home,70-80,Los Angeles Kings,1
+2023-11-20,Boston Bruins,0.7147346257997349,Tampa Bay Lightning,0.2852653742002651,Playing At:  Tampa Bay Lightning   Home,70-80,Tampa Bay Lightning,0
+2023-11-20,Vancouver Canucks,0.6857275863315566,San Jose Sharks,0.3142724136684434,Playing At:  Vancouver Canucks   Home,60-70,Vancouver Canucks,1
+2023-11-20,Colorado Avalanche,0.6330801955132748,Nashville Predators,0.36691980448672523,Playing At:  Nashville Predators   Home,60-70,Nashville Predators,0
+2023-11-20,Seattle Kraken,0.6281380915174923,Calgary Flames,0.37186190848250766,Playing At:  Seattle Kraken   Home,60-70,Calgary Flames,0
+2023-11-20,Florida Panthers,0.5597754840085565,Edmonton Oilers,0.4402245159914435,Playing At:  Florida Panthers   Home,55-60,Florida Panthers,1
+2023-11-20,New York Rangers,0.5521848008723301,Dallas Stars,0.44781519912766987,Playing At:  Dallas Stars   Home,55-60,Dallas Stars,0
+2023-11-22,Seattle Kraken,0.7963197765075289,San Jose Sharks,0.20368022349247106,Playing At:  Seattle Kraken   Home,70-80,Seattle Kraken,1
+2023-11-22,New York Islanders,0.7381022517630025,Philadelphia Flyers,0.2618977482369975,Playing At:  New York Islanders   Home,70-80,New York Islanders,1
+2023-11-22,St. Louis Blues,0.711269694418651,Arizona Coyotes,0.28873030558134904,Playing At:  Arizona Coyotes   Home,70-80,St. Louis Blues,1
+2023-11-22,Boston Bruins,0.6620809947787218,Florida Panthers,0.33791900522127816,Playing At:  Florida Panthers   Home,60-70,Boston Bruins,1
+2023-11-22,Colorado Avalanche,0.6122168773264988,Vancouver Canucks,0.38778312267350123,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2023-11-22,Montreal Canadiens,0.5747380843322778,Anaheim Ducks,0.4252619156677222,Playing At:  Anaheim Ducks   Home,55-60,Montreal Canadiens,1
+2023-11-22,Buffalo Sabres,0.5446259557582764,Washington Capitals,0.45537404424172356,Playing At:  Washington Capitals   Home,55 >,Washington Capitals,0
+2023-11-22,Vegas Golden Knights,0.542431079907663,Dallas Stars,0.45756892009233696,Playing At:  Dallas Stars   Home,55 >,Vegas Golden Knights,1
+2023-11-22,Carolina Hurricanes,0.5342936213325221,Edmonton Oilers,0.4657063786674779,Playing At:  Carolina Hurricanes   Home,55 >,Carolina Hurricanes,1
+2023-11-22,New York Rangers,0.5322957498794532,Pittsburgh Penguins,0.46770425012054684,Playing At:  Pittsburgh Penguins   Home,55 >,New York Rangers,1
+2023-11-22,New Jersey Devils,0.5302170146831915,Detroit Red Wings,0.4697829853168085,Playing At:  Detroit Red Wings   Home,55 >,Detroit Red Wings,0
+2023-11-22,Chicago Blackhawks,0.519895459954879,Columbus Blue Jackets,0.48010454004512104,Playing At:  Columbus Blue Jackets   Home,55 >,Columbus Blue Jackets,0
+2023-11-22,Tampa Bay Lightning,0.5093798776253049,Winnipeg Jets,0.4906201223746951,Playing At:  Tampa Bay Lightning   Home,55 >,Winnipeg Jets,0
+2023-11-22,Calgary Flames,0.5031062979222969,Nashville Predators,0.4968937020777031,Playing At:  Nashville Predators   Home,55 >,Nashville Predators,0
+2023-11-24,Toronto Maple Leafs,0.8235734236758246,Chicago Blackhawks,0.17642657632417535,Playing At:  Chicago Blackhawks   Home,80-85,Chicago Blackhawks,0
+2023-11-24,Boston Bruins,0.8191635564974783,Detroit Red Wings,0.1808364435025217,Playing At:  Boston Bruins   Home,80-85,Detroit Red Wings,0
+2023-11-24,New Jersey Devils,0.8036288406868894,Columbus Blue Jackets,0.19637115931311055,Playing At:  New Jersey Devils   Home,80-85,Columbus Blue Jackets,0
+2023-11-24,Los Angeles Kings,0.7779447626571286,Anaheim Ducks,0.22205523734287136,Playing At:  Anaheim Ducks   Home,70-80,Los Angeles Kings,1
+2023-11-24,New York Rangers,0.7309632251882462,Philadelphia Flyers,0.2690367748117538,Playing At:  Philadelphia Flyers   Home,70-80,New York Rangers,1
+2023-11-24,Dallas Stars,0.7000464667133227,Calgary Flames,0.2999535332866773,Playing At:  Dallas Stars   Home,70-80,Calgary Flames,0
+2023-11-24,Montreal Canadiens,0.6449222033277492,San Jose Sharks,0.3550777966722508,Playing At:  San Jose Sharks   Home,60-70,Montreal Canadiens,1
+2023-11-24,Seattle Kraken,0.6293052833275875,Vancouver Canucks,0.3706947166724125,Playing At:  Seattle Kraken   Home,60-70,Vancouver Canucks,0
+2023-11-24,Florida Panthers,0.6124502248546688,Winnipeg Jets,0.3875497751453312,Playing At:  Florida Panthers   Home,60-70,Winnipeg Jets,0
+2023-11-24,Edmonton Oilers,0.6004664815766833,Washington Capitals,0.39953351842331675,Playing At:  Washington Capitals   Home,60-70,Edmonton Oilers,1
+2023-11-24,Buffalo Sabres,0.5978976738550387,Pittsburgh Penguins,0.40210232614496133,Playing At:  Buffalo Sabres   Home,55-60,Buffalo Sabres,1
+2023-11-24,Carolina Hurricanes,0.5788179162631736,Tampa Bay Lightning,0.4211820837368264,Playing At:  Carolina Hurricanes   Home,55-60,Tampa Bay Lightning,0
+2023-11-24,Ottawa Senators,0.5361323360388824,New York Islanders,0.46386766396111756,Playing At:  Ottawa Senators   Home,55 >,New York Islanders,0
+2023-11-24,Minnesota Wild,0.5258454070664562,Colorado Avalanche,0.4741545929335438,Playing At:  Minnesota Wild   Home,55 >,Colorado Avalanche,0
+2023-11-24,St. Louis Blues,0.5183548094382228,Nashville Predators,0.48164519056177724,Playing At:  St. Louis Blues   Home,55 >,Nashville Predators,0
+2023-11-25,Vegas Golden Knights,0.7590301309066654,Arizona Coyotes,0.24096986909333462,Playing At:  Vegas Golden Knights   Home,70-80,Arizona Coyotes,0
+2023-11-25,Los Angeles Kings,0.7393985545444655,Montreal Canadiens,0.26060144545553454,Playing At:  Los Angeles Kings   Home,70-80,Los Angeles Kings,1
+2023-11-25,Colorado Avalanche,0.7071486693884266,Calgary Flames,0.2928513306115734,Playing At:  Colorado Avalanche   Home,70-80,Colorado Avalanche,1
+2023-11-25,Vancouver Canucks,0.7002945867888118,San Jose Sharks,0.29970541321118815,Playing At:  San Jose Sharks   Home,70-80,San Jose Sharks,0
+2023-11-25,Boston Bruins,0.6515760703325921,New York Rangers,0.3484239296674079,Playing At:  New York Rangers   Home,60-70,New York Rangers,0
+2023-11-25,New York Islanders,0.6458438425160045,Philadelphia Flyers,0.35415615748399554,Playing At:  New York Islanders   Home,60-70,Philadelphia Flyers,0
+2023-11-25,Toronto Maple Leafs,0.5980552730282045,Pittsburgh Penguins,0.4019447269717955,Playing At:  Pittsburgh Penguins   Home,55-60,Pittsburgh Penguins,0
+2023-11-25,New Jersey Devils,0.5743980471599277,Buffalo Sabres,0.4256019528400723,Playing At:  New Jersey Devils   Home,55-60,New Jersey Devils,1
+2023-11-26,Edmonton Oilers,0.8387966551779886,Anaheim Ducks,0.16120334482201137,Playing At:  Edmonton Oilers   Home,80-85,Edmonton Oilers,1
+2023-11-26,Carolina Hurricanes,0.7897724150043766,Columbus Blue Jackets,0.21022758499562344,Playing At:  Carolina Hurricanes   Home,70-80,Carolina Hurricanes,1
+2023-11-26,St. Louis Blues,0.577686231044577,Chicago Blackhawks,0.42231376895542305,Playing At:  Chicago Blackhawks   Home,55-60,St. Louis Blues,1
+2023-11-26,Minnesota Wild,0.56009485307953355,Detroit Red Wings,0.43990514692046645,Playing At:  Detroit Red Wings   Home,55-60,Detroit Red Wings,0
+2023-11-26,Winnipeg Jets,0.5388303868837991,Nashville Predators,0.46116961311620086,Playing At:  Nashville Predators   Home,55 >,Nashville Predators,0
+2023-11-27,Boston Bruins,0.8562660016440619,Columbus Blue Jackets,0.14373399835593814,Playing At:  Columbus Blue Jackets   Home,85 <,Columbus Blue Jackets,0
+2023-11-27,Vegas Golden Knights,0.6804976819149029,Calgary Flames,0.3195023180850971,Playing At:  Calgary Flames   Home,60-70,Calgary Flames,0
+2023-11-27,Washington Capitals,0.6571448405265954,San Jose Sharks,0.3428551594734046,Playing At:  San Jose Sharks   Home,60-70,San Jose Sharks,0
+2023-11-27,New York Rangers,0.6468861827256223,Buffalo Sabres,0.35311381727437774,Playing At:  New York Rangers   Home,60-70,Buffalo Sabres,0
+2023-11-27,Colorado Avalanche,0.6425903040300011,Tampa Bay Lightning,0.35740969596999894,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2023-11-27,Florida Panthers,0.571673097141156,Ottawa Senators,0.428326902858844,Playing At:  Ottawa Senators   Home,55-60,Florida Panthers,1
+2023-11-28,Vancouver Canucks,0.755491510969996,Anaheim Ducks,0.244508489030004,Playing At:  Vancouver Canucks   Home,70-80,Vancouver Canucks,1
+2023-11-28,Carolina Hurricanes,0.7217674075267595,Philadelphia Flyers,0.2782325924732405,Playing At:  Philadelphia Flyers   Home,70-80,Carolina Hurricanes,1
+2023-11-28,Seattle Kraken,0.6783705013314315,Chicago Blackhawks,0.3216294986685685,Playing At:  Chicago Blackhawks   Home,60-70,Chicago Blackhawks,0
+2023-11-28,Tampa Bay Lightning,0.6488802539433263,Arizona Coyotes,0.35111974605667373,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,0
+2023-11-28,Toronto Maple Leafs,0.6358589065775142,Florida Panthers,0.3641410934224858,Playing At:  Toronto Maple Leafs   Home,60-70,Toronto Maple Leafs,1
+2023-11-28,Minnesota Wild,0.6113615023080392,St. Louis Blues,0.3886384976919608,Playing At:  Minnesota Wild   Home,60-70,Minnesota Wild,1
+2023-11-28,New Jersey Devils,0.606961032637436,New York Islanders,0.39303896736256405,Playing At:  New Jersey Devils   Home,60-70,New Jersey Devils,1
+2023-11-28,Dallas Stars,0.5710153595944738,Winnipeg Jets,0.4289846404055262,Playing At:  Winnipeg Jets   Home,55-60,Dallas Stars,1
+2023-11-28,Edmonton Oilers,0.5261413169290253,Vegas Golden Knights,0.4738586830709747,Playing At:  Edmonton Oilers   Home,55 >,Edmonton Oilers,1
+2023-11-28,Pittsburgh Penguins,0.5237769784314787,Nashville Predators,0.47622302156852125,Playing At:  Nashville Predators   Home,55 >,Nashville Predators,0
+2023-11-29,New York Rangers,0.6889369572489228,Detroit Red Wings,0.3110630427510772,Playing At:  New York Rangers   Home,60-70,New York Rangers,1
+2023-11-29,Los Angeles Kings,0.660154245723775,Washington Capitals,0.339845754276225,Playing At:  Los Angeles Kings   Home,60-70,Washington Capitals,0
+2023-11-29,Columbus Blue Jackets,0.501384664741539,Montreal Canadiens,0.498615335258461,Playing At:  Columbus Blue Jackets   Home,55 >,Montreal Canadiens,0
+2023-11-30,Boston Bruins,0.8958791061087118,San Jose Sharks,0.1041208938912882,Playing At:  Boston Bruins   Home,85 <,Boston Bruins,1
+2023-11-30,Colorado Avalanche,0.7563870111308219,Arizona Coyotes,0.24361298886917815,Playing At:  Arizona Coyotes   Home,70-80,Arizona Coyotes,0
+2023-11-30,Florida Panthers,0.744417412980128,Montreal Canadiens,0.255582587019872,Playing At:  Montreal Canadiens   Home,70-80,Florida Panthers,1
+2023-11-30,New Jersey Devils,0.697122676142086,Philadelphia Flyers,0.302877323857914,Playing At:  Philadelphia Flyers   Home,60-70,New Jersey Devils,1
+2023-11-30,Toronto Maple Leafs,0.6861332610516039,Seattle Kraken,0.3138667389483961,Playing At:  Toronto Maple Leafs   Home,60-70,Toronto Maple Leafs,1
+2023-11-30,Tampa Bay Lightning,0.6750351331090998,Pittsburgh Penguins,0.3249648668909002,Playing At:  Tampa Bay Lightning   Home,60-70,Pittsburgh Penguins,0
+2023-11-30,Carolina Hurricanes,0.6573786258547243,New York Islanders,0.3426213741452757,Playing At:  Carolina Hurricanes   Home,60-70,New York Islanders,0
+2023-11-30,Washington Capitals,0.6371070848120749,Anaheim Ducks,0.3628929151879251,Playing At:  Anaheim Ducks   Home,60-70,Washington Capitals,1
+2023-11-30,Detroit Red Wings,0.6043184317219499,Chicago Blackhawks,0.3956815682780501,Playing At:  Detroit Red Wings   Home,60-70,Detroit Red Wings,1
+2023-11-30,Minnesota Wild,0.5951029827831822,Nashville Predators,0.4048970172168178,Playing At:  Nashville Predators   Home,55-60,Minnesota Wild,1
+2023-11-30,Dallas Stars,0.5741945075330724,Calgary Flames,0.42580549246692756,Playing At:  Calgary Flames   Home,55-60,Calgary Flames,0
+2023-11-30,St. Louis Blues,0.5516709874103509,Buffalo Sabres,0.4483290125896491,Playing At:  St. Louis Blues   Home,55-60,St. Louis Blues,1
+2023-11-30,Vegas Golden Knights,0.5236135976036088,Vancouver Canucks,0.4763864023963912,Playing At:  Vancouver Canucks   Home,55 >,Vegas Golden Knights,1
+2023-11-30,Edmonton Oilers,0.5233788399579333,Winnipeg Jets,0.47662116004206667,Playing At:  Winnipeg Jets   Home,55 >,Edmonton Oilers,1
+2023-12-01,New Jersey Devils,0.8008228267343085,San Jose Sharks,0.1991771732656915,Playing At:  New Jersey Devils   Home,80-85,San Jose Sharks,0
+2023-12-01,Ottawa Senators,0.7112008049437732,Columbus Blue Jackets,0.28879919505622675,Playing At:  Columbus Blue Jackets   Home,70-80,Columbus Blue Jackets,0
+2023-12-02,Colorado Avalanche,0.7998080892539652,Anaheim Ducks,0.20019191074603482,Playing At:  Anaheim Ducks   Home,70-80,Anaheim Ducks,0
+2023-12-02,Winnipeg Jets,0.7743868500317912,Chicago Blackhawks,0.2256131499682088,Playing At:  Winnipeg Jets   Home,70-80,Winnipeg Jets,1
+2023-12-02,St. Louis Blues,0.6979969447807908,Arizona Coyotes,0.3020030552192092,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,0
+2023-12-02,Vegas Golden Knights,0.662768968602257,Washington Capitals,0.337231031397743,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,1
+2023-12-02,New York Rangers,0.6447833949331512,Nashville Predators,0.3552166050668488,Playing At:  Nashville Predators   Home,60-70,New York Rangers,1
+2023-12-02,Boston Bruins,0.6300352803631872,Toronto Maple Leafs,0.36996471963681277,Playing At:  Toronto Maple Leafs   Home,60-70,Boston Bruins,1
+2023-12-02,Pittsburgh Penguins,0.6080120632517259,Philadelphia Flyers,0.39198793674827415,Playing At:  Pittsburgh Penguins   Home,60-70,Philadelphia Flyers,0
+2023-12-02,Carolina Hurricanes,0.5985263522838136,Buffalo Sabres,0.40147364771618643,Playing At:  Carolina Hurricanes   Home,55-60,Carolina Hurricanes,1
+2023-12-02,Florida Panthers,0.5948095961646349,New York Islanders,0.4051904038353651,Playing At:  Florida Panthers   Home,55-60,New York Islanders,0
+2023-12-02,Seattle Kraken,0.5675929989323631,Ottawa Senators,0.43240700106763685,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,0
+2023-12-02,Vancouver Canucks,0.5672689378074612,Calgary Flames,0.43273106219253876,Playing At:  Calgary Flames   Home,55-60,Vancouver Canucks,1
+2023-12-02,Dallas Stars,0.5503159327587239,Tampa Bay Lightning,0.4496840672412761,Playing At:  Dallas Stars   Home,55-60,Dallas Stars,1
+2023-12-02,Detroit Red Wings,0.5391941270383438,Montreal Canadiens,0.4608058729616562,Playing At:  Montreal Canadiens   Home,55 >,Detroit Red Wings,1
+2023-12-03,Boston Bruins,0.9041839870853037,Columbus Blue Jackets,0.09581601291469632,Playing At:  Boston Bruins   Home,85 <,Boston Bruins,1
+2023-12-03,New York Rangers,0.7980371238826403,San Jose Sharks,0.20196287611735975,Playing At:  New York Rangers   Home,70-80,New York Rangers,1
+2023-12-03,Minnesota Wild,0.7505454668316813,Chicago Blackhawks,0.24945453316831867,Playing At:  Minnesota Wild   Home,70-80,Minnesota Wild,1
+2023-12-03,Buffalo Sabres,0.5597148643262,Nashville Predators,0.4402851356738,Playing At:  Buffalo Sabres   Home,55-60,Nashville Predators,0
+2023-12-03,Colorado Avalanche,0.5282038353941468,Los Angeles Kings,0.47179616460585316,Playing At:  Los Angeles Kings   Home,55 >,Los Angeles Kings,0
+2023-12-04,Vegas Golden Knights,0.6487709668951936,St. Louis Blues,0.35122903310480635,Playing At:  Vegas Golden Knights   Home,60-70,St. Louis Blues,0
+2023-12-04,Pittsburgh Penguins,0.6049385809741634,Philadelphia Flyers,0.3950614190258366,Playing At:  Philadelphia Flyers   Home,60-70,Philadelphia Flyers,0
+2023-12-04,Carolina Hurricanes,0.591178923379106,Winnipeg Jets,0.40882107662089395,Playing At:  Winnipeg Jets   Home,55-60,Winnipeg Jets,0
+2023-12-04,Seattle Kraken,0.5859258968225398,Montreal Canadiens,0.4140741031774602,Playing At:  Montreal Canadiens   Home,55-60,Montreal Canadiens,0
+2023-12-04,Washington Capitals,0.5646306242998946,Arizona Coyotes,0.43536937570010537,Playing At:  Arizona Coyotes   Home,55-60,Arizona Coyotes,0
+2023-12-04,Dallas Stars,0.5333411835870631,Tampa Bay Lightning,0.46665881641293694,Playing At:  Tampa Bay Lightning   Home,55 >,Tampa Bay Lightning,0
+2023-12-05,Colorado Avalanche,0.8291700763270353,Anaheim Ducks,0.17082992367296468,Playing At:  Colorado Avalanche   Home,80-85,Colorado Avalanche,1
+2023-12-05,New York Islanders,0.788904058897693,San Jose Sharks,0.211095941102307,Playing At:  New York Islanders   Home,70-80,San Jose Sharks,0
+2023-12-05,Los Angeles Kings,0.6965653351281356,Columbus Blue Jackets,0.30343466487186443,Playing At:  Columbus Blue Jackets   Home,60-70,Los Angeles Kings,1
+2023-12-05,Nashville Predators,0.6905082885338695,Chicago Blackhawks,0.3094917114661305,Playing At:  Chicago Blackhawks   Home,60-70,Nashville Predators,1
+2023-12-05,Buffalo Sabres,0.5918993282537209,Detroit Red Wings,0.40810067174627906,Playing At:  Buffalo Sabres   Home,55-60,Detroit Red Wings,0
+2023-12-05,New York Rangers,0.5732917791387406,Ottawa Senators,0.42670822086125937,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,0
+2023-12-05,Minnesota Wild,0.5548135040403148,Calgary Flames,0.4451864959596852,Playing At:  Calgary Flames   Home,55-60,Minnesota Wild,1
+2023-12-05,New Jersey Devils,0.502433054985326,Vancouver Canucks,0.497566945014674,Playing At:  Vancouver Canucks   Home,55 >,New Jersey Devils,1
+2023-12-06,Tampa Bay Lightning,0.5890829581868646,Pittsburgh Penguins,0.4109170418131354,Playing At:  Tampa Bay Lightning   Home,55-60,Tampa Bay Lightning,1
+2023-12-06,Vegas Golden Knights,0.5890440184379205,St. Louis Blues,0.41095598156207946,Playing At:  St. Louis Blues   Home,55-60,Vegas Golden Knights,1
+2023-12-06,Florida Panthers,0.5424431531233443,Dallas Stars,0.45755684687665565,Playing At:  Florida Panthers   Home,55 >,Florida Panthers,1
+2023-12-06,Carolina Hurricanes,0.5063979438928127,Edmonton Oilers,0.4936020561071873,Playing At:  Edmonton Oilers   Home,55 >,Edmonton Oilers,0
+2023-12-07,Detroit Red Wings,0.7227666940025099,San Jose Sharks,0.2772333059974901,Playing At:  Detroit Red Wings   Home,70-80,San Jose Sharks,0
+2023-12-07,Boston Bruins,0.7224201535754051,Buffalo Sabres,0.2775798464245949,Playing At:  Boston Bruins   Home,70-80,Buffalo Sabres,0
+2023-12-07,New York Islanders,0.7068367986641312,Columbus Blue Jackets,0.2931632013358688,Playing At:  New York Islanders   Home,70-80,New York Islanders,1
+2023-12-07,Toronto Maple Leafs,0.692208760361062,Ottawa Senators,0.30779123963893795,Playing At:  Ottawa Senators   Home,60-70,Toronto Maple Leafs,1
+2023-12-07,Colorado Avalanche,0.6521590943123862,Winnipeg Jets,0.34784090568761383,Playing At:  Colorado Avalanche   Home,60-70,Winnipeg Jets,0
+2023-12-07,Carolina Hurricanes,0.6158883488220874,Calgary Flames,0.38411165117791257,Playing At:  Calgary Flames   Home,60-70,Calgary Flames,0
+2023-12-07,Los Angeles Kings,0.615042686397161,Montreal Canadiens,0.384957313602839,Playing At:  Montreal Canadiens   Home,60-70,Los Angeles Kings,1
+2023-12-07,Dallas Stars,0.5825114353596174,Washington Capitals,0.41748856464038264,Playing At:  Washington Capitals   Home,55-60,Dallas Stars,1
+2023-12-07,Tampa Bay Lightning,0.5551981461227086,Nashville Predators,0.44480185387729143,Playing At:  Nashville Predators   Home,55-60,Nashville Predators,0
+2023-12-07,Minnesota Wild,0.5497820826630699,Vancouver Canucks,0.45021791733693006,Playing At:  Vancouver Canucks   Home,55 >,Vancouver Canucks,0
+2023-12-07,New Jersey Devils,0.5357601679440775,Seattle Kraken,0.46423983205592245,Playing At:  Seattle Kraken   Home,55 >,New Jersey Devils,1
+2023-12-07,Chicago Blackhawks,0.5354665958722065,Anaheim Ducks,0.46453340412779354,Playing At:  Chicago Blackhawks   Home,55 >,Chicago Blackhawks,1
+2023-12-07,Arizona Coyotes,0.5310514138613545,Philadelphia Flyers,0.46894858613864554,Playing At:  Arizona Coyotes   Home,55 >,Philadelphia Flyers,0
+2023-12-08,St. Louis Blues,0.7012944038167894,Columbus Blue Jackets,0.2987055961832106,Playing At:  Columbus Blue Jackets   Home,70-80,Columbus Blue Jackets,0
+2023-12-08,Florida Panthers,0.6115861413001142,Pittsburgh Penguins,0.38841385869988576,Playing At:  Florida Panthers   Home,60-70,Florida Panthers,1
+2023-12-08,Edmonton Oilers,0.5769549268934213,Minnesota Wild,0.4230450731065787,Playing At:  Edmonton Oilers   Home,55-60,Edmonton Oilers,1
+2023-12-09,Boston Bruins,0.8606935285468473,Arizona Coyotes,0.13930647145315267,Playing At:  Boston Bruins   Home,85 <,Boston Bruins,1
+2023-12-09,Colorado Avalanche,0.7622525621460424,Philadelphia Flyers,0.23774743785395758,Playing At:  Colorado Avalanche   Home,70-80,Philadelphia Flyers,0
+2023-12-09,Buffalo Sabres,0.6983905201961529,Montreal Canadiens,0.3016094798038471,Playing At:  Buffalo Sabres   Home,60-70,Montreal Canadiens,0
+2023-12-09,Carolina Hurricanes,0.6499412101575273,Vancouver Canucks,0.35005878984247274,Playing At:  Vancouver Canucks   Home,60-70,Vancouver Canucks,0
+2023-12-09,Toronto Maple Leafs,0.6366259235667342,Nashville Predators,0.3633740764332658,Playing At:  Toronto Maple Leafs   Home,60-70,Toronto Maple Leafs,1
+2023-12-09,New York Rangers,0.5939872368425836,Washington Capitals,0.4060127631574164,Playing At:  Washington Capitals   Home,55-60,Washington Capitals,0
+2023-12-09,New Jersey Devils,0.5776377382156934,Calgary Flames,0.4223622617843066,Playing At:  Calgary Flames   Home,55-60,New Jersey Devils,1
+2023-12-09,St. Louis Blues,0.5732544526458031,Chicago Blackhawks,0.4267455473541969,Playing At:  Chicago Blackhawks   Home,55-60,Chicago Blackhawks,0
+2023-12-09,Seattle Kraken,0.5700142916736086,Tampa Bay Lightning,0.4299857083263914,Playing At:  Seattle Kraken   Home,55-60,Tampa Bay Lightning,0
+2023-12-09,Ottawa Senators,0.563741024937733,Detroit Red Wings,0.43625897506226696,Playing At:  Detroit Red Wings   Home,55-60,Ottawa Senators,1
+2023-12-09,Los Angeles Kings,0.5624996135548649,New York Islanders,0.4375003864451351,Playing At:  New York Islanders   Home,55-60,New York Islanders,0
+2023-12-09,Vegas Golden Knights,0.5178376855614354,Dallas Stars,0.4821623144385646,Playing At:  Dallas Stars   Home,55 >,Vegas Golden Knights,1
+2023-12-10,Vegas Golden Knights,0.7918540684968359,San Jose Sharks,0.20814593150316407,Playing At:  Vegas Golden Knights   Home,70-80,Vegas Golden Knights,1
+2023-12-10,Winnipeg Jets,0.724647461497932,Anaheim Ducks,0.275352538502068,Playing At:  Anaheim Ducks   Home,70-80,Winnipeg Jets,1
+2023-12-10,Florida Panthers,0.6684593939777056,Columbus Blue Jackets,0.3315406060222944,Playing At:  Columbus Blue Jackets   Home,60-70,Florida Panthers,1
+2023-12-10,Nashville Predators,0.6395347449227149,Montreal Canadiens,0.3604652550772851,Playing At:  Montreal Canadiens   Home,60-70,Nashville Predators,1
+2023-12-10,New York Rangers,0.5750573263890115,Los Angeles Kings,0.4249426736109885,Playing At:  New York Rangers   Home,55-60,New York Rangers,1
+2023-12-10,Washington Capitals,0.5702200554146362,Chicago Blackhawks,0.42977994458536384,Playing At:  Chicago Blackhawks   Home,55-60,Washington Capitals,1
+2023-12-10,Minnesota Wild,0.5096292820541963,Seattle Kraken,0.49037071794580367,Playing At:  Seattle Kraken   Home,55 >,Minnesota Wild,1
+2023-12-10,Edmonton Oilers,0.5019964079326484,New Jersey Devils,0.49800359206735156,Playing At:  Edmonton Oilers   Home,55 >,Edmonton Oilers,1
+2023-12-11,Dallas Stars,0.6885108916997686,Detroit Red Wings,0.31148910830023135,Playing At:  Dallas Stars   Home,60-70,Dallas Stars,1
+2023-12-11,Buffalo Sabres,0.6495330372381192,Arizona Coyotes,0.35046696276188083,Playing At:  Buffalo Sabres   Home,60-70,Buffalo Sabres,1
+2023-12-11,Colorado Avalanche,0.6472092147188888,Calgary Flames,0.3527907852811112,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2023-12-11,Toronto Maple Leafs,0.6173588731544961,New York Islanders,0.3826411268455039,Playing At:  New York Islanders   Home,60-70,New York Islanders,0
+2023-12-12,Edmonton Oilers,0.7937384785482056,Chicago Blackhawks,0.20626152145179444,Playing At:  Edmonton Oilers   Home,70-80,Edmonton Oilers,1
+2023-12-12,Winnipeg Jets,0.7680678820195547,San Jose Sharks,0.23193211798044533,Playing At:  San Jose Sharks   Home,70-80,San Jose Sharks,0
+2023-12-12,Vegas Golden Knights,0.6898753668709816,Calgary Flames,0.3101246331290184,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,1
+2023-12-12,Nashville Predators,0.6661777822839221,Philadelphia Flyers,0.3338222177160779,Playing At:  Nashville Predators   Home,60-70,Nashville Predators,1
+2023-12-12,Pittsburgh Penguins,0.6545533842056834,Arizona Coyotes,0.34544661579431657,Playing At:  Pittsburgh Penguins   Home,60-70,Pittsburgh Penguins,1
+2023-12-12,Carolina Hurricanes,0.5822840366412605,Ottawa Senators,0.4177159633587395,Playing At:  Ottawa Senators   Home,55-60,Carolina Hurricanes,1
+2023-12-12,St. Louis Blues,0.5683952427662564,Detroit Red Wings,0.4316047572337436,Playing At:  St. Louis Blues   Home,55-60,Detroit Red Wings,0
+2023-12-12,Seattle Kraken,0.5531660738263348,Florida Panthers,0.44683392617366524,Playing At:  Seattle Kraken   Home,55-60,Seattle Kraken,1
+2023-12-12,New York Rangers,0.5351856958929313,Toronto Maple Leafs,0.4648143041070687,Playing At:  New York Rangers   Home,55 >,Toronto Maple Leafs,0
+2023-12-12,Tampa Bay Lightning,0.51557948866862,Vancouver Canucks,0.48442051133138,Playing At:  Vancouver Canucks   Home,55 >,Vancouver Canucks,0
+2023-12-13,New York Islanders,0.7280625128111435,Anaheim Ducks,0.27193748718885646,Playing At:  New York Islanders   Home,70-80,New York Islanders,1
+2023-12-13,Boston Bruins,0.7211831529234911,New Jersey Devils,0.2788168470765089,Playing At:  New Jersey Devils   Home,70-80,New Jersey Devils,0
+2023-12-13,Colorado Avalanche,0.6509883598108361,Buffalo Sabres,0.34901164018916386,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2023-12-13,Pittsburgh Penguins,0.6078840808701624,Montreal Canadiens,0.39211591912983756,Playing At:  Montreal Canadiens   Home,60-70,Pittsburgh Penguins,1
+2023-12-13,Los Angeles Kings,0.5011091575282745,Winnipeg Jets,0.49889084247172555,Playing At:  Los Angeles Kings   Home,55 >,Winnipeg Jets,0
+2023-12-14,Toronto Maple Leafs,0.7748706771105733,Columbus Blue Jackets,0.22512932288942666,Playing At:  Toronto Maple Leafs   Home,70-80,Columbus Blue Jackets,0
+2023-12-14,Seattle Kraken,0.7611999327931497,Chicago Blackhawks,0.23880006720685032,Playing At:  Seattle Kraken   Home,70-80,Seattle Kraken,1
+2023-12-14,Minnesota Wild,0.6046484757068062,Calgary Flames,0.39535152429319376,Playing At:  Minnesota Wild   Home,60-70,Minnesota Wild,1
+2023-12-14,Washington Capitals,0.5860766930382527,Philadelphia Flyers,0.4139233069617473,Playing At:  Philadelphia Flyers   Home,55-60,Philadelphia Flyers,0
+2023-12-14,Carolina Hurricanes,0.5833720611514372,Detroit Red Wings,0.41662793884856275,Playing At:  Detroit Red Wings   Home,55-60,Carolina Hurricanes,1
+2023-12-14,Edmonton Oilers,0.5454589705772412,Tampa Bay Lightning,0.45454102942275876,Playing At:  Edmonton Oilers   Home,55 >,Tampa Bay Lightning,0
+2023-12-14,St. Louis Blues,0.5272075816353385,Ottawa Senators,0.47279241836466146,Playing At:  St. Louis Blues   Home,55 >,St. Louis Blues,1
+2023-12-14,Florida Panthers,0.5201810204667872,Vancouver Canucks,0.47981897953321284,Playing At:  Vancouver Canucks   Home,55 >,Vancouver Canucks,0
+2023-12-15,New York Rangers,0.8260562069523963,Anaheim Ducks,0.17394379304760366,Playing At:  New York Rangers   Home,80-85,New York Rangers,1
+2023-12-15,Boston Bruins,0.7569553232199915,New York Islanders,0.24304467678000852,Playing At:  New York Islanders   Home,70-80,Boston Bruins,1
+2023-12-15,Vegas Golden Knights,0.6822260956011006,Buffalo Sabres,0.3177739043988994,Playing At:  Vegas Golden Knights   Home,60-70,Buffalo Sabres,0
+2023-12-15,Carolina Hurricanes,0.660084170074279,Nashville Predators,0.339915829925721,Playing At:  Carolina Hurricanes   Home,60-70,Nashville Predators,0
+2023-12-15,Arizona Coyotes,0.6137583189404703,San Jose Sharks,0.3862416810595297,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,1
+2023-12-15,Dallas Stars,0.5823175666529559,Ottawa Senators,0.41768243334704414,Playing At:  Dallas Stars   Home,55-60,Dallas Stars,1
+2023-12-16,New Jersey Devils,0.7576551478353653,Columbus Blue Jackets,0.24234485216463475,Playing At:  Columbus Blue Jackets   Home,70-80,New Jersey Devils,1
+2023-12-16,Toronto Maple Leafs,0.671755646494788,Pittsburgh Penguins,0.32824435350521197,Playing At:  Toronto Maple Leafs   Home,60-70,Toronto Maple Leafs,1
+2023-12-16,Boston Bruins,0.6310489852537934,New York Rangers,0.3689510147462066,Playing At:  Boston Bruins   Home,60-70,New York Rangers,0
+2023-12-16,Buffalo Sabres,0.6303149051395252,Arizona Coyotes,0.36968509486047485,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,0
+2023-12-16,Minnesota Wild,0.6076821197860343,Vancouver Canucks,0.39231788021396574,Playing At:  Minnesota Wild   Home,60-70,Minnesota Wild,1
+2023-12-16,New York Islanders,0.6030417480252618,Montreal Canadiens,0.3969582519747382,Playing At:  Montreal Canadiens   Home,60-70,Montreal Canadiens,0
+2023-12-16,Los Angeles Kings,0.5827683091166964,Seattle Kraken,0.4172316908833036,Playing At:  Seattle Kraken   Home,55-60,Los Angeles Kings,1
+2023-12-16,Edmonton Oilers,0.5431050316588505,Florida Panthers,0.4568949683411495,Playing At:  Edmonton Oilers   Home,55 >,Florida Panthers,0
+2023-12-16,Nashville Predators,0.5424799773235769,Washington Capitals,0.4575200226764231,Playing At:  Nashville Predators   Home,55 >,Nashville Predators,1
+2023-12-16,Tampa Bay Lightning,0.5302513863736398,Calgary Flames,0.4697486136263602,Playing At:  Calgary Flames   Home,55 >,Calgary Flames,0
+2023-12-16,Colorado Avalanche,0.5289287104616339,Winnipeg Jets,0.4710712895383661,Playing At:  Winnipeg Jets   Home,55 >,Winnipeg Jets,0
+2023-12-16,Detroit Red Wings,0.5267736558940059,Philadelphia Flyers,0.47322634410599407,Playing At:  Philadelphia Flyers   Home,55 >,Philadelphia Flyers,0
+2023-12-16,Dallas Stars,0.5233897901726731,St. Louis Blues,0.47661020982732694,Playing At:  St. Louis Blues   Home,55 >,St. Louis Blues,0
+2023-12-17,Colorado Avalanche,0.8008967585897293,San Jose Sharks,0.1991032414102707,Playing At:  Colorado Avalanche   Home,80-85,Colorado Avalanche,1
+2023-12-17,New Jersey Devils,0.7963353819991872,Anaheim Ducks,0.2036646180008128,Playing At:  New Jersey Devils   Home,70-80,Anaheim Ducks,0
+2023-12-17,Carolina Hurricanes,0.7264649877959173,Washington Capitals,0.2735350122040827,Playing At:  Carolina Hurricanes   Home,70-80,Washington Capitals,0
+2023-12-17,Vancouver Canucks,0.6584351685355596,Chicago Blackhawks,0.3415648314644404,Playing At:  Chicago Blackhawks   Home,60-70,Vancouver Canucks,1
+2023-12-17,Vegas Golden Knights,0.6070938083186637,Ottawa Senators,0.39290619168133634,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,1
+2023-12-18,Winnipeg Jets,0.6943353204516395,Montreal Canadiens,0.3056646795483605,Playing At:  Winnipeg Jets   Home,60-70,Montreal Canadiens,0
+2023-12-18,Detroit Red Wings,0.6569297869774534,Anaheim Ducks,0.3430702130225466,Playing At:  Detroit Red Wings   Home,60-70,Anaheim Ducks,0
+2023-12-18,Dallas Stars,0.6133142815898708,Seattle Kraken,0.3866857184101292,Playing At:  Dallas Stars   Home,60-70,Dallas Stars,1
+2023-12-18,Florida Panthers,0.5520917494885824,Calgary Flames,0.4479082505114176,Playing At:  Calgary Flames   Home,55-60,Calgary Flames,0
+2023-12-18,Minnesota Wild,0.5225098575071725,Pittsburgh Penguins,0.4774901424928275,Playing At:  Pittsburgh Penguins   Home,55 >,Pittsburgh Penguins,0
+2023-12-19,Los Angeles Kings,0.8093810547076263,San Jose Sharks,0.19061894529237366,Playing At:  San Jose Sharks   Home,80-85,Los Angeles Kings,1
+2023-12-19,Boston Bruins,0.7425013571707204,Minnesota Wild,0.2574986428292796,Playing At:  Boston Bruins   Home,70-80,Minnesota Wild,0
+2023-12-19,Colorado Avalanche,0.7362570636592624,Chicago Blackhawks,0.26374293634073764,Playing At:  Chicago Blackhawks   Home,70-80,Chicago Blackhawks,0
+2023-12-19,Buffalo Sabres,0.7349203234440363,Columbus Blue Jackets,0.26507967655596365,Playing At:  Buffalo Sabres   Home,70-80,Columbus Blue Jackets,0
+2023-12-19,New Jersey Devils,0.7242184992913187,Philadelphia Flyers,0.27578150070868135,Playing At:  New Jersey Devils   Home,70-80,Philadelphia Flyers,0
+2023-12-19,Carolina Hurricanes,0.6766903076984085,Vegas Golden Knights,0.32330969230159146,Playing At:  Carolina Hurricanes   Home,60-70,Carolina Hurricanes,1
+2023-12-19,Tampa Bay Lightning,0.6585978314728171,St. Louis Blues,0.34140216852718286,Playing At:  Tampa Bay Lightning   Home,60-70,Tampa Bay Lightning,1
+2023-12-19,Ottawa Senators,0.6336739647635243,Arizona Coyotes,0.36632603523647567,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,0
+2023-12-19,Nashville Predators,0.6116914952931813,Vancouver Canucks,0.38830850470681866,Playing At:  Nashville Predators   Home,60-70,Vancouver Canucks,0
+2023-12-19,Edmonton Oilers,0.606644506021739,New York Islanders,0.393355493978261,Playing At:  New York Islanders   Home,60-70,New York Islanders,0
+2023-12-19,Toronto Maple Leafs,0.5377394906394093,New York Rangers,0.4622605093605907,Playing At:  Toronto Maple Leafs   Home,55 >,New York Rangers,0
+2023-12-20,Winnipeg Jets,0.6337309877927024,Detroit Red Wings,0.3662690122072976,Playing At:  Winnipeg Jets   Home,60-70,Winnipeg Jets,1
+2023-12-20,Los Angeles Kings,0.6274309003246348,Seattle Kraken,0.3725690996753652,Playing At:  Los Angeles Kings   Home,60-70,Seattle Kraken,0
+2023-12-20,New York Islanders,0.5065340321854208,Washington Capitals,0.4934659678145792,Playing At:  Washington Capitals   Home,55 >,Washington Capitals,0
+2023-12-21,Minnesota Wild,0.7008135316090358,Montreal Canadiens,0.2991864683909642,Playing At:  Minnesota Wild   Home,70-80,Minnesota Wild,1
+2023-12-21,Florida Panthers,0.6922254946352921,St. Louis Blues,0.30777450536470785,Playing At:  Florida Panthers   Home,60-70,St. Louis Blues,0
+2023-12-21,Carolina Hurricanes,0.6603248802630683,Pittsburgh Penguins,0.33967511973693165,Playing At:  Pittsburgh Penguins   Home,60-70,Pittsburgh Penguins,0
+2023-12-21,Calgary Flames,0.6480182129979055,Anaheim Ducks,0.3519817870020945,Playing At:  Anaheim Ducks   Home,60-70,Calgary Flames,1
+2023-12-21,Washington Capitals,0.6181883906354801,Columbus Blue Jackets,0.38181160936451985,Playing At:  Columbus Blue Jackets   Home,60-70,Washington Capitals,1
+2023-12-21,Dallas Stars,0.6174264563119537,Vancouver Canucks,0.3825735436880463,Playing At:  Dallas Stars   Home,60-70,Dallas Stars,1
+2023-12-21,Nashville Predators,0.6099397169575309,Philadelphia Flyers,0.3900602830424691,Playing At:  Philadelphia Flyers   Home,60-70,Nashville Predators,1
+2023-12-21,Toronto Maple Leafs,0.5869570061815681,Buffalo Sabres,0.4130429938184319,Playing At:  Buffalo Sabres   Home,55-60,Buffalo Sabres,0
+2023-12-21,Tampa Bay Lightning,0.5826990203758238,Vegas Golden Knights,0.4173009796241762,Playing At:  Tampa Bay Lightning   Home,55-60,Tampa Bay Lightning,1
+2023-12-21,Colorado Avalanche,0.5695906997357554,Ottawa Senators,0.4304093002642446,Playing At:  Colorado Avalanche   Home,55-60,Colorado Avalanche,1
+2023-12-21,New Jersey Devils,0.5439190259401245,Edmonton Oilers,0.45608097405987547,Playing At:  New Jersey Devils   Home,55 >,Edmonton Oilers,0
+2023-12-21,San Jose Sharks,0.5146308413008278,Arizona Coyotes,0.4853691586991722,Playing At:  San Jose Sharks   Home,55 >,Arizona Coyotes,0
+2023-12-22,Boston Bruins,0.672401873651615,Winnipeg Jets,0.32759812634838503,Playing At:  Winnipeg Jets   Home,60-70,Winnipeg Jets,0
+2023-12-22,Detroit Red Wings,0.6356256793152916,Philadelphia Flyers,0.36437432068470843,Playing At:  Detroit Red Wings   Home,60-70,Detroit Red Wings,1
+2023-12-22,New York Rangers,0.5798613379039759,Edmonton Oilers,0.42013866209602413,Playing At:  New York Rangers   Home,55-60,Edmonton Oilers,0
+2023-12-22,Montreal Canadiens,0.5289815550755239,Chicago Blackhawks,0.4710184449244761,Playing At:  Chicago Blackhawks   Home,55 >,Montreal Canadiens,1
+2023-12-23,Toronto Maple Leafs,0.7223690495773816,Columbus Blue Jackets,0.27763095042261843,Playing At:  Columbus Blue Jackets   Home,70-80,Toronto Maple Leafs,1
+2023-12-23,St. Louis Blues,0.7150320062588389,Chicago Blackhawks,0.2849679937411611,Playing At:  St. Louis Blues   Home,70-80,St. Louis Blues,1
+2023-12-23,Colorado Avalanche,0.710795762612682,Arizona Coyotes,0.28920423738731804,Playing At:  Colorado Avalanche   Home,70-80,Colorado Avalanche,1
+2023-12-23,Vancouver Canucks,0.7022760465939397,San Jose Sharks,0.2977239534060603,Playing At:  Vancouver Canucks   Home,70-80,Vancouver Canucks,1
+2023-12-23,Boston Bruins,0.7012905395936364,Minnesota Wild,0.2987094604063636,Playing At:  Minnesota Wild   Home,70-80,Minnesota Wild,0
+2023-12-23,Seattle Kraken,0.6630895428244542,Anaheim Ducks,0.3369104571755458,Playing At:  Anaheim Ducks   Home,60-70,Seattle Kraken,1
+2023-12-23,New Jersey Devils,0.6628037033767891,Detroit Red Wings,0.33719629662321093,Playing At:  New Jersey Devils   Home,60-70,New Jersey Devils,1
+2023-12-23,Tampa Bay Lightning,0.6617435340912199,Washington Capitals,0.3382564659087801,Playing At:  Washington Capitals   Home,60-70,Tampa Bay Lightning,1
+2023-12-23,Los Angeles Kings,0.6598331653743825,Calgary Flames,0.3401668346256175,Playing At:  Los Angeles Kings   Home,60-70,Los Angeles Kings,1
+2023-12-23,Carolina Hurricanes,0.6549204287397559,New York Islanders,0.34507957126024413,Playing At:  Carolina Hurricanes   Home,60-70,New York Islanders,0
+2023-12-23,Florida Panthers,0.551928234308346,Vegas Golden Knights,0.44807176569165397,Playing At:  Florida Panthers   Home,55-60,Florida Panthers,1
+2023-12-23,Ottawa Senators,0.5499530493375919,Pittsburgh Penguins,0.4500469506624081,Playing At:  Ottawa Senators   Home,55 >,Ottawa Senators,1
+2023-12-23,Dallas Stars,0.5410736301872989,Nashville Predators,0.4589263698127011,Playing At:  Nashville Predators   Home,55 >,Dallas Stars,1
+2023-12-23,New York Rangers,0.5121510327404319,Buffalo Sabres,0.48784896725956806,Playing At:  New York Rangers   Home,55 >,New York Rangers,1
+2023-12-27,Los Angeles Kings,0.8264935301164078,San Jose Sharks,0.1735064698835922,Playing At:  Los Angeles Kings   Home,80-85,Los Angeles Kings,1
+2023-12-27,New Jersey Devils,0.7778757376127965,Columbus Blue Jackets,0.2221242623872035,Playing At:  New Jersey Devils   Home,70-80,New Jersey Devils,1
+2023-12-27,Vegas Golden Knights,0.7763631808153739,Anaheim Ducks,0.22363681918462608,Playing At:  Anaheim Ducks   Home,70-80,Anaheim Ducks,0
+2023-12-27,Winnipeg Jets,0.7584456729836262,Chicago Blackhawks,0.2415543270163738,Playing At:  Chicago Blackhawks   Home,70-80,Chicago Blackhawks,0
+2023-12-27,Boston Bruins,0.7574358979119333,Buffalo Sabres,0.24256410208806667,Playing At:  Buffalo Sabres   Home,70-80,Boston Bruins,1
+2023-12-27,Colorado Avalanche,0.754001578977052,Arizona Coyotes,0.245998421022948,Playing At:  Arizona Coyotes   Home,70-80,Arizona Coyotes,0
+2023-12-27,New York Rangers,0.7336721719922406,Washington Capitals,0.26632782800775945,Playing At:  New York Rangers   Home,70-80,New York Rangers,1
+2023-12-27,Toronto Maple Leafs,0.6315189013486971,Ottawa Senators,0.36848109865130285,Playing At:  Toronto Maple Leafs   Home,60-70,Ottawa Senators,0
+2023-12-27,Carolina Hurricanes,0.6150707975185346,Nashville Predators,0.38492920248146545,Playing At:  Nashville Predators   Home,60-70,Carolina Hurricanes,1
+2023-12-27,Minnesota Wild,0.6025063665732875,Detroit Red Wings,0.3974936334267125,Playing At:  Minnesota Wild   Home,60-70,Minnesota Wild,1
+2023-12-27,New York Islanders,0.578000322413639,Pittsburgh Penguins,0.42199967758636103,Playing At:  New York Islanders   Home,55-60,Pittsburgh Penguins,0
+2023-12-27,Seattle Kraken,0.5722727774189823,Calgary Flames,0.4277272225810177,Playing At:  Calgary Flames   Home,55-60,Seattle Kraken,1
+2023-12-27,Dallas Stars,0.5484704575071033,St. Louis Blues,0.4515295424928967,Playing At:  St. Louis Blues   Home,55 >,St. Louis Blues,0
+2023-12-27,Tampa Bay Lightning,0.525217613749352,Florida Panthers,0.47478238625064795,Playing At:  Tampa Bay Lightning   Home,55 >,Florida Panthers,0
+2023-12-28,Carolina Hurricanes,0.7685655123898972,Montreal Canadiens,0.23143448761010277,Playing At:  Carolina Hurricanes   Home,70-80,Carolina Hurricanes,1
+2023-12-28,Edmonton Oilers,0.7391885607672728,San Jose Sharks,0.2608114392327272,Playing At:  San Jose Sharks   Home,70-80,Edmonton Oilers,1
+2023-12-28,Vancouver Canucks,0.6548973102862092,Philadelphia Flyers,0.34510268971379077,Playing At:  Vancouver Canucks   Home,60-70,Philadelphia Flyers,0
+2023-12-28,Vegas Golden Knights,0.5295528386790762,Los Angeles Kings,0.4704471613209238,Playing At:  Vegas Golden Knights   Home,55 >,Vegas Golden Knights,1
+2023-12-29,Dallas Stars,0.755712137488262,Chicago Blackhawks,0.24428786251173795,Playing At:  Dallas Stars   Home,70-80,Dallas Stars,1
+2023-12-29,Toronto Maple Leafs,0.722099963966953,Columbus Blue Jackets,0.277900036033047,Playing At:  Columbus Blue Jackets   Home,70-80,Columbus Blue Jackets,0
+2023-12-29,New York Rangers,0.6377042496036534,Florida Panthers,0.36229575039634665,Playing At:  Florida Panthers   Home,60-70,Florida Panthers,0
+2023-12-29,Colorado Avalanche,0.622394441870895,St. Louis Blues,0.377605558129105,Playing At:  St. Louis Blues   Home,60-70,Colorado Avalanche,1
+2023-12-29,Seattle Kraken,0.6211337292587675,Philadelphia Flyers,0.37886627074123247,Playing At:  Seattle Kraken   Home,60-70,Seattle Kraken,1
+2023-12-29,New York Islanders,0.6072101035253191,Washington Capitals,0.3927898964746809,Playing At:  New York Islanders   Home,60-70,New York Islanders,1
+2023-12-29,Ottawa Senators,0.5071616737387135,New Jersey Devils,0.49283832626128654,Playing At:  Ottawa Senators   Home,55 >,New Jersey Devils,0
+2023-12-29,Detroit Red Wings,0.503949385126456,Nashville Predators,0.49605061487354396,Playing At:  Detroit Red Wings   Home,55 >,Detroit Red Wings,1
+2023-12-29,Arizona Coyotes,0.5038450738921093,Anaheim Ducks,0.4961549261078907,Playing At:  Anaheim Ducks   Home,55 >,Arizona Coyotes,1
+2023-12-30,Boston Bruins,0.7707092867622529,New Jersey Devils,0.22929071323774708,Playing At:  Boston Bruins   Home,70-80,Boston Bruins,1
+2023-12-30,Buffalo Sabres,0.7288427018796804,Columbus Blue Jackets,0.27115729812031963,Playing At:  Buffalo Sabres   Home,70-80,Buffalo Sabres,1
+2023-12-30,Florida Panthers,0.648080562847198,Montreal Canadiens,0.35191943715280205,Playing At:  Florida Panthers   Home,60-70,Florida Panthers,1
+2023-12-30,Pittsburgh Penguins,0.5730287036044635,St. Louis Blues,0.42697129639553655,Playing At:  Pittsburgh Penguins   Home,55-60,Pittsburgh Penguins,1
+2023-12-30,Nashville Predators,0.5579763023334574,Washington Capitals,0.4420236976665426,Playing At:  Washington Capitals   Home,55-60,Nashville Predators,1
+2023-12-30,Carolina Hurricanes,0.5433040794709186,Toronto Maple Leafs,0.45669592052908137,Playing At:  Toronto Maple Leafs   Home,55 >,Carolina Hurricanes,1
+2023-12-30,Winnipeg Jets,0.5381714349982482,Minnesota Wild,0.46182856500175185,Playing At:  Winnipeg Jets   Home,55 >,Winnipeg Jets,1
+2023-12-30,Los Angeles Kings,0.5355672690770956,Edmonton Oilers,0.4644327309229044,Playing At:  Los Angeles Kings   Home,55 >,Edmonton Oilers,0
+2023-12-30,New York Rangers,0.5224963758648392,Tampa Bay Lightning,0.4775036241351608,Playing At:  Tampa Bay Lightning   Home,55 >,New York Rangers,1
+2023-12-31,Colorado Avalanche,0.8420610537071433,San Jose Sharks,0.15793894629285665,Playing At:  Colorado Avalanche   Home,80-85,Colorado Avalanche,1
+2023-12-31,Boston Bruins,0.7878105477873573,Detroit Red Wings,0.21218945221264274,Playing At:  Detroit Red Wings   Home,70-80,Boston Bruins,1
+2023-12-31,Dallas Stars,0.7747158859448505,Chicago Blackhawks,0.22528411405514948,Playing At:  Dallas Stars   Home,70-80,Dallas Stars,1
+2023-12-31,Edmonton Oilers,0.7212862390858097,Anaheim Ducks,0.2787137609141903,Playing At:  Anaheim Ducks   Home,70-80,Edmonton Oilers,1
+2023-12-31,Tampa Bay Lightning,0.6408514709578045,Montreal Canadiens,0.3591485290421955,Playing At:  Tampa Bay Lightning   Home,60-70,Tampa Bay Lightning,1
+2023-12-31,Calgary Flames,0.5871769755281713,Philadelphia Flyers,0.4128230244718287,Playing At:  Calgary Flames   Home,55-60,Calgary Flames,1
+2023-12-31,Winnipeg Jets,0.5625884275278722,Minnesota Wild,0.4374115724721278,Playing At:  Minnesota Wild   Home,55-60,Winnipeg Jets,1
+2023-12-31,Ottawa Senators,0.5625112693497655,Buffalo Sabres,0.4374887306502345,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,1
+2023-12-31,New York Islanders,0.5126451887550243,Pittsburgh Penguins,0.4873548112449757,Playing At:  Pittsburgh Penguins   Home,55 >,Pittsburgh Penguins,0
+2024-01-01,Vegas Golden Knights,0.5989481747631697,Seattle Kraken,0.40105182523683025,Playing At:  Seattle Kraken   Home,55-60,Seattle Kraken,0
+2024-01-02,Boston Bruins,0.8524687960999816,Columbus Blue Jackets,0.1475312039000184,Playing At:  Columbus Blue Jackets   Home,85 <,Boston Bruins,1
+2024-01-02,Nashville Predators,0.7841246206279007,Chicago Blackhawks,0.21587537937209933,Playing At:  Nashville Predators   Home,70-80,Nashville Predators,1
+2024-01-02,Dallas Stars,0.7240562444860459,Montreal Canadiens,0.2759437555139541,Playing At:  Dallas Stars   Home,70-80,Montreal Canadiens,0
+2024-01-02,Edmonton Oilers,0.6930311878597339,Philadelphia Flyers,0.30696881214026606,Playing At:  Edmonton Oilers   Home,60-70,Edmonton Oilers,1
+2024-01-02,Detroit Red Wings,0.6904768280482065,San Jose Sharks,0.30952317195179346,Playing At:  San Jose Sharks   Home,60-70,Detroit Red Wings,1
+2024-01-02,Colorado Avalanche,0.64154082236183,New York Islanders,0.35845917763817003,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2024-01-02,Minnesota Wild,0.6178371739030211,Calgary Flames,0.38216282609697894,Playing At:  Minnesota Wild   Home,60-70,Calgary Flames,0
+2024-01-02,Florida Panthers,0.5961894180753984,Arizona Coyotes,0.4038105819246016,Playing At:  Arizona Coyotes   Home,55-60,Florida Panthers,1
+2024-01-02,Pittsburgh Penguins,0.5646956042382305,Washington Capitals,0.4353043957617695,Playing At:  Pittsburgh Penguins   Home,55-60,Washington Capitals,0
+2024-01-02,Vancouver Canucks,0.5578550371975184,Ottawa Senators,0.4421449628024816,Playing At:  Vancouver Canucks   Home,55-60,Vancouver Canucks,1
+2024-01-02,Carolina Hurricanes,0.5419411501825777,New York Rangers,0.4580588498174223,Playing At:  New York Rangers   Home,55 >,Carolina Hurricanes,1
+2024-01-02,Winnipeg Jets,0.5389531083531554,Tampa Bay Lightning,0.46104689164684465,Playing At:  Winnipeg Jets   Home,55 >,Winnipeg Jets,1
+2024-01-02,Los Angeles Kings,0.5088969266158477,Toronto Maple Leafs,0.49110307338415227,Playing At:  Los Angeles Kings   Home,55 >,Toronto Maple Leafs,0
+2024-01-03,Toronto Maple Leafs,0.7888241991126292,Anaheim Ducks,0.21117580088737076,Playing At:  Anaheim Ducks   Home,70-80,Toronto Maple Leafs,1
+2024-01-03,New Jersey Devils,0.6613697098910878,Washington Capitals,0.3386302901089122,Playing At:  Washington Capitals   Home,60-70,New Jersey Devils,1
+2024-01-04,New York Rangers,0.7994135855760259,Chicago Blackhawks,0.20058641442397407,Playing At:  New York Rangers   Home,70-80,New York Rangers,1
+2024-01-04,Boston Bruins,0.7380557035272539,Pittsburgh Penguins,0.2619442964727461,Playing At:  Boston Bruins   Home,70-80,Pittsburgh Penguins,0
+2024-01-04,Winnipeg Jets,0.7319122050256525,San Jose Sharks,0.26808779497434754,Playing At:  San Jose Sharks   Home,70-80,Winnipeg Jets,1
+2024-01-04,Los Angeles Kings,0.7301693533522882,Detroit Red Wings,0.26983064664771184,Playing At:  Los Angeles Kings   Home,70-80,Detroit Red Wings,0
+2024-01-04,Nashville Predators,0.6132814412398853,Calgary Flames,0.38671855876011474,Playing At:  Nashville Predators   Home,60-70,Calgary Flames,0
+2024-01-04,Vegas Golden Knights,0.5915905613249357,Florida Panthers,0.4084094386750643,Playing At:  Vegas Golden Knights   Home,55-60,Florida Panthers,0
+2024-01-04,Philadelphia Flyers,0.5816086693884148,Columbus Blue Jackets,0.4183913306115852,Playing At:  Philadelphia Flyers   Home,55-60,Columbus Blue Jackets,0
+2024-01-04,Minnesota Wild,0.5754444127855811,Tampa Bay Lightning,0.4245555872144189,Playing At:  Minnesota Wild   Home,55-60,Tampa Bay Lightning,0
+2024-01-04,Seattle Kraken,0.5733714613422449,Ottawa Senators,0.4266285386577551,Playing At:  Seattle Kraken   Home,55-60,Seattle Kraken,1
+2024-01-04,New York Islanders,0.5670258358505971,Arizona Coyotes,0.43297416414940293,Playing At:  Arizona Coyotes   Home,55-60,New York Islanders,1
+2024-01-04,Buffalo Sabres,0.5333653264083501,Montreal Canadiens,0.4666346735916499,Playing At:  Montreal Canadiens   Home,55 >,Buffalo Sabres,1
+2024-01-04,St. Louis Blues,0.5304484659807309,Vancouver Canucks,0.4695515340192691,Playing At:  St. Louis Blues   Home,55 >,St. Louis Blues,1
+2024-01-04,Dallas Stars,0.5047180037727825,Colorado Avalanche,0.49528199622721747,Playing At:  Dallas Stars   Home,55 >,Colorado Avalanche,0
+2024-01-05,New Jersey Devils,0.8332481149514429,Chicago Blackhawks,0.1667518850485571,Playing At:  New Jersey Devils   Home,80-85,New Jersey Devils,1
+2024-01-05,Winnipeg Jets,0.6687850673930746,Anaheim Ducks,0.33121493260692536,Playing At:  Anaheim Ducks   Home,60-70,Winnipeg Jets,1
+2024-01-05,Carolina Hurricanes,0.5727132755363944,Washington Capitals,0.4272867244636056,Playing At:  Washington Capitals   Home,55-60,Carolina Hurricanes,1
+2024-01-06,Toronto Maple Leafs,0.7818360894778553,San Jose Sharks,0.21816391052214468,Playing At:  San Jose Sharks   Home,70-80,Toronto Maple Leafs,1
+2024-01-06,Boston Bruins,0.704408464157231,Tampa Bay Lightning,0.295591535842769,Playing At:  Boston Bruins   Home,70-80,Boston Bruins,1
+2024-01-06,Minnesota Wild,0.6931414494791913,Columbus Blue Jackets,0.3068585505208087,Playing At:  Columbus Blue Jackets   Home,60-70,Minnesota Wild,1
+2024-01-06,New York Rangers,0.688368190040327,Montreal Canadiens,0.311631809959673,Playing At:  Montreal Canadiens   Home,60-70,Montreal Canadiens,0
+2024-01-06,Carolina Hurricanes,0.657000319969899,St. Louis Blues,0.34299968003010095,Playing At:  Carolina Hurricanes   Home,60-70,St. Louis Blues,0
+2024-01-06,Edmonton Oilers,0.640729298283382,Ottawa Senators,0.359270701716618,Playing At:  Edmonton Oilers   Home,60-70,Edmonton Oilers,1
+2024-01-06,Vegas Golden Knights,0.6256820629125968,New York Islanders,0.37431793708740324,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,1
+2024-01-06,New Jersey Devils,0.593655455034018,Vancouver Canucks,0.40634454496598205,Playing At:  New Jersey Devils   Home,55-60,Vancouver Canucks,0
+2024-01-06,Colorado Avalanche,0.572318616118177,Florida Panthers,0.427681383881823,Playing At:  Colorado Avalanche   Home,55-60,Florida Panthers,0
+2024-01-06,Dallas Stars,0.5657528797394606,Nashville Predators,0.43424712026053935,Playing At:  Dallas Stars   Home,55-60,Nashville Predators,0
+2024-01-06,Philadelphia Flyers,0.5360080856828402,Calgary Flames,0.4639919143171598,Playing At:  Philadelphia Flyers   Home,55 >,Philadelphia Flyers,1
+2024-01-06,Pittsburgh Penguins,0.5315201971160782,Buffalo Sabres,0.46847980288392177,Playing At:  Pittsburgh Penguins   Home,55 >,Buffalo Sabres,0
+2024-01-07,Winnipeg Jets,0.6799886059443543,Arizona Coyotes,0.3200113940556457,Playing At:  Arizona Coyotes   Home,60-70,Winnipeg Jets,1
+2024-01-07,Los Angeles Kings,0.6468078413121134,Washington Capitals,0.35319215868788656,Playing At:  Washington Capitals   Home,60-70,Washington Capitals,0
+2024-01-07,Detroit Red Wings,0.6111837760101242,Anaheim Ducks,0.3888162239898758,Playing At:  Anaheim Ducks   Home,60-70,Detroit Red Wings,1
+2024-01-07,Calgary Flames,0.5706485745552348,Chicago Blackhawks,0.42935142544476523,Playing At:  Chicago Blackhawks   Home,55-60,Chicago Blackhawks,0
+2024-01-08,New York Rangers,0.6341315628936599,Vancouver Canucks,0.3658684371063401,Playing At:  New York Rangers   Home,60-70,Vancouver Canucks,0
+2024-01-08,Boston Bruins,0.6107171780435678,Colorado Avalanche,0.38928282195643216,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,0
+2024-01-08,Dallas Stars,0.5516822210078235,Minnesota Wild,0.4483177789921765,Playing At:  Minnesota Wild   Home,55-60,Dallas Stars,1
+2024-01-08,Pittsburgh Penguins,0.5440010289423067,Philadelphia Flyers,0.45599897105769327,Playing At:  Philadelphia Flyers   Home,55 >,Pittsburgh Penguins,1
+2024-01-09,Boston Bruins,0.7936801012919313,Arizona Coyotes,0.20631989870806866,Playing At:  Arizona Coyotes   Home,70-80,Arizona Coyotes,0
+2024-01-09,Toronto Maple Leafs,0.7671935876100584,San Jose Sharks,0.2328064123899416,Playing At:  Toronto Maple Leafs   Home,70-80,Toronto Maple Leafs,1
+2024-01-09,Winnipeg Jets,0.7354612372146935,Columbus Blue Jackets,0.2645387627853065,Playing At:  Winnipeg Jets   Home,70-80,Winnipeg Jets,1
+2024-01-09,Nashville Predators,0.7058913498667522,Anaheim Ducks,0.29410865013324783,Playing At:  Nashville Predators   Home,70-80,Anaheim Ducks,0
+2024-01-09,Edmonton Oilers,0.6707301694942469,Chicago Blackhawks,0.3292698305057531,Playing At:  Chicago Blackhawks   Home,60-70,Edmonton Oilers,1
+2024-01-09,New York Islanders,0.5874552168076803,Vancouver Canucks,0.4125447831923197,Playing At:  New York Islanders   Home,55-60,Vancouver Canucks,0
+2024-01-09,Los Angeles Kings,0.5449527347322133,Tampa Bay Lightning,0.4550472652677867,Playing At:  Tampa Bay Lightning   Home,55 >,Tampa Bay Lightning,0
+2024-01-09,Buffalo Sabres,0.5321799698444462,Seattle Kraken,0.46782003015555385,Playing At:  Buffalo Sabres   Home,55 >,Seattle Kraken,0
+2024-01-09,Ottawa Senators,0.5229822317133179,Calgary Flames,0.4770177682866821,Playing At:  Calgary Flames   Home,55 >,Calgary Flames,0
+2024-01-09,Florida Panthers,0.5171248839494721,St. Louis Blues,0.4828751160505279,Playing At:  St. Louis Blues   Home,55 >,Florida Panthers,1
+2024-01-10,Dallas Stars,0.5911570584175365,Minnesota Wild,0.4088429415824635,Playing At:  Dallas Stars   Home,55-60,Dallas Stars,1
+2024-01-10,Philadelphia Flyers,0.563708150732326,Montreal Canadiens,0.43629184926767395,Playing At:  Philadelphia Flyers   Home,55-60,Philadelphia Flyers,1
+2024-01-10,Colorado Avalanche,0.522574592486126,Vegas Golden Knights,0.47742540751387397,Playing At:  Colorado Avalanche   Home,55 >,Colorado Avalanche,1
+2024-01-11,Carolina Hurricanes,0.8474498113940694,Anaheim Ducks,0.15255018860593061,Playing At:  Carolina Hurricanes   Home,80-85,Carolina Hurricanes,1
+2024-01-11,Winnipeg Jets,0.7350591220650062,Chicago Blackhawks,0.26494087793499377,Playing At:  Winnipeg Jets   Home,70-80,Winnipeg Jets,1
+2024-01-11,New York Rangers,0.6465729200124111,St. Louis Blues,0.35342707998758893,Playing At:  St. Louis Blues   Home,60-70,St. Louis Blues,0
+2024-01-11,Boston Bruins,0.6406645015709812,Vegas Golden Knights,0.3593354984290188,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,0
+2024-01-11,Montreal Canadiens,0.5951358438798058,San Jose Sharks,0.4048641561201942,Playing At:  Montreal Canadiens   Home,55-60,San Jose Sharks,0
+2024-01-11,Edmonton Oilers,0.5728386075856107,Detroit Red Wings,0.42716139241438933,Playing At:  Detroit Red Wings   Home,55-60,Edmonton Oilers,1
+2024-01-11,Arizona Coyotes,0.5588742918819656,Calgary Flames,0.4411257081180344,Playing At:  Arizona Coyotes   Home,55-60,Calgary Flames,0
+2024-01-11,New Jersey Devils,0.558205824735597,Tampa Bay Lightning,0.441794175264403,Playing At:  Tampa Bay Lightning   Home,55-60,Tampa Bay Lightning,0
+2024-01-11,Toronto Maple Leafs,0.5547980170575166,New York Islanders,0.44520198294248337,Playing At:  New York Islanders   Home,55-60,New York Islanders,0
+2024-01-11,Pittsburgh Penguins,0.5242037774599824,Vancouver Canucks,0.47579622254001763,Playing At:  Pittsburgh Penguins   Home,55 >,Vancouver Canucks,0
+2024-01-11,Ottawa Senators,0.5134418610734484,Buffalo Sabres,0.48655813892655164,Playing At:  Buffalo Sabres   Home,55 >,Buffalo Sabres,0
+2024-01-11,Los Angeles Kings,0.5127506802940285,Florida Panthers,0.4872493197059715,Playing At:  Florida Panthers   Home,55 >,Florida Panthers,0
+2024-01-11,Seattle Kraken,0.5040451691121987,Washington Capitals,0.49595483088780135,Playing At:  Washington Capitals   Home,55 >,Seattle Kraken,1
+2024-01-12,Minnesota Wild,0.636175582253425,Philadelphia Flyers,0.36382441774657504,Playing At:  Minnesota Wild   Home,60-70,Philadelphia Flyers,0
+2024-01-12,Dallas Stars,0.5469874919234105,Nashville Predators,0.45301250807658955,Playing At:  Dallas Stars   Home,55 >,Nashville Predators,0
+2024-01-13,Tampa Bay Lightning,0.7908301255607992,Anaheim Ducks,0.20916987443920076,Playing At:  Tampa Bay Lightning   Home,70-80,Tampa Bay Lightning,1
+2024-01-13,Boston Bruins,0.7863313560006655,St. Louis Blues,0.2136686439993345,Playing At:  St. Louis Blues   Home,70-80,Boston Bruins,1
+2024-01-13,Vegas Golden Knights,0.732120696582133,Calgary Flames,0.26787930341786703,Playing At:  Vegas Golden Knights   Home,70-80,Calgary Flames,0
+2024-01-13,Ottawa Senators,0.7263599144789118,San Jose Sharks,0.2736400855210882,Playing At:  Ottawa Senators   Home,70-80,Ottawa Senators,1
+2024-01-13,Dallas Stars,0.7067487799208496,Chicago Blackhawks,0.2932512200791504,Playing At:  Chicago Blackhawks   Home,70-80,Dallas Stars,1
+2024-01-13,New York Rangers,0.6938726506647439,Washington Capitals,0.3061273493352561,Playing At:  Washington Capitals   Home,60-70,Washington Capitals,0
+2024-01-13,Seattle Kraken,0.6860077481190858,Columbus Blue Jackets,0.3139922518809142,Playing At:  Columbus Blue Jackets   Home,60-70,Seattle Kraken,1
+2024-01-13,Los Angeles Kings,0.68400401551572,Detroit Red Wings,0.31599598448428,Playing At:  Detroit Red Wings   Home,60-70,Detroit Red Wings,0
+2024-01-13,Edmonton Oilers,0.6684329860074871,Montreal Canadiens,0.33156701399251287,Playing At:  Montreal Canadiens   Home,60-70,Edmonton Oilers,1
+2024-01-13,Winnipeg Jets,0.6610853443689405,Philadelphia Flyers,0.3389146556310595,Playing At:  Winnipeg Jets   Home,60-70,Philadelphia Flyers,0
+2024-01-13,Minnesota Wild,0.6610737924998569,Arizona Coyotes,0.33892620750014313,Playing At:  Minnesota Wild   Home,60-70,Arizona Coyotes,0
+2024-01-13,Carolina Hurricanes,0.6445814863359025,Pittsburgh Penguins,0.3554185136640975,Playing At:  Carolina Hurricanes   Home,60-70,Carolina Hurricanes,1
+2024-01-13,New York Islanders,0.5584236609927773,Nashville Predators,0.4415763390072227,Playing At:  Nashville Predators   Home,55-60,Nashville Predators,0
+2024-01-13,New Jersey Devils,0.5419386442917391,Florida Panthers,0.4580613557082609,Playing At:  Florida Panthers   Home,55 >,New Jersey Devils,1
+2024-01-13,Colorado Avalanche,0.52296379272656,Toronto Maple Leafs,0.47703620727344,Playing At:  Toronto Maple Leafs   Home,55 >,Colorado Avalanche,1
+2024-01-13,Buffalo Sabres,0.5023030875217565,Vancouver Canucks,0.49769691247824355,Playing At:  Buffalo Sabres   Home,55 >,Vancouver Canucks,0
+2024-01-14,New York Rangers,0.7218308153011841,Washington Capitals,0.2781691846988159,Playing At:  New York Rangers   Home,70-80,New York Rangers,1
+2024-01-14,Toronto Maple Leafs,0.6455353307207616,Detroit Red Wings,0.35446466927923836,Playing At:  Toronto Maple Leafs   Home,60-70,Detroit Red Wings,0
+2024-01-15,Florida Panthers,0.7841174057341673,Anaheim Ducks,0.21588259426583267,Playing At:  Florida Panthers   Home,70-80,Anaheim Ducks,0
+2024-01-15,Buffalo Sabres,0.7600017887899495,San Jose Sharks,0.2399982112100505,Playing At:  Buffalo Sabres   Home,70-80,Buffalo Sabres,1
+2024-01-15,Colorado Avalanche,0.7440478207819063,Montreal Canadiens,0.25595217921809366,Playing At:  Montreal Canadiens   Home,70-80,Montreal Canadiens,0
+2024-01-15,Vancouver Canucks,0.7167881461726753,Columbus Blue Jackets,0.2832118538273247,Playing At:  Columbus Blue Jackets   Home,70-80,Columbus Blue Jackets,0
+2024-01-15,Boston Bruins,0.6698599800734018,New Jersey Devils,0.33014001992659825,Playing At:  Boston Bruins   Home,60-70,Boston Bruins,1
+2024-01-15,St. Louis Blues,0.6326045154489432,Philadelphia Flyers,0.36739548455105675,Playing At:  St. Louis Blues   Home,60-70,Philadelphia Flyers,0
+2024-01-15,Vegas Golden Knights,0.6148856281951176,Nashville Predators,0.3851143718048824,Playing At:  Vegas Golden Knights   Home,60-70,Vegas Golden Knights,1
+2024-01-15,Minnesota Wild,0.5988790308257985,New York Islanders,0.4011209691742015,Playing At:  Minnesota Wild   Home,55-60,Minnesota Wild,1
+2024-01-15,Carolina Hurricanes,0.5226403663498146,Los Angeles Kings,0.4773596336501854,Playing At:  Carolina Hurricanes   Home,55 >,Los Angeles Kings,0
+2024-01-15,Pittsburgh Penguins,0.5168065673446863,Seattle Kraken,0.48319343265531367,Playing At:  Pittsburgh Penguins   Home,55 >,Pittsburgh Penguins,1
+2024-01-16,New York Rangers,0.648286708040525,Seattle Kraken,0.351713291959475,Playing At:  New York Rangers   Home,60-70,New York Rangers,1
+2024-01-16,Washington Capitals,0.6351590500869457,Anaheim Ducks,0.36484094991305427,Playing At:  Washington Capitals   Home,60-70,Washington Capitals,1
+2024-01-16,Colorado Avalanche,0.5871270893022269,Ottawa Senators,0.4128729106977731,Playing At:  Ottawa Senators   Home,55-60,Colorado Avalanche,1
+2024-01-16,Winnipeg Jets,0.5767697827595688,New York Islanders,0.4232302172404312,Playing At:  Winnipeg Jets   Home,55-60,Winnipeg Jets,1
+2024-01-16,Calgary Flames,0.5623980560314238,Arizona Coyotes,0.4376019439685762,Playing At:  Calgary Flames   Home,55-60,Calgary Flames,1
+2024-01-16,Chicago Blackhawks,0.5161032263972051,San Jose Sharks,0.4838967736027949,Playing At:  Chicago Blackhawks   Home,55 >,Chicago Blackhawks,1
+2024-01-16,Los Angeles Kings,0.5091423727822643,Dallas Stars,0.49085762721773574,Playing At:  Dallas Stars   Home,55 >,Dallas Stars,0
+2024-01-16,Edmonton Oilers,0.5074393281644289,Toronto Maple Leafs,0.49256067183557106,Playing At:  Edmonton Oilers   Home,55 >,Edmonton Oilers,1
+2024-01-17,New Jersey Devils,0.7668211393779145,Montreal Canadiens,0.23317886062208548,Playing At:  New Jersey Devils   Home,70-80,Montreal Canadiens,0
+2024-01-17,Florida Panthers,0.6118903316541524,Detroit Red Wings,0.3881096683458476,Playing At:  Florida Panthers   Home,60-70,Detroit Red Wings,0
+2024-01-18,Boston Bruins,0.7296514604828054,Colorado Avalanche,0.2703485395171946,Playing At:  Boston Bruins   Home,70-80,Boston Bruins,1
+2024-01-18,Buffalo Sabres,0.7082939997848664,Chicago Blackhawks,0.2917060002151336,Playing At:  Buffalo Sabres   Home,70-80,Buffalo Sabres,1
+2024-01-18,Edmonton Oilers,0.6778896187256364,Seattle Kraken,0.32211038127436364,Playing At:  Edmonton Oilers   Home,60-70,Edmonton Oilers,1
+2024-01-18,Dallas Stars,0.6259297217137845,Philadelphia Flyers,0.37407027828621553,Playing At:  Philadelphia Flyers   Home,60-70,Philadelphia Flyers,0
+2024-01-18,Toronto Maple Leafs,0.6088743844593298,Calgary Flames,0.39112561554067016,Playing At:  Calgary Flames   Home,60-70,Toronto Maple Leafs,1
+2024-01-18,Vancouver Canucks,0.606316080770569,Arizona Coyotes,0.393683919229431,Playing At:  Vancouver Canucks   Home,60-70,Vancouver Canucks,1
+2024-01-18,Ottawa Senators,0.582400246313875,Montreal Canadiens,0.417599753686125,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,1
+2024-01-18,Tampa Bay Lightning,0.5545831787257535,Minnesota Wild,0.44541682127424653,Playing At:  Tampa Bay Lightning   Home,55-60,Tampa Bay Lightning,1
+2024-01-18,Los Angeles Kings,0.5350744797018159,Nashville Predators,0.4649255202981841,Playing At:  Los Angeles Kings   Home,55 >,Nashville Predators,0
+2024-01-18,Washington Capitals,0.5335146517789273,St. Louis Blues,0.4664853482210727,Playing At:  Washington Capitals   Home,55 >,Washington Capitals,1
+2024-01-18,Vegas Golden Knights,0.5177850443871265,New York Rangers,0.48221495561287353,Playing At:  Vegas Golden Knights   Home,55 >,Vegas Golden Knights,1
+2024-01-19,New Jersey Devils,0.7549680016487846,Columbus Blue Jackets,0.24503199835121536,Playing At:  Columbus Blue Jackets   Home,70-80,New Jersey Devils,1
+2024-01-19,Carolina Hurricanes,0.7103092646083857,Detroit Red Wings,0.2896907353916143,Playing At:  Carolina Hurricanes   Home,70-80,Carolina Hurricanes,1
+2024-01-19,New York Islanders,0.674518656415992,Chicago Blackhawks,0.32548134358400804,Playing At:  Chicago Blackhawks   Home,60-70,Chicago Blackhawks,0
+2024-01-19,Florida Panthers,0.5961962207989129,Minnesota Wild,0.4038037792010871,Playing At:  Florida Panthers   Home,55-60,Minnesota Wild,0
+2024-01-20,Boston Bruins,0.8457676812362448,Montreal Canadiens,0.1542323187637552,Playing At:  Boston Bruins   Home,80-85,Boston Bruins,1
+2024-01-20,Colorado Avalanche,0.7330296534075817,Philadelphia Flyers,0.26697034659241825,Playing At:  Philadelphia Flyers   Home,70-80,Colorado Avalanche,1
+2024-01-20,Nashville Predators,0.629286156018579,Arizona Coyotes,0.37071384398142104,Playing At:  Arizona Coyotes   Home,60-70,Arizona Coyotes,0
+2024-01-20,Winnipeg Jets,0.616717172936877,Ottawa Senators,0.383282827063123,Playing At:  Ottawa Senators   Home,60-70,Winnipeg Jets,1
+2024-01-20,Edmonton Oilers,0.6163538269976508,Calgary Flames,0.38364617300234916,Playing At:  Calgary Flames   Home,60-70,Edmonton Oilers,1
+2024-01-20,Vegas Golden Knights,0.5949933860631547,Pittsburgh Penguins,0.40500661393684534,Playing At:  Vegas Golden Knights   Home,55-60,Vegas Golden Knights,1
+2024-01-20,Tampa Bay Lightning,0.584621754886798,Buffalo Sabres,0.415378245113202,Playing At:  Buffalo Sabres   Home,55-60,Tampa Bay Lightning,1
+2024-01-20,New Jersey Devils,0.5758218505848843,Dallas Stars,0.42417814941511567,Playing At:  New Jersey Devils   Home,55-60,Dallas Stars,0
+2024-01-20,Toronto Maple Leafs,0.5570961426581612,Vancouver Canucks,0.4429038573418388,Playing At:  Vancouver Canucks   Home,55-60,Vancouver Canucks,0
+2024-01-20,Anaheim Ducks,0.5366119601563131,San Jose Sharks,0.4633880398436869,Playing At:  San Jose Sharks   Home,55 >,San Jose Sharks,0
+2024-01-20,St. Louis Blues,0.5307065666145595,Washington Capitals,0.4692934333854405,Playing At:  St. Louis Blues   Home,55 >,St. Louis Blues,1
+2024-01-20,New York Rangers,0.5258581067360568,Los Angeles Kings,0.4741418932639432,Playing At:  Los Angeles Kings   Home,55 >,Los Angeles Kings,0
+2024-01-21,New York Rangers,0.7831301565583748,Anaheim Ducks,0.2168698434416252,Playing At:  Anaheim Ducks   Home,70-80,New York Rangers,1
+2024-01-21,Carolina Hurricanes,0.6252847992601012,Minnesota Wild,0.37471520073989883,Playing At:  Carolina Hurricanes   Home,60-70,Minnesota Wild,0
+2024-01-21,Dallas Stars,0.5897246382795234,New York Islanders,0.41027536172047663,Playing At:  New York Islanders   Home,55-60,New York Islanders,0
+2024-01-21,Tampa Bay Lightning,0.5833100743692374,Detroit Red Wings,0.41668992563076257,Playing At:  Detroit Red Wings   Home,55-60,Detroit Red Wings,0
+2024-01-21,Toronto Maple Leafs,0.5554287062096902,Seattle Kraken,0.4445712937903098,Playing At:  Seattle Kraken   Home,55-60,Toronto Maple Leafs,1
+2024-01-21,Ottawa Senators,0.5270195029047333,Philadelphia Flyers,0.4729804970952667,Playing At:  Philadelphia Flyers   Home,55 >,Ottawa Senators,1
+2024-01-22,Vancouver Canucks,0.7754250505180496,Chicago Blackhawks,0.22457494948195045,Playing At:  Vancouver Canucks   Home,70-80,Vancouver Canucks,1
+2024-01-22,Los Angeles Kings,0.7644753748847006,San Jose Sharks,0.23552462511529937,Playing At:  Los Angeles Kings   Home,70-80,San Jose Sharks,0
+2024-01-22,Boston Bruins,0.6868710684908237,Winnipeg Jets,0.3131289315091763,Playing At:  Boston Bruins   Home,60-70,Boston Bruins,1
+2024-01-22,Pittsburgh Penguins,0.5984205116384381,Arizona Coyotes,0.4015794883615619,Playing At:  Arizona Coyotes   Home,55-60,Arizona Coyotes,0
+2024-01-22,New Jersey Devils,0.527587764215028,Vegas Golden Knights,0.47241223578497205,Playing At:  New Jersey Devils   Home,55 >,New Jersey Devils,1
+2024-01-22,Florida Panthers,0.5090253012908126,Nashville Predators,0.4909746987091874,Playing At:  Nashville Predators   Home,55 >,Florida Panthers,1
+2024-01-23,New York Rangers,0.8165148599600103,San Jose Sharks,0.18348514003998972,Playing At:  San Jose Sharks   Home,80-85,San Jose Sharks,0
+2024-01-23,Edmonton Oilers,0.8010104989601691,Columbus Blue Jackets,0.19898950103983093,Playing At:  Edmonton Oilers   Home,80-85,Edmonton Oilers,1
+2024-01-23,Buffalo Sabres,0.6797795179242361,Anaheim Ducks,0.3202204820757639,Playing At:  Anaheim Ducks   Home,60-70,Anaheim Ducks,0
+2024-01-23,Tampa Bay Lightning,0.6596337231949552,Philadelphia Flyers,0.34036627680504483,Playing At:  Philadelphia Flyers   Home,60-70,Tampa Bay Lightning,1
+2024-01-23,Vegas Golden Knights,0.6245431834566872,New York Islanders,0.37545681654331275,Playing At:  New York Islanders   Home,60-70,Vegas Golden Knights,1
+2024-01-23,Dallas Stars,0.590342527797782,Detroit Red Wings,0.40965747220221804,Playing At:  Detroit Red Wings   Home,55-60,Dallas Stars,1
+2024-01-23,St. Louis Blues,0.5720804912898818,Calgary Flames,0.4279195087101182,Playing At:  Calgary Flames   Home,55-60,St. Louis Blues,1
+2024-01-23,Minnesota Wild,0.5610546833681355,Washington Capitals,0.43894531663186453,Playing At:  Minnesota Wild   Home,55-60,Minnesota Wild,1
+2024-01-23,Ottawa Senators,0.5059469185178445,Montreal Canadiens,0.49405308148215554,Playing At:  Montreal Canadiens   Home,55 >,Ottawa Senators,1
+2024-01-24,Seattle Kraken,0.7655580191685294,Chicago Blackhawks,0.2344419808314706,Playing At:  Seattle Kraken   Home,70-80,Seattle Kraken,1
+2024-01-24,Florida Panthers,0.6783108007699217,Arizona Coyotes,0.3216891992300783,Playing At:  Florida Panthers   Home,60-70,Florida Panthers,1
+2024-01-24,Colorado Avalanche,0.6658302349681395,Washington Capitals,0.33416976503186047,Playing At:  Colorado Avalanche   Home,60-70,Colorado Avalanche,1
+2024-01-24,Los Angeles Kings,0.613491150664006,Buffalo Sabres,0.38650884933599405,Playing At:  Los Angeles Kings   Home,60-70,Buffalo Sabres,0
+2024-01-24,Boston Bruins,0.6115692563586416,Carolina Hurricanes,0.38843074364135843,Playing At:  Boston Bruins   Home,60-70,Carolina Hurricanes,0
+2024-01-24,Vancouver Canucks,0.5735175708097504,St. Louis Blues,0.4264824291902496,Playing At:  Vancouver Canucks   Home,55-60,St. Louis Blues,0
+2024-01-24,Toronto Maple Leafs,0.5014914231253645,Winnipeg Jets,0.49850857687463546,Playing At:  Toronto Maple Leafs   Home,55 >,Toronto Maple Leafs,1
+2024-01-25,Edmonton Oilers,0.79106571846508,Chicago Blackhawks,0.20893428153492,Playing At:  Edmonton Oilers   Home,70-80,Edmonton Oilers,1
+2024-01-25,Dallas Stars,0.754910352198588,Anaheim Ducks,0.24508964780141196,Playing At:  Dallas Stars   Home,70-80,Dallas Stars,1
+2024-01-25,Boston Bruins,0.7501616657265917,Ottawa Senators,0.2498383342734083,Playing At:  Ottawa Senators   Home,70-80,Boston Bruins,1
+2024-01-25,Calgary Flames,0.716937633984705,Columbus Blue Jackets,0.283062366015295,Playing At:  Calgary Flames   Home,70-80,Columbus Blue Jackets,0
+2024-01-25,Tampa Bay Lightning,0.6880965161733275,Arizona Coyotes,0.31190348382667255,Playing At:  Tampa Bay Lightning   Home,60-70,Tampa Bay Lightning,1
+2024-01-25,New York Islanders,0.6398695203965412,Montreal Canadiens,0.3601304796034588,Playing At:  Montreal Canadiens   Home,60-70,Montreal Canadiens,0
+2024-01-25,Detroit Red Wings,0.5486554785588631,Philadelphia Flyers,0.4513445214411369,Playing At:  Detroit Red Wings   Home,55 >,Detroit Red Wings,1
+2024-01-25,Minnesota Wild,0.5388149423845341,Nashville Predators,0.4611850576154659,Playing At:  Minnesota Wild   Home,55 >,Nashville Predators,0
+2024-01-25,New Jersey Devils,0.5208262265323216,Carolina Hurricanes,0.4791737734676784,Playing At:  Carolina Hurricanes   Home,55 >,Carolina Hurricanes,0
+2024-01-26,Colorado Avalanche,0.5773906952745677,Los Angeles Kings,0.42260930472543234,Playing At:  Colorado Avalanche   Home,55-60,Colorado Avalanche,1
+2024-01-26,Seattle Kraken,0.5755184772309083,St. Louis Blues,0.4244815227690917,Playing At:  Seattle Kraken   Home,55-60,St. Louis Blues,0
+2024-01-26,New York Rangers,0.5441352959515184,Vegas Golden Knights,0.45586470404848156,Playing At:  New York Rangers   Home,55 >,Vegas Golden Knights,0
+2024-01-26,Florida Panthers,0.5310283606913714,Pittsburgh Penguins,0.4689716393086286,Playing At:  Pittsburgh Penguins   Home,55 >,Florida Panthers,1
+2024-01-27,Vancouver Canucks,0.7747246837445295,Columbus Blue Jackets,0.22527531625547048,Playing At:  Vancouver Canucks   Home,70-80,Vancouver Canucks,1
+2024-01-27,Carolina Hurricanes,0.767842068236207,Arizona Coyotes,0.23215793176379296,Playing At:  Carolina Hurricanes   Home,70-80,Carolina Hurricanes,1
+2024-01-27,Minnesota Wild,0.7506746411434685,Anaheim Ducks,0.2493253588565315,Playing At:  Minnesota Wild   Home,70-80,Anaheim Ducks,0
+2024-01-27,Buffalo Sabres,0.7255784976905226,San Jose Sharks,0.27442150230947737,Playing At:  San Jose Sharks   Home,70-80,Buffalo Sabres,1
+2024-01-27,Boston Bruins,0.7039959101868518,Philadelphia Flyers,0.2960040898131482,Playing At:  Philadelphia Flyers   Home,70-80,Boston Bruins,1
+2024-01-27,New York Rangers,0.6913309317340595,Ottawa Senators,0.30866906826594054,Playing At:  Ottawa Senators   Home,60-70,New York Rangers,1
+2024-01-27,Dallas Stars,0.6514770426038765,Washington Capitals,0.3485229573961235,Playing At:  Dallas Stars   Home,60-70,Dallas Stars,1
+2024-01-27,Calgary Flames,0.6477674210833959,Chicago Blackhawks,0.3522325789166041,Playing At:  Calgary Flames   Home,60-70,Calgary Flames,1
+2024-01-27,Pittsburgh Penguins,0.6017502818721698,Montreal Canadiens,0.39824971812783017,Playing At:  Pittsburgh Penguins   Home,60-70,Pittsburgh Penguins,1
+2024-01-27,Winnipeg Jets,0.5853487420976587,Toronto Maple Leafs,0.41465125790234125,Playing At:  Winnipeg Jets   Home,55-60,Toronto Maple Leafs,0
+2024-01-27,Vegas Golden Knights,0.5844593162116016,Detroit Red Wings,0.41554068378839837,Playing At:  Detroit Red Wings   Home,55-60,Detroit Red Wings,0
+2024-01-27,Edmonton Oilers,0.5590731121205137,Nashville Predators,0.4409268878794863,Playing At:  Edmonton Oilers   Home,55-60,Edmonton Oilers,1
+2024-01-27,New Jersey Devils,0.5238023910548026,Tampa Bay Lightning,0.47619760894519736,Playing At:  Tampa Bay Lightning   Home,55 >,Tampa Bay Lightning,0
+2024-01-27,Florida Panthers,0.5162462006409346,New York Islanders,0.4837537993590654,Playing At:  New York Islanders   Home,55 >,Florida Panthers,1
+2024-01-28,Seattle Kraken,0.7500967675071377,Columbus Blue Jackets,0.24990323249286228,Playing At:  Seattle Kraken   Home,70-80,Seattle Kraken,1
+2024-01-28,Los Angeles Kings,0.5753076723723038,St. Louis Blues,0.42469232762769615,Playing At:  St. Louis Blues   Home,55-60,St. Louis Blues,0
+2024-01-29,Nashville Predators,0.5839847076802356,Ottawa Senators,0.4160152923197644,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,0
+2024-01-30,St. Louis Blues,0.723151367777938,Columbus Blue Jackets,0.276848632222062,Playing At:  St. Louis Blues   Home,70-80,Columbus Blue Jackets,0
+2024-01-30,Seattle Kraken,0.6958918033706848,San Jose Sharks,0.3041081966293152,Playing At:  San Jose Sharks   Home,60-70,San Jose Sharks,0
+2024-01-31,Anaheim Ducks,0.6012238993376179,San Jose Sharks,0.3987761006623821,Playing At:  Anaheim Ducks   Home,60-70,Anaheim Ducks,1
+2024-01-31,Los Angeles Kings,0.5957818473758487,Nashville Predators,0.4042181526241513,Playing At:  Nashville Predators   Home,55-60,Los Angeles Kings,1
+2024-01-31,Detroit Red Wings,0.5686618618584256,Ottawa Senators,0.4313381381415744,Playing At:  Detroit Red Wings   Home,55-60,Ottawa Senators,0
+2024-02-05,Toronto Maple Leafs,0.6285519928838864,New York Islanders,0.3714480071161136,Playing At:  Toronto Maple Leafs   Home,60-70,New York Islanders,0
+2024-02-05,Colorado Avalanche,0.5549961662377253,New York Rangers,0.4450038337622747,Playing At:  New York Rangers   Home,55-60,New York Rangers,0
+2024-02-06,Boston Bruins,0.7712072506054535,Calgary Flames,0.22879274939454652,Playing At:  Boston Bruins   Home,70-80,Calgary Flames,0
+2024-02-06,Florida Panthers,0.6703977509727652,Philadelphia Flyers,0.3296022490272348,Playing At:  Florida Panthers   Home,60-70,Philadelphia Flyers,0
+2024-02-06,Carolina Hurricanes,0.6236529384622258,Vancouver Canucks,0.3763470615377742,Playing At:  Carolina Hurricanes   Home,60-70,Vancouver Canucks,0
+2024-02-06,Winnipeg Jets,0.6185935942872469,Pittsburgh Penguins,0.3814064057127531,Playing At:  Pittsburgh Penguins   Home,60-70,Pittsburgh Penguins,0
+2024-02-06,Dallas Stars,0.5936861838579174,Buffalo Sabres,0.4063138161420826,Playing At:  Buffalo Sabres   Home,55-60,Dallas Stars,1
+2024-02-06,New Jersey Devils,0.5778437437522279,Colorado Avalanche,0.4221562562477721,Playing At:  New Jersey Devils   Home,55-60,New Jersey Devils,1
+2024-02-06,Washington Capitals,0.5737708321157696,Montreal Canadiens,0.4262291678842304,Playing At:  Washington Capitals   Home,55-60,Montreal Canadiens,0
+2024-02-06,Edmonton Oilers,0.5238895068611745,Vegas Golden Knights,0.4761104931388255,Playing At:  Vegas Golden Knights   Home,55 >,Vegas Golden Knights,0
+2024-02-07,Minnesota Wild,0.6747506430839378,Chicago Blackhawks,0.32524935691606216,Playing At:  Chicago Blackhawks   Home,60-70,Minnesota Wild,1
+2024-02-07,Toronto Maple Leafs,0.553102381340197,Dallas Stars,0.44689761865980304,Playing At:  Toronto Maple Leafs   Home,55-60,Toronto Maple Leafs,1
+2024-02-07,New York Rangers,0.5188626857797833,Tampa Bay Lightning,0.48113731422021666,Playing At:  New York Rangers   Home,55 >,New York Rangers,1
+2024-02-08,Boston Bruins,0.711103607416957,Vancouver Canucks,0.288896392583043,Playing At:  Boston Bruins   Home,70-80,Boston Bruins,1
+2024-02-08,New Jersey Devils,0.6865215707891902,Calgary Flames,0.3134784292108098,Playing At:  New Jersey Devils   Home,60-70,Calgary Flames,0
+2024-02-08,Winnipeg Jets,0.6675443676874,Philadelphia Flyers,0.3324556323126,Playing At:  Philadelphia Flyers   Home,60-70,Philadelphia Flyers,0
+2024-02-08,Florida Panthers,0.6446545606278262,Washington Capitals,0.3553454393721738,Playing At:  Florida Panthers   Home,60-70,Florida Panthers,1
+2024-02-08,Vegas Golden Knights,0.6146983571440366,Arizona Coyotes,0.38530164285596336,Playing At:  Arizona Coyotes   Home,60-70,Vegas Golden Knights,1
+2024-02-08,New York Islanders,0.5391038211661944,Tampa Bay Lightning,0.4608961788338056,Playing At:  New York Islanders   Home,55 >,New York Islanders,1
+2024-02-08,Carolina Hurricanes,0.5061083422015056,Colorado Avalanche,0.4938916577984944,Playing At:  Carolina Hurricanes   Home,55 >,Carolina Hurricanes,1
+2024-02-09,Edmonton Oilers,0.755698272975035,Anaheim Ducks,0.244301727024965,Playing At:  Anaheim Ducks   Home,70-80,Edmonton Oilers,1
+2024-02-09,New York Rangers,0.7284078399971032,Chicago Blackhawks,0.27159216000289677,Playing At:  Chicago Blackhawks   Home,70-80,New York Rangers,1
+2024-02-09,Minnesota Wild,0.525249014580172,Pittsburgh Penguins,0.47475098541982796,Playing At:  Minnesota Wild   Home,55 >,Minnesota Wild,1
+2024-02-10,Boston Bruins,0.7954730447154856,Washington Capitals,0.20452695528451437,Playing At:  Boston Bruins   Home,70-80,Washington Capitals,0
+2024-02-10,Nashville Predators,0.693774983211696,Arizona Coyotes,0.30622501678830405,Playing At:  Nashville Predators   Home,60-70,Nashville Predators,1
+2024-02-10,Dallas Stars,0.6463407324261368,Montreal Canadiens,0.35365926757386323,Playing At:  Montreal Canadiens   Home,60-70,Dallas Stars,1
+2024-02-10,Tampa Bay Lightning,0.6381902874046238,Columbus Blue Jackets,0.3618097125953762,Playing At:  Columbus Blue Jackets   Home,60-70,Tampa Bay Lightning,1
+2024-02-10,Winnipeg Jets,0.6327164447841074,Pittsburgh Penguins,0.3672835552158926,Playing At:  Winnipeg Jets   Home,60-70,Winnipeg Jets,1
+2024-02-10,Seattle Kraken,0.6250199853999225,Philadelphia Flyers,0.37498001460007746,Playing At:  Philadelphia Flyers   Home,60-70,Philadelphia Flyers,0
+2024-02-10,Toronto Maple Leafs,0.5774920593390298,Ottawa Senators,0.4225079406609702,Playing At:  Ottawa Senators   Home,55-60,Ottawa Senators,0
+2024-02-10,Vancouver Canucks,0.5658970398417149,Detroit Red Wings,0.4341029601582851,Playing At:  Detroit Red Wings   Home,55-60,Detroit Red Wings,0
+2024-02-10,Colorado Avalanche,0.5158358463610577,Florida Panthers,0.4841641536389423,Playing At:  Florida Panthers   Home,55 >,Florida Panthers,0
+2024-02-10,New York Islanders,0.5151340493273349,Calgary Flames,0.48486595067266514,Playing At:  New York Islanders   Home,55 >,Calgary Flames,0
+2024-02-10,Edmonton Oilers,0.5075516239145048,Los Angeles Kings,0.4924483760854952,Playing At:  Los Angeles Kings   Home,55 >,Los Angeles Kings,0
+2024-02-10,New Jersey Devils,0.5033679969925494,Carolina Hurricanes,0.4966320030074506,Playing At:  Carolina Hurricanes   Home,55 >,Carolina Hurricanes,0
+2024-02-10,St. Louis Blues,0.5004509547566962,Buffalo Sabres,0.4995490452433038,Playing At:  Buffalo Sabres   Home,55 >,St. Louis Blues,1

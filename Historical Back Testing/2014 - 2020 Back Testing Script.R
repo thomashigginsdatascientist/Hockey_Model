@@ -5,13 +5,22 @@ library(lubridate)
 library(scales)
 # library(car)
 
+schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
+schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2022.csv")
+schedule2023 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2023.csv")
+
+colnames(schedule2021) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
+colnames(schedule2022) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
+colnames(schedule2023) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
+
+games <- rbind(schedule2021, schedule2022, schedule2023)
 
 
-schedule <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2014-2020.csv")
-
-colnames(schedule) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
-
-games <- schedule
+# schedule <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2014-2020.csv")
+# 
+# colnames(schedule) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
+# 
+# games <- schedule
 
 games$Winner <- ifelse(games$`Vistor Score` > games$`Home Score`, "V", "H")
 
@@ -38,7 +47,7 @@ colnames(dates) <- "Date"
 dates$Date <- as.Date(dates$Date, format = "%m/%d/%Y")
 filter_dates <- dates
 filter_dates <- filter_dates %>%
-  filter(Date >= as.Date("01/04/2015", format = "%m/%d/%Y")) %>%
+  filter(Date >= as.Date("10/15/2023", format = "%m/%d/%Y")) %>%
   filter(!Date%in% vegas_dates) #removed because vegas enters the league in 2017, caused error in testing pipe
 
 
