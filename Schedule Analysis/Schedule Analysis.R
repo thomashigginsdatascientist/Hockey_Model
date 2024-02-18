@@ -48,7 +48,7 @@ analysis2 <- schedule %>%
   summarise(Num_Games = n(), Light_Days = sum(Target)) %>%
   mutate(Heavy_Days = Num_Games - Light_Days) %>%
   arrange(Min_Date) %>%
-  filter(Min_Date >= as.Date("2/12/2024", format = "%m/%d/%Y")) %>%
+  filter(Min_Date >= as.Date("2/19/2024", format = "%m/%d/%Y")) %>%
   ungroup() %>%
   mutate(Light_Multiplier = Light_Days * 1.5) %>%
   mutate(Heavy_Multiplier = Heavy_Days * 0.5) %>%
