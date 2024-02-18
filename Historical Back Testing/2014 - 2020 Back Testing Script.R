@@ -260,7 +260,7 @@ for(i in 1:nrow(filter_dates)){
 
   rf_model <- train(Win ~ .,
                     data = sequence_data1,
-                    method="pda"
+                    method="bagFDA"
   )
   
   end1 <- Sys.time()
