@@ -238,18 +238,18 @@ train <- sequence_data1 %>%
 
 train <- train[complete.cases(train),]
   
-start <- Sys.time()
-
-model <- train(Win ~ .,
-                  data = train,
-                  method="pda"
-                  )
-
-end <- Sys.time()
-
-end - start
-
-saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA12.RDS")
+# start <- Sys.time()
+# 
+# model <- train(Win ~ .,
+#                   data = train,
+#                   method="pda"
+#                   )
+# 
+# end <- Sys.time()
+# 
+# end - start
+# 
+# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA12.RDS")
 
 model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA12.RDS")
 
