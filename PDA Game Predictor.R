@@ -314,8 +314,11 @@ write_csv(metrics, "C:/Users/thigg/Desktop/Hockey Models/Current Model Metrics.c
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
+
+max_date <- max(dates$dates) + days(1)
+
 next_week <- next_week %>%
-  filter(Date == Sys.Date())
+  filter(Date == max_date)
 
 colnames(next_week) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 
@@ -446,7 +449,7 @@ next_week <- next_week %>%
   select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
   
 next_week1 <- next_week %>%
-  filter(Date == Sys.Date()) %>%
+  filter(Date == max_date) %>%
   # filter(Date >= as.Date("12/13/2023", format = "%m/%d/%Y")) %>%
   select(-Win, -GF, -GA)
 
