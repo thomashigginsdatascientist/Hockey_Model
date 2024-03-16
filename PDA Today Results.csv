@@ -1,14 +1,15 @@
 Date,Winner1,Winner Probability,Loser1,Loser Probability,Site,Category,hot_score
-2024-03-09,Nashville Predators,74.494%,Columbus Blue Jackets,25.506%,Playing At:  Columbus Blue Jackets   Home,70-75,0.75
-2024-03-09,Toronto Maple Leafs,72.639%,Montreal Canadiens,27.361%,Playing At:  Montreal Canadiens   Home,70-75,-0.7857142857142858
-2024-03-09,Boston Bruins,72.579%,Pittsburgh Penguins,27.421%,Playing At:  Boston Bruins   Home,70-75,0.125
-2024-03-09,Ottawa Senators,70.796%,San Jose Sharks,29.204%,Playing At:  San Jose Sharks   Home,70-75,-2.928571428571429
-2024-03-09,New York Rangers,68.321%,St. Louis Blues,31.679%,Playing At:  New York Rangers   Home,60-70,1
-2024-03-09,Florida Panthers,67.602%,Calgary Flames,32.398%,Playing At:  Florida Panthers   Home,60-70,2.125
-2024-03-09,Washington Capitals,65.978%,Chicago Blackhawks,34.022%,Playing At:  Washington Capitals   Home,60-70,1.3571428571428577
-2024-03-09,Tampa Bay Lightning,64.219%,Philadelphia Flyers,35.781%,Playing At:  Tampa Bay Lightning   Home,60-70,-0.21428571428571452
-2024-03-09,Vegas Golden Knights,63.433%,Detroit Red Wings,36.567%,Playing At:  Vegas Golden Knights   Home,60-70,-1.9285714285714284
-2024-03-09,Edmonton Oilers,54.973%,Buffalo Sabres,45.027%,Playing At:  Buffalo Sabres   Home,55 >,0.625
-2024-03-09,Vancouver Canucks,51.585%,Winnipeg Jets,48.415%,Playing At:  Vancouver Canucks   Home,55 >,0.21428571428571397
-2024-03-09,Dallas Stars,51.412%,Los Angeles Kings,48.588%,Playing At:  Los Angeles Kings   Home,55 >,0.75
-2024-03-09,Carolina Hurricanes,51.247%,New Jersey Devils,48.753%,Playing At:  New Jersey Devils   Home,55 >,-0.375
+2024-03-16,Boston Bruins,71.775%,Philadelphia Flyers,28.225%,Playing At:  Boston Bruins   Home,70-75,1.125
+2024-03-16,Calgary Flames,65.488%,Montreal Canadiens,34.512%,Playing At:  Calgary Flames   Home,60-70,-0.7857142857142861
+2024-03-16,New Jersey Devils,64.836%,Arizona Coyotes,35.164%,Playing At:  Arizona Coyotes   Home,60-70,0.16666666666666652
+2024-03-16,Dallas Stars,64.794%,Los Angeles Kings,35.206%,Playing At:  Dallas Stars   Home,60-70,1.9285714285714293
+2024-03-16,New York Rangers,63.332%,Pittsburgh Penguins,36.668%,Playing At:  Pittsburgh Penguins   Home,60-70,-2.0555555555555554
+2024-03-16,Florida Panthers,63.128%,Tampa Bay Lightning,36.872%,Playing At:  Florida Panthers   Home,60-70,2.125
+2024-03-16,Vancouver Canucks,61.918%,Washington Capitals,38.082%,Playing At:  Vancouver Canucks   Home,60-70,1.4999999999999998
+2024-03-16,Edmonton Oilers,59.323%,Colorado Avalanche,40.677%,Playing At:  Edmonton Oilers   Home,55-60,2.785714285714286
+2024-03-16,Columbus Blue Jackets,58.160%,San Jose Sharks,41.840%,Playing At:  Columbus Blue Jackets   Home,55-60,0.125
+2024-03-16,New York Islanders,55.976%,Ottawa Senators,44.024%,Playing At:  New York Islanders   Home,55-60,2.5
+2024-03-16,Carolina Hurricanes,54.194%,Toronto Maple Leafs,45.806%,Playing At:  Toronto Maple Leafs   Home,55 >,1.357142857142857
+2024-03-16,Detroit Red Wings,52.844%,Buffalo Sabres,47.156%,Playing At:  Detroit Red Wings   Home,55 >,-3.928571428571429
+2024-03-16,Seattle Kraken,52.571%,Nashville Predators,47.429%,Playing At:  Seattle Kraken   Home,55 >,0.2142857142857143
+2024-03-16,St. Louis Blues,51.377%,Minnesota Wild,48.623%,Playing At:  St. Louis Blues   Home,55 >,0.6428571428571428
