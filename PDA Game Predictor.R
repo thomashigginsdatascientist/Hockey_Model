@@ -164,7 +164,7 @@ for(i in 1:nrow(dates)){
 
   current_date <- dates$dates[i]
 
-  current_date_one <- current_date
+  current_date_one <- current_date - days(1)
 
   current_date_two_weeks <- current_date - days(15)
 
@@ -249,9 +249,9 @@ train <- train[complete.cases(train),]
 # 
 # end - start
 # 
-# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA14.RDS")
+# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA15.RDS")
 
-model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA14.RDS")
+model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA15.RDS")
 
 preds <- read_excel("C:/Users/thigg/Desktop/Hockey Models/PDA Lifetime Predictions.xlsx", sheet = "Predictions")
 

@@ -164,7 +164,7 @@ for(i in 1:nrow(dates)){
 
   current_date <- dates$dates[i]
 
-  current_date_one <- current_date - days(1)
+  current_date_one <- current_date
 
   current_date_two_weeks <- current_date - days(15)
 
@@ -267,7 +267,6 @@ model <- train(Win ~ .,
 end <- Sys.time()
 
 end - start
-
 
 preds <- predict(model, test, type = "prob")
 
