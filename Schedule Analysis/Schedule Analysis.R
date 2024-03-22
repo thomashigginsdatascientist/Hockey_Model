@@ -48,7 +48,7 @@ analysis2 <- schedule %>%
   summarise(Num_Games = n(), Light_Days = sum(Target)) %>%
   mutate(Heavy_Days = Num_Games - Light_Days) %>%
   arrange(Min_Date) %>%
-  filter(Min_Date >= as.Date("3/18/2024", format = "%m/%d/%Y")) %>%
+  filter(Min_Date >= as.Date("4/1/2024", format = "%m/%d/%Y")) %>%
   ungroup() %>%
   mutate(Light_Multiplier = Light_Days * 1.5) %>%
   mutate(Heavy_Multiplier = Heavy_Days * 0.5) %>%
@@ -78,8 +78,20 @@ analysis2 <- schedule %>%
   select(Team, Min_Date, Num_Games, Light_Days, Heavy_Days, Score, Next_Week_Num_Games, Next_Week_Light_Days, Next_Week_Score, Two_Week_Num_Games, Two_Week_Light_Days, Two_Week_Score, Three_Week_Num_Games, Three_Week_Light_Days, Three_Week_Score) %>%
   arrange(desc(Score)) %>%
   ungroup() %>%
+  mutate(Score = ifelse(is.na(Score), 0, Score)) %>%
+  mutate(Next_Week_Score = ifelse(is.na(Next_Week_Score), 0, Next_Week_Score)) %>%
+  mutate(Two_Week_Score = ifelse(is.na(Two_Week_Score), 0, Two_Week_Score)) %>%
+  mutate(Three_Week_Score = ifelse(is.na(Three_Week_Score), 0, Three_Week_Score)) %>%
   mutate(Total_Score = Score + Next_Week_Score + Two_Week_Score + Three_Week_Score) %>%
+  mutate(Num_Games = ifelse(is.na(Num_Games), 0, Num_Games)) %>%
+  mutate(Next_Week_Num_Games = ifelse(is.na(Next_Week_Num_Games), 0, Next_Week_Num_Games)) %>%
+  mutate(Two_Week_Num_Games = ifelse(is.na(Two_Week_Num_Games), 0, Two_Week_Num_Games)) %>%
+  mutate(Three_Week_Num_Games = ifelse(is.na(Three_Week_Num_Games), 0, Three_Week_Num_Games)) %>%
   mutate(Total_Games = Num_Games + Next_Week_Num_Games + Two_Week_Num_Games + Three_Week_Num_Games) %>%
+  mutate(Light_Days = ifelse(is.na(Light_Days), 0, Light_Days)) %>%
+  mutate(Next_Week_Light_Days = ifelse(is.na(Next_Week_Light_Days), 0, Next_Week_Light_Days)) %>%
+  mutate(Two_Week_Light_Days = ifelse(is.na(Two_Week_Light_Days), 0, Two_Week_Light_Days)) %>%
+  mutate(Three_Week_Light_Days = ifelse(is.na(Three_Week_Light_Days), 0, Three_Week_Light_Days)) %>%
   mutate(Total_Light_Games = Light_Days + Next_Week_Light_Days + Two_Week_Light_Days + Three_Week_Light_Days) %>%
   arrange(desc(Total_Score)) %>%
   mutate(Score_Rank = min_rank(Total_Score)) %>%
