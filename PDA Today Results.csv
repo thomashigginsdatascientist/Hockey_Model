@@ -1,5 +1,9 @@
 Date,Winner1,Winner Probability,Loser1,Loser Probability,Site,Category,hot_score
-2024-04-14,Carolina Hurricanes,83.943%,Chicago Blackhawks,16.057%,Playing At:  Chicago Blackhawks   Home,80-85,-0.9999999999999999
-2024-04-14,Calgary Flames,68.116%,Arizona Coyotes,31.884%,Playing At:  Calgary Flames   Home,60-70,-0.21428571428571452
-2024-04-14,St. Louis Blues,53.283%,Seattle Kraken,46.717%,Playing At:  St. Louis Blues   Home,55 >,-0.5000000000000001
-2024-04-14,Colorado Avalanche,53.267%,Vegas Golden Knights,46.733%,Playing At:  Vegas Golden Knights   Home,55 >,0.666666666666667
+2024-04-15,Edmonton Oilers,86.61%,San Jose Sharks,13.39%,Playing At:  Edmonton Oilers   Home,85 <,1.25
+2024-04-15,Boston Bruins,70.85%,Washington Capitals,29.15%,Playing At:  Washington Capitals   Home,70-75,-1.25
+2024-04-15,New York Rangers,70.59%,Ottawa Senators,29.41%,Playing At:  New York Rangers   Home,70-75,0.875
+2024-04-15,Detroit Red Wings,66.79%,Montreal Canadiens,33.21%,Playing At:  Detroit Red Wings   Home,60-70,0.4999999999999999
+2024-04-15,New Jersey Devils,63.44%,New York Islanders,36.56%,Playing At:  New Jersey Devils   Home,60-70,-0.9285714285714286
+2024-04-15,Los Angeles Kings,59.25%,Minnesota Wild,40.75%,Playing At:  Los Angeles Kings   Home,55-60,1.625
+2024-04-15,Nashville Predators,55.18%,Pittsburgh Penguins,44.82%,Playing At:  Pittsburgh Penguins   Home,55-60,1.625
+2024-04-15,Tampa Bay Lightning,52.77%,Buffalo Sabres,47.23%,Playing At:  Tampa Bay Lightning   Home,55 >,1.25
