@@ -4,8 +4,6 @@ library(tidyverse)
 library(lubridate)
 library(scales)
 library(readxl)
-library(openxlsx)
-
 
 schedule <- read_csv("C:/Users/thigg/Desktop/Hockey_Model/Next Week Games.csv")
 
@@ -48,14 +46,12 @@ schedule <- rbind(homes, visits)
 
 schedule <- left_join(schedule, analysis, by = "Date")
 
-filter_date <- as.Date("10/21/2024", format = "%m/%d/%Y")
-
 analysis2 <- schedule %>%
   group_by(Team, Week, Min_Date) %>%
   summarise(Num_Games = n(), Light_Days = sum(Target)) %>%
   mutate(Heavy_Days = Num_Games - Light_Days) %>%
   arrange(Min_Date) %>%
-  filter(Min_Date >= filter_date) %>%
+  filter(Min_Date >= as.Date("4/1/2024", format = "%m/%d/%Y")) %>%
   ungroup() %>%
   mutate(Light_Multiplier = Light_Days * 1.5) %>%
   mutate(Heavy_Multiplier = Heavy_Days * 0.5) %>%
@@ -107,119 +103,66 @@ analysis2 <- schedule %>%
   mutate(Total_Rank = Score_Rank + Games_Rank + Light_Rank)
   
 
-next_week_analysis3 <- schedule %>%
-  arrange(Date) %>%
-  filter(Date >= filter_date) %>%
-  filter(Date <= (filter_date + days(6))) %>%
-  mutate(week_day = wday(Date, label = TRUE, week_start = 1)) %>%
-  group_by(Team, week_day) %>%
-  summarise(count = n()) %>%
-  pivot_wider(names_from = week_day, values_from = count)
-
-four_week_analysis3 <- schedule %>%
-  arrange(Date) %>%
-  filter(Date >= filter_date) %>%
-  filter(Date <= (filter_date + weeks(4))) %>%
-  mutate(week_day = wday(Date, label = TRUE, week_start = 1)) %>%
-  group_by(Team, week_day) %>%
-  summarise(count = n()) %>%
-  pivot_wider(names_from = week_day, values_from = count)
-
-binder <- four_week_analysis3[1,]
-
-binder$Team <- NA
-binder$Mon <- NA
-binder$Tue <- NA
-binder$Wed <- NA
-binder$Thu <- NA
-binder$Fri <- NA
-binder$Sat <- NA
-binder$Sun <- NA
-
-next_week_analysis3 <- rbind(binder, next_week_analysis3) 
-
-next_week_analysis3 <- next_week_analysis3 %>%
-  filter(!is.na(Team))
-
-next_week_analysis3[is.na(next_week_analysis3)] <- 0
-
-next_week_analysis3 <- next_week_analysis3 %>%
-  mutate(Total_Light = Mon + Wed + Fri + Sun) %>%
-  mutate(Total_Heavy = Tue + Thu + Sat)
-
-four_week_analysis3[is.na(four_week_analysis3)] <- 0
-
-four_week_analysis3 <- four_week_analysis3 %>%
-  mutate(Total_Light = Mon + Wed + Fri + Sun) %>%
-  mutate(Total_Heavy = Tue + Thu + Sat)
-
-# analysis3 <- rbind(four_week_analysis3, binder)
-# 
-# analysis3 <- rbind(analysis3, next_week_analysis3)
-
-this_week <- analysis2 %>%
-  select(Team, Num_Games, Light_Days, Score) %>%
-  arrange(desc(Score))
-
-next_week <- analysis2 %>%
-  select(Team, Next_Week_Num_Games, Next_Week_Light_Days, Next_Week_Score) %>%
-  arrange(desc(Next_Week_Score))
+write_csv(analysis2, "C:/Users/thigg/Desktop/Hockey_Model/Schedule Analysis/Schedule Analysis.csv")  
 
 
-wb <- createWorkbook()
+library(dplyr)
+library(tidyr)
+library(tibble)
+library(rvest)
+library(stringr)
+library(purrr)
+library(scales)
+library(xml2)
 
-DF = this_week
-name = "This Week SA"
-addWorksheet(wb, sheetName = name)
-writeData(wb, sheet = name, x = DF)
-addFilter(wb, name, row = 1, cols = 1:ncol(DF))
-width_vec <- apply(DF, 2, function(x) max(nchar(as.character(x)) + 2, na.rm = TRUE))
-width_vec_header <- nchar(colnames(DF))  + 2
-max_vec_header <- pmax(width_vec, width_vec_header)
-setColWidths(wb, name, cols = 1:ncol(DF), widths = max_vec_header)
+url = "https://fantasy.espn.com/hockey/team?leagueId=1525903891&teamId=10&seasonId=2025"
 
-DF = next_week
-name = "Next Week SA"
-addWorksheet(wb, sheetName = name)
-writeData(wb, sheet = name, x = DF)
-addFilter(wb, name, row = 1, cols = 1:ncol(DF))
-width_vec <- apply(DF, 2, function(x) max(nchar(as.character(x)) + 2, na.rm = TRUE))
-width_vec_header <- nchar(colnames(DF))  + 2
-max_vec_header <- pmax(width_vec, width_vec_header)
-setColWidths(wb, name, cols = 1:ncol(DF), widths = max_vec_header)
+web <- read_html(url)
 
-DF = analysis2
-name = "All Schedule Analysis"
-addWorksheet(wb, sheetName = name)
-writeData(wb, sheet = name, x = DF)
-addFilter(wb, name, row = 1, cols = 1:ncol(DF))
-width_vec <- apply(DF, 2, function(x) max(nchar(as.character(x)) + 2, na.rm = TRUE))
-width_vec_header <- nchar(colnames(DF))  + 2
-max_vec_header <- pmax(width_vec, width_vec_header)
-setColWidths(wb, name, cols = 1:ncol(DF), widths = max_vec_header)
+divs <- web %>% html_elements("div.jsx-405950422 container generic--container")
 
-DF = next_week_analysis3
-name = "This Week DOW"
-addWorksheet(wb, sheetName = name)
-writeData(wb, sheet = name, x = DF)
-addFilter(wb, name, row = 1, cols = 1:ncol(DF))
-width_vec <- apply(DF, 2, function(x) max(nchar(as.character(x)) + 2, na.rm = TRUE))
-width_vec_header <- nchar(colnames(DF))  + 2
-max_vec_header <- pmax(width_vec, width_vec_header)
-setColWidths(wb, name, cols = 1:ncol(DF), widths = max_vec_header)
+divs1 <- divs %>% html_elements("div.ResponsiveTable")
 
-DF = four_week_analysis3
-name = "All DOW"
-addWorksheet(wb, sheetName = name)
-writeData(wb, sheet = name, x = DF)
-addFilter(wb, name, row = 1, cols = 1:ncol(DF))
-width_vec <- apply(DF, 2, function(x) max(nchar(as.character(x)) + 2, na.rm = TRUE))
-width_vec_header <- nchar(colnames(DF))  + 2
-max_vec_header <- pmax(width_vec, width_vec_header)
-setColWidths(wb, name, cols = 1:ncol(DF), widths = max_vec_header)
+test <- html_node(divs1, "div.flex")
+
+divs[2][[2]]
+
+for(i in 1:length(divs)){
+  
+  print(i)
+  
+  current_div <- divs[[2]]
+  
+  current_div <- current_div %>% html_text()
+}
 
 
-saveWorkbook(wb, "C:/Users/thigg/Desktop/Hockey_Model/Schedule Analysis/Schedule Analysis.xlsx", overwrite = TRUE)
 
+url_ <- "https://www.espn.com/nhl/boxscore/_/gameId/401459058"
 
-# write_csv(analysis2, "C:/Users/thigg/Desktop/Hockey_Model/Schedule Analysis/Schedule Analysis.csv")  
+boxscore <- read_html(url_) %>% 
+  # extract team sections (2)
+  html_elements("div.Boxscore div.Wrapper")
+  # extract team names, use as list element names
+  set_names(html_elements(., ".BoxscoreItem__TeamName") %>% html_text()) %>% 
+  # extact tables, 4 per team
+  map(\(team_section) html_elements(team_section, "table")) %>% 
+  map(\(team_tables) list(
+    # bind tables 1 & 2 (skaters/defensemen and data section)
+    tbl_1 = html_table(team_tables[1:2]) %>% 
+      bind_cols(.name_repair = "minimal") %>% 
+      # columns names from first row
+      set_names(.[1,]) %>% 
+      rename(player = Skaters) %>% 
+      # position to spearate column
+      mutate(position = if_else(G == "G", player, NA), .before = 1) %>% 
+      fill(position, .direction = "down") %>% 
+      filter(G != "G"),
+    # bind tables 3 & 4 (goalies and data section)
+    tbl_2 = html_table(team_tables[3:4]) %>% 
+      bind_cols(.name_repair = "minimal") %>% 
+      set_names(.[1,]) %>% 
+      filter(SA != "SA")
+  )
+  ) 
+
