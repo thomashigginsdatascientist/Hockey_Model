@@ -48,7 +48,7 @@ schedule <- rbind(homes, visits)
 
 schedule <- left_join(schedule, analysis, by = "Date")
 
-filter_date <- as.Date("10/21/2024", format = "%m/%d/%Y")
+filter_date <- as.Date("10/28/2024", format = "%m/%d/%Y")
 
 analysis2 <- schedule %>%
   group_by(Team, Week, Min_Date) %>%
