@@ -14,7 +14,31 @@ schedule <- schedule %>%
 
 schedule$Date <- as.Date(schedule$Date, format = "%m/%d/%Y")
 
-schedule$Week <- lubridate::week(schedule$Date)
+start_date <- as.Date("12/16/2024", format = "%m/%d/%Y")
+
+filter_date <- start_date
+
+dates <- seq.Date(from = start_date, to = as.Date("01/01/2027", format = "%m/%d/%Y"), by = "days")
+
+dates <- as.data.frame(dates)
+
+num <- nrow(dates)/7
+
+num <- ceiling(num)
+
+weeks <- rep(1:num, each=7)
+
+weeks <- weeks[1:nrow(dates)]
+
+dates$Week <- weeks
+
+colnames(dates) <- c("Date", "Week")
+
+# schedule$Week <- lubridate::isoweek(schedule$Date)
+# 
+# schedule$Year <- lubridate::year(schedule$Date)
+
+schedule <- left_join(schedule, dates, by = "Date")
 
 analysis <- schedule %>%
   group_by(Week, Date) %>%
@@ -47,8 +71,6 @@ visits <- schedule %>%
 schedule <- rbind(homes, visits)
 
 schedule <- left_join(schedule, analysis, by = "Date")
-
-filter_date <- as.Date("11/04/2024", format = "%m/%d/%Y")
 
 analysis2 <- schedule %>%
   group_by(Team, Week, Min_Date) %>%
