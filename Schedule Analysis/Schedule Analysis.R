@@ -14,7 +14,7 @@ schedule <- schedule %>%
 
 schedule$Date <- as.Date(schedule$Date, format = "%m/%d/%Y")
 
-start_date <- as.Date("12/16/2024", format = "%m/%d/%Y")
+start_date <- as.Date("01/13/2025", format = "%m/%d/%Y")
 
 filter_date <- start_date
 

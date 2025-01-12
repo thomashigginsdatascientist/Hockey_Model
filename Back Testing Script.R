@@ -10,12 +10,20 @@ library(scales)
 schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
 schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2022.csv")
 schedule2023 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2023.csv")
+schedule2024 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2024.csv")
 
 colnames(schedule2021) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 colnames(schedule2022) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 colnames(schedule2023) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
+colnames(schedule2024) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 
-games <- rbind(schedule2021, schedule2022, schedule2023)
+games <- rbind(schedule2023, schedule2024)
+
+games <- games %>%
+  mutate(Vistor = case_when(Vistor == "Utah Hockey Club" ~ "Arizona Coyotes",
+                            TRUE ~ Vistor)) %>%
+  mutate(Home = case_when(Home == "Utah Hockey Club" ~ "Arizona Coyotes",
+                            TRUE ~ Home))
 
 games$Winner <- ifelse(games$`Vistor Score` > games$`Home Score`, "V", "H")
 
@@ -106,8 +114,9 @@ for(i in 1:nrow(dates)){
   
 }
 
-
-train_dates <- data.frame(Date = c("12/9/2023", "12/17/2023", "12/24/2023", "12/31/2023", "1/7/2024", "1/14/2024"))
+train_dates <- seq(from = as.Date("12/9/2023", format = "%m/%d/%Y"), to = as.Date("1/4/2025", format = "%m/%d/%Y"), by = 7)
+# train_dates <- data.frame(Date = c("12/9/2023", "12/17/2023", "12/24/2023", "12/31/2023", "1/7/2024", "1/14/2024"))
+train_dates <- data.frame(Date = train_dates)
 train_dates$Date <- as.Date(train_dates$Date, format = "%m/%d/%Y")
 
 library(caret)
@@ -371,9 +380,10 @@ acc <- testc/test
 
 print(paste0("Above 80% Prob: ", test, " predictions; ", testc, " correct; ", percent(acc$Correct), " accuracy"))
 
-write.csv(results, "C:/Users/thigg/Desktop/Hockey Models/Backtesting With Hot Score No Location Data PDA.csv", row.names = FALSE)
+write.csv(results, "C:/Users/thigg/Desktop/Hockey Models/Backtesting PDA.csv", row.names = FALSE)
 
 next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
+next_week <- next_week[,-2]
 next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
 next_week <- next_week %>%
   filter(Date == Sys.Date())
