@@ -251,9 +251,9 @@ train <- train[complete.cases(train),]
 # 
 # end - start
 # 
-# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA20.RDS")
+# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA21.RDS")
 
-model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA20.RDS")
+model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA21.RDS")
 
 preds <- read_excel("C:/Users/thigg/Desktop/Hockey Models/PDA Lifetime Predictions.xlsx", sheet = "Predictions")
 
@@ -320,8 +320,10 @@ next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
 
 max_date <- max(dates$dates) + days(1)
 
+# Filtering based on results
 next_week <- next_week %>%
   filter(Date == max_date)
+
 
 colnames(next_week) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
 

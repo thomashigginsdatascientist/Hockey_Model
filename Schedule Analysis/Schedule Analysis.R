@@ -7,14 +7,15 @@ library(readxl)
 library(openxlsx)
 
 
-schedule <- read_csv("C:/Users/thigg/Desktop/Hockey_Model/Next Week Games.csv")
+schedule <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
 
 schedule <- schedule %>%
   select(-Time)
 
 schedule$Date <- as.Date(schedule$Date, format = "%m/%d/%Y")
 
-start_date <- as.Date("01/13/2025", format = "%m/%d/%Y")
+#Always start on a Monday
+start_date <- as.Date("10/06/2025", format = "%m/%d/%Y")
 
 filter_date <- start_date
 
@@ -241,7 +242,7 @@ max_vec_header <- pmax(width_vec, width_vec_header)
 setColWidths(wb, name, cols = 1:ncol(DF), widths = max_vec_header)
 
 
-saveWorkbook(wb, "C:/Users/thigg/Desktop/Hockey_Model/Schedule Analysis/Schedule Analysis.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "C:/Users/thigg/Desktop/Hockey Models/Schedule Analysis/Schedule Analysis.xlsx", overwrite = TRUE)
 
 
 # write_csv(analysis2, "C:/Users/thigg/Desktop/Hockey_Model/Schedule Analysis/Schedule Analysis.csv")  
