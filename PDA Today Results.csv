@@ -1,6 +1,101 @@
 Date,Winner1,Winner Probability,Loser1,Loser Probability,Site,Category,hot_score
-2025-01-27,Edmonton Oilers,74.9%,Seattle Kraken,25.1%,Playing At:  Edmonton Oilers   Home,70-75,2
-2025-01-27,Pittsburgh Penguins,66.2%,San Jose Sharks,33.8%,Playing At:  San Jose Sharks   Home,60-70,-2.25
-2025-01-27,Los Angeles Kings,58.2%,Detroit Red Wings,41.8%,Playing At:  Detroit Red Wings   Home,55-60,0.5
-2025-01-27,Philadelphia Flyers,53.9%,New Jersey Devils,46.1%,Playing At:  Philadelphia Flyers   Home,55 >,1.25
-2025-01-27,St. Louis Blues,52.0%,Vancouver Canucks,48.0%,Playing At:  St. Louis Blues   Home,55 >,0.07142857142857106
+2025-10-09,Carolina Hurricanes,70.797%,New Jersey Devils,29.203%,Playing At:  Carolina Hurricanes   Home,70-75,-0.875
+2025-10-11,Carolina Hurricanes,70.797%,Philadelphia Flyers,29.203%,Playing At:  Carolina Hurricanes   Home,70-75,-0.875
+2025-10-07,Florida Panthers,69.938%,Chicago Blackhawks,30.062%,Playing At:  Florida Panthers   Home,60-70,0
+2025-10-09,Florida Panthers,69.938%,Philadelphia Flyers,30.062%,Playing At:  Florida Panthers   Home,60-70,0
+2025-10-11,Florida Panthers,69.938%,Ottawa Senators,30.062%,Playing At:  Florida Panthers   Home,60-70,0
+2025-10-14,Dallas Stars,67.211%,Minnesota Wild,32.789%,Playing At:  Dallas Stars   Home,60-70,-1.3571428571428572
+2025-10-16,Dallas Stars,67.211%,Vancouver Canucks,32.789%,Playing At:  Dallas Stars   Home,60-70,-1.3571428571428572
+2025-10-21,Dallas Stars,67.211%,Columbus Blue Jackets,32.789%,Playing At:  Dallas Stars   Home,60-70,-1.3571428571428572
+2025-10-08,Toronto Maple Leafs,66.755%,Montreal Canadiens,33.245%,Playing At:  Toronto Maple Leafs   Home,60-70,3.071428571428571
+2025-10-13,Toronto Maple Leafs,66.755%,Detroit Red Wings,33.245%,Playing At:  Toronto Maple Leafs   Home,60-70,3.071428571428571
+2025-10-14,Toronto Maple Leafs,66.755%,Nashville Predators,33.245%,Playing At:  Toronto Maple Leafs   Home,60-70,3.071428571428571
+2025-10-16,Toronto Maple Leafs,66.755%,New York Rangers,33.245%,Playing At:  Toronto Maple Leafs   Home,60-70,3.071428571428571
+2025-10-18,Toronto Maple Leafs,66.755%,Seattle Kraken,33.245%,Playing At:  Toronto Maple Leafs   Home,60-70,3.071428571428571
+2025-10-21,Toronto Maple Leafs,66.755%,New Jersey Devils,33.245%,Playing At:  Toronto Maple Leafs   Home,60-70,3.071428571428571
+2025-10-08,Edmonton Oilers,66.352%,Calgary Flames,33.648%,Playing At:  Edmonton Oilers   Home,60-70,0.625
+2025-10-11,Edmonton Oilers,66.352%,Vancouver Canucks,33.648%,Playing At:  Edmonton Oilers   Home,60-70,0.625
+2025-10-09,Boston Bruins,65.272%,Chicago Blackhawks,34.728%,Playing At:  Boston Bruins   Home,60-70,0.6428571428571431
+2025-10-11,Boston Bruins,65.272%,Buffalo Sabres,34.728%,Playing At:  Boston Bruins   Home,60-70,0.6428571428571431
+2025-10-13,Boston Bruins,65.272%,Tampa Bay Lightning,34.728%,Playing At:  Boston Bruins   Home,60-70,0.6428571428571431
+2025-10-21,Boston Bruins,65.272%,Florida Panthers,34.728%,Playing At:  Boston Bruins   Home,60-70,0.6428571428571431
+2025-10-14,Carolina Hurricanes,65.145%,San Jose Sharks,34.855%,Playing At:  San Jose Sharks   Home,60-70,-2.25
+2025-10-16,Carolina Hurricanes,65.145%,Anaheim Ducks,34.855%,Playing At:  Anaheim Ducks   Home,60-70,-1.25
+2025-10-18,Carolina Hurricanes,65.145%,Los Angeles Kings,34.855%,Playing At:  Los Angeles Kings   Home,60-70,3.5
+2025-10-20,Carolina Hurricanes,65.145%,Vegas Golden Knights,34.855%,Playing At:  Vegas Golden Knights   Home,60-70,0.25
+2025-10-13,Winnipeg Jets,64.394%,New York Islanders,35.606%,Playing At:  New York Islanders   Home,60-70,-0.3571428571428573
+2025-10-16,Winnipeg Jets,64.394%,Philadelphia Flyers,35.606%,Playing At:  Philadelphia Flyers   Home,60-70,0.09999999999999987
+2025-10-20,Winnipeg Jets,64.394%,Calgary Flames,35.606%,Playing At:  Calgary Flames   Home,60-70,2.071428571428571
+2025-10-09,Winnipeg Jets,63.359%,Dallas Stars,36.641%,Playing At:  Winnipeg Jets   Home,60-70,0.9285714285714288
+2025-10-11,Winnipeg Jets,63.359%,Los Angeles Kings,36.641%,Playing At:  Winnipeg Jets   Home,60-70,0.9285714285714288
+2025-10-18,Winnipeg Jets,63.359%,Nashville Predators,36.641%,Playing At:  Winnipeg Jets   Home,60-70,0.9285714285714288
+2025-10-09,Vegas Golden Knights,62.398%,San Jose Sharks,37.602%,Playing At:  San Jose Sharks   Home,60-70,-2.25
+2025-10-11,Vegas Golden Knights,62.398%,Seattle Kraken,37.602%,Playing At:  Seattle Kraken   Home,60-70,0.9285714285714288
+2025-10-14,Vegas Golden Knights,62.398%,Calgary Flames,37.602%,Playing At:  Calgary Flames   Home,60-70,2.071428571428571
+2025-10-11,Toronto Maple Leafs,62.090%,Detroit Red Wings,37.910%,Playing At:  Detroit Red Wings   Home,60-70,1.357142857142857
+2025-10-09,Tampa Bay Lightning,61.865%,Ottawa Senators,38.135%,Playing At:  Tampa Bay Lightning   Home,60-70,1.3571428571428572
+2025-10-11,Tampa Bay Lightning,61.865%,New Jersey Devils,38.135%,Playing At:  Tampa Bay Lightning   Home,60-70,1.3571428571428572
+2025-10-09,Nashville Predators,61.631%,Columbus Blue Jackets,38.369%,Playing At:  Nashville Predators   Home,60-70,-1.7857142857142863
+2025-10-21,Nashville Predators,61.631%,Anaheim Ducks,38.369%,Playing At:  Nashville Predators   Home,60-70,-1.7857142857142863
+2025-10-11,Minnesota Wild,59.945%,Columbus Blue Jackets,40.055%,Playing At:  Minnesota Wild   Home,55-60,-0.07142857142857173
+2025-10-13,Minnesota Wild,59.945%,Los Angeles Kings,40.055%,Playing At:  Minnesota Wild   Home,55-60,-0.07142857142857173
+2025-10-07,New York Rangers,59.429%,Pittsburgh Penguins,40.571%,Playing At:  New York Rangers   Home,55-60,-0.3571428571428572
+2025-10-12,New York Rangers,59.429%,Washington Capitals,40.571%,Playing At:  New York Rangers   Home,55-60,-0.3571428571428572
+2025-10-14,New York Rangers,59.429%,Edmonton Oilers,40.571%,Playing At:  New York Rangers   Home,55-60,-0.3571428571428572
+2025-10-20,New York Rangers,59.429%,Minnesota Wild,40.571%,Playing At:  New York Rangers   Home,55-60,-0.3571428571428572
+2025-10-09,Vancouver Canucks,58.363%,Calgary Flames,41.637%,Playing At:  Vancouver Canucks   Home,55-60,0.9285714285714284
+2025-10-13,Vancouver Canucks,58.363%,St. Louis Blues,41.637%,Playing At:  Vancouver Canucks   Home,55-60,0.9285714285714284
+2025-10-09,Seattle Kraken,57.606%,Anaheim Ducks,42.394%,Playing At:  Seattle Kraken   Home,55-60,0.9285714285714288
+2025-10-07,Colorado Avalanche,56.894%,Los Angeles Kings,43.106%,Playing At:  Los Angeles Kings   Home,55-60,3.5
+2025-10-13,Colorado Avalanche,56.894%,Buffalo Sabres,43.106%,Playing At:  Buffalo Sabres   Home,55-60,0.07142857142857151
+2025-10-16,Colorado Avalanche,56.894%,Columbus Blue Jackets,43.106%,Playing At:  Columbus Blue Jackets   Home,55-60,1.25
+2025-10-14,Tampa Bay Lightning,56.239%,Washington Capitals,43.761%,Playing At:  Washington Capitals   Home,55-60,-1.3571428571428572
+2025-10-17,Tampa Bay Lightning,56.239%,Detroit Red Wings,43.761%,Playing At:  Detroit Red Wings   Home,55-60,1.357142857142857
+2025-10-18,Tampa Bay Lightning,56.239%,Columbus Blue Jackets,43.761%,Playing At:  Columbus Blue Jackets   Home,55-60,1.25
+2025-10-08,Vegas Golden Knights,55.330%,Los Angeles Kings,44.670%,Playing At:  Vegas Golden Knights   Home,55-60,0.25
+2025-10-16,Vegas Golden Knights,55.330%,Boston Bruins,44.670%,Playing At:  Vegas Golden Knights   Home,55-60,0.25
+2025-10-18,Vegas Golden Knights,55.330%,Calgary Flames,44.670%,Playing At:  Vegas Golden Knights   Home,55-60,0.25
+2025-10-09,St. Louis Blues,54.949%,Minnesota Wild,45.051%,Playing At:  St. Louis Blues   Home,55 >,0.33333333333333304
+2025-10-15,St. Louis Blues,54.949%,Chicago Blackhawks,45.051%,Playing At:  St. Louis Blues   Home,55 >,0.33333333333333304
+2025-10-18,St. Louis Blues,54.949%,Dallas Stars,45.051%,Playing At:  St. Louis Blues   Home,55 >,0.33333333333333304
+2025-10-21,St. Louis Blues,54.949%,Los Angeles Kings,45.051%,Playing At:  St. Louis Blues   Home,55 >,0.33333333333333304
+2025-10-16,Edmonton Oilers,54.385%,New York Islanders,45.615%,Playing At:  New York Islanders   Home,55 >,-0.3571428571428573
+2025-10-18,Edmonton Oilers,54.385%,New Jersey Devils,45.615%,Playing At:  New Jersey Devils   Home,55 >,-0.30000000000000004
+2025-10-19,Edmonton Oilers,54.385%,Detroit Red Wings,45.615%,Playing At:  Detroit Red Wings   Home,55 >,1.357142857142857
+2025-10-21,Edmonton Oilers,54.385%,Ottawa Senators,45.615%,Playing At:  Ottawa Senators   Home,55 >,2.071428571428571
+2025-10-11,New York Islanders,53.651%,Washington Capitals,46.349%,Playing At:  New York Islanders   Home,55 >,-0.3571428571428573
+2025-10-21,New York Islanders,53.651%,San Jose Sharks,46.349%,Playing At:  New York Islanders   Home,55 >,-0.3571428571428573
+2025-10-09,New York Rangers,53.220%,Buffalo Sabres,46.780%,Playing At:  Buffalo Sabres   Home,55 >,0.07142857142857151
+2025-10-11,New York Rangers,53.220%,Pittsburgh Penguins,46.780%,Playing At:  Pittsburgh Penguins   Home,55 >,1
+2025-10-18,New York Rangers,53.220%,Montreal Canadiens,46.780%,Playing At:  Montreal Canadiens   Home,55 >,1.25
+2025-10-13,Ottawa Senators,52.814%,Nashville Predators,47.186%,Playing At:  Ottawa Senators   Home,55 >,2.071428571428571
+2025-10-16,Ottawa Senators,52.814%,Seattle Kraken,47.186%,Playing At:  Ottawa Senators   Home,55 >,2.071428571428571
+2025-10-18,Ottawa Senators,52.814%,New York Islanders,47.186%,Playing At:  Ottawa Senators   Home,55 >,2.071428571428571
+2025-10-11,Colorado Avalanche,52.355%,Dallas Stars,47.645%,Playing At:  Colorado Avalanche   Home,55 >,0.125
+2025-10-18,Colorado Avalanche,52.355%,Boston Bruins,47.645%,Playing At:  Colorado Avalanche   Home,55 >,0.125
+2025-10-14,Pittsburgh Penguins,51.989%,Anaheim Ducks,48.011%,Playing At:  Anaheim Ducks   Home,55 >,-1.25
+2025-10-16,Pittsburgh Penguins,51.989%,Los Angeles Kings,48.011%,Playing At:  Los Angeles Kings   Home,55 >,3.5
+2025-10-18,Pittsburgh Penguins,51.989%,San Jose Sharks,48.011%,Playing At:  San Jose Sharks   Home,55 >,-2.25
+2025-10-13,Florida Panthers,51.575%,Philadelphia Flyers,48.425%,Playing At:  Philadelphia Flyers   Home,55 >,0.09999999999999987
+2025-10-15,Florida Panthers,51.575%,Detroit Red Wings,48.425%,Playing At:  Detroit Red Wings   Home,55 >,1.357142857142857
+2025-10-16,Florida Panthers,51.575%,New Jersey Devils,48.425%,Playing At:  New Jersey Devils   Home,55 >,-0.30000000000000004
+2025-10-18,Florida Panthers,51.575%,Buffalo Sabres,48.425%,Playing At:  Buffalo Sabres   Home,55 >,0.07142857142857151
+2025-10-08,Washington Capitals,50.954%,Boston Bruins,49.046%,Playing At:  Washington Capitals   Home,55 >,-1.3571428571428572
+2025-10-17,Washington Capitals,50.954%,Minnesota Wild,49.046%,Playing At:  Washington Capitals   Home,55 >,-1.3571428571428572
+2025-10-19,Washington Capitals,50.954%,Vancouver Canucks,49.046%,Playing At:  Washington Capitals   Home,55 >,-1.3571428571428572
+2025-10-21,Washington Capitals,50.954%,Seattle Kraken,49.046%,Playing At:  Washington Capitals   Home,55 >,-1.3571428571428572
+2025-10-09,Pittsburgh Penguins,50.826%,New York Islanders,49.174%,Playing At:  Pittsburgh Penguins   Home,55 >,1
+2025-10-21,Pittsburgh Penguins,50.826%,Vancouver Canucks,49.174%,Playing At:  Pittsburgh Penguins   Home,55 >,1
+2025-10-15,Buffalo Sabres,49.173%,Ottawa Senators,50.827%,Playing At:  Buffalo Sabres   Home,55 >,0.07142857142857151
+2025-10-11,St. Louis Blues,48.130%,Calgary Flames,51.870%,Playing At:  Calgary Flames   Home,55 >,2.071428571428571
+2025-10-14,Seattle Kraken,47.533%,Montreal Canadiens,52.467%,Playing At:  Montreal Canadiens   Home,55 >,1.25
+2025-10-20,Seattle Kraken,47.533%,Philadelphia Flyers,52.467%,Playing At:  Philadelphia Flyers   Home,55 >,0.09999999999999987
+2025-10-17,Vancouver Canucks,46.626%,Chicago Blackhawks,53.374%,Playing At:  Chicago Blackhawks   Home,55 >,-0.07142857142857129
+2025-10-18,Minnesota Wild,46.248%,Philadelphia Flyers,53.752%,Playing At:  Philadelphia Flyers   Home,55 >,0.09999999999999987
+2025-10-16,Montreal Canadiens,45.126%,Nashville Predators,54.874%,Playing At:  Montreal Canadiens   Home,55 >,1.25
+2025-10-20,Montreal Canadiens,45.126%,Buffalo Sabres,54.874%,Playing At:  Montreal Canadiens   Home,55 >,1.25
+2025-10-11,Anaheim Ducks,44.538%,San Jose Sharks,55.462%,Playing At:  San Jose Sharks   Home,55 >,-2.25
+2025-10-19,Anaheim Ducks,44.538%,Chicago Blackhawks,55.462%,Playing At:  Chicago Blackhawks   Home,55 >,-0.07142857142857129
+2025-10-13,New Jersey Devils,44.312%,Columbus Blue Jackets,55.688%,Playing At:  Columbus Blue Jackets   Home,55 >,1.25
+2025-10-09,Detroit Red Wings,44.221%,Montreal Canadiens,55.779%,Playing At:  Detroit Red Wings   Home,55 >,1.357142857142857
+2025-10-11,Montreal Canadiens,42.081%,Chicago Blackhawks,57.919%,Playing At:  Chicago Blackhawks   Home,55 >,-0.07142857142857129

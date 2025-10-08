@@ -7,12 +7,12 @@ library(readxl)
 library(openxlsx)
 
 
-schedule <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
+schedule <- readRDS("C:/Users/thigg/Desktop/Hockey Models/Seasons/Historic Season Data.RDS")
 
 schedule <- schedule %>%
   select(-Time)
 
-schedule$Date <- as.Date(schedule$Date, format = "%m/%d/%Y")
+schedule$Date <- as.Date(schedule$Date, format = "%Y-%m-%d")
 
 #Always start on a Monday
 start_date <- as.Date("10/06/2025", format = "%m/%d/%Y")

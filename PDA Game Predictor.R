@@ -1,4 +1,7 @@
 
+source("C:/Users/thigg/Desktop/Hockey Models/Historic Game Web Scrape.R")
+
+rm(list = ls())
 
 library(tidyverse)
 library(lubridate)
@@ -6,37 +9,34 @@ library(scales)
 library(readxl)
 # library(car)
 
-schedule2021 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2021.csv")
-schedule2022 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2022.csv")
-schedule2023 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2023.csv")
-schedule2024 <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Seasons/2024.csv")
+games <- readRDS("C:/Users/thigg/Desktop/Hockey Models/Seasons/Historic Season Data.RDS")
 
-colnames(schedule2021) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
-colnames(schedule2022) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
-colnames(schedule2023) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
-colnames(schedule2024) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
+games$Date1 <- as.Date(games$Date, format = "%Y-%m-%d")
 
-games <- rbind(schedule2021, schedule2022, schedule2023, schedule2024)
+filter_date <- Sys.Date() - days(1)
 
-games$Winner <- ifelse(games$`Vistor Score` > games$`Home Score`, "V", "H")
+games <- games %>%
+  filter(Date1 <= filter_date)
+
+games$Winner <- ifelse(games$`Visitor Score` > games$`Home Score`, "V", "H")
 
 games$Home_Win <- ifelse(games$Winner == "H", 1, 0)
 games$Visitor_Win <- ifelse(games$Winner == "V", 1, 0)
 
 homes <- games %>%
-  select(Date, Home, `Home Score`, Home_Win, Vistor, `Vistor Score`) %>%
-  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor, "GA" = `Vistor Score`) %>%
+  select(Date, Home, `Home Score`, Home_Win, Visitor, `Visitor Score`) %>%
+  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Visitor, "GA" = `Visitor Score`) %>%
   mutate(Location = "Home")
 
 visits <- games %>%
-  select(Date, Vistor, `Vistor Score`, Visitor_Win, Home, `Home Score`) %>%
-  rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
+  select(Date, Visitor, `Visitor Score`, Visitor_Win, Home, `Home Score`) %>%
+  rename("Team" = Visitor, "GF" = `Visitor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
   mutate(Location = "Road")
 
 games <- rbind(homes, visits)
 
 sequence_data <- games %>%
-  mutate(Date = as.Date(Date, format = "%m/%d/%Y")) %>%
+  mutate(Date = as.Date(Date, format = "%Y-%m-%d")) %>%
   group_by(Date, Team) %>%
   arrange(Date) %>%
   ungroup() %>%
@@ -129,7 +129,7 @@ sequence_data <- games %>%
   mutate(Games_Between_Last_3 = as.numeric(Games_Between_Last_3)) %>%
   mutate(Games_Between_Last_7 = as.numeric(Games_Between_Last_7)) %>%
   arrange(desc(Date)) %>%
-  slice(1:120) %>%
+  slice(1:250) %>%
   arrange(Date) %>%
   ungroup() %>%
   select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
@@ -137,7 +137,7 @@ sequence_data <- games %>%
 sequence_data1 <- sequence_data[complete.cases(sequence_data),]
 
 games1 <- games %>%
-  mutate(Date = as.Date(Date, format = "%m/%d/%Y"))
+  mutate(Date = as.Date(Date, format = "%Y-%m-%d"))
 
 dates <- unique(games1$Date)
 dates <- as.data.frame(dates)
@@ -230,13 +230,12 @@ sequence_data1 <- left_join(sequence_data1, binder, by = c("Team", "Date"))
 
 sequence_data1$Win <- ifelse(sequence_data1$Win == 1, "W", "L")
 
-sequence_data1 <- sequence_data1 %>%
-  select(-Date)
+sequence_data1 <- sequence_data1
 
 library(caret)
 
 train <- sequence_data1 %>%
-  select(-GF, -GA)
+  select(-GF, -GA, -Date)
 
 train <- train[complete.cases(train),]
   
@@ -251,9 +250,9 @@ train <- train[complete.cases(train),]
 # 
 # end - start
 # 
-# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA21.RDS")
+# saveRDS(model, "C:/Users/thigg/Desktop/Hockey Models/PDA22.RDS")
 
-model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA21.RDS")
+model <- readRDS("C:/Users/thigg/Desktop/Hockey Models/PDA22.RDS")
 
 preds <- read_excel("C:/Users/thigg/Desktop/Hockey Models/PDA Lifetime Predictions.xlsx", sheet = "Predictions")
 
@@ -314,162 +313,61 @@ metrics <- rbind(metrics, Rsquared1)
 
 write_csv(metrics, "C:/Users/thigg/Desktop/Hockey Models/Current Model Metrics.csv")
 
-next_week <- read_csv("C:/Users/thigg/Desktop/Hockey Models/Next Week Games.csv")
-next_week <- next_week[,-2]
-next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
 
-max_date <- max(dates$dates) + days(1)
+next_week <- readRDS("C:/Users/thigg/Desktop/Hockey Models/Seasons/Historic Season Data.RDS")
 
-# Filtering based on results
+next_week$Date1 <- as.Date(next_week$Date, format = "%Y-%m-%d")
+
+filter_date <- Sys.Date()
+filter_date_2 <- Sys.Date() + days(14)
+
 next_week <- next_week %>%
-  filter(Date == max_date)
+  filter(Date1 >= filter_date) %>%
+  filter(Date1 <= filter_date_2)
 
+next_week <- next_week[,-2]
+next_week$Date <- as.Date(next_week$Date, format = "%Y-%m-%d")
 
-colnames(next_week) <- c("Date", "Vistor", "Vistor Score", "Home", "Home Score", "OTSO", "ATT", "LOG", "Notes")
-
-next_week$Winner <- ifelse(next_week$`Vistor Score` > next_week$`Home Score`, "V", "H")
+next_week$Winner <- ifelse(next_week$`Visitor Score` > next_week$`Home Score`, "V", "H")
 
 next_week$Home_Win <- ifelse(next_week$Winner == "H", 1, 0)
 next_week$Visitor_Win <- ifelse(next_week$Winner == "V", 1, 0)
 
-attributes <- games %>%
-  mutate(Date = as.Date(Date, format = "%m/%d/%Y")) %>%
+attributes <- sequence_data1 %>%
+  mutate(Date = as.Date(Date, format = "%Y-%m-%d")) %>%
   group_by(Team) %>%
   arrange(desc(Date)) %>%
-  slice(1:30) %>%
+  slice(1) %>%
   arrange(Date) %>%
-  ungroup()
+  ungroup() %>%
+  select(-Date, -GF, -GA, -Win, -Opponent, -Location)
+
+
 
 homes <- next_week %>%
-  select(Date, Home, `Home Score`, Home_Win, Vistor, `Vistor Score`) %>%
-  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Vistor, "GA" = `Vistor Score`) %>%
+  select(Date, Home, `Home Score`, Home_Win, Visitor, `Visitor Score`) %>%
+  rename("Team" = Home, "GF" = `Home Score`, "Win" = Home_Win, "Opponent" = Visitor, "GA" = `Visitor Score`) %>%
   mutate(Location = "Home")
 
 visits <- next_week %>%
-  select(Date, Vistor, `Vistor Score`, Visitor_Win, Home, `Home Score`) %>%
-  rename("Team" = Vistor, "GF" = `Vistor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
+  select(Date, Visitor, `Visitor Score`, Visitor_Win, Home, `Home Score`) %>%
+  rename("Team" = Visitor, "GF" = `Visitor Score`, "Win" = Visitor_Win, "Opponent" = Home, "GA" = `Home Score`) %>%
   mutate(Location = "Road")
 
 next_week <- rbind(homes, visits)
 
-next_week$Date <- as.Date(next_week$Date, format = "%m/%d/%Y")
+next_week$Date <- as.Date(next_week$Date, format = "%Y-%m-%d")
 
-next_week <- rbind(attributes, next_week)
-
-next_week <- next_week %>%
-  mutate(Date = as.Date(Date, format = "%m/%d/%Y")) %>%
-  group_by(Date, Team) %>%
-  arrange(Date) %>%
-  ungroup() %>%
-  group_by(Team) %>%
-  mutate(Previous_Opponent = lag(Opponent)) %>%
-  mutate(Previous_GF = lag(GF, n = 1)) %>%
-  mutate(Previous_GA = lag(GA, n = 1)) %>%
-  mutate(Previous_3_GF = lag(GF, n = 1) + lag(GF, n = 2) + lag(GF, n = 3)) %>%
-  mutate(Previous_3_GA = lag(GA, n = 1) + lag(GA, n = 2) + lag(GA, n = 3)) %>%
-  mutate(Previous_Result = lag(Win)) %>%
-  mutate(Previous_3_Results = lag(Win, n = 1) + lag(Win, n = 2) + lag(Win, n = 3)) %>%
-  mutate(Previous_Location = lag(Location)) %>%
-  mutate(Previous_7_GF = lag(GF, n = 1) + 
-           lag(GF, n = 2) + 
-           lag(GF, n = 3) + 
-           lag(GF, n = 4) +
-           lag(GF, n = 5) +
-           lag(GF, n = 6) +
-           lag(GF, n = 7)) %>%
-  mutate(Previous_7_GA = lag(GA, n = 1) + 
-           lag(GA, n = 2) + 
-           lag(GA, n = 3) + 
-           lag(GA, n = 4) +
-           lag(GA, n = 5) +
-           lag(GA, n = 6) +
-           lag(GA, n = 7)) %>%
-  mutate(Previous_7_Results = lag(Win, n = 1) + 
-           lag(Win, n = 2) + 
-           lag(Win, n = 3) + 
-           lag(Win, n = 4) +
-           lag(Win, n = 5) +
-           lag(Win, n = 6) +
-           lag(Win, n = 7)) %>%
-  mutate(Previous_15_GF = lag(GF, n = 1) + 
-           lag(GF, n = 2) + 
-           lag(GF, n = 3) + 
-           lag(GF, n = 4) +
-           lag(GF, n = 5) +
-           lag(GF, n = 6) +
-           lag(GF, n = 7) +
-           lag(GF, n = 8) + 
-           lag(GF, n = 9) + 
-           lag(GF, n = 10) +
-           lag(GF, n = 11) +
-           lag(GF, n = 12) +
-           lag(GF, n = 13) +
-           lag(GF, n = 14) +
-           lag(GF, n = 15)) %>%
-  mutate(Previous_15_GA = lag(GA, n = 1) + 
-           lag(GA, n = 2) + 
-           lag(GA, n = 3) + 
-           lag(GA, n = 4) +
-           lag(GA, n = 5) +
-           lag(GA, n = 6) +
-           lag(GA, n = 7) +
-           lag(GA, n = 8) + 
-           lag(GA, n = 9) + 
-           lag(GA, n = 10) +
-           lag(GA, n = 11) +
-           lag(GA, n = 12) +
-           lag(GA, n = 13) +
-           lag(GA, n = 14) +
-           lag(GA, n = 15)) %>%
-  mutate(Previous_15_Resuts = lag(Win, n = 1) + 
-           lag(GA, n = 2) + 
-           lag(GA, n = 3) + 
-           lag(GA, n = 4) +
-           lag(GA, n = 5) +
-           lag(GA, n = 6) +
-           lag(GA, n = 7) +
-           lag(GA, n = 8) + 
-           lag(GA, n = 9) + 
-           lag(GA, n = 10) +
-           lag(GA, n = 11) +
-           lag(GA, n = 12) +
-           lag(GA, n = 13) +
-           lag(GA, n = 14) +
-           lag(GA, n = 15)) %>%
-  mutate(DOW = wday(Date, week_start = 1)) %>%
-  mutate(Games_Since_Last_Game = Date - lag(Date)) %>%
-  mutate(Games_Between_Last_3 = lag(Games_Since_Last_Game, n = 1) + lag(Games_Since_Last_Game, n = 2) + lag(Games_Since_Last_Game, n = 3)) %>%
-  mutate(Games_Between_Last_7 = lag(Games_Since_Last_Game, n = 1) + 
-           lag(Games_Since_Last_Game, n = 2) + 
-           lag(Games_Since_Last_Game, n = 3) +
-           lag(Games_Since_Last_Game, n = 4) +
-           lag(Games_Since_Last_Game, n = 5) +
-           lag(Games_Since_Last_Game, n = 6) +
-           lag(Games_Since_Last_Game, n = 7)) %>%
-  mutate(Games_Since_Last_Game = as.numeric(Games_Since_Last_Game)) %>%
-  mutate(Games_Between_Last_3 = as.numeric(Games_Between_Last_3)) %>%
-  mutate(Games_Between_Last_7 = as.numeric(Games_Between_Last_7)) %>%
-  arrange(Date) %>%
-  ungroup() %>%
-  select(Date, Team, GF, Location, Opponent, GA, Previous_Opponent, Previous_GF, Previous_GA, Previous_Result, Previous_3_GF, Previous_3_GA, Previous_3_Results, Previous_7_GF, Previous_7_GA, Previous_7_Results, Previous_15_GF, Previous_15_GA, Previous_15_Resuts, Previous_Location, DOW, Games_Since_Last_Game, Games_Between_Last_3, Games_Between_Last_7, Win)
+next_week <- left_join(next_week, attributes, by = "Team")
 
 next_week1 <- next_week %>%
-  filter(Date == max_date) %>%
-  # filter(Date >= as.Date("12/13/2023", format = "%m/%d/%Y")) %>%
-  select(-Win, -GF, -GA)
-
-binder1 <- binder %>%
-  arrange(desc(Date)) %>%
-  group_by(Team) %>%
-  slice(1) %>%
-  select(Team, Date, hot_score) %>%
-  rename("Score_Date" = Date) %>%
-  ungroup() %>%
-  filter(Team %in% next_week1$Team)
-
-next_week1 <- left_join(next_week1, binder1, by = "Team")
+  select(-GF, -GA, -Win)
 
 next_week1 <- next_week1[complete.cases(next_week1),]
+
+next_week1 <- next_week1 %>%
+  filter(!Team == "Utah Mammoth") %>%
+  filter(!Opponent == "Utah Mammoth")
 
 today_preds <- predict(model, newdata = next_week1, type = "prob")
 
